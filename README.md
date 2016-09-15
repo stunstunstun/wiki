@@ -3,6 +3,8 @@
 
 제 자신은 믿지만 자신의 뇌는 믿지 못하는 편이라, 사소한 일정 관리부터 깊게 이해하고 싶은 부분까지 기록하는 것을 즐기는 편입니다. 광범위한 인터넷 환경에서 조금 더 효율적으로 정보를 관리하고, 지속적으로 리마인드 할 수 있었으면 합니다.
 
+> Github Markdown Guide : https://guides.github.com/features/mastering-markdown/
+
 ## How to do?
 
 > **[Trello](http://trello.com)**
