@@ -1,20 +1,32 @@
 
-## How come?
+## Github에서 위키페이지를 생성한 이유
 
-NHN 으로 이직 후에 가장 놀라웠던 부분과 성장 할 수 있던 요인은 효율적인 개발 프로세스를 위한 사내플랫폼 보다는 사내 Wiki 서비스를 통해 개발환경부터 모든 조직의 경험을 간접적으로 체험할수 있는 부분이였다. Wiki를 통해 프로젝트를 시작하기 앞서 Overview 하는 행동이 습관이 되었고, 스스로 간략한 정보부터 깊게 이해하고 싶은 부분까지 기록하는 것을 즐기는 내자신을 발견하였다. 그 결과 어느시점부터는 로컬PC, 블로그 등에 흩어진 정보를 한곳에서 조금 더 효율적으로 정보를 관리하고, 지속적으로 리마인드 할 수 있도록 Github에서 위키페이지를 관리 하기로 했다.
+2014년 NHN 으로 이직 후에 개인적으로 가장 놀라웠던 부분은 조직의 규모에 맞는 개발표준 / 애플리케이션 개발 / 빌드&배포 / 모니터링을 돕는 사내플랫폼도 인상적이였지만 사내의 Wiki 서비스를 통해 개발자들이 소통 하고 있었다는 것이였다.
 
-- Github Markdown Guide : https://guides.github.com/features/mastering-markdown/
+이와 같이 공유가능한 문서를 생산 할 수 있는 Wiki 서비스를 통해 아래와 같은 것들이 가능했다.
+- 신규입사자를 위한 개발환경부터 팀내에 가이드라인을 제시 할 수 있다.
+- 개인의 주간업무를 관리 할수 있었고, 주간 회의를 통해 팀원들이 어떠한 일을 진행하고 있는지 알 수 있었다.
+- 프로젝트를 진행하면서 작성된 문서들은 그 자체만으로 훌륭항 Reference 가 된다.
+- 본인이 원한다면 다른 조직의 경험까지 간접적으로 체험 할 수 있었다. 
+
+이후 프로젝트를 시작하기 앞서 Overview 하는 행동이 습관이 되었고 스스로 간략한 정보부터 깊게 이해하고 싶은 부분까지 기록하는 것을 즐기는 내 자신을 발견하였다. 하지만 몇몇 아쉬운 부분이 있어 Github Repository 내에 Wiki 페이지를 관리해야 겠다는 결론을 내렸다.
+- 기존에는 기술적인 이슈를 Blog를 통해 정리를 하였지만 현재는 익숙한 Markdown 문법을 활용해 Wiki 페이지를 작성하는 것이 유리하다.
+- 작성한 Wiki 페이지를 활용해 손쉽게 Blog 포스팅도 가능하다.
+- 정보의 단절, 사내에서 작성한 문서는 기본적으로 회사의 자산이다. 하지만 사내에서 진행한 프로젝트를 통해 얻은 경험을 개인적으로 지속적으로 리마인드 할 수 있었으면 한다.
 - 프로젝트만 레거시 시스템이 있는 것은 아니다. 지속적인 리마인드를 위해서는 이전글에서 현재까지의 경험을 반영하여 더 나은 문서를 생산해 나가야한다.
+- Github Markdown Guide : https://guides.github.com/features/mastering-markdown/
+
 
 ## How to do?
 
 > **[Trello](http://trello.com)**
-- 매일 또는 매주 하고 싶은 일은 **TO DO LIST** 를 통해 기록한다.
+- Daily 단위로 하고 싶은 이슈에 대한 **TO DO LIST** 를 통해 기록한다.
 - 관심있는 Article 이나 이슈들을 스크랩한다.
 
 > **[Github](https://github.com/wjdsupj)**
-- Programming Language 및 Software Enginnering 에 대한 모든 이야기는 이곳에 위키페이지 형태로 기록한다.
-- 개인 프로젝트 중 Google Play, iTunes에 배포된 Product는 private 상태로 공개하지 않는다.
+- Programming Language 및 Software Enginnering 에 대한 모든 이야기를 위키페이지를 통해 관리한다.
+- 개발환경, 개발방법론, 인프라운영 전반에 걸쳐 프로젝트를 진행하면서 쌓인 경험을 위키페이지를 통해 관리한다.
+- 개인 프로젝트 중 Google Play, iTunes에 배포된 Product는 private repository를 통해 공개하지 않는다.
 
 > **[stunstun's blog](http://stunstun.tistory.com)**
 - Junior 시절 부터 겪은 작은 시행착오 부터 공유하고 싶은 경험을 Blog를 통해 정리해왔다.
