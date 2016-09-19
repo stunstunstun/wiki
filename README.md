@@ -14,7 +14,8 @@
 - 작성한 Wiki 페이지를 활용해 손쉽게 Blog 포스팅도 가능하다.
 - 정보의 단절, 사내에서 작성한 문서는 기본적으로 회사의 자산이다. 하지만 사내에서 진행한 프로젝트를 통해 얻은 경험을 개인적으로 지속적으로 리마인드 할 수 있었으면 한다.
 - 프로젝트만 레거시 시스템이 있는 것은 아니다. 지속적인 리마인드를 위해서는 이전글에서 현재까지의 경험을 반영하여 더 나은 문서를 생산해 나가야한다.
-- Github Markdown Guide : https://guides.github.com/features/mastering-markdown/
+
+> Github Markdown Guide : https://guides.github.com/features/mastering-markdown/
 
 
 ## How to do?
