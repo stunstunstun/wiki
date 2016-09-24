@@ -1,2 +1,3 @@
+# Functional Programming Principles in Scala
 
-# References
+> https://www.coursera.org/learn/progfun1
