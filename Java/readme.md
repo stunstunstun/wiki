@@ -8,16 +8,13 @@
 - http://docs.oracle.com/javase/8/
 - http://docs.oracle.com/javase/8/docs/
 
--
-
-
 #### 나아가서는
 - Java Language 와 JVM에 대해 공식문서를 참고하여 정리해 나아간다.
 - 예제를 통해 직접 코딩해 나아가면서 제대로 이해해 나아간다. 문서의 **List of Examples** 을 참조한다.
  - http://docs.oracle.com/javase/specs/jls/se8/html/index.html
 - **Java8** 에 대해 관심이 있다면 본격적으로 학습하기 위해 관련 Contents를 번역해 가면서 공부한다.
 
-<br>
+-
 
 ### Documents
 
