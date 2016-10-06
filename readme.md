@@ -34,4 +34,4 @@
 - 2011년 부터 2015년까지 Blog를 통해 작성한 글을 여유가 되면 조금씩 Github 페이지도 이관한다.
 - 프로젝트만 레거시 시스템이 있는 것은 아니다. 문서 이관시에도 이전글에서 현재까지의 경험을 보충해 더 나은 컨텐츠를 생산했으면 하는 바람이다.
 
-<script type="text/javascript" src="http://imgdg.joycity.com/th/common/js/analytics.js" data-id="UA-43100337-1" data-domain="tistory.com" ></script>
+<script type="text/javascript" src="http://imgdg.joycity.com/th/common/js/analytics.js" data-id="UA-43100337-1" data-domain="github.com" ></script>
