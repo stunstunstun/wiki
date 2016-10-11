@@ -3,6 +3,8 @@
 
 - https://developer.apple.com/develop/
 - https://developer.apple.com/account/#/welcome 
+- https://developer.apple.com/library/content/referencelibrary/GettingStarted/DevelopiOSAppsSwift/
+- http://tryhelloworld.co.kr/courses/ios-swift입문
 
 # Udacity
 
