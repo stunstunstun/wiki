@@ -3,7 +3,7 @@
 
 2014년 NHN 으로 이직 후에 가장 놀라웠던 부분은 개발환경에 대한 표준가이드, 빌드&배포, 모니터링 등을 돕는 사내플랫폼도 인상적이였지만 사내의 Wiki 서비스를 통해 개발자들이 소통하고 있었다는 것이였다.
 
-협업을 할 때에는 프로젝트를 시작하기 앞서 왜 이 프로젝트가 필요한지에 대해 서로 이해하는 것이 중요합니다. 이를 Wiki 페이지에 정의하고 함께 Overview & Review 하는 것을 시작으로 하위에 필요한 Task 및 기술적 요소들을 점진적으로 정리해 나아가는 습관을 기르도록 한다.
+협업을 할 때에는 프로젝트를 시작하기 앞서 왜 이러한 서비스가 필요한지에 대해 서로 이해하는 것이 중요하다. 이를 Wiki 페이지에 정의하고 함께 Overview & Review 하는 것을 시작으로 하위에 필요한 Task 및 기술적 요소들을 점진적으로 정리해 나아가는 습관을 기르도록 한다.
 
 > Github Markdown Guide : https://guides.github.com/features/mastering-markdown/
 
@@ -14,9 +14,20 @@
 - 기존에는 기술적인 이슈를 Blog를 통해 정리를 하였지만 현재는 익숙한 Markdown 문법을 활용해 Wiki 페이지를 작성하는 것이 유리하다.
 
 ## Table
+
+Category 에 대한 자세한 설명은 각 Category 폴더의 readme.md 문서를 참조한다. 
+
 | Category | Description |
 | --- | --- |
-| Java | Based |
+| AWS | AWS |
+| Android | - |
+| BugfixedDiary | - |
+| Fundamentals | - |
+| Git | - |
+| Java | - |
+| Scala | - |
+| Spring | - |
+| iOS | - |
 
 ## Contribute
 
