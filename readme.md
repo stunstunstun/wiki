@@ -9,10 +9,14 @@
 
 이후부터 업무에 필요한 정보를 Wiki 페이지에 정의하고 함께 Overview & Review 하는 것을 시작으로 하위에 필요한 업무 및 기술적 요소들을 점진적으로 정리해 나아가는 습관을 기를수가 있었습니다.
 
+<br>
+
 ##### Github Markdown Guide
 - https://guides.github.com/features/mastering-markdown/
 
----
+<br>
+
+----
 
 **하지만 몇몇 아쉬운 부분이 있어 Github Repository 내에 Wiki 페이지를 관리해야 겠다는 결론을 내렸습니다.**
 
@@ -47,3 +51,5 @@ Wiki 페이지의 대부분의 문서는 각 주제에 대해 처음 접근하�
 
 - 이 문서의 최상단의 **'Github에서 위키문서를 관리하기 시작한 이유'** 에 공감하시는 모든 분들은 카테고리 또는 문서를 추가하거나 수정할 수가 있습니다.
 - 언제든지 어려워마시고 Pull Request 부탁드리겠습니다.
+
+<script type="text/javascript" src="http://imgdg.joycity.com/th/common/js/analytics.js" data-id="UA-43100337-1" data-domain="github.com" ></script>
