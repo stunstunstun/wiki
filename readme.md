@@ -38,7 +38,7 @@ Wiki 페이지의 대부분의 문서는 각 주제에 대해 처음 접근하�
 | --- | --- |
 | AWS | AWS 및 인프라 전반에 관한 지식 |
 | Android | All about Android |
-| BugfixedDiary | 버그픽스 기록을 남긴다기 보다는 어떻게 문제를 인식하고 해결해 나아가는지를 중점으로 기술한다. |
+| BugFixedDiary | 버그픽스 기록을 남긴다기 보다는 어떻게 문제를 인식하고 해결해 나아가는지를 중점으로 기술한다. |
 | Fundamentals | 개발자에게 밑천이 되는 소프트웨어 공학 전반 |
 | Git | All about Git |
 | Java | Java language |
