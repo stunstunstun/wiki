@@ -51,8 +51,8 @@ Test Driven Development (or TDD ) 는  소프트웨어를 개발하는 하나의
 
 ### 프로젝트 정보를 입력한다.
 
-| 속성 | 설명  |
-|-|-|
+| 속성 | 설명 |
+|--|--|
 | Product Name | 프로젝트명 |
 | Team | 개인 또는 조직 |
 | Organization Name | 조직 이름
