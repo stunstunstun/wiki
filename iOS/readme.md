@@ -43,6 +43,8 @@ Test Driven Development (or TDD ) 는  소프트웨어를 개발하는 하나의
 
 ### Xcode를 실행하고 'Create a new Xcode Project' 를 통해 새 프로젝트를 생성한다.
 
+![Create Project](/images/create-project-1.png)
+
 ![Create Project](http://hola.dooray.com/files/1800041434974220585)
 
 <img src='http://hola.dooray.com/files/1800041434974220585'/>
