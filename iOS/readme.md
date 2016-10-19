@@ -43,6 +43,8 @@ Test Driven Development (or TDD ) 는  소프트웨어를 개발하는 하나의
 
 ### Xcode를 실행하고 'Create a new Xcode Project' 를 통해 새 프로젝트를 생성한다.
 
+![Create Project](http://hola.dooray.com/files/1800041434974220585)
+
 <img src='http://hola.dooray.com/files/1800041434974220585'/>
 
 ### Single View Application 을 선택
@@ -51,13 +53,15 @@ Test Driven Development (or TDD ) 는  소프트웨어를 개발하는 하나의
 
 ### 프로젝트 정보를 입력한다.
 
-- Product Name : 프로젝트명
-- Team : 개인 또는 조직
-- Organization Name : 조직 이름
-- Organization Identifier : 조직 Identifier
-- Language : Swift를 선택
-- Devices : Universal을 선택
-- Include Unit Tests, Include UI Tests를 체크합니다.
+| 속성 | 설명  |
+|-|-|
+| Product Name | 프로젝트명 |
+| Team | 개인 또는 조직 |
+| Organization Name | 조직 이름
+| Organization Identifier | 조직 Identifier
+| Language | Swift를 선택
+| Devices | Universal을 선택 |
+| 테스트 환경 설정 | Include Unit Tests, Include UI Tests를 체크한다 |
 
 <img src='http://hola.dooray.com/files/1800043282146902982'/>
 
