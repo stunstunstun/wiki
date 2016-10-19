@@ -21,7 +21,6 @@ Test Driven Development (or TDD ) 는  소프트웨어를 개발하는 하나의
 
 지금부터 Xcode 설치를 시작으로 개발에 필요한 환경들을 준비해보도록 하겠다.
 
-
 ## Xcode 설치
 
 ### Apple 개발자센터에서 다운받기
@@ -40,7 +39,7 @@ Test Driven Development (or TDD ) 는  소프트웨어를 개발하는 하나의
 #### App Store 에서 Xcode를 검색하면 최신의 버전을 다운로드 할 수 있다.
 
 
-## TDD 개발 환경 구성
+## 프로젝트 생성하기
 
 ### Xcode를 실행하고 'Create a new Xcode Project' 를 통해 새 프로젝트를 생성한다.
 
@@ -68,12 +67,9 @@ Devices | Universal을 선택
 
 ![Create Project](/iOS/images/create-project-4.png)
 
-## Github 와 SourceTree 로 프로젝트 관리하기
-
-
 ## Build Setting & 하위 호환성 유지
 
-
+## 첫 테스트 케이스 만들기
 
 ## References
 ##### Start Developing iOS Apps with Swift
