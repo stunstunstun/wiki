@@ -51,15 +51,15 @@ Test Driven Development (or TDD ) 는  소프트웨어를 개발하는 하나의
 
 ### 프로젝트 정보를 입력한다.
 
-| 속성 | 설명 |
-|--|--|
-| Product Name | 프로젝트명 |
-| Team | 개인 또는 조직 |
-| Organization Name | 조직 이름
-| Organization Identifier | 조직 Identifier
-| Language | Swift를 선택
-| Devices | Universal을 선택 |
-| 테스트 환경 설정 | Include Unit Tests, Include UI Tests를 체크한다 |
+속성 | 설명 
+--- | ---
+Product Name | 프로젝트명 
+Team | 개인 또는 조직 
+Organization Name | 조직 이름
+Organization Identifier | 조직 Identifier
+Language | Swift를 선택
+Devices | Universal을 선택 
+테스트 환경 설정 | Include Unit Tests, Include UI Tests를 체크한다 
 
 ![Create Project](/iOS/images/create-project-3.png)
 
