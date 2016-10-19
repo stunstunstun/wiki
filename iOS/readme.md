@@ -43,15 +43,11 @@ Test Driven Development (or TDD ) 는  소프트웨어를 개발하는 하나의
 
 ### Xcode를 실행하고 'Create a new Xcode Project' 를 통해 새 프로젝트를 생성한다.
 
-![Create Project](/images/create-project-1.png)
-
-![Create Project](http://hola.dooray.com/files/1800041434974220585)
-
-<img src='http://hola.dooray.com/files/1800041434974220585'/>
+![Create Project](/iOS/images/create-project-1.png)
 
 ### Single View Application 을 선택
 
-<img src='http://hola.dooray.com/files/1800042978962854822'/>
+![Create Project](/iOS/images/create-project-2.png)
 
 ### 프로젝트 정보를 입력한다.
 
@@ -65,11 +61,11 @@ Test Driven Development (or TDD ) 는  소프트웨어를 개발하는 하나의
 | Devices | Universal을 선택 |
 | 테스트 환경 설정 | Include Unit Tests, Include UI Tests를 체크한다 |
 
-<img src='http://hola.dooray.com/files/1800043282146902982'/>
+![Create Project](/iOS/images/create-project-3.png)
 
 입력이 완료되면 Next를 클릭하면 아래와 같은 구조로 최종적으로 프로젝트가 생성된다.
 
-<img src='http://hola.dooray.com/files/1800047408439943603'/>
+![Create Project](/iOS/images/create-project-4.png)
 
 ## Github 와 SourceTree 로 프로젝트 관리하기
 
