@@ -1,4 +1,3 @@
-
 ## 누구를 위한 문서인가요?
 
 Swift를 통해 iOS 애플리케이션 개발을 시작하면서 학습한 내용을 정리하고 있습니다. 저와 같이 처음 Swift를 통해 iOS개발을 시작하시는 분들에게 도움이 되었으면 합니다.
@@ -20,6 +19,7 @@ Test Driven Development (or TDD ) 는  소프트웨어를 개발하는 하나의
 - 다른 언어에서 이미 경험해본 TDD를 기반으로, 새로운 언어의 개발환경에 쉽게 익숙해 질수 있다.
 
 지금부터 Xcode 설치를 시작으로 개발에 필요한 환경들을 준비해보도록 하겠다.
+
 
 ## Xcode 설치
 
@@ -43,33 +43,34 @@ Test Driven Development (or TDD ) 는  소프트웨어를 개발하는 하나의
 
 ### Xcode를 실행하고 'Create a new Xcode Project' 를 통해 새 프로젝트를 생성한다.
 
-![Create Project](/iOS/images/create-project-1.png)
+<img src='http://image.toast.com/aaaaahq/xcode-create-project-1.png'/>
 
 ### Single View Application 을 선택
 
-![Create Project](/iOS/images/create-project-2.png)
+<img src='http://image.toast.com/aaaaahq/xcode-create-project-2.png'/>
 
 ### 프로젝트 정보를 입력한다.
 
-속성 | 설명 
---- | ---
-Product Name | 프로젝트명 
-Team | 개인 또는 조직 
-Organization Name | 조직 이름
-Organization Identifier | 조직 Identifier
-Language | Swift를 선택
-Devices | Universal을 선택 
-테스트 환경 설정 | Include Unit Tests, Include UI Tests를 체크한다 
+| 속성 | 설명  |
+|-|-|
+| Product Name | 프로젝트명 |
+| Team | 개인 또는 조직 |
+| Organization Name | 조직 이름
+| Organization Identifier | 조직 Identifier
+| Language | Swift를 선택
+| Devices | Universal을 선택 |
+| 테스트 환경 설정 | Include Unit Tests, Include UI Tests를 체크한다 |
 
-![Create Project](/iOS/images/create-project-3.png)
+<img src='http://image.toast.com/aaaaahq/xcode-create-project-3.png'/>
 
 입력이 완료되면 Next를 클릭하면 아래와 같은 구조로 최종적으로 프로젝트가 생성된다.
 
-![Create Project](/iOS/images/create-project-4.png)
+<img src='http://image.toast.com/aaaaahq/xcode-create-project-4.png'/>
+
 
 ## Build Setting & 하위 호환성 유지
 
-## 첫 테스트 케이스 만들기
+## 첫 테스트케이스 만들기
 
 ## References
 ##### Start Developing iOS Apps with Swift
@@ -78,3 +79,4 @@ Devices | Universal을 선택
 ##### Good Practices
 - https://github.com/futurice/ios-good-practices#architecture/
 - https://realm.io/news/gotocph-ash-furrow-best-practices-swift/
+- https://medium.com/@ynzc/part-2-brains-before-beauty-410fb41f6ae3#.nsgg40fu1
