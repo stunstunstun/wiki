@@ -286,14 +286,15 @@ public class UserMapperTests {
 ----
 ### References
 
-http://mybatis.org/spring/apidocs/reference/
-http://mybatis.org/spring/ko/mappers.html
-http://mybatis.org/mybatis-3/ko/index.html
-http://jeremyko.blogspot.kr/2012/07/mybatis-spring.html
-https://github.com/mybatis/spring/pull/40
-http://mybatis.org/spring/apidocs/reference/org/mybatis/spring/mapper/MapperScannerConfigurer.html
-https://heartdev.wordpress.com/2013/07/04/mybatis-spring-%EC%9D%98-mapperscannerconfigurer-%EB%A5%BC-%ED%86%B5%ED%95%B4-spring-%EA%B3%B5%EB%B6%80%ED%95%98%EA%B8%B0/
-https://github.com/mybatis/spring/releases
-https://github.com/mybatis/spring/issues/58
+- http://mybatis.org/spring/apidocs/reference/
+- http://mybatis.org/spring/ko/mappers.html
+- http://mybatis.org/mybatis-3/ko/index.html
+- http://jeremyko.blogspot.kr/2012/07/mybatis-spring.html
+- http://www.robinhowlett.com/blog/2013/02/13/spring-app-migration-from-xml-to-java-based-config/
+- https://github.com/mybatis/spring/pull/40
+- http://mybatis.org/spring/apidocs/reference/org/mybatis/spring/mapper/MapperScannerConfigurer.html
+- https://heartdev.wordpress.com/2013/07/04/mybatis-spring-%EC%9D%98-mapperscannerconfigurer-%EB%A5%BC-%ED%86%B5%ED%95%B4-spring-%EA%B3%B5%EB%B6%80%ED%95%98%EA%B8%B0/
+- https://github.com/mybatis/spring/releases
+- https://github.com/mybatis/spring/issues/58
 
 
