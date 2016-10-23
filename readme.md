@@ -50,7 +50,7 @@ Swift를 통해 iOS 개발을 하면서 겪는 경험을 시작으로 기술문�
 | Android | Android 개발에 관한 지식 |
 | BugFixedDiary | 버그 픽스 기록을 남긴다기보다는 어떻게 문제를 인식하고 해결해 나아갔는지를 중점으로 기술한다. |
 | Fundamentals | 개발자에게 밑천이 되는 소프트웨어 공학 전반 |
-| Git | Git에 대한 사용 경험 |
+| Git | Git에 대한 사용 경험과 그 밖의 협업도구에 대한 이야기 |
 | Java | Java의 기본지식 및 Java8에 대한 내용 |
 | Spring | Spring Framework에 대한 지식, Spring Boot과 Spring 5.0 에 대한 인사이트 |
 | iOS | Swift를 통한 iOS 개발에 관한 지식 |
