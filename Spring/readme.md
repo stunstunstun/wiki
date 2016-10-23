@@ -12,7 +12,7 @@ Spring Boot을 통해 애플리케이션 개발을 처음 시작하시는 분들
 
 ## Tutorials & Samples
 
-> https://github.com/wjdsupj/stunstun-wiki/edit/master/Spring/readme.md
+> https://github.com/wjdsupj/spring-framework-examples
 
 * spring-boot-gradle-multi-example : Gradle multiple project sample
 * spring-jdbc-example : XML based spring JDBC Integration
