@@ -8,7 +8,7 @@ Why do we need this session..? Blah Blah
 ### 범위 좁히기
 
 ### 개발자환경 또는 애플리케이션의 Properties 정보에는 이상이 없는지 확인하자.
-- 운영환경의 Locale 정보는 어떠한가?
+- 운영환경의 Encoding Type에 대한 정보는 어떠한가?
 
 ### 문제 재현하기
 
