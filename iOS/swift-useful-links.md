@@ -9,11 +9,11 @@
 
 
 ## Useful Links
+- https://swift.org/download/#releases
+- http://swift3tutorials.com/ 
 - https://www.coursera.org/learn/swift-programming
 - http://www.learnswift.tips/
 - https://classroom.udacity.com/me
-- https://firebase.google.com
-- https://swift.org/download/#releases
 - https://www.gitbook.com/book/devxoul/ios-with-swift-in-40-hours/details
 - https://github.com/devxoul/Todobox
 - https://cocoapods.org/?q=swift
