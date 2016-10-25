@@ -1,8 +1,8 @@
 ## Instagram API
 
-https://www.instagram.com/developer/
+> https://www.instagram.com/developer/
 
-### Instagram Swift SDK
+**To Release Instagram Swift SDK**
 - Authorization
 - Profile
 - Images
