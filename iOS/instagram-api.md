@@ -1,4 +1,14 @@
-## Authorization
+## Instagram API
+
+https://www.instagram.com/developer/
+
+### Instagram Swift SDK
+- Authorization
+- Profile
+- Images
+- Download Image
+
+### Authorization
 
 #### Request
 ````
