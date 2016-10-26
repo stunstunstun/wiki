@@ -1,15 +1,35 @@
+## 목차
+
+- ### <span style="color:#eb6420">Swift 학습을 위한 개발환경 준비 그리고 TDD 맛보기</span>
+
+- Github 와 SourceTree 로 프로젝트 관리하기
+
+- 더욱 다양한 테스트 시나리오를 통해서 Swift 3 학습하기
+
+- Swift3에 대해 더 알아보기전에 무엇을 개발하고 싶으신가요?
+
+- 프로토타이핑, UI 툴을 통해 Product에 적용하기
+
+
 ## 누구를 위한 문서인가요?
 
-Swift를 통해 iOS 애플리케이션 개발을 시작하면서 학습한 내용을 정리하고 있습니다. 저와 같이 처음 Swift를 통해 iOS개발을 시작하시는 분들에게 도움이 되었으면 합니다.
-- iOS 개발을 처음시작 하는 분
+Swift를 통해 iOS 애플리케이션 개발을 시작하면서 학습한 내용을 정리하고자 합니다. 이 문서는 저와 같이 처음 Swift를 통해 iOS 개발을 시작하시는 분들에게 도움이 되었으면 합니다.
+
+- Swift3 를 통해 iOS 개발을 처음 시작 하는 분
 - 기본적인 프로그래밍 경험이 있으신분
+
+먼저 iOS 애플리케이션 개발을 하기 위한 환경을 준비하는 것으로 시작으로 Swift 3의 기본적인 개념을 살펴볼까 합니다.
 
 ## Swift 3 학습하기 
 
 먼저, iOS 애플리케이션 개발을 위해서는 Objective-C 또는 Swift 언어에 대한 학습이 선행되어야 하는데, iOS개발을 처음시작하는 사람이라면 Swift를 통해 개발을 시작하는 것이 유리하다. 
+
 - https://swift.org/
+- https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/TheBasics.html#//apple_ref/doc/uid/TP40014097-CH5-ID309
+- https://developer.apple.com/library/content/referencelibrary/GettingStarted/DevelopiOSAppsSwift/Lesson1.html
 
 ### What is Test Driven Development?
+
 Test Driven Development (or TDD ) 는  소프트웨어를 개발하는 하나의 방법이다. 우리가 작성하게 되는 모든 코드는 정상적으로 작동하는지에 대한 테스트가 필요한데, 코드를 구현하기 이전에 테스트 케이스를 정의하고, 테스트코드를 먼저 작성하는 방법이다. 
 
 ### 현재 Swift 3가 최신의 버전이며, TDD를 통해 새로운 언어를 학습하는 것이 아래와 같은 장점이 있을 것으로 판단했다.
@@ -74,10 +94,6 @@ Test Driven Development (or TDD ) 는  소프트웨어를 개발하는 하나의
 ## Build Setting & 하위 호환성 유지
 
 ## 첫 테스트케이스 만들기
-
-## References
-##### Start Developing iOS Apps with Swift
-- https://developer.apple.com/library/content/referencelibrary/GettingStarted/DevelopiOSAppsSwift/Lesson1.html
 
 ##### Good Practices
 - https://github.com/futurice/ios-good-practices#architecture/
