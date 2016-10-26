@@ -7,9 +7,11 @@ Welcome to the stunstun-wiki repository. Contributions and pull requests are wel
 
 > See [how to write in markdown](https://blog.ghost.org/markdown/) for how to write markdown.
 
-## What subject are you dealing with?
+<br>
 
-먼저 Swift를 통해 iOS 개발을 하면서 겪는 경험을 시작으로 다시 기술문서를 작성할 예정이다. 그 이외에 개발자들에게 친숙한 카테고리를 미리 정해놓고 순차적으로 기술문서를 작성하고 문서 공유에 관심이 있는 개발자들이 참여할 수 있도록 가이드할 예정이다. 각 주제에 대해서 처음 접근하는 Junior 개발자를 위한 내용이 대다수가 될 것이며, 위키 페이지의 구조는 크게 **카테고리**와 **문서**로 이루어져 있다.
+## What subject are we dealing with?
+
+먼저 Swift를 통해 iOS 개발을 하면서 겪는 경험을 시작으로 다시 기술 문서를 작성할 예정이다. 그 이외에 개발자들에게 친숙한 카테고리를 미리 정해놓고 순차적으로 기술문서를 작성하고 문서 공유에 관심이 있는 개발자들이 참여할 수 있도록 가이드할 예정이다. 각 주제에 대해서 처음 접근하는 Junior 개발자를 위한 내용이 대다수가 될 것이며, 위키 페이지의 구조는 크게 **카테고리**와 **문서**로 이루어져 있다.
 
 | Category | Description |
 | --- | --- |
