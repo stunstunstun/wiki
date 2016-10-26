@@ -1,11 +1,9 @@
-## Hola! stunstun-wiki
+## Welcome, stunstun-wiki
 
-Welcome to the stunstun-wiki repository. Contributions and pull requests are welcome!
+See [how to write in markdown](https://blog.ghost.org/markdown/) for how to write markdown.
 
 - 문서는 markdown을 통해 작성해 주세요. 
 - 문서의 이름 형태는 YYYY-MM-DD-blog-post-name.md 과 같이 작성일, 제목을 포함한 필수정보가 필요합니다.
- 
-See [how to write in markdown](https://blog.ghost.org/markdown/) for how to write markdown.
 
 **Github Markdown Guide** 
 > https://guides.github.com/features/mastering-markdown/
