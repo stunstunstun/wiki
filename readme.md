@@ -7,7 +7,7 @@ Welcome to the stunstun-wiki repository. Contributions and pull requests are wel
  
 See [how to write in markdown](https://blog.ghost.org/markdown/) for how to write markdown.
 
-> Github Markdown Guide - https://guides.github.com/features/mastering-markdown/
+> **Github Markdown Guide** https://guides.github.com/features/mastering-markdown/
 
 <br>
 
