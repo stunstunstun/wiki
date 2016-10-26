@@ -1,14 +1,14 @@
 ## 목차
 
-### <span style="color:#eb6420">1. Swift 학습을 위한 개발환경 준비 그리고 TDD 맛보기</span>
+### <span style="color:#eb6420">A. Swift 학습을 위한 개발환경 준비 그리고 TDD 맛보기</span>
 
-2. Github 와 SourceTree 로 프로젝트 관리하기
+B. Github 와 SourceTree 로 프로젝트 관리하기
 
-3. 더욱 다양한 테스트 시나리오를 통해서 Swift 학습하기
+C. 더욱 다양한 테스트 시나리오를 통해서 Swift 학습하기
 
-4. Swift에 대해 더 알아보기전에 무엇을 개발하고 싶으신가요?
+D. Swift에 대해 더 알아보기전에 무엇을 개발하고 싶으신가요?
 
-5. 프로토타이핑, UI 툴을 통해 Product에 적용하기
+E. 프로토타이핑, UI 툴을 통해 Product에 적용하기
 
 <br>
 
