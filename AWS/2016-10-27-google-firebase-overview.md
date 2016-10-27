@@ -4,3 +4,8 @@
 
 **Firebase Console**
 > https://console.firebase.google.com/
+
+
+## Google Cloud Platform
+
+- https://cloud.google.com/
