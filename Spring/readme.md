@@ -29,11 +29,13 @@ Gradle | 2.6
 
 ### 실습
 
-a. Spring Boot에서 고전적인 JDBC 연동하기
+a. 첫 테스트 케이스 만들어보기
 
-b. Spring Boot에서 Java Config를 통해 mybatis 연동하기
+b. Spring Boot에서 고전적으로 JDBC를 통해 Datasource 연동하기
 
-c. Spring Boot에서 2개 이상의 Datasource 운용하기
+c. Spring Boot에서 Java Config, myBatis를 통해 Datasource 연동하기
+
+d. Spring Boot에서 2개 이상의 Datasource 운용하기
 
 <br>
 
