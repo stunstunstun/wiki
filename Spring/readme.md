@@ -39,7 +39,7 @@ Gradle | 2.6
 
 ### 실습
 
-a. Spring Boot에서 전통적인 JDBC를 통해 Datasource 연동하기
+a. [Spring Boot에서 전통적인 JDBC를 통해 Datasource 연동하기](https://github.com/wjdsupj/stunstun-wiki/blob/master/Spring/2015-11-01-spring-boot-jdbc.md)
 
 b. Spring Boot에서 Java Config, myBatis를 통해 Datasource 연동하기
 
