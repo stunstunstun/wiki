@@ -1,4 +1,4 @@
-## Overview
+## Spring Boot 개발환경 준비부터 실습까지
 
 현재 많은 개발자가 Spring Framework를 통해 Back-End 개발을 하고 있습니다. 저 역시 회사에서 맡은 첫 업무가 Spring을 학습하고 이를 통해서 게임포털을 운영했던 것으로 기억이 납니다.
 
@@ -54,3 +54,4 @@ d. Spring Boot에서 2개 이상의 Datasource 운용하기
 ---|---
 Spring Boot | 1.2.5.RELEASE
 Gradle | 2.6
+
