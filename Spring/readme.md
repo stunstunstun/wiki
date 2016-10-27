@@ -4,11 +4,14 @@
 
 이후에 Android, iOS, Unity 플랫폼 같은 클라이언트 환경에서 개발을 하게 되면서 한 동안 Spring에 대한 경험을 지속적으로 할 수 없는 상태였는데 최근 2년만에 다시 Spring을 통해 Back-End개발을 하면서 필요했던 내용을 정리하고자 합니다.
 
-**이 문서의 예제를 위해 Spring Boot과 Gradle는 아래의 Version을 기준으로 2015년 5월에 작성되었습니다.**
+**이 문서를 위한 예제는 Spring Boot, Gradle 를 아래의 Version을 기준으로 2015년 5월에 작성되었습니다.**
 
-- Spring Boot 1.2.5.RELEASE
-- Gradle 2.6
+ Enviroments | Version 
+---|---
+Spring Boot | 1.2.5.RELEASE
+Gradle | 2.6
 
+<br>
 
 ## 목차
 
@@ -40,5 +43,3 @@ c. Spring Boot에서 2개 이상의 Datasource 운용하기
 
 아래의 Github Repository에서 예제를 위한 프로젝트를 제공하고 있습니다. Spring Boot를 학습하는데에 조금이나마 도움이 되었으면 합니다.
 > https://github.com/wjdsupj/spring-boot-examples-for-beginner
-
-
