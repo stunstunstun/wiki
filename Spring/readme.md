@@ -7,7 +7,7 @@
 ### 대상 독자
 
 - Spring Framework에 대한 기본적인 지식을 바탕으로 애플리케이션을 구현해보신 분
-- Spring Boot를 통해 애플리케이션을 개발하고자 하시는 분
+- Spring Boot를 통해 애플리케이션 개발을 시작하시려는 분
 
 <br>
 
@@ -46,6 +46,8 @@ b. Spring Boot에서 고전적으로 JDBC를 통해 Datasource 연동하기
 c. Spring Boot에서 Java Config, myBatis를 통해 Datasource 연동하기
 
 d. Spring Boot에서 2개 이상의 Datasource 운용하기
+
+e. 나아가서, Spring Boot에 대해 더 알아보기 전에 무엇을 개발하고 싶으신가요?
 
 <br>
 
