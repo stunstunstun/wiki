@@ -6,6 +6,9 @@
 > https://console.firebase.google.com/
 
 
-## Google Cloud Platform
+## Google Cloud Platform 과 Firebase
 
 - https://cloud.google.com/
+- https://cloud.google.com/solutions/mobile/mobile-app-backend-services
+
+
