@@ -30,7 +30,7 @@ Gradle | 2.6
 
 ㄴ. STS IDE를 통한 개발환경 준비 및 Gradle 프로젝트 생성하기
 
-ㄷ. Spring Boot과 Gradle 프로젝트의 구조
+ㄷ. Spring Boot과 Gradle 프로젝트의 구조, 첫 테스트 케이스 만들어보기
 
 ㄹ. Spring Loaded로 개발환경 개선하기
 
@@ -39,15 +39,13 @@ Gradle | 2.6
 
 ### 실습
 
-a. 첫 테스트 케이스 만들어보기
+a. Spring Boot에서 전통적인 JDBC를 통해 Datasource 연동하기
 
-b. Spring Boot에서 전통적인 JDBC를 통해 Datasource 연동하기
+b. Spring Boot에서 Java Config, myBatis를 통해 Datasource 연동하기
 
-c. Spring Boot에서 Java Config, myBatis를 통해 Datasource 연동하기
+c. Spring Boot에서 2개 이상의 Datasource 운용하기
 
-d. Spring Boot에서 2개 이상의 Datasource 운용하기
-
-e. 나아가서, Spring Boot에 대해 더 알아보기 전에 무엇을 개발하고 싶으신가요?
+d. 나아가서, Spring Boot에 대해 더 알아보기 전에 무엇을 개발하고 싶으신가요?
 
 <br>
 
