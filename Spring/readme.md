@@ -4,9 +4,9 @@
 
 이후에 Android, iOS, Unity 플랫폼 같은 클라이언트 환경에서 개발을 하게 되면서 한 동안 Spring에 대한 경험을 지속적으로 할 수 없는 상태였는데 최근 2년만에 다시 Spring을 통해 Back-End개발을 하면서 필요했던 내용을 정리하고자 합니다.
 
-**이 문서를 위한 예제는 Spring Boot, Gradle 를 아래의 Version을 기준으로 2015년 5월에 작성되었습니다.**
+**이 문서에 포함된 예제는 아래의 개발 환경을 기준으로 2015년 5월에 작성되었습니다.**
 
- Enviroments | Version 
+ Enviroments | Version (Lastest Updated 2015.05)
 ---|---
 Spring Boot | 1.2.5.RELEASE
 Gradle | 2.6
@@ -15,11 +15,13 @@ Gradle | 2.6
 
 ## 목차
 
+이 문서를 통해 먼저 Spring Boot의 출현 배경에 대해 간단히 알아보고, 개발환경 준비를 시작으로 최종적으로 실습을 통해 간단한 예제를 직접 구현해보기를 바랍니다.
+
 ### 준비하기
 
 ㄱ. Spring Boot 시작하기
 
-ㄴ. STS를 통한 개발환경 준비 그리고 Gradle로 프로젝트 빌드해보기
+ㄴ. STS IDE를 통한 개발환경 준비 및 Gradle 프로젝트 생성하기
 
 ㄷ. Spring Boot과 Gradle 프로젝트 
 
