@@ -41,7 +41,7 @@ Gradle | 2.6
 
 a. [Spring Boot에서 전통적인 JDBC를 통해 Datasource 연동하기](https://github.com/wjdsupj/stunstun-wiki/blob/master/Spring/2015-11-01-spring-boot-jdbc.md)
 
-b. Spring Boot에서 Java Config, myBatis를 통해 Datasource 연동하기
+b. [Spring Boot에서 Java Config, myBatis를 통해 Datasource 연동하기](https://github.com/wjdsupj/stunstun-wiki/blob/master/Spring/2015-11-02-spring-boot-java-config.md)
 
 c. Spring Boot에서 2개 이상의 Datasource 운용하기
 
