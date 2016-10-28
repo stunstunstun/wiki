@@ -1,10 +1,12 @@
-## Google Analystics를 이용한 사용자 이벤트 및 패턴 분석
+## Overview
 
 보통 웹사이트의 페이지에서 유저의 행동을 추적하기 위한 통계 정보을 위해서 Google Analystic 를 사용하곤 한다. 그 중 예를 들면 사용자가 게임 스타트 버튼을 클릭하거나, 특정 카테고리의 어떤 메뉴를 선택했는지에 대한 Tracking 이 가능한 것이 가장 눈에 띄였다. Dev Guide 에서는 Event Tracking 이라는 메뉴를 살펴보면 된다.
 
-**Google Analystics**
+
+**Google Analystic Service**
 
 - Service : http://www.google.co.kr/intl/ko/analytics/
+
 - Dev guide : https://developers.google.com/analytics/ 
 
 
@@ -52,8 +54,9 @@ _gaq.push(['_trackEvent', 'Videos', 'Video Load Time', 'Gone With the Wind', dow
 ````javascript
 <script type=”text/javascript” src="analytics.js" data-id="UA-XXXXX-1" data-domain="joycity.com"></script>
 ````
+<br>
 
- ##### 공통 집계 요소 ( Event Category )
+##### 공통 집계 요소 ( Event Category )
  
  게임 포털에 속한 모든 하위페이지에서는 아래의 Event에 대해 수집하고 싶었다.
  
@@ -73,7 +76,6 @@ Event Label | 기타 정보
 ### Include를 통해 재사용을 위한 예제
 
 **Javascript 페이지에 포함시키기**
-
 ```javascript
 <script type="text/javascript" src="analytics.js" data-id="UA-XXXXXX-1" data-domain="joycity.com" ></script>
 ```
@@ -142,9 +144,9 @@ var GA = {
 	GA.init();
 })();
 ```
+
 ### 마치며
 
 이외에도 Google Analystic은 모바일을 클라이언트를 위한 SDK를 지원하는듯 하며, 웹서비스 API 형태로 Google Analystic을 사용 가능 한것으로 미루어 보아 조금 더 관심을 가지면, 손쉽게 유저의 행동에 대한 정보를 효율적으로 수집이 가능 할 듯 싶다.
 
 <br>
-
