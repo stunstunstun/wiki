@@ -54,7 +54,6 @@ _gaq.push(['_trackEvent', 'Videos', 'Video Load Time', 'Gone With the Wind', dow
 ````javascript
 <script type=”text/javascript” src="analytics.js" data-id="UA-XXXXX-1" data-domain="joycity.com"></script>
 ````
-<br>
 
 ##### 공통 집계 요소 ( Event Category )
  
@@ -148,5 +147,3 @@ var GA = {
 ### 마치며
 
 이외에도 Google Analystic은 모바일을 클라이언트를 위한 SDK를 지원하는듯 하며, 웹서비스 API 형태로 Google Analystic을 사용 가능 한것으로 미루어 보아 조금 더 관심을 가지면, 손쉽게 유저의 행동에 대한 정보를 효율적으로 수집이 가능 할 듯 싶다.
-
-<br>
