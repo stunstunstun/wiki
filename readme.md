@@ -44,7 +44,5 @@ Swift를 통해 iOS 개발을 하면서 겪는 경험을 시작으로 다시 기
 - 문서의 이름 형태는 YYYY-MM-DD-blog-post-name.md 과 같이 작성일, 제목을 포함한 필수정보가 필요합니다.
 - 그 이외에 문서에 대한 제약사항은 없습니다 :)
 
-<br>
-
 ### How to Pull Request
 > Fork Repository > Create Category or Create & Update Documents > New Pull Request
