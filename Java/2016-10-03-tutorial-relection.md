@@ -1,5 +1,7 @@
 
-# What is Relection? 
+# What is Java Reflection? 
+
+나중에 시간될 때 정리 (..)
 
 # Why is it useful?
 
