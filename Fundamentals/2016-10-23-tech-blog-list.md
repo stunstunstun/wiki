@@ -1,3 +1,6 @@
+### Square Open Sources
+- http://square.github.io
+
 ### Airbnb Tech Blog
 - http://nerds.airbnb.com/
 - http://airbnb.design/
@@ -7,6 +10,9 @@
 
 ### Instagram Engineering
 - https://engineering.instagram.com/
+
+### Line Engineering
+- http://developers.linecorp.com/blog/en/
 
 ### Evernote
 - http://blog.evernote.com/tech/
