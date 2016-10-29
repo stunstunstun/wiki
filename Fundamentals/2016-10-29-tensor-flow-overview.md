@@ -1,6 +1,8 @@
 
 ## Tensor Flow Overview
 
+패러다임이 변하고 있다...
+
 ![overview](http://image.toast.com/aaaaahq/tensor-flow-overview.png)
 
 ## Google Cloud ML
