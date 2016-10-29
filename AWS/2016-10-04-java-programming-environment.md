@@ -1,4 +1,4 @@
-## Mac OSX에서 Java 개발환경 준비하기
+## Overview
 
 이 문서에서는 Mac 환경에서 Java 개발환경을 준비하는 것을 설명한다.
 
@@ -16,7 +16,7 @@ brew cask install java
 
 ## Spring Tool Suite (STS) 설치
 
-![spring-tool-suite.png](http://hola.dooray.com/files/1807189325186482127)
+![spring-tool-suite.png](http://image.toast.com/aaaaahq/spring-tool-suite.png)
 
 STS는 Spring을 운영하고 있는 Pivotal에서 제공하는 IDE이다. Eclipse를 기반으로 만들어 졌으며 Spring 애플리케이션을 개발할 때 필요한 환경과 Gradle과 같은 빌드환경, Git을 통한 협업을 쉽게 할 수 있도록 도와준다. 
 
@@ -39,10 +39,10 @@ STS설치가 완료가 되었으면 IDE에서 유용한 플러그인을 몇몇 �
 Color Theme 는 IDE에서 Side Effect 없이 코드를 이쁘게 보여주게 만들어 주는 플러그인 이다. 설치가 완료되면 메뉴의 Spring Tool Suite > Preferences 에서 Color Theme 메뉴를 통해 다양한 템플릿을 적용할 수가 있다.
 
 - Color theme를 적용하기 전의 화면
-![color-theme-before.png](http://hola.dooray.com/files/1807193319225233381)
+![color-theme-before.png](http://image.toast.com/aaaaahq/color-theme-before.png)
 
 - Color Theme를 적용한 화면
-![color-theme.png](http://hola.dooray.com/files/1807193407001421126)
+![color-theme.png](http://image.toast.com/aaaaahq/color-theme.png)
 
 
 <br>
@@ -52,10 +52,10 @@ Color Theme 는 IDE에서 Side Effect 없이 코드를 이쁘게 보여주게 �
 이제 Java개발을 하기 위한 모든 준비가 완료되었다. 첫 프로젝트를 만들어 보자!
 
 - Project Name 과 JRE Version을 선택한다. JavaSE-1.8를 선택하는 것을 추천한다. 
-![sts-create-project-1.png](http://hola.dooray.com/files/1807194398166509500)
+![sts-create-project-1.png](http://image.toast.com/aaaaahq/sts-create-project-1.png)
 
 - Package 이름을 입력하고 문자열을 출력하는 프로젝트를 만들어본다. _public static void main(String[] args)_ 를 선택해 활성화하면 main 메소드를 자동으로 생성할 수 있다.
-![sts-create-project-2.png](http://hola.dooray.com/files/1807194640895283282)
+![sts-create-project-2.png](http://image.toast.com/aaaaahq/sts-create-project-2.png)
 
 <br>
 
