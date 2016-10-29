@@ -24,9 +24,7 @@ Java를 통해 Back-End 애플리케이션 개발을 할 때 Spring Framework를
 
 - https://spring.io/tools
 
----
 > 2016.10월 기준으로 STS의 최신 Version은 3.8.2가 RELEASE되었다.
----
 
 ### 유용한 플러그인들 
 
