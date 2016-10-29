@@ -1,6 +1,18 @@
 ## Overview
 
-## Gitlab을 통해 CI
+Github Integrations
+
+## CI
+
+Service | URL 
+----|----
+Travis CI | https://travis-ci.org/getting_started 
+
+### Travis CI
+
+### Gitlab을 통해 CI
+
+- gitlab.com
 
 > **.gitlab-ci.yml**
 
@@ -46,3 +58,14 @@ deploy:
 after_script:
   - echo "End CI"
 ````
+
+### CD
+
+Service | URL 
+----|----
+Codeship | https://codeship.com/features 
+AWS Code Deploy | https://aws.amazon.com/en/codedeploy/
+
+
+## References
+- iOS Application CI : https://www.objc.io/issues/6-build-tools/travis-ci/
