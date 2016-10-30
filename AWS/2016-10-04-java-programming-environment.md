@@ -9,6 +9,7 @@
 - 유용한 플러그인들
 - Java 프로젝트 생성하기
 - Gradle 프로젝트 생성하기
+- 외부 프로젝트 Import 하기
 - IDE에서 유용한 단축키들
 
 <br>
@@ -117,6 +118,32 @@ Color Theme 는 IDE에서 Side Effect 없이 코드를 이쁘게 보여주게 �
 **Gradle Project 생성완료**
 
 ![create-gradle-project](http://image.toast.com/aaaaahq/create-gradle-project-5.png)
+
+<br>
+
+## 외부 프로젝트 Import 하기
+
+프로젝트를 새롭게 생성하는 것이 아니라 외부의 프로젝트를 IDE에 가져오고 싶은 경우가 있을 것이다. 아래는 Spring Boot을 학습하기 위한 예제를 제공하는 Git Repository이다. 이 예제를 통해서 외부의 프로젝트를 IDE에 Import 해보겠다.
+
+- https://github.com/wjdsupj/spring-boot-examples-for-beginner
+
+**git clone을 통해 remote에서 소스코드 다운로드하기**
+```
+@guest] git clone https://github.com/wjdsupj/spring-boot-examples-for-beginner
+```
+- git이 설치되어 있지 않다면 Github에서도 직접 소스코드를 zip형태로 다운로드 받을 수가 있다.
+
+<br>
+
+소스코드의 다운로드가 완료가 되었다면, IDE에서 아래와 같이 Import 해보자.
+
+**메뉴에서 File > Import > Gradle Project를 선택하고 Next**
+
+![import-gradle](http://image.toast.com/aaaaahq/import-gradle-1.png)
+
+**다운로드받은 Gradle 프로젝트의 경로를 지정하고 Finish**
+
+![import-gradle](http://image.toast.com/aaaaahq/import-gradle-2.png)
 
 <br>
 
