@@ -80,11 +80,11 @@ Color Theme 는 IDE에서 Side Effect 없이 코드를 이쁘게 보여주게 �
 
 이제 Java개발을 하기 위한 모든 준비가 완료되었다. 가장 기본적인 Java 프로젝트를 만들어보자.
 
-- Project Name 과 JRE Version을 선택한다. JavaSE-1.8를 선택하는 것을 추천한다. 
+**Project Name 과 JRE Version을 선택한다. JavaSE-1.8를 선택하는 것을 추천한다.** 
 
 ![sts-create-project-1.png](http://image.toast.com/aaaaahq/sts-create-project-1.png)
 
-- Package 이름을 입력하고 문자열을 출력하는 프로젝트를 만들어본다. _public static void main(String[] args)_ 를 선택해 활성화하면 main 메소드를 자동으로 생성할 수 있다.
+**Package 이름을 입력하고 문자열을 출력하는 프로젝트를 만들어본다. _public static void main(String[] args)_ 를 선택해 활성화하면 main 메소드를 자동으로 생성할 수 있다.**
 
 ![sts-create-project-2.png](http://image.toast.com/aaaaahq/sts-create-project-2.png)
 
@@ -100,11 +100,11 @@ Color Theme 는 IDE에서 Side Effect 없이 코드를 이쁘게 보여주게 �
 
 ![create-gradle-project](http://image.toast.com/aaaaahq/create-gradle-project-2.png)
 
-**Gradle wrapper를 선택하고 Next**
+**Gradle Wrapper를 선택하고 Next**
 
 ![create-gradle-project](http://image.toast.com/aaaaahq/create-gradle-project-3.png)
 
-**Gradle Project가 생성되는 중**
+**Gradle Project가 생성되는 중, 필요한 리소스를 원격으로 자동으로 다운로드 받는다.**
 
 ![create-gradle-project](http://image.toast.com/aaaaahq/create-gradle-project-4.png)
 
