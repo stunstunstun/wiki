@@ -10,7 +10,9 @@ Travis CI | https://travis-ci.org/getting_started
 
 ### Travis CI
 
-![travis-ci](http://image.toast.com/aaaaahq/integration-travis-ci.png)
+![travis](http://image.toast.com/aaaaahq/integration-travis-ci.png)
+
+<br>
 
 ### Gitlab을 통해 CI
 
