@@ -27,7 +27,7 @@ Gradle | 2.6
 
 ### 준비하기
 
-ㄱ. Spring Boot 시작하기
+ㄱ. [Spring Boot 시작하기](https://github.com/wjdsupj/stunstun-wiki/blob/master/Spring/2015-05-08-get-started-spring-boot.md)
 
 ㄴ. STS IDE를 통한 개발환경 준비 및 Gradle 프로젝트 생성하기
 
