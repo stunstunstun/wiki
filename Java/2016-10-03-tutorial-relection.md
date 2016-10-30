@@ -1,12 +1,13 @@
 
-# What is Java Reflection? 
+## Why Java Reflection is useful?
 
-나중에 시간될 때 정리 (..)
+## What is Java Reflection?
 
-# Why is it useful?
+## For Example
 
-# References
+## References
 - http://stackoverflow.com/questions/37628/what-is-reflection-and-why-is-it-useful
 - http://tutorials.jenkov.com/java-reflection/index.html
 - https://docs.oracle.com/javase/tutorial/reflect/
 - https://docs.oracle.com/javase/tutorial/reflect/member/methodInvocation.html
+- http://blog.kevinlee.io/2012/12/06/java-generics-generics-in-real-life-programming/
