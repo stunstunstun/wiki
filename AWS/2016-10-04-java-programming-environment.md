@@ -1,8 +1,9 @@
-## Mac환경에서 Gradle기반의 Java 개발환경 준비하기
+## Overview
 
 이 문서에서는 Mac OSX 환경에서 Java 개발환경을 준비하는 것을 설명합니다.
 
 ### 목차
+
 - Java 설치하기
 - Gradle 설치하기
 - STS 설치하기
@@ -43,9 +44,7 @@ Java를 통해 Back-End를 개발하기 위해 Spring Framework를 사용한다�
 
 ![spring-tool-suite.png](http://image.toast.com/aaaaahq/spring-tool-suite.png)
 
-STS는 Spring을 운영하고 있는 Pivotal에서 제공하는 IDE이다. Eclipse를 기반으로 만들어 졌으며 Spring 애플리케이션을 개발할 때 필요한 환경과 Gradle과 같은 빌드환경, Git을 통한 협업을 쉽게 할 수 있도록 도와준다. 
-
-Java를 통해 Back-End 애플리케이션 개발을 할 때 Spring Framework를 사용한다면 STS를 설치하는 것을 추천한다. 아래의 링크를 통해 IDE를 Download 할 수 있으며, 실행하기 전에는 JDK의 설치가 완료가 되어야 한다.
+STS는 Spring을 운영하고 있는 Pivotal에서 제공하는 IDE이다. Eclipse를 기반으로 만들어 졌으며 Spring 애플리케이션을 개발할 때 필요한 환경과 Gradle과 같은 빌드환경, Git을 통한 협업을 쉽게 할 수 있도록 도와준다. Java를 통해 Back-End 애플리케이션 개발을 할 때 Spring Framework를 사용한다면 STS를 설치하는 것을 추천한다. 아래의 링크를 통해 IDE를 Download 할 수 있으며, 실행하기 전에는 JDK의 설치가 완료가 되어야 한다.
 
 - https://spring.io/tools
 - STS는 2016.10월 기준으로 3.8.2 Version이 RELEASE되었다.
@@ -54,9 +53,7 @@ Java를 통해 Back-End 애플리케이션 개발을 할 때 Spring Framework를
 
 ## 유용한 플러그인들 
 
-STS설치가 완료가 되었으면 IDE에서 유용한 플러그인을 몇몇 소개하도록 하겠다. 플러그인 설치를 위해서는 메뉴에서 _Help > Eclipse Marketplace_ 를 통해 설치할 수 있다.
-
-플러그인을 설치하고 적용하기 위해서는 IDE를 재시작해야 하는데 플러그인을 많이 설치할 경우에는 모든 플러그인이 설치가 완료되면 재시작하는 것을 권장한다.
+STS설치가 완료가 되었으면 IDE에서 유용한 플러그인을 몇몇 소개하도록 하겠다. 플러그인 설치를 위해서는 메뉴에서 _Help > Eclipse Marketplace_ 를 통해 설치할 수 있다. 플러그인을 설치하고 적용하기 위해서는 IDE를 재시작해야 하는데 플러그인을 많이 설치할 경우에는 모든 플러그인이 설치가 완료되면 재시작하는 것을 권장한다.
 
 
 ### Buildship Gradle Integration
