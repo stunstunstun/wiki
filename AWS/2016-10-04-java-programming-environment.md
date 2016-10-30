@@ -97,6 +97,7 @@ Color Theme 는 IDE에서 Side Effect 없이 코드를 이쁘게 보여주게 �
 ![create-gradle-project](http://image.toast.com/aaaaahq/create-gradle-project-1.png)
 
 **Project명을 입력하고 Next**
+
 ![create-gradle-project](http://image.toast.com/aaaaahq/create-gradle-project-2.png)
 
 **Gradle wrapper를 선택하고 Next**
@@ -108,6 +109,7 @@ Color Theme 는 IDE에서 Side Effect 없이 코드를 이쁘게 보여주게 �
 ![create-gradle-project](http://image.toast.com/aaaaahq/create-gradle-project-4.png)
 
 **Gradle Project 생성완료**
+
 ![create-gradle-project](http://image.toast.com/aaaaahq/create-gradle-project-5.png)
 
 ## IDE에서 유용한 단축키들
