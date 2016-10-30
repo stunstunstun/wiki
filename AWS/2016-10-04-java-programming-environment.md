@@ -1,4 +1,4 @@
-## Overview
+## Mac환경에서 Gradle기반의 Java 개발환경 준비하기
 
 이 문서에서는 Mac OSX 환경에서 Java 개발환경을 준비하는 것을 설명합니다.
 
