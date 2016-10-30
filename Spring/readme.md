@@ -7,7 +7,8 @@
 ### 대상 독자
 
 - Spring Framework에 대한 기본적인 지식을 바탕으로 애플리케이션을 구현해보신 분
-- Spring Boot를 통해 애플리케이션 개발을 시작하시려는 분
+- Spring Boot을 통해 애플리케이션 개발을 시작하시려는 분
+- Spring Boot을 학습하는데에 예제 프로젝트가 필요하신 분
 
 <br>
 
@@ -41,7 +42,7 @@ Gradle | 2.6
 
 a. [Spring Boot에서 전통적인 JDBC를 통해 Datasource 연동하기](https://github.com/wjdsupj/stunstun-wiki/blob/master/Spring/2015-11-01-spring-boot-jdbc.md)
 
-b. [Spring Boot에서 Java Config, myBatis를 통해 Datasource 연동하기](https://github.com/wjdsupj/stunstun-wiki/blob/master/Spring/2015-11-02-spring-boot-java-config.md)
+b. [Spring Boot에서 Java Config, myBatis를 통해 Datasource 연동하기](https://github.com/wjdsupj/stunstun-wiki/blob/master/Spring/2015-11-02-spring-boot-mybatis.md)
 
 c. Spring Boot에서 2개 이상의 Datasource 운용하기
 
@@ -49,9 +50,12 @@ d. 나아가서, Spring Boot에 대해 더 알아보기 전에 무엇을 개발�
 
 <br>
 
-##  예제코드 살펴보기
+## Spring Boot 예제 프로젝트 모음
 
 이 문서의 이론적인 내용은 모두 실제 Spring Boot을 통해 Database와 연동하는 간단한 애플리케이션을 개발해보는데 목적이 있습니다.
 
 아래의 Github Repository에서 예제를 위한 프로젝트를 제공하고 있습니다. Spring Boot를 학습하는 데에 조금이나마 도움이 되었으면 합니다.
+
 > https://github.com/wjdsupj/spring-boot-examples-for-beginner
+
+<br>
