@@ -1,20 +1,38 @@
 ## Overview
 
-이 문서에서는 Mac 환경에서 Java 개발환경을 준비하는 것을 설명한다.
+이 문서에서는 Mac OSX 환경에서 Java 개발환경을 준비하는 것을 설명합니다.
 
-## Java 설치
+### 목차
+- Java 설치하기
+- Gradle 설치하기
+- STS 설치하기
+- 유용한 플러그인들
+- Java 프로젝트 생성하기
+- Gradle 프로젝트 생성하기
+- IDE에서 유용한 단축키들
+
+## Java 설치하기
 
 Mac 환경에서는 Java 개발을 위한 JDK 뿐만 아니라 이외의 여러가지 패키지를 Homebrew를 통해 설치하는 것을 권장한다. Homebrew에 대한 자세한 설명은 아래의 링크를 참조한다.
 
-- [Homebrew 설치](https://github.com/wjdsupj/stunstun-wiki/blob/master/AWS/2016-10-04-local-install-homebrew.md)
+- [Homebrew 설치](https://github.com/wjdsupj/stunstun-wiki/blob/master/AWS/2016-10-03-local-install-homebrew.md)
 
 Homebrew 설치가 완료가 되면 Terminal에서 아래와 같은 Command를 통해 JDK를 설치할 수 있다.
 ````
-brew update
-brew cask install java
+@guest] brew update
+@guest] brew cask install java
 ````
 
-## Spring Tool Suite (STS) 설치
+## Gradle 설치하기 
+
+Java를 통해 Back-End를 개발하기 위해 Spring Framework를 사용한다거나 Android 애플리케이션을 개발하기 위해서는 프로젝트 빌드 도구인 Gradle을 사용하는 것이 유리하다. Terminal에서 아래와 같이 설치 할 수 있다. 
+
+````
+@guest] brew install gradle
+````
+- **Gradle** : https://gradle.org/
+
+## Spring Tool Suite (STS) 설치하기
 
 ![spring-tool-suite.png](http://image.toast.com/aaaaahq/spring-tool-suite.png)
 
@@ -33,6 +51,17 @@ STS설치가 완료가 되었으면 IDE에서 유용한 플러그인을 몇몇 �
 
 플러그인을 설치하고 적용하기 위해서는 IDE를 재시작해야 하는데 플러그인을 많이 설치할 경우에는 모든 플러그인이 설치가 완료되면 재시작하는 것을 권장한다.
 
+
+### Buildship Gradle Integration
+
+STS에서 Gradle을 사용하기 위해 Gradle Support라는 플러그인을 제공했지만 Gradle에서 Eclipse를 위한 공식적인 플러그인 Buildship Gradle를 릴리즈하면서 STS의 기존의 Gradle Support는 Fade-Out 될 예정이다. 자세한 내용은 아래의 링크를 통해 확인 할 수 있다.
+- https://github.com/eclipse/buildship/wiki/Migration-guide-from-STS-Gradle-to-Buildship
+
+Gradle Buildship 설치를 위해서는 메뉴의 Help > Market Place 에서 Buildship을 검색한 후 설치하면 된다.
+
+![buildship](http://image.toast.com/aaaaahq/buildship.png)
+
+
 ### Color Theme 1.0.0
 
 Color Theme 는 IDE에서 Side Effect 없이 코드를 이쁘게 보여주게 만들어 주는 플러그인 이다. 설치가 완료되면 메뉴의 Spring Tool Suite > Preferences 에서 Color Theme 메뉴를 통해 다양한 템플릿을 적용할 수가 있다.
@@ -47,9 +76,9 @@ Color Theme 는 IDE에서 Side Effect 없이 코드를 이쁘게 보여주게 �
 
 <br>
 
-## 프로젝트 생성하기
+## Java 프로젝트 생성하기
 
-이제 Java개발을 하기 위한 모든 준비가 완료되었다. 첫 프로젝트를 만들어 보자!
+이제 Java개발을 하기 위한 모든 준비가 완료되었다. 가장 기본적인 Java 프로젝트를 만들어보자.
 
 - Project Name 과 JRE Version을 선택한다. JavaSE-1.8를 선택하는 것을 추천한다. 
 
@@ -61,9 +90,29 @@ Color Theme 는 IDE에서 Side Effect 없이 코드를 이쁘게 보여주게 �
 
 <br>
 
+## Gradle 프로젝트 생성하기
+
+**Wizard에서 Gradle Project를 선택**
+
+![create-gradle-project](http://image.toast.com/aaaaahq/create-gradle-project-1.png)
+
+**Project명을 입력하고 Next**
+![create-gradle-project](http://image.toast.com/aaaaahq/create-gradle-project-2.png)
+
+**Gradle wrapper를 선택하고 Next**
+
+![create-gradle-project](http://image.toast.com/aaaaahq/create-gradle-project-3.png)
+
+**Gradle Project가 생성되는 중**
+
+![create-gradle-project](http://image.toast.com/aaaaahq/create-gradle-project-4.png)
+
+**Gradle Project 생성완료**
+![create-gradle-project](http://image.toast.com/aaaaahq/create-gradle-project-5.png)
+
 ## IDE에서 유용한 단축키들
 
-지금까지 Mac OSX에서 JDK를 설치하고 Java프로젝트를 생성해 보는것을 기본적인 개발환경을 준비해 보았다. STS IDE에서 개발하면서 유용한 단축키를 소개하는 것으로 이 글을 마무리 한다. 
+지금까지 Mac OSX에서 JDK를 설치하고 기본적인 Java프로젝트와 Gradle 프로젝트를 생성해 보는것으로 기본적인 개발환경을 준비해 보았다. STS IDE에서 개발하면서 유용한 단축키를 소개하는 것으로 이 글을 마무리 한다. 
 
  Shortcut | Description 
  ---|---
