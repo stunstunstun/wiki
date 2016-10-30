@@ -88,12 +88,16 @@ Spring Boot Starter는 애플리케이션 구성에 필요한 Library를 쉽게 
 
 예를 들면, Spring Core와 JPA를 통해 Database에 접근하고 싶다면 Spring Stater 에서 JPA와 목적에 맞는 SQL에 대한 dependency만을 추가하면 된다.
 
+<br>
+
 ### Embeded Tomcat과 같은 Product 운영에 효율적인 기능들
 
 Spring Boot 내부에서 Tomcat을 운영할 수 있게 되면서 외부에 의존적이지 않고 독립적(Stand-alone)인 상태로 웹 애플리케이션을 위한 서버 인스턴스를 생성할 수가 있다. 이 밖에도 아래와 같이 Product 운영에 필요한 다양한 기능을 활용할 수 있다.
 - security
 - metrics
 - health check
+
+<br>
 
 ### 쉽게 실행하기
 
@@ -123,7 +127,8 @@ Spring Boot 애플리케이션이 Stand-alone 한 상태가 되면서 **java -ja
 
 이 문서의 이론적인 내용은 모두 실습을 통해 Database와 연동하는 간단한 Spring Boot 애플리케이션을 개발해보는데 목적이 있습니다. 아래의 Github Repository에서 예제를 위한 프로젝트를 제공하고 있습니다. Spring Boot를 학습하는 데에 조금이나마 도움이 되었으면 합니다.
 
-> https://github.com/wjdsupj/spring-boot-examples-for-beginner
+- https://github.com/wjdsupj/spring-boot-examples-for-beginner
+
 
 ---
 
