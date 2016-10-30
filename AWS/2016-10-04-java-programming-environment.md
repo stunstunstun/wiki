@@ -11,6 +11,8 @@
 - Gradle 프로젝트 생성하기
 - IDE에서 유용한 단축키들
 
+<br>
+
 ## Java 설치하기
 
 Mac 환경에서는 Java 개발을 위한 JDK 뿐만 아니라 이외의 여러가지 패키지를 Homebrew를 통해 설치하는 것을 권장한다. Homebrew에 대한 자세한 설명은 아래의 링크를 참조한다.
@@ -23,6 +25,8 @@ Homebrew 설치가 완료가 되면 Terminal에서 아래와 같은 Command를 �
 @guest] brew cask install java
 ````
 
+<br>
+
 ## Gradle 설치하기 
 
 Java를 통해 Back-End를 개발하기 위해 Spring Framework를 사용한다거나 Android 애플리케이션을 개발하기 위해서는 프로젝트 빌드 도구인 Gradle을 사용하는 것이 유리하다. Terminal에서 아래와 같이 설치 할 수 있다. 
@@ -31,6 +35,8 @@ Java를 통해 Back-End를 개발하기 위해 Spring Framework를 사용한다�
 @guest] brew install gradle
 ````
 - **Gradle** : https://gradle.org/
+
+<br>
 
 ## Spring Tool Suite (STS) 설치하기
 
@@ -111,6 +117,8 @@ Color Theme 는 IDE에서 Side Effect 없이 코드를 이쁘게 보여주게 �
 **Gradle Project 생성완료**
 
 ![create-gradle-project](http://image.toast.com/aaaaahq/create-gradle-project-5.png)
+
+<br>
 
 ## IDE에서 유용한 단축키들
 
