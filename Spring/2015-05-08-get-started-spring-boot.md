@@ -14,6 +14,7 @@
 
 <span style="color:#999999">ㄹ. Spring Loaded로 개발환경 개선하기</span>
 
+<br>
 
 ## Spring Boot 시작하기
 
@@ -22,7 +23,7 @@
 이 문서에서는 Spring Boot이 왜 출현하게 되었는지 그리고 어떻게 이전의 경험보다 효율적으로 개발할 수 있는지에 대한 이슈를 중점으로 설명해 나아가려고 합니다.
 
 
-## Spring Boot은 어떻게 탄생되었는가
+### Spring Boot은 어떻게 탄생되었는가
 
 ![spring-boot](http://image.toast.com/aaaaahq/spring-boot.png)
 - spring projects 중 상위에 노출되고 있는 SPRING BOOT
@@ -37,6 +38,7 @@ Spring Boot 프로젝트를 **spring.io**에서 그들의 Blog에서 처음 발�
 
 모든 것에 대해 Spring을 간소화하는 것이라니.. 엄청난 일이지 않은가? 그렇다면 먼저 Spring Boot 이전에는 어떠한 점이 복잡했는지 보는 것을 시작으로 Spring Boot은 이러한 점들을 어떻게 해결해 나아갔는지 살펴보도록 하자.
 
+<br>
 
 ## Spring Boot을 다음 프로젝트에 적용해야 할까?
 
@@ -50,6 +52,8 @@ Spring Framework 덕분에 J2EE의 지옥에서 벗어났음에도 불구하고 
 - 외부의 시스템과 통합을 해야 하는 이슈
 - 외부 Cloud 환경과 연동해야 하는 이슈
 - 다양한 보안이슈에 대응해야 되는 이슈 
+
+<br>
 
 ### _"결국 어떻게 효율적으로 통합할 것인가에 대한 문제"_
 
@@ -73,6 +77,8 @@ Spring 진영에서는 이러한 다양한 문제를 spring-data, spring-web, sp
 
 - Absolutely no code generation and no requirement for XML configuration
 ````
+
+<br>
 
 ### 초기 환경설정에서 벗어나기, 더 나은 Bootstrap에 대한 필요성
 
@@ -106,20 +112,22 @@ Spring Boot 애플리케이션이 Stand-alone 한 상태가 되면서 **java -ja
 @root] java -jar build/libs/api-0.0.1-SNAPSHOT.jar
 ```
 
+<br>
 
 ## 마치며
 
 이 장에서는 Spring Boot의 출현 배경에 대해 알아보았고, 다음 장에서는 Spring Boot 애플리케이션을 개발하기 위한 개발환경 준비에 대해서 알아보겠다.
 
 
-## Spring Boot 예제 프로젝트 모음
+### Spring Boot 예제 프로젝트 모음
 
 이 문서의 이론적인 내용은 모두 실습을 통해 Database와 연동하는 간단한 Spring Boot 애플리케이션을 개발해보는데 목적이 있습니다. 아래의 Github Repository에서 예제를 위한 프로젝트를 제공하고 있습니다. Spring Boot를 학습하는 데에 조금이나마 도움이 되었으면 합니다.
 
 > https://github.com/wjdsupj/spring-boot-examples-for-beginner
 
+---
 
-## References
+### References
 - http://projects.spring.io/spring-boot/
 - http://docs.spring.io/spring-boot/docs/1.4.1.RELEASE/reference/htmlsingle/
 - https://spring.io/blog/2013/08/06/spring-boot-simplifying-spring-for-everyone
