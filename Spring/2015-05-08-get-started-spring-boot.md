@@ -12,9 +12,11 @@
 
 ㄷ. Github의 Spring Boot 예제 프로젝트 Import하기
 
-ㄹ. Spring Boot과 Gradle 프로젝트의 구조 그리고 첫 테스트 케이스 만들어보기
+ㄹ. Spring Boot과 Gradle 그리고 첫 테스트 케이스 만들어보기
 
 ㅁ. Spring Loaded로 개발환경 개선하기
+
+ㄱ. Spring Boot 시작하기
 
 <br>
 
