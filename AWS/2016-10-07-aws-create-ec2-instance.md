@@ -4,12 +4,15 @@ EC2는 Amazon 데이터센터의 가상 Computing 서버를 유연하게 사용�
 
 - **AWS EC2 Documentation** - https://aws.amazon.com/documentation/ec2/
 
+<br>
 
 ## AWS EC2 Instance 생성
 
 먼저 AWS Services에서 EC2를 사용하기 위해서는 Create Instance를 통해 아래의 화면에 진입해야 합니다. 이 문서에는 Amazon Linux AMI를 선택하여 가상서버를 생성하고 접속하는 방법을 설명하고자 합니다.
 
 ![step0](http://image.toast.com/aaaaahq/aws-ec2-step0.png)
+
+<br>
 
 ### Amazon Linux AMI
 
@@ -61,6 +64,8 @@ chmod 400 [private-keyfile.pem]
 ````
 - Connect to your instance using its Public DNS
 
+<br>
+
 ## 참고 할 내용
 
 - 데이터 센터를 기준으로 **Region**으로 서비스영역을 제공하는 국내에서 서비스 한다면 Seoul Region를 선택하는 것을 추천합니다. Region은 세계 어느곳에서 자유롭게 선택하여 사용할 수 있습니다.
@@ -76,7 +81,7 @@ chmod 400 [private-keyfile.pem]
 
 > https://aws.amazon.com/autoscaling/
 
-
+<br>
 
 ## References
 - https://aws.amazon.com/documentation/ec2/
