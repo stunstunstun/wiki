@@ -39,6 +39,7 @@ Spring Boot 프로젝트를 **spring.io**에서 그들의 Blog에서 처음 발�
 
 ### _"Simplifying Spring for Everyone"_
 
+> https://spring.io/blog/2013/08/06/spring-boot-simplifying-spring-for-everyone
 
 모든 것에 대해 Spring을 간소화하는 것이라니.. 엄청난 일이지 않은가? 그렇다면 먼저 Spring Boot 이전에는 어떠한 점이 복잡했는지 보는 것을 시작으로 Spring Boot은 이러한 점들을 어떻게 해결해 나아갔는지 살펴보도록 하자.
 
