@@ -29,8 +29,10 @@
 
 
 ### References
-> 
-- https://en.wikipedia.org/wiki/
+- https://guides.github.com
+- https://help.github.com
+- https://help.github.com/articles/fork-a-repo/
+- https://en.wikipedia.org/wiki/GitHub
 - http://www.slideshare.net/ibare/dvcs-git
 - http://www.slideshare.net/ibare/git-level-2
 - http://www.slideshare.net/flyskykr/github-46014813
