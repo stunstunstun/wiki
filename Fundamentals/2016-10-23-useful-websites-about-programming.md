@@ -1,3 +1,18 @@
+## MOCC
+
+- http://www.ted.com/topics/technology
+- https://www.safaribooksonline.com
+- https://www.udemy.com
+- https://www.coursera.org/
+- https://www.udacity.com
+- http://tryhelloworld.co.kr/courses
+- https://codility.com/programmers/
+- https://leetcode.com
+- http://www.ideserve.co.in/#dynamicProgramming
+- https://github.com/MaximAbramchuck/awesome-interview-questions
+
+## Tech Blog
+
 ### Square Open Sources
 - http://square.github.io
 
