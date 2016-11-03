@@ -1,9 +1,7 @@
 ## Welcome, stunstun-wiki
 
-See [how to write in markdown](https://blog.ghost.org/markdown/) for how to write markdown.
-
 - 문서는 markdown을 통해 작성해 주세요. 
-- 문서의 이름 형태는 YYYY-MM-DD-blog-post-name.md 과 같이 작성일, 제목을 포함한 필수정보가 필요합니다.
+- 문서의 이름 형태는 YYYY-MM-DD-post-name.md 과 같이 작성일, 제목을 포함한 필수정보가 필요합니다.
 
 **Github Markdown Guide** 
 > https://guides.github.com/features/mastering-markdown/
@@ -12,7 +10,7 @@ See [how to write in markdown](https://blog.ghost.org/markdown/) for how to writ
 
 ## What subject are we dealing with?
 
-Swift를 통해 iOS 개발을 하면서 겪는 경험을 시작으로 다시 기술문서를 작성할 예정이다. 그 이외에 Junior 개발자에게 친숙한 카테고리를 미리 정해놓고 순차적으로 문서를 작성하고 문서 공유에 관심이 있는 개발자들이 관심 있는 주제에 직접 참여할 수 있었으면 하는 바람이다. 각 주제에 대해서 처음 접근하는 Junior 개발자를 위한 내용이 대다수가 될 것이며, 위키 페이지의 구조는 크게 **카테고리**와 **문서**로 이루어져 있다.
+Junior 개발자에게 친숙한 카테고리를 시작으로 문서를 작성하고 순차적으로 문서 공유에 관심이 있는 개발자들이 관심 있는 주제에 직접 참여해 Reference가 쌓여 나아가기를 바랍니다. 아래의 주제에 대해서 처음 접근하는 Junior 개발자를 위한 내용이 대다수가 될 것이며, 위키 페이지의 구조는 크게 주제를 나타내는 **카테고리**와 하위에 속한 **문서**로 이루어져 있습니다.
 
 | Category | Description |
 | --- | --- |
@@ -39,9 +37,12 @@ Swift를 통해 iOS 개발을 하면서 겪는 경험을 시작으로 다시 기
 ### 문서를 작성하시면서 지켜주시면 좋은 것들
 - 최상단의 폴더명은 다루고 싶은 주제에 대한 카테고리명을 뜻합니다.
 - 카테고리는 이 주제가 왜 필요한지에 대한 readme.md 문서를 포함해야 합니다.
-- 문서는 markdown을 통해 작성해 주세요. 
 - 문서의 파일명은 숫자와 영문 소문자로 이루어지고 확장자는 *.md 입니다. 파일명에 띄어쓰기가 필요할 때에는 '-' 을 사용합니다.
-- 문서의 이름 형태는 YYYY-MM-DD-blog-post-name.md 과 같이 작성일, 제목을 포함한 필수정보가 필요합니다.
-- 그 이외에 문서에 대한 제약사항은 없습니다 :)
 
-<br>
+> 그 이외에 문서에 대한 제약사항은 없습니다 :)
+
+### How to Pull Request
+
+1. 우측 상단의 버튼을 통해 Repository를 Fork합니다. 
+2. Fork한 Repository를 통해 문서를 추가합니다.
+3. New Pull Request버튼을 통해 Merge요청을 합니다.
