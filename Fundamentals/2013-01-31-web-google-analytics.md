@@ -49,26 +49,26 @@ _gaq.push(['_trackEvent', 'Videos', 'Video Load Time', 'Gone With the Wind', dow
 
 ### 서비스 적용
 
-실제 서비스에 적용해 보았는데, 서비스에 맞게 Event를 처리하는 Javascript Object 를 정의하고 서비스에 재사용하기 위해 아래와 같이 Service ID 와 Domain 정보를 script 에 어트리뷰트로 추가 하게 끔 구성하였다.
+실제 서비스에 적용해 보았는데, 서비스에 맞게 Event를 처리하는 Javascript Object 를 정의하고 여러 페이지에서 재사용하기 위해 아래와 같이 Service ID 와 Domain 정보를 script 에 어트리뷰트로 추가 하게 끔 구성하였다.
 
 ````javascript
-<script type=”text/javascript” src="analytics.js" data-id="UA-XXXXX-1" data-domain="joycity.com"></script>
+<script type=”text/javascript” src="analytics.js" data-id="UA-XXXXXX-1" data-domain="joycity.com"></script>
 ````
 
-##### 공통 집계 요소 ( Event Category )
+### 공통 집계 요소 ( Event Category )
  
  게임 포털에 속한 모든 하위페이지에서는 아래의 Event에 대해 수집하고 싶었다.
  
- - 게임 스타트	
- - 로그인 레이어 
+ - 사용자가 게임 스타트 버튼을 클릭할 때	
+ - 로그인을 위한 Layer UI 진입 
  - 로그인 
  - 공통 GNB 에 의존적인 링크 선택시
 
 각 서비스에 공통으로 정의된 인터페이스 호출시 위의 script 추가만으로 가능하게 되었고, 실제 유저가 게임스타트 버튼을 호출 한다면, Google Analytics 에서는 아래와 같이 유저 게임을 실행 할때 어떤 페이지에서 시도를 했는지 그리고 원하는 추가정보를 수집 할 수 있게 되었다.
 
- 구분 | 설명 
- ---|---
- Category | 게임스타트
+구분 | 설명 
+---|---
+Category | 게임스타트
 Action | 메인 페이지 / 이벤트 페이지 / 게시판 페이지 
 Event Label | 기타 정보
 
