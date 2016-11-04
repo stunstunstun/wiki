@@ -4,13 +4,9 @@
 
 ㄴ. STS IDE를 통한 개발환경 준비 및 Github에서 소소코드 관리하기
 
-ㄷ. Github의 Spring Boot 예제 프로젝트 Import하기
+ㄷ. Spring Boot과 Gradle 그리고 첫 테스트 케이스 만들어보기
 
-ㄹ. Spring Boot과 Gradle 그리고 첫 테스트 케이스 만들어보기
-
-ㅁ. Spring Loaded로 개발환경 개선하기
-
-ㄱ. Spring Boot 시작하기
+ㄹ. Spring Loaded로 개발환경 개선하기
 
 
 ### 대상독자
