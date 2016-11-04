@@ -1,3 +1,25 @@
+## 목차 - 준비편
+
+### ㄱ. Spring Boot 시작하기
+
+ㄴ. STS IDE를 통한 개발환경 준비 및 Github에서 소소코드 관리하기
+
+ㄷ. Github의 Spring Boot 예제 프로젝트 Import하기
+
+ㄹ. Spring Boot과 Gradle 그리고 첫 테스트 케이스 만들어보기
+
+ㅁ. Spring Loaded로 개발환경 개선하기
+
+ㄱ. Spring Boot 시작하기
+
+
+### 대상독자
+
+- Spring Framework에 대한 기본적인 지식을 바탕으로 애플리케이션을 구현해보신 분
+- Spring Boot을 통해 애플리케이션 개발을 시작하거나 프로젝트에 도입 예정인 분
+- Spring Boot을 학습하는 데에 예제 프로젝트가 필요하신 분
+
+<br>
 
 ## Spring Boot 시작하기
 
@@ -112,6 +134,11 @@ Spring Boot 애플리케이션이 Stand-alone 한 상태가 되면서 **java -ja
 이 문서의 이론적인 내용은 모두 실습을 통해 Database와 연동하는 간단한 Spring Boot 애플리케이션을 개발해보는데 목적이 있습니다. 아래의 Github Repository에서 예제를 위한 프로젝트를 제공하고 있습니다. Spring Boot를 학습하는 데에 조금이나마 도움이 되었으면 합니다.
 
 - https://github.com/wjdsupj/spring-boot-examples-for-beginner
+
+Enviroments | Version (Lastest Updated 2016.10)
+---|---
+Spring Boot | 1.3.0.RELEASE
+Gradle | 2.9
 
 <br>
 
