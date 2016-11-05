@@ -1,5 +1,6 @@
 ## Welcome, stunstun-wiki
 
+- 이 위키페이지는 2016/10/10 부터 시작되었습니다.
 - 문서는 markdown을 통해 작성해 주세요. 
 - 문서의 이름 형태는 YYYY-MM-DD-post-name.md 과 같이 작성일, 제목을 포함한 필수정보가 필요합니다.
 
