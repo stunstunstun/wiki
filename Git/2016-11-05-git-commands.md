@@ -27,6 +27,17 @@ git branch {new-branch}
 git branch -d {branch}
 git branch -m {branch} {new-branch}
 ```
+**Remote**
+```
+git clone {address}
+git fetch
+git pull
+git push
+git remote add {name}
+git remote
+git remote show {name}
+git remote rm {name}
+```
 
 ## References
 - https://blog.outsider.ne.kr/572
