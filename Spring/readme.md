@@ -30,7 +30,7 @@ Gradle | 2.9
 
 ㄱ. [Spring Boot 시작하기](https://github.com/wjdsupj/stunstun-wiki/blob/master/Spring/2015-05-08-get-started-spring-boot.md)
 
-ㄴ. STS IDE를 통한 개발환경 준비 및 Github에서 소소코드 관리하기 
+ㄴ. [STS IDE를 통한 개발환경 준비 및 Github에서 Version 관리하기](https://github.com/wjdsupj/stunstun-wiki/blob/master/Spring/2015-05-09-spring-boot-environment.md)
 
 ㄷ. Github의 Spring Boot 예제 프로젝트 Import하기
 
