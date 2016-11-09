@@ -24,7 +24,7 @@
 
 STS IDE를 실행하기 위해서는 OS에 JDK가 필수적으로 설치되어 있어야만 한다.
 
-**Mac**
+_**Mac**_
 
 Mac 환경에서는 Java 개발을 위한 JDK 뿐만 아니라 이외의 여러가지 패키지를 Homebrew를 통해 설치하는 것을 권장한다. Homebrew에 대한 자세한 설명은 아래의 링크를 참조한다.
 
@@ -36,7 +36,7 @@ $ brew update
 $ brew cask install java
 ````
 
-**Windows**
+_**Windows**_
 
 아래의 페이지에서 JDK를 다운로드 할수 있습니다.
 
@@ -66,7 +66,7 @@ STS는 Spring을 운영하고 있는 Pivotal에서 제공하는 IDE이다. Eclip
 
 Java를 통해 Back-End를 개발하기 위해 Spring Framework를 사용한다거나 Android 애플리케이션을 개발하기 위해서는 프로젝트 빌드 도구인 Gradle을 사용하는 것이 유리하다. 
 
-**Mac**
+_**Mac**_
 
 Terminal에서 아래와 같이 설치 할 수 있다. 
 
@@ -74,7 +74,7 @@ Terminal에서 아래와 같이 설치 할 수 있다.
 $ brew install gradle
 ```
 
-**Windows**
+_**Windows**_
 
 아래의 페이지에서 Gradle를 다운로드할 수 있다.
 
@@ -89,7 +89,7 @@ $ gradle --version
 
 <br>
 
-### Gralde 플러그인 설치
+### Gradle 플러그인 설치
 
 **Buildship Gradle Integration**
 
@@ -188,16 +188,19 @@ Github는 이미 전 세계의 많은 개발자와 기업에서 프로젝트 관
 <br>
 
 **New Repository를 선택**
+
 ![github-step-1](http://image.toast.com/aaaaahq/github-step-1.png)
 
 <br>
 
 **Repository에 대한 정보를 입력**
+
 ![github-step-2](http://image.toast.com/aaaaahq/github-step-2.png)
 
 <br>
 
 **Repository가 생성되면 자신의 repository의 리스트를 아래와 같이 private/public 별로 확인이 가능하다.**
+
 ![github-step-3](http://image.toast.com/aaaaahq/github-step-3.png)
 
 <br>
