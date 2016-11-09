@@ -32,11 +32,9 @@ Gradle | 2.9
 
 ㄴ. [STS IDE를 통한 개발환경 준비 및 Github에서 Version 관리하기](https://github.com/wjdsupj/stunstun-wiki/blob/master/Spring/2015-05-09-spring-boot-environment.md)
 
-ㄷ. Github의 Spring Boot 예제 프로젝트 Import하기
+ㄷ. Spring Boot과 Gradle 그리고 첫 테스트 케이스 만들어보기
 
-ㄹ. Spring Boot과 Gradle 그리고 첫 테스트 케이스 만들어보기
-
-ㅁ. Spring Loaded로 개발환경 개선하기
+ㄹ. Spring Loaded로 개발환경 개선하기
 
 
 <br>
