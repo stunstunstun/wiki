@@ -96,7 +96,10 @@ Test Driven Development (or TDD ) 는  소프트웨어를 개발하는 하나의
 
 ---
 
-##### Good Practices
+##### References & Good Practices
 - https://github.com/futurice/ios-good-practices#architecture/
 - https://realm.io/news/gotocph-ash-furrow-best-practices-swift/
 - https://medium.com/@ynzc/part-2-brains-before-beauty-410fb41f6ae3#.nsgg40fu1
+- https://medium.com/ios-geek-community/how-it-feels-to-learn-ios-in-2016-b195a79f7e80#.g6ubx92on
+
+
