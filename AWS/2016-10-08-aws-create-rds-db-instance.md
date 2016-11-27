@@ -2,6 +2,9 @@
 
 AWS RDS는 Relational Database Service로 말그대로 AWS의 클라우드 환경에서 관계형 데이터베이스를 운영하기 위한 초기설정, 운영, 스케일링을 쉽게할 수 있도록 도와주는 서비스이다.
 
+![new](http://image.slidesharecdn.com/dat304-151009185056-lva1-app6891/95/dat304-amazon-rds-for-mysql-best-practices-2-638.jpg)
+
+
 <br>
 
 ## 시작하기
@@ -97,3 +100,4 @@ Test Connection 버튼을 눌러보자. 아래와 같이 성공적인 메세지�
 - https://aws.amazon.com/documentation/rds/
 - http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html
 - http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_BestPractices.html
+
