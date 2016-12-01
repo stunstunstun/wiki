@@ -30,12 +30,13 @@ Gradle | 2.9
 
 ㄱ. [Spring Boot 시작하기](https://github.com/wjdsupj/stunstun-wiki/blob/master/Spring/2015-05-08-get-started-spring-boot.md)
 
-ㄴ. [STS IDE를 통한 개발환경 준비 및 Github에서 Version 관리하기](https://github.com/wjdsupj/stunstun-wiki/blob/master/Spring/2015-05-09-spring-boot-environment.md)
+ㄴ. [STS IDE를 통한 개발환경 준비 및 Github에서 Version 관리하기]((https://github.com/wjdsupj/stunstun-wiki/blob/master/Spring/2015-05-09-spring-boot-environment.md))
 
 ㄷ. Spring Boot과 Gradle 그리고 첫 테스트 케이스 만들어보기
 
 ㄹ. Spring Loaded로 개발환경 개선하기
 
+ㅁ. AWS RDS 시작하기
 
 <br>
 
