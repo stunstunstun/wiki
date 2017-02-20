@@ -98,6 +98,8 @@ Python은 여러가지 프로그래밍 언어 중 하나예요.
 제가 남미 여행을 했을때 스페인어를 1도 몰랐지만 급할 때 화장실을 가야하거나 음식을 주문하기 위해서는 
 
 <br>
+### [다음으로 > 소스코드 관리하기](https://github.com/wjdsupj/stunstun-wiki/blob/master/Fundamentals/2017-02-21-version-control-source-code.md)
+<br>
 
 **[글/그림 정민혁]**
 Joycity, NHN Entertainment 에서 모바일게임/결제 관련 플랫폼을 개발 해 왔습니다. 현재는 1년간의 세계일주 후에 태국의 치앙마이에서 원하는 방식으로 살아보려고 아둥 바둥 발버둥 중입니다.
