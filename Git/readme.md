@@ -6,34 +6,3 @@
 ### Github Guides
 
 > http://guides.github.com
-
-<br>
-
-## 문서에 Version 관리가 왜 필요한가요?
-
--
-### Github 가입후 웹서비스에서 Wiki 문서 관리해보기
-
-**Wiki는 뭐죠?**
-
-
-## Github Pages 를 통해 웹페이지 호스팅 해보기
-
-- https://pages.github.com/
-
-
-## Git Command
-
-
-## Source Tree를 통해 Git 관리하기
-
-
-### References
-- https://guides.github.com
-- https://help.github.com
-- https://help.github.com/articles/fork-a-repo/
-- https://en.wikipedia.org/wiki/GitHub
-- http://www.slideshare.net/ibare/dvcs-git
-- http://www.slideshare.net/ibare/git-level-2
-- http://www.slideshare.net/flyskykr/github-46014813
-
