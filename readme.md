@@ -23,6 +23,7 @@
 
 | Category | Description |
 | --- | --- |
+| [SmallStep](https://github.com/wjdsupj/stunstun-wiki/tree/master/SmallStep) | 스몰스텝, 프로그래밍을 시작하는 작은 습관 |
 | [AWS](https://github.com/wjdsupj/stunstun-wiki/tree/master/AWS) | 개발환경 및 AWS 인프라 운영 전반에 관한 내용 |
 | [Android](https://github.com/wjdsupj/stunstun-wiki/tree/master/Android) | Android 개발에 관한 지식 |
 | [BugFixedDiary](https://github.com/wjdsupj/stunstun-wiki/tree/master/BugFixedDiary)| 단순히 Bug Fixed 기록을 남긴다기보다는 어떻게 문제를 인식하고 해결해 나아갔는지를 중점으로 기술한다. |
