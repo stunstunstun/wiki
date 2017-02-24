@@ -76,5 +76,8 @@
 
 ---
 
+### [다음 > 스몰스텝 + 두번째걸음 = ?](https://github.com/wjdsupj/stunstun-wiki/blob/master/SmallStep/2017-02-24-%EC%8A%A4%EB%AA%B0%EC%8A%A4%ED%85%9D%2B%EB%91%90%EB%B2%88%EC%A7%B8%EA%B1%B8%EC%9D%8C%3D%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%96%B8%EC%96%B4.md)
+---
+
 **[글/그림 정민혁]**
 Joycity, NHN에서 모바일게임 및 결제 관련 플랫폼을 개발해 왔습니다. 현재는 퇴사 후 1년간의 세계일주 후에 태국의 치앙마이에서 원하는 방식으로 살아보려고 아둥 바둥 발버둥 중입니다.
