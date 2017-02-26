@@ -1,4 +1,4 @@
-## 스몰스텝 + 첫걸음 = 프로그래밍을 시작하는 작은 습관
+## 스몰스텝, 프로그래밍을 시작하는 작은 습관
 
 개인적으로 무엇인가를 꾸준히 한다는 것은 쉽지 않은 일이라고 생각해요. 새로운 공부를 하거나 새해가 시작되면 모든 사람들은 계획을 짜기 시작하죠. 스스로에게 동기부여를 하지만 처음부터 높은 목표치와 지속적으로 의지 할 곳이 없어 쉽게 포기하게 됩니다.
 
@@ -23,14 +23,13 @@
 
 저 역시 영어 또는 새로운 언어를 공부하거나, 새로운 기술 등 무엇이 되었던 간에 관심있는 것들을 홀로 시작하게 되었을 때 **"습관"** 이 되지 못한체 포기한 적이 많아요. 하지만 관심이 가는 것이 있다면 제 자신에게 질문하는 것을 시작으로 지속적인 동기부여가 필요하다고 생각합니다. 일단 Just Fucking Do It 말이죠.
 
-**먼저 그 시작으로 프로그래밍은 왜 배워야 할까요?**
+**먼저 그 시작으로 프로그래밍은 왜 배워야 할까요?** 함께 이 영상을 보는 것으로 시작했으면 좋겠어요.
 
-함께 이 영상을 보는 것으로 시작했으면 좋겠어요.
-- https://www.youtube.com/watch?v=SESuctdE9vM
+- https://www.youtube.com/embed/SESuctdE9vM
 
-> Everybody in this country should learn how to program computer because it teach you how to think
+> Everybody in this country should learn how to program computer because it teach you how to think - Steve Jobs -
 
-다들 알고 계시는 Steve Jobs의 말을 시작으로, 프로그래밍을 시작하는 것으로 인해 새로운 가치를 만들어낸 명사 대부분이 이렇게 말하고 있어요. 맞아요. 
+어떤가요? 프로그래밍에 대해 조금은 흥미가 생기시나요? 프로그래밍을 시작하는 것으로 인해 새로운 가치를 만들어낸 명사 대부분이 이렇게 말하고 있어요. 프로그래밍은 생각하는 방법을 제시한다. 
 
 언어를 배운다는 것은 새롭게 사고하는 방식을 배우는 것과 같습니다. 서양의 언어와 동양의 언어 차이를 통해 동/서양의 사고방식이 다르다는 학술적인 연구결과도 있어요. 최근에 개봉한 컨택트라는 영화에서는 이러한 주제를 심오하게 다루고 있기도 하죠. 
 
@@ -77,6 +76,7 @@
 ---
 
 ### [다음 > 스몰스텝 + 두번째걸음 = ?](https://github.com/wjdsupj/stunstun-wiki/blob/master/SmallStep/2017-02-24-%EC%8A%A4%EB%AA%B0%EC%8A%A4%ED%85%9D%2B%EB%91%90%EB%B2%88%EC%A7%B8%EA%B1%B8%EC%9D%8C%3D%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%96%B8%EC%96%B4.md)
+
 ---
 
 **[글/그림 정민혁]**
