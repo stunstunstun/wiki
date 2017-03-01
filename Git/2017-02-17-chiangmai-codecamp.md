@@ -38,6 +38,7 @@
 - 행아웃을 통한 원격 Kick-Off 회의. 간단한 자기소개
 - Slack 소개 
 - Github 소개
+- Markdown 문서 만들기
 
 <br>
 
