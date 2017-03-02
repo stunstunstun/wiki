@@ -18,12 +18,11 @@
 
 ## 무슨 내용을 다루나요?
 
-이제 막 시작하는 주니어 개발자의 가려운 부분을 긁어주고 싶어요. 아래의 주제에 대해서 처음 접근하는 주니어 개발자를 위한 내용이 대다수가 될 것이며, 이를 시작으로 개발자들이 관심 있는 주제를 직접 만들고 참여해 Reference가 쌓여 나아가기를 바랍니다.  
+이제 막 시작하는 주니어 개발자 분들의 가려운 부분을 긁어주고 싶어요. 아래의 주제에 대해서 처음 접근하는 주니어 개발자를 위한 내용이 대다수가 될 것이며, 이를 시작으로 개발자들이 관심 있는 주제를 직접 만들고 참여해 Reference가 쌓여 나아가기를 바랍니다.  
 - 위키 페이지의 구조는 크게 주제를 나타내는 **카테고리**와 하위에 속한 **Markdown 문서**로 이루어져 있습니다.
 
 | Category | Description |
 | --- | --- |
-| [SmallStep](https://github.com/wjdsupj/stunstun-wiki/tree/master/SmallStep) | 스몰스텝, 프로그래밍을 시작하는 작은 습관 |
 | [AWS](https://github.com/wjdsupj/stunstun-wiki/tree/master/AWS) | 개발환경 및 AWS 인프라 운영 전반에 관한 내용 |
 | [Android](https://github.com/wjdsupj/stunstun-wiki/tree/master/Android) | Android 개발에 관한 지식 |
 | [BugFixedDiary](https://github.com/wjdsupj/stunstun-wiki/tree/master/BugFixedDiary)| 단순히 Bug Fixed 기록을 남긴다기보다는 어떻게 문제를 인식하고 해결해 나아갔는지를 중점으로 기술한다. |
