@@ -25,6 +25,10 @@ Android Studio 가 베타 Version 에서 1.0 으로 릴리즈 된 이후 오랜�
 
 ## TDD
 
+## Gradle
+
+## Circle CI
+
 ## Travis CI
 
 ````yml
