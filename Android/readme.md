@@ -23,13 +23,34 @@ Android Studio 가 베타 Version 에서 1.0 으로 릴리즈 된 이후 오랜�
 - Android SDK Platform-Tools 24.0.3
 - Android SDK Tools 25.2.2
 
-## TDD
+## Awesome Android
 
-## Gradle
+### Libraries
+- https://github.com/ReactiveX/RxJava
+- https://github.com/ReactiveX/RxAndroid
+- https://github.com/realm/realm-java
+- https://github.com/google/gson
+- https://github.com/square/okhttp
+- https://github.com/square/picasso
+- https://github.com/square/retrofit
+- https://github.com/facebook/fresco
+- https://github.com/stfalcon-studio/FrescoImageViewer
 
-## Circle CI
+### References
+- https://github.com/firebase/quickstart-android
+- https://github.com/Schinizer/RxUnfurl
+- https://github.com/artsy/eigen
+- https://github.com/jungilhan/awesome-blogs-android
 
-## Travis CI
+## Build & CI
+
+### Unit Test
+
+### Gradle
+
+### Circle CI
+
+### Travis CI
 
 ````yml
 language: android
