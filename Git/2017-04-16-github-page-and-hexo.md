@@ -1,3 +1,4 @@
+
 이 포스팅에서는 GitHub Page를 통해 손쉽게 개발 블로그를 Hosting 해보고 Command Line 명령을 통해 쉽게 블로그를 만들 수 있는 Hexo 프레임워크를 소개하고자 합니다.
 
 - GitHub Page - https://pages.github.com/
@@ -104,14 +105,15 @@ author: Minhyeok Jung
 
 ##### URL 정보
 
-블로그 URL정보를 설정 할 수 있다 url 값은 이후에 Custom Domain 설정시 CNAME 파일을 생성 할 때도 활용된다.
+블로그 URL정보를 설정 할 수 있다
 
 ```yml
-url: http://holaxprogramming.com
+url: https://USERNAME.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 ```
+> 만약 본인의 Custom Domain을 적용하고 싶다면 url값은 이후에 Custom Domain 설정시 CNAME 파일을 생성 할 때도 참조한다.
 
 ##### Github 정보
 
@@ -209,7 +211,7 @@ $ hexo new post github-page-and-hexo
 
 ```md
 ---
-title: Github Page와 Hexo를 통해 10분만에 기술 블로그 만들기
+title: Github Page와 Hexo를 통해 30분만에 기술 블로그 만들기
 date: 2017-04-16 22:37:53
 ---
 ```
