@@ -1,4 +1,4 @@
-## Welcome, stunstun-wik
+## awesome-wiki
 
 **다들 문서 관리 어떻게 하시나요?**
 
