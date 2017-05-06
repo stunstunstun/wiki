@@ -6,7 +6,7 @@
 
  위키 페이지를 통해서 기술 문서 관리에 대한 일관성을 유지하고 꾸준히 지속적으로 리마인드 하기 위해 만들었습니다. 이렇게 쌓인 Reference들이 제 자신은 물론이고 프로그래밍을 업으로 시작하는 주니어 ㅇ 스스로 성장하기 위한 좋은 자료가 되기를 바랍니다.
 
-### 무슨 내용을 다루나요?
+#### 무슨 내용을 다루나요?
 
 비교적 회사 또는 주변의 동료에 대해 경험이 적은 주니어  분들의 가려운 부분을 긁어주고 싶어요. 아래의 주제에 대해서 처음 접근하는 개발자를 위한 내용이 대다수가 될 것이며, 이를 시작으로 개발자들이 관심 있는 주제를 직접 만들고 참여해 Reference가 쌓여 나아가기를 바랍니다.  
 
@@ -23,15 +23,14 @@
 | [Spring Framework](https://github.com/stunstunstun/awesome-wiki/tree/master/Spring) | Spring Framework에 대한 지식, Spring Boot과 Spring 5.0 에 대한 Insight |
 | [Git](https://github.com/stunstunstun/awesome-wiki/tree/master/Git) | Git에 대한 사용 경험과 그 밖의 협업도구에 대한 이야기 |
 
-### 직접 참여하고 싶으시다구요?
+#### 직접 참여하고 싶으시다구요?
 
 - 이 글에 공감하시는 모든 분이 참여가 가능해요.
 - 문서는 markdown을 통해 작성해 주세요. 
 - 문서의 이름 형태는 YYYY-MM-DD-post-name.md 과 같이 작성일, 제목을 포함한 필수정보가 필요합니다.
 
-#### Github Markdown Guide
-
-> https://guides.github.com/features/mastering-markdown/
+> Github Markdown Guide
+https://guides.github.com/features/mastering-markdown/
 
 #### 문서를 작성하시면서 지켜주시면 좋은 것들
 
