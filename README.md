@@ -42,6 +42,6 @@
 
 #### Pull Request를 위한 절차
 
-A. 우측 상단의 버튼을 통해 Repository를 Fork합니다. 
-B. Fork한 Repository를 통해 문서를 추가합니다.
-C. New Pull Request버튼을 통해 Merge요청을 합니다.
+1. 우측 상단의 버튼을 통해 Repository를 Fork합니다. 
+2. Fork한 Repository를 통해 문서를 추가합니다.
+3. New Pull Request버튼을 통해 Merge요청을 합니다.
