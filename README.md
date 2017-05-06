@@ -29,10 +29,7 @@
 - 문서는 markdown을 통해 작성해 주세요. 
 - 문서의 이름 형태는 YYYY-MM-DD-post-name.md 과 같이 작성일, 제목을 포함한 필수정보가 필요합니다.
 
-> Github Markdown Guide
-https://guides.github.com/features/mastering-markdown/
-https://guides.github.com/features/mastering-markdown/
-https://guides.github.com/features/mastering-markdown/
+> Github Markdown Guide - https://guides.github.com/features/mastering-markdown/
 
 #### 문서를 작성하시면서 지켜주시면 좋은 것들
 
@@ -40,10 +37,11 @@ https://guides.github.com/features/mastering-markdown/
 - 카테고리는 이 주제가 왜 필요한지에 대한 readme.md 문서를 포함해야 합니다.
 - 문서의 파일명은 숫자와 영문 소문자로 이루어지고 확장자는 *.md 입니다. 파일명에 띄어쓰기가 필요할 때에는 '-' 을 사용합니다.
 
-> 시작은 부족하겠지만 꾸준하게 이어 나아갈 수 있다면, 이 습관이 결국 프로그래밍을 즐겁게 만들어 준다고 생각합니다. 언제든지 가벼운 마음으로 Pull Request 해주시면 됩니다.
+> 시작은 부족하겠지만 꾸준하게 이어 나아갈 수 있다면, 이 습관이 결국 프로그래밍을 즐겁게 만들어 준다고 생각합니다. 
+언제든지 가벼운 마음으로 Pull Request 해주시면 됩니다.
 
 #### Pull Request를 위한 절차
 
-1. 우측 상단의 버튼을 통해 Repository를 Fork합니다. 
-2. Fork한 Repository를 통해 문서를 추가합니다.
-3. New Pull Request버튼을 통해 Merge요청을 합니다.
+A. 우측 상단의 버튼을 통해 Repository를 Fork합니다. 
+B. Fork한 Repository를 통해 문서를 추가합니다.
+C. New Pull Request버튼을 통해 Merge요청을 합니다.
