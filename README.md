@@ -15,7 +15,7 @@
 | 카테고리 | 설명 |
 | --- | --- |
 | [Fundamentals](https://github.com/stunstunstun/awesome-wiki/tree/master/Fundamentals) | 개발자에게 밑천이 되는 소프트웨어 공학 전반 |
-| [Devops](https://github.com/stunstunstun/awesome-wiki/tree/master/Devops) | 개발환경 및 인프라 운영에 대한 내용 |
+| [DevOps](https://github.com/stunstunstun/awesome-wiki/tree/master/Devops) | 개발환경 및 인프라 운영에 대한 내용 |
 | [Java](https://github.com/stunstunstun/awesome-wiki/tree/master/Java) | Java의 기본지식 및 Java8에 대한 내용 |
 | [Android](https://github.com/stunstunstun/awesome-wiki/tree/master/Android) | Android 관련 카테고리|
 | [iOS](https://github.com/stunstunstun/awesome-wiki/tree/master/iOS) | Swift를 통한 iOS 개발에 관한 지식 |
