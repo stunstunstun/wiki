@@ -1,5 +1,14 @@
+---
+title: Github Page와 Hexo를 통해 30분만에 기술 블로그 만들기
+date: 2017-04-16 15:14:40
+categories: tutorials
+---
 
 이 포스팅에서는 GitHub Page를 통해 손쉽게 개발 블로그를 Hosting 해보고 Command Line 명령을 통해 쉽게 블로그를 만들 수 있는 Hexo 프레임워크를 소개하고자 합니다.
+
+<!--more-->
+
+<img src='http://www.ybrikman.com/assets/img/blog/github-pages/github-pages.png' width='500' />
 
 - GitHub Page - https://pages.github.com/
 - Hexo - https://hexo.io/
@@ -11,9 +20,6 @@
 ## Git Page로 정적 페이지 Hosting하기
 
 Git Page를 통해 손쉽게 USERNAME.github.io 도메인을 통해 정적 페이지를 호스팅(Hosting) 할 수가 있습니다.
-
-<img src='http://www.ybrikman.com/assets/img/blog/github-pages/github-pages.png' />
-
 
 #### Github Repository 생성하기
 
@@ -58,8 +64,6 @@ $ git push -u origin master
 
 아주 손쉽게 여러분의 웹페이지를 하나 만들었다. 이제는 브라우저에서 정상적으로 https://USERNAME.github.io 에 접속되는지 확인 한다.
 
-<br>
-
 ## Hexo
 
 Hexo는 Jekyll와 함께 대표적으로 정적 페이지를 쉽게 만들 수 있도록 도와주는 서비스이다. 두 서비스 역시 블로그 지향적인 서비스이며 Hexo의 경우에는 npm을 통해 쉽게 설치가 가능하고 한 줄의 Command Line을 통해 Github에 바로 배포 할 수 있으며, Jekyll과 마찬가지로 다양한 플러그인과 테마를 지원하고 있다
@@ -68,16 +72,14 @@ Hexo는 Jekyll와 함께 대표적으로 정적 페이지를 쉽게 만들 수 �
 
 <img src='http://www.devzhou.com/2016/06/04/my-first-blog/hexo-logo.png' />
 
-#### 설치하기
-
-##### Requirements
+#### 설치 전 준비
 
 Hexo를 이용하기 위해서는 먼저 아래의 구성 요소들이 사전에 설치가 되어 있어야 한다. 이미 설치가 되어 있다면 생략해도 좋다.
 
 - **[Node.js](https://nodejs.org/en/)**
 - **[Git](https://git-scm.com/)**
 
-##### Hexo CLI 설치 및 블로그 생성
+#### Hexo CLI 설치 및 블로그 생성
 
 ```bash
 $ npm install hexo-cli -g
@@ -86,13 +88,13 @@ $ cd blog
 $ npm install
 ```
 
-##### 설정파일 업데이트
+#### 설정파일 업데이트
 
-Command Line을 통해 Hexo를 설치하고 블로그 생성이 완료가 되면 root 디렉토리에 _config.yml 이라는 설정파일이 생성이 되는데 이 곳에 블로그에 대한 대부분의 설정을 할 수 있다. 이 중 중요한 설정 요소들을 소개하도록 하겠다. 나머지 설정 값에 대한 자세한 정보는 Hexo의 Document를 통해 확인이 가능하다.
+Command Line을 통해 Hexo를 설치하고 블로그 생성이 완료가 되면 root 디렉토리에 `_config.yml` 이라는 설정파일이 생성이 되는데 이 곳에 블로그에 대한 대부분의 설정을 할 수 있다. 이 중 중요한 설정 요소들을 소개하도록 하겠다. 나머지 설정 값에 대한 자세한 정보는 Hexo의 Document를 통해 확인이 가능하다.
 
 - Documentation - https://hexo.io/docs/
 
-##### Site 정보
+#### Site 정보
 
 블로그의 이름과 간략한 소개등을 수정 할 수 있다
 
@@ -103,7 +105,7 @@ description:
 author: Minhyeok Jung
 ```
 
-##### URL 정보
+#### URL 정보
 
 블로그 URL정보를 설정 할 수 있다
 
@@ -115,7 +117,7 @@ permalink_defaults:
 ```
 > 만약 본인의 Custom Domain을 적용하고 싶다면 url값은 이후에 Custom Domain 설정시 CNAME 파일을 생성 할 때도 참조한다.
 
-##### Github 정보
+#### Github 정보
 
 자신의 Git Page의 Repository 정보를 입력하면 이후에 손쉽게 배포가 가능하다.
 
@@ -169,8 +171,6 @@ $ hexo clean
 $ hexo deploy --generate
 ```
 
-<br>
-
 ## 테마 적용하기
 
 USERNAME.github.io를 통해 성공적으로 블로그 접속이 되었다면, 멋진 디자인을 적용한 테마(Theme)를 적용하고 싶을 것이다. Hexo에서는 아래의 페이지에서 다양한 Theme가 적용된 페이지를 소개하고 있다.
@@ -187,11 +187,11 @@ hexo clean
 hexo deploy --generate
 ```
 
-<br>
-
 ## 포스트 작성하기
 
-멋진 디자인의 Theme까지 적용하였다면 이제는 앞으로 블로그의 주인공이 될 기술 문서를 작성 할 일만 남았다. 아래의 Command Line을 입력하면, root 디렉토리의 source/_posts 폴더에 Markdown 파일이 하나 생성되는데 Hexo에서는 Markdown 문서를 통해 포스트를 작성해 나가면 된다.
+멋진 디자인의 Theme까지 적용하였다면 이제는 앞으로 블로그의 주인공이 될 기술 문서를 작성 할 일만 남았다. 아래의 Command Line을 입력하면, root 디렉토리의 `source/_posts` 폴더에 Markdown 파일이 하나 생성되는데 Hexo에서는 `Markdown`문서를 통해 포스트를 작성해 나가면 된다.
+
+#### 새 포스트 만들기
 
 ```bash
 $ hexo new post [post_name]
@@ -203,9 +203,13 @@ $ hexo new post [post_name]
 $ hexo new post github-page-and-hexo
 ```
 
-**아래의 경로의 Markdown 문서를 통해 포스트를 작성한다**
+**아래와 같은 경로에 Markdown 문서가 생성 된다**
 
-- /source/_posts/github-page-and-hexo.md
+```bash
+ㄴ source
+   ㄴ _posts
+          - github-page-and-hexo.md
+```
 
 **github-page-and-hexo.md 에서 아래와 같이 포스트의 제목을 수정 할 수 있다**
 
@@ -216,7 +220,11 @@ date: 2017-04-16 22:37:53
 ---
 ```
 
----
+#### Github Markdown Guide
+
+Markdown 문서가 생소하다면 아래의 링크를 확인하자
+
+> https://guides.github.com/features/mastering-markdown/
 
 ## 체크리스트
 
@@ -224,24 +232,28 @@ date: 2017-04-16 22:37:53
 
 #### Theme를 변경하고 배포시에 적용이 되지 않는 이슈
 
-이 경우에는 Hexo를 clean 하고 재배포를 합니다.
+이 경우에는 Hexo를 `clean` 하고 재배포를 합니다.
 
 ```bash
 $ hexo clean
 $ hexo deploy --generate
 ```
+
 #### 배포시에 아래와 같은 에러메세지와 함께 배포가 되지 않는 이슈
 
-> ERROR Deployer not found: git
+```bash
+ERROR Deployer not found: git
+```
 
-**hexo-deployer-git 플러그인 설치**
+**`hexo-deployer-git` 플러그인 설치**
+
 ```bash
 npm install hexo-deployer-git --save
 ```
 
-**_config.yml 에 플러그인 설정**
+**`_config.yml`에 플러그인 설정**
+
 ```yml
-## Plugins: https://hexo.io/plugins/
 plugins:
 - hexo-deployer-git
 ```
