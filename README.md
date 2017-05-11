@@ -21,7 +21,7 @@
 | [Android](https://github.com/stunstunstun/awesome-wiki/tree/master/Android) | Android 관련 카테고리 |
 | [iOS](https://github.com/stunstunstun/awesome-wiki/tree/master/iOS) | Swift를 통한 iOS 개발에 관한 지식 |
 | [Spring Framework](https://github.com/stunstunstun/awesome-wiki/tree/master/Spring) | Spring Framework에 대한 지식, Spring Boot과 Spring 5.0 에 대한 Insight |
-| [DevOps](https://github.com/stunstunstun/awesome-wiki/tree/master/Devops) | 개발환경 및 인프라 운영에 대한 내용 |
+| [DevOps](https://github.com/stunstunstun/awesome-wiki/tree/master/DevOps) | 개발환경 및 인프라 운영에 대한 내용 |
 | [Git](https://github.com/stunstunstun/awesome-wiki/tree/master/Git) | Git에 대한 사용 경험과 그 밖의 협업도구에 대한 이야기 |
 
 #### 직접 참여하고 싶으시다구요?
