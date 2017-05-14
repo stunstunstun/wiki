@@ -15,8 +15,6 @@ categories: tutorials
 
 지금 보고 계시는 블로그 역시 동일한 방법으로 30분 이내에 블로그를 개설 할 수 있었습니다. Git Page와 Hexo를 통해 개인의 기술 관련 문서를 손쉽게 관리하고 알릴 수 있기를 바랍니다.
 
----
-
 ## Git Page로 정적 페이지 Hosting하기
 
 Git Page를 통해 손쉽게 USERNAME.github.io 도메인을 통해 정적 페이지를 호스팅(Hosting) 할 수가 있습니다.
