@@ -15,6 +15,8 @@ categories: tutorials
 
 지금 보고 계시는 블로그 역시 동일한 방법으로 30분 이내에 블로그를 개설 할 수 있었습니다. Git Page와 Hexo를 통해 개인의 기술 관련 문서를 손쉽게 관리하고 알릴 수 있기를 바랍니다.
 
+---
+
 ## Git Page로 정적 페이지 Hosting하기
 
 Git Page를 통해 손쉽게 USERNAME.github.io 도메인을 통해 정적 페이지를 호스팅(Hosting) 할 수가 있습니다.
@@ -173,16 +175,17 @@ $ hexo deploy --generate
 
 USERNAME.github.io를 통해 성공적으로 블로그 접속이 되었다면, 멋진 디자인을 적용한 테마(Theme)를 적용하고 싶을 것이다. Hexo에서는 아래의 페이지에서 다양한 Theme가 적용된 페이지를 소개하고 있다.
 
-- https://hexo.io/themes/
+> https://hexo.io/themes/
 
-대부분의 Theme페이지에서는 Github 링크가 포함되어 있는데 Theme를 적용하기 위한 자세한 설명을 포함하고 있다. 안녕 프로그래밍 페이지는 아래의 apollo Theme를 적용하였다.
+대부분의 Theme 페이지에서는 Github 링크가 포함되어 있는데 Theme를 적용하기 위한 자세한 설명을 포함하고 있다. 안녕 프로그래밍은 자체 제작한 hexo-theme-chiangmai 라는 Theme를 사용하고 있다.
 
-- https://github.com/pinggod/hexo-theme-apollo
+> https://github.com/stunstunstun/hexo-theme-chiangmai
 
-**테마를 적용하기 위해서는 아래와 같이 다시 deploy를 해야한다**
+Theme를 적용하기 위해서는 hexo-theme-chiangmai Github 페이지에서 자세한 내용을 확인 할 수 있다. 주의사항으로는 Theme를 적용하기 위해서는 아래와 같이 Repository 상태를 clean한 이후에 재배포 해야만 한다.
+
 ```
-hexo clean
-hexo deploy --generate
+$ hexo clean
+$ hexo deploy --generate
 ```
 
 ## 포스트 작성하기
