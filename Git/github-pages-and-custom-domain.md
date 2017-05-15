@@ -1,28 +1,28 @@
 ---
-title: Git Pages에 Custom Domain 적용하기
+title: Github Pages에 Custom Domain 적용하기
 date: 2017-05-15 15:14:40
-desc: Git Pages 더 활용하기
+desc: Github Pages 더 활용하기
 image: https://cdn.dribbble.com/users/14268/screenshots/949452/photo-x2.png
 categories: tutorials
 ---
 
 <img src='https://cdn.dribbble.com/users/14268/screenshots/949452/photo-x2.png' width='500'>
 
-이 포스팅은 [`Github Page와 Hexo를 통해 30분만에 기술 블로그 만들기`](http://holaxprogramming.com/2017/04/16/github-page-and-hexo/) 후에 Git Pages에 새로운 Domain을 적용하는 과정을 담고 있습니다. Git Pages를 통해 블로그를 만들고 싶다면 먼저 위의 글을 참고해주세요. 자 그럼 시작해 볼까요, 기본적으로 Git Pages를 통해 정적 페이지(Static Page)를 호스팅(Hosting)하는 경우에는 아래와 같은 도메인(Domain)을 제공 받게 됩니다.
+이 포스팅은 [`Github Pages와 Hexo를 통해 30분만에 기술 블로그 만들기`](http://holaxprogramming.com/2017/04/16/github-page-and-hexo/) 후에 Github Pages에 새로운 Domain을 적용하는 과정을 담고 있습니다. Github Pages를 통해 블로그를 만들고 싶다면 먼저 위의 글을 참고해주세요. 자 그럼 시작해 볼까요, 기본적으로 Github Pages를 통해 정적 페이지(Static Page)를 호스팅(Hosting)하는 경우에는 아래와 같은 도메인(Domain)을 제공 받게 됩니다.
 
 ```
 USERNAME.github.io
 ```
 
-그렇다면 직접 DNS을 구입해 Git Pages에 적용 할 수는 없을까요? Github에서는 Custom DNS를 통해서 새로운 Domain을 Git Pages에 적용 할 수 있도록 하고 있습니다. 지금 보시는 블로그 역시 같은 방법으로 github.io 에서 Custom Domain으로 변경하여 운영하고 있습니다.
+그렇다면 직접 DNS을 구입해 Github Pages에 적용 할 수는 없을까요? Github에서는 Custom DNS를 통해서 새로운 Domain을 Github Pages에 적용 할 수 있도록 하고 있습니다. 지금 보시는 블로그 역시 같은 방법으로 github.io 에서 Custom Domain으로 변경하여 운영하고 있습니다.
 
-## Git Pages 설정
+## Github Pages 설정
 
-Git Pages의 Repository 메뉴의 `Settings > Options > Github Pages` 로 이동:
+Github Pages의 Repository 메뉴의 `Settings > Options > Github Pages` 로 이동:
 
 <img src='http://image.toast.com/aaaaahq/git-page-ssl.png' />
 
-Git Pages 메뉴의 Custom domain을 자신이 소유하고 있는 Domain 주소로 변경하면, Repository의 Root 디렉토리에 아래와 같이 [`CNAME`](https://en.wikipedia.org/wiki/CNAME_record) 파일이 생성 됩니다. 이후에는 USERNAME.github.io 접근되는 요청은 변경된 Domain으로 Redirect 됩니다.
+Github Pages 메뉴의 Custom domain을 자신이 소유하고 있는 Domain 주소로 변경하면, Repository의 Root 디렉토리에 아래와 같이 [`CNAME`](https://en.wikipedia.org/wiki/CNAME_record) 파일이 생성 됩니다. 이후에는 USERNAME.github.io 접근되는 요청은 변경된 Domain으로 Redirect 됩니다.
 
 **CNAME**
 ```
@@ -38,7 +38,7 @@ https://github.com/holaxapps/holaxapps.github.io/blob/master/CNAME
 
 #### Host Record 설정
 
-Github에서는 Git Pages에서 Custom Domain을 사용할 경우에 DNS 설정을 아래와 같이 반영할 것을 요구하고 있습니다. Advanced DNS Guide: If your custom domain name is `example.com` you need to modify the Host records information as shown below.
+Github에서는 Github Pages에서 Custom Domain을 사용할 경우에 DNS 설정을 아래와 같이 반영할 것을 요구하고 있습니다. Advanced DNS Guide: If your custom domain name is `example.com` you need to modify the Host records information as shown below.
 
 Type | Host | Value
 --|--|--
