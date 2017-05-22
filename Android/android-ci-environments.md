@@ -1,18 +1,18 @@
 ---
 title: Android CI 환경 구축하기
 date: 2014-12-29 16:05:18
-desc: Android 프로젝트를 효율적으로 관리하기
+desc: Linux환경에서 Android 프로젝트 빌드하기
 image: https://bluefletch.com/wp-content/uploads/2015/03/header_image.jpg
 categories: android
 ---
 
-이 글에서는 개발자의 IDE에서 벗어나 독립적으로 Linux 운영체제에서 Jenkins를 통해 Android 프로젝트의 빌드 및 배포를 자동화하기 위한 시작을 살펴보고, 지속적인 통합을 위한 빌드 환경에 대한 이야기를 해볼까 한다.
+이 글에서는 로컬PC의 IDE에서 벗어나 독립적으로 Linux와 같은 운영체제에서 Jenkins를 통해 Android 프로젝트를 빌드하는 과정을 살펴볼 예정이다.
 
 <!--more-->
 
 <img src='https://bluefletch.com/wp-content/uploads/2015/03/header_image.jpg' width='500' />
 
-> 빌드 환경 구성을 위하 시스템 환경은 아래와 같다.
+> 빌드 환경 구성을 위한 시스템 환경은 아래와 같다.
 
 구성 요소 | 설명
 --|--
@@ -22,7 +22,7 @@ Build Tools | Jenkins, Gradle 2.1
 
 ## IDE 독립적인 빌드 환경은 왜 필요할까?
 
-별도의 빌드 머신이나 AWS의 EC2 인스턴스에서 쉽게 빌드 환경을 구성 할 수가 있는데, 애플리케이션을 개발자의 IDE 뿐만 아니라 별도의 환경에서 빌드 할 수 있어야 하는 이유는 다음과 같다.
+별도의 빌드 머신이나 AWS의 EC2 인스턴스에서 쉽게 빌드 환경을 구성 할 수가 있는데, 애플리케이션을 개발자의 IDE 뿐만 아니라 독립적인 환경에서 빌드 할 수 있어야 하는 이유는 다음과 같다.
 
 <img src='http://image.toast.com/aaaaahq/android-ci-environments.png' />
 
@@ -90,7 +90,7 @@ $ android update --no-ui
 아래와 같이 필요한 패키지만을 선택해서 설치 할 수 있다.
 
 ```
-$ android update sdk -u --filter platform-tools,android-19
+$ android update sdk -u --filter platform-tools, android-19
 ```
 
 설치 가능한 패키지는 아래와 같이 확인이 가능 한다.
@@ -100,7 +100,7 @@ $ android list sdk --all
 $ android update sdk -u --all --filter <number>
 ```
 
-> 만약, OS가 64bit라면, 아래와 같이 32bit 라이브러리의 설치가 필요 할수도 있다.
+<div class="tip">만약, OS가 64bit라면, 아래와 같이 32bit 라이브러리의 설치가 필요 할수도 있다</div>
 
 ```
 $ sudo yum install libstdc++.i686
@@ -110,11 +110,11 @@ $ sudo yum install zlib.i686
 
 #### Jenkins에 Gradle 연동하기
 
-이 글에서는 Jenkins에 대한 구체적인 설명이나 설치 방법을 생략한다. 이미 Jenkins를 사용해 본 경험이 있는 개발자를 대상으로 한다. 그렇지 않다면 아래의 링크를 통해서 Jenkins를 설치 할 수 있다.
+이 글에서는 Jenkins에 대한 구체적인 설명이나 설치 방법을 생략한다. Jenkins를 사용해 본 경험이 없다면 아래의 링크를 통해서 자신이 필요한 운영체제에 Jenkins를 설치 할 수 있다.
 
 > https://jenkins.io/
 
-Jenkins의 운영 화면을 통해서 `관리` > `시스템 설정` 메뉴에서 아래와 같이 설치한 Android SDK 와 Gradle에 대한 설정을 한다.
+Jenkins의 운영 화면을 통해서 `관리`-`시스템 설정`메뉴에서 아래와 같이 설치한 Android SDK 와 Gradle에 대한 설정을 한다.
 
 #### Android SDK 경로 지정
 
@@ -142,7 +142,7 @@ Environment Injector Plugin은 빌드시에 필요한 운영체제의 환경 변
 <img src='http://cfile22.uf.tistory.com/image/2435564654A13D7A2CF1B0' />
 
 
-## Android 와 Gradle
+## Android Studio와 Gradle
 
 빌드 서버에서 Android 프로젝트를 빌드하기 위한 기본적인 구성이 마련되었다면, 애플리케이션 또는 라이브러리를 배포하기 위한 요구사항이나 빌드에 필요한 프로세스를 먼저 정의할 필요가 있다.
 
@@ -161,11 +161,12 @@ IDE 독립적으로 빌드할 수 있는 환경이 갖추어지면 위와 같은
 > https://gradle.org/
 
 
-## Jenkins를 통한 QP 관리를 위한 플러그인
+## Jenkins를 통해 지속적인 통합하기
 
-마지막으로 Jenkins의 다양한 플러그인과 Gradle을 통해 지속적으로 프로젝트의 Quality Practice를 위한 전략을 살펴보겠다.
+마지막으로 Jenkins의 다양한 플러그인과 Gradle을 통해 프로젝트를 지속적으로 통합하기 위한 전략을 살펴보겠다.
 
-Quality Practice는 빌드와 배포과정을 자동화하는 것 뿐만 아니라 지속으로 프로젝트의 품질을 자동으로 평가하는 것을 말한다.
+> 지속적으로 통합하기
+빌드와 배포 과정을 자동화하는 것 뿐만 아니라 지속적으로 프로젝트의 품질을 자동으로 평가하는 것을 말한다.
 
 #### jacoco를 통한 테스트 Coverage 측정
 
@@ -179,7 +180,7 @@ Gradle 스크립트에서 아래와 같이 jacoco task를 추가한다.
 
 ```groovy
 apply plugin: 'jacoco'
-...
+
 task jacocoTestReport(type: JacocoReport, dependsOn: "testDebug") {
     group = "Reporting"
     description = "Generate Jacoco coverage reports after running tests."
@@ -201,8 +202,10 @@ task jacocoTestReport(type: JacocoReport, dependsOn: "testDebug") {
 }
 ```
 
-Jenkins에서 jacoco 플러그인을 설치하고 연동하면 빌드가 완료 되면, 아래와 같이 테스트 Coverage 리포트를 확인 할 수 있다.
+Jenkins에 jacoco 플러그인을 설치한 뒤 Gradle Task를 통해 빌드가 완료 되면, 아래와 같이 테스트 Coverage 리포트를 확인 할 수 있다.
 
 <img src='http://cfile24.uf.tistory.com/image/2225B24154A13D89116569' />
+
+#### 마치며
 
 지금까지 IDE를 벗어나서 Android 프로젝트를 빌드하고 지속적인 통합을 위한 환경을 구성해 보았다. 이 문서를 시작으로 빌드 환경에 대한 필요성을 인식하고 활용 할 수 있는 환경을 갖추고 앞으로 Gradle에 대한 이해를 높혀 나간다면 빌드 프로세스에서 발생하는 다양한 요구사항을 효율적으로 해결 할 수 있을 것이라고 본다.
