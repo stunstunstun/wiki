@@ -1,30 +1,39 @@
-## AWS RDS
+---
+title: AWS RDS 시작하기
+date: 2016-10-22 22:37:31
+desc: Amazon Web Service의 든든한 저장소
+image: https://1.bp.blogspot.com/-5HaWl2nXjtc/Vx9EPVBhwHI/AAAAAAAAEto/HffgsQazTgALl0MjjVE_pBaNX5QJjSN7ACLcB/s1600/Amazon-RDS%2B%25281%2529.png
+categories: devops
+---
 
-AWS RDS는 Relational Database Service로 말그대로 AWS의 클라우드 환경에서 관계형 데이터베이스를 운영하기 위한 초기설정, 운영, 스케일링을 쉽게할 수 있도록 도와주는 서비스이다.
+AWS RDS는 Relational Database Service로 문자 그대로 AWS의 클라우드 환경에서 관계형 데이터베이스를 운영하기 위한 초기 설정, 운영, 스케일링을 쉽게 할 수 있도록 도와주는 서비스이다.
 
-![new](http://image.slidesharecdn.com/dat304-151009185056-lva1-app6891/95/dat304-amazon-rds-for-mysql-best-practices-2-638.jpg)
+<!--more-->
 
+<img src='https://1.bp.blogspot.com/-5HaWl2nXjtc/Vx9EPVBhwHI/AAAAAAAAEto/HffgsQazTgALl0MjjVE_pBaNX5QJjSN7ACLcB/s1600/Amazon-RDS%2B%25281%2529.png' />
 
-<br>
+## RDS의 최근 New Features
+
+<img src='https://image.slidesharecdn.com/dat304-151009185056-lva1-app6891/95/dat304-amazon-rds-for-mysql-best-practices-2-638.jpg' width='500' />
 
 ## 시작하기
 
-먼저 AWS RDS를 사용하기 위해서는 Services 메뉴에서 **Database > RDS**  를 선택해야 한다. 
+먼저 AWS RDS를 사용하기 위해서는 Services 메뉴에서 `Database` > `RDS`를 선택한다.
 
 - https://console.aws.amazon.com/rds/
 
-Launch a DB Instance 버튼을 통해 새로운 DB Instance를 생성 할 수 있으며 이 문서에는 MySQL를 선택하여 가상서버를 생성하고 MySQL Workbench를 통해 DB서버에 접근하는 방법을 알아보도록 하겠다.
+`Launch a DB Instance` 버튼을 통해 새로운 DB Instance를 생성 할 수 있으며 이 문서에는 MySQL를 선택하여 가상서버를 생성하고 MySQL Workbench를 통해 DB서버에 접근하는 방법을 알아보도록 하겠다.
 
-### DB Instance 생성하기
+#### DB Instance 생성하기
 
 AWS RDS에서는 아래와 같은 종류의 Engine을 제공하고 있다. 이 문서에서는 MySQL 인스턴스를 생성하도록 하겠다.
 
-- Amazon Aurora 
-- MySQL 
-- Maria DB 
-- PostgreSQL 
-- Oracle DB 
-- SQL Server 
+- Amazon Aurora
+- MySQL
+- Maria DB
+- PostgreSQL
+- Oracle DB
+- SQL Server
 
 ![aws-rds](http://image.toast.com/aaaaahq/aws-rds-1.png)
 
@@ -49,14 +58,11 @@ Settings 메뉴에서는 DB Instance의 이름과 관리자 계정을 생성 할
 
 ![e](http://image.toast.com/aaaaahq/aws-rds-5.png)
 
-
-<br>
-
 ## Advanced Config
 
 지금까지 AWS RDS DB Instance를 생성하기 위한 대부분의 과정을 거쳤고, Security Group과 Monitoring, Back-Up에 대한 정책을 설정 하는 것으로 Instance 생성을 마치게 된다.
 
-### Security Group 생성하기
+#### Security Group 생성하기
 
 그 중 꼭 체크해야 할 부분이 Security Group에 대한 설정인데, DB Instance 생성을 마치고 Client에서 가상서버에 접속이 되지 않아 당황스러울 수가 있는데 대부분이 Security Group에 대한 설정이 잘못된 경우가 많다.
 
@@ -65,8 +71,6 @@ Settings 메뉴에서는 DB Instance의 이름과 관리자 계정을 생성 할
 예를 들어 아래과 같이 설정하면 모든 외부 IP에서 3306 Port에 대하여 접근을 허용하게 된다. 실제 운영서버를 관리한다면 Inbound 설정을 통해 접근 할 수 있는 IP를 애플리케이션 서버로 제한하는 것을 추천한다.
 
 ![f](http://image.toast.com/aaaaahq/aws-rds-7.png)
-
-<br>
 
 ## MySQL Workbench
 
@@ -93,11 +97,8 @@ Test Connection 버튼을 눌러보자. 아래와 같이 성공적인 메세지�
 - AWS RDS의 DB Instance의 Status가 available 상태인지 확인
 - Security Group의 정상적으로 설정되어 있는지 확인
 
-<br>
-
 ## References
 
 - https://aws.amazon.com/documentation/rds/
 - http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html
 - http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_BestPractices.html
-
