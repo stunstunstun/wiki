@@ -3,7 +3,7 @@ title: Github Pages에 Custom Domain 적용하기
 date: 2017-05-15 15:14:40
 desc: Github Pages 더 활용하기
 image: https://cdn.dribbble.com/users/14268/screenshots/949452/photo-x2.png
-categories: tutorials
+categories: git
 ---
 
 <img src='https://cdn.dribbble.com/users/14268/screenshots/949452/photo-x2.png' width='500'>
