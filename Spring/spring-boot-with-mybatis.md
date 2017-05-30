@@ -1,3 +1,10 @@
+---
+title: Spring Boot의 Java Config, myBatis를 통해 Datasource 연동하기
+date: 2016-09-18 15:14:40
+desc: 예제 중심의 Spring Boot 시작하기
+categories: spring-boot
+---
+
 ## Overview
 
 이 문서에서는 myBatis 를 Spring Boot 애플리케이션에 통합하기 위한 방법을 설명하고자 합니다. myBatis 에서는 Spring 과의 연동을 위한 mybatis-spring 모듈을 제공하고 있으며, 아래의 링크에서 한글화된 메뉴얼도 제공하고 있는 상태입니다.

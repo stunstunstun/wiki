@@ -1,3 +1,8 @@
+---
+title: 시간복잡도와 빅오표기법
+date: 2014-04-20 11:54:07
+categories: Fundamentals
+---
 
 <img src='https://i1.wp.com/texblog.org/Wordpress/wp-content/uploads/2014/06/big-o-example-latex.png' />
 

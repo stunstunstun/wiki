@@ -1,3 +1,9 @@
+---
+title: Google Analystics 활용하기
+date: 2013-01-31 11:54:07
+categories: Fundamentals
+---
+
 ## Overview
 
 보통 웹사이트의 페이지에서 유저의 행동을 추적하기 위한 통계 정보을 위해서 Google Analystic 를 사용하곤 한다. 그 중 예를 들면 사용자가 게임 스타트 버튼을 클릭하거나, 특정 카테고리의 어떤 메뉴를 선택했는지에 대한 Tracking 이 가능한 것이 가장 눈에 띄였다. Dev Guide 에서는 Event Tracking 이라는 메뉴를 살펴보면 된다.

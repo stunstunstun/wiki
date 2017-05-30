@@ -1,3 +1,10 @@
+---
+title: Spring Boot의 JDBC를 통해 Database 연동하기
+date: 2016-09-16 15:14:40
+desc: 예제 중심의 Spring Boot 시작하기
+categories: spring-boot
+---
+
 ## Overview
 
 이 문서에서는 Spring Boot 애플리케이션에서 JDBC를 사용하기 위한 방법을 설명하고자 합니다.
