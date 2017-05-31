@@ -30,6 +30,14 @@ git mv {filename} {new-filename}
 git checkout -- {filename}
 ```
 
+**Diff**
+
+```
+git diff 
+git diff --name-only 
+git diff {filename}
+```
+
 **Remote**
 
 ```
