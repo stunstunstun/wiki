@@ -131,12 +131,10 @@ public class ExampleController {
 Hello World With Spring Loaded!
 ```
 
-<br>
-
 #### References
 
-> Spring Boots How to Hot Swapping - http://docs.spring.io/spring-boot/docs/current/reference/html/howto-hotswapping.html
-Hot Swapping in STS - http://blog.netgloo.com/2014/05/21/hot-swapping-in-spring-boot-with-eclipse-sts/
+> http://docs.spring.io/spring-boot/docs/current/reference/html/howto-hotswapping.html
+http://blog.netgloo.com/2014/05/21/hot-swapping-in-spring-boot-with-eclipse-sts/
 
 
 
