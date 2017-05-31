@@ -48,6 +48,7 @@ Gradle | 3.5
 - Embedded servlet containers를 통해 WAS 독립적인 배포하기
 - 시스템 환경변수와 @Profile를 이용한 배포 환경 구분하기 
 - 통합 테스트
+- Spring Loaded로 로컬 개발환경 개선하기
 
 #### Spring Boot 예제 프로젝트 모음
 

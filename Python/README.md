@@ -1,5 +1,6 @@
 ## Contents
 
+- [Installing Jupyter Notebook](https://jupyter.readthedocs.io/en/latest/install.html)
 - [Python Docs](https://docs.python.org/3/)
 - [Learn Python the Hard Way](https://learnpythonthehardway.org/book/ex0.html)
 - [Guide to Python](http://docs.python-guide.org/en/latest/)
