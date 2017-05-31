@@ -26,8 +26,8 @@ Gradle | 3.5
 #### 준비하기
 
 - [Spring Boot 시작하기](https://github.com/stunstunstun/awesome-wiki/blob/master/Spring/spring-boot-get-started.md)
-- STS IDE를 통한 개발환경 준비
-- Gradle를 통해 프로젝트를 효율적으로 관리하자 
+- [STS IDE를 통한 개발환경 준비](https://github.com/stunstunstun/awesome-wiki/blob/master/Spring/spring-boot-environments.md)
+- [Gradle를 통해 프로젝트를 효율적으로 관리하자](https://github.com/stunstunstun/awesome-wiki/blob/master/Spring/spring-boot-and-gradle.md) 
 - Github를 통해 맘껏 뛰어 놀기
 
 #### 중요한 내용은 예제로 살펴보자
@@ -48,7 +48,7 @@ Gradle | 3.5
 - Embedded servlet containers를 통해 WAS 독립적인 배포하기
 - 시스템 환경변수와 @Profile를 이용한 배포 환경 구분하기 
 - 통합 테스트
-- Spring Loaded로 로컬 개발환경 개선하기
+- [Spring Loaded로 로컬 개발환경 개선하기](https://github.com/stunstunstun/awesome-wiki/blob/master/Spring/spring-boot-and-loaded.md)
 
 #### Spring Boot 예제 프로젝트 모음
 
