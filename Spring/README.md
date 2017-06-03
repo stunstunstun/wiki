@@ -46,12 +46,12 @@ Gradle | 3.5
 
 #### 나아가서
 
-- 앞으로 무엇을 하면 좋을까?
-- Spring Boot과 테스트
-- 자동화로 쿨하게 개발하자! Travis CI와 연동하기
-- 소중한 정보를 지키는 습관 Logging
-- 외부 서비스와 연동하기 위한 RestTemplate
-- 시스템 환경변수와 `@Profile`를 이용한 배포 환경 구분하기
+- [앞으로 무엇을 하면 좋을까?](https://github.com/stunstunstun/awesome-wiki/blob/master/Spring/spring-boot-what-is-next.md) 
+- [Spring Boot과 테스트](https://github.com/stunstunstun/awesome-wiki/blob/master/Spring/spring-boot-test.md) 
+- [자동화로 쿨하게 개발하자! Travis CI와 연동하기](https://github.com/stunstunstun/awesome-wiki/blob/master/Spring/spring-boot-with-travis-ci.md) 
+- [소중한 정보를 지키는 습관 Logging](https://github.com/stunstunstun/awesome-wiki/blob/master/Spring/spring-boot-logging.md) 
+- [외부 서비스와 연동하기 위한 RestTemplate](https://github.com/stunstunstun/awesome-wiki/blob/master/Spring/spring-boot-rest-template.md) 
+- [시스템 환경 변수와 Profile를 이용한 Properties 관리](https://github.com/stunstunstun/awesome-wiki/blob/master/Spring/spring-boot-properties.md) 
 - [클라우드 서비스에 배포하기 AWS, Cloud Foundry](https://github.com/stunstunstun/awesome-wiki/blob/master/Spring/spring-boot-deploying.md) 
 - [Spring Loaded로 로컬 개발환경 개선하기](https://github.com/stunstunstun/awesome-wiki/blob/master/Spring/spring-boot-and-loaded.md)
 

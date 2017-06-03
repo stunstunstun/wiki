@@ -1,8 +1,18 @@
+---
+title: Spring Boot과 Spring MVC
+date: 2015-11-20 15:14:40
+desc: Spring Boot 레시피
+categories: spring-boot
+---
 
-## 효율적으로 REST API를 제공하자
+## Spring Boot과 Spring MVC
 
-- Spring Boot MVC
-- Exception Handling with @ControllerAdvice
+## RESTful API
+
+## Exception Handling
+
+- @ExceptionHandler
+- @ControllerAdvice
 
 #### References
 
