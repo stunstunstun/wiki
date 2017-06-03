@@ -1,4 +1,8 @@
-## Python 학습을 위한 개발환경 준비
+---
+title: Python 설치부터 PyPI 업로드까지
+date: 2017-04-30 00:24:49
+categories: Python 활용하기
+---
 
 먼저 Python을 통해 애플리케이션 개발을 하기 위한 환경을 준비하는 것으로 시작합니다. 그리고 이후 간단한 테스트 케이스를 작성하면서 Python의 기본적인 개념을 살펴볼까 합니다.
 
@@ -43,6 +47,8 @@ TDD에 대해 더욱 자세히 알고 싶다면 Kent Beck의 Test Driven Develop
 ## Coverage
 
 ## Coding Convention
+
+## PyPI? 
 
 ## 오픈소스?
 

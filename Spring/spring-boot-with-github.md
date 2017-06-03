@@ -1,7 +1,7 @@
 ---
 title: Github를 통해 맘껏 뛰어놀기
 date: 2016-09-12 15:14:40
-desc: 예제 중심의 Spring Boot 시작하기
+desc: Spring Boot 레시피
 categories: spring-boot
 ---
 
