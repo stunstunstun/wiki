@@ -27,7 +27,10 @@
 - 우리에게 익숙한 HTML
 - HTML을 이쁘게 만들어주는 CSS
 - HTML5와 CSS3
-
+- Javascript
+- (...)
+- (...)
+- Github로 친구들에게 `웹사이트`와 `챗봇` 자랑하기
 
 ## 그 밖의 Python 정보들
 
