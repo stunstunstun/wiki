@@ -1,13 +1,5 @@
-## Contents
 
-- [Installing Jupyter Notebook](https://jupyter.readthedocs.io/en/latest/install.html)
-- [Python Docs](https://docs.python.org/3/)
-- [Learn Python the Hard Way](https://learnpythonthehardway.org/book/ex0.html)
-- [Guide to Python](http://docs.python-guide.org/en/latest/)
-- [점프 투 파이썬](https://wikidocs.net/book/1)
-- [Python 학습을 위한 개발환경 준비](https://github.com/stunstunstun/awesome-wiki/blob/master/Python/python-get-started.md)
-
-## Python으로 시작하는 프로그래밍
+## 안녕 프로그래밍
 
 - [스몰스텝, 프로그래밍을 시작하는 작은 습관](https://github.com/stunstunstun/awesome-wiki/blob/master/Python/hola-programming-get-started.md)
 - [프로그래밍 언어에 대해 소개합니다](https://github.com/stunstunstun/awesome-wiki/blob/master/Python/hola-programming-chapter-01.md)
@@ -29,3 +21,12 @@
 - [페이스북 메신저 플랫폼](https://github.com/stunstunstun/awesome-wiki/blob/master/Python/hola-programming-project-03.md)
 - [Ping-Pong 챗봇 만들기](https://github.com/stunstunstun/awesome-wiki/blob/master/Python/hola-programming-project-04.md)
 - [한<>영 번역을 도와주는 챗봇 만들기](https://github.com/stunstunstun/awesome-wiki/blob/master/Python/hola-programming-project-05.md)
+
+## 그 밖의 Python 정보들
+
+- [Installing Jupyter Notebook](https://jupyter.readthedocs.io/en/latest/install.html)
+- [Python Docs](https://docs.python.org/3/)
+- [Learn Python the Hard Way](https://learnpythonthehardway.org/book/ex0.html)
+- [Guide to Python](http://docs.python-guide.org/en/latest/)
+- [점프 투 파이썬](https://wikidocs.net/book/1)
+- [Python 학습을 위한 개발환경 준비](https://github.com/stunstunstun/awesome-wiki/blob/master/Python/python-get-started.md)
