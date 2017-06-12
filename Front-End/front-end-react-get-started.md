@@ -54,7 +54,44 @@ my-app/
     logo.svg
 ```
 
-### References
+
+`public/index.html`
+
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <title>Hola Bookmarks</title>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
+```
+
+`index.js`
+
+package.json을 통해 index 페이지에서는 아래와 같은 ES6 문법을 통해 React 패키지를 참조 할 수 있다
+
+```javascript
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import './index.css';
+
+ReactDOM.render(
+  <App />,
+  document.getElementById('root')
+);
+```
+
+
+
+
+#### References
 
 - https://facebook.github.io/react/
 - https://facebook.github.io/react/tutorial/tutorial.html

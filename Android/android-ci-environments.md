@@ -36,6 +36,9 @@ Build Tools | Jenkins, Gradle 2.1
 
 먼저 Eclipse나 Android Studio와 같은 IDE 독립적으로 안드로이드 프로젝트를 빌드 하기 위해서는 빌드를 수행할 빌드 머신 또는 빌드 서버가 필요하다. 이 글에서는 운영체제가 CentOS인 환경을 시작으로 그 밖에 필요한 것들을 살펴보도록 하겠다.
 
+- Android SDK 설치
+- Jenkins에 Gradle 플러그인 설치
+
 #### Android SDK 설치 및 환경 설정
 
 빌드를 수행할 운영체제에 Android SDK를 설치하는 일이 가장 먼저이다. Android Developer 페이지에서 CentOS와 같은 Linux 환경을 위한 Android SDK를 다운 받을 수 있다.
@@ -108,7 +111,7 @@ $ sudo yum install ncurses-libs.i686
 $ sudo yum install zlib.i686
 ```
 
-#### Jenkins에 Gradle 연동하기
+#### Jenkins에 Gradle 플러그인 설치
 
 이 글에서는 Jenkins에 대한 구체적인 설명이나 설치 방법을 생략한다. Jenkins를 사용해 본 경험이 없다면 아래의 링크를 통해서 자신이 필요한 운영체제에 Jenkins를 설치 할 수 있다.
 
@@ -118,11 +121,11 @@ Jenkins의 운영 화면을 통해서 `관리`-`시스템 설정`메뉴에서 �
 
 #### Android SDK 경로 지정
 
-<img src='http://cfile4.uf.tistory.com/image/252C244154A13D5B062153' />
+운영체제에 설치된 Android SDK의 Path를 지정한다
 
 #### Gradle 설치
 
-<img src='http://cfile30.uf.tistory.com/image/22213A3F54A13D6A17167B' />
+플러그인을 통해 Jenkins에서 사용할 Gradle을 설치할 수 있다. 하지만 빌드시에는 Gradle를 따로 설치할 필요가 없는 Gradle Wrapper로 빌드하는 것을 추천한다.
 
 ## Gradle 플러그인 설정
 
@@ -138,9 +141,6 @@ Jenkins 플러그인 중 Jenkins Gradle Plugin을 설치하면, 빌드 서버에
 #### Environment Injector Plugin
 
 Environment Injector Plugin은 빌드시에 필요한 운영체제의 환경 변수를 동적으로 inject 시키는 역할을 한다. 아래와 같이 Gradle에서 참조해야 할 환경 변수를 위해 `Inject environment variables to the build process > Properties Content`에 Android SDK의 경로를 추가해 준다.
-
-<img src='http://cfile22.uf.tistory.com/image/2435564654A13D7A2CF1B0' />
-
 
 ## Android Studio와 Gradle
 
@@ -159,7 +159,6 @@ IDE 독립적으로 빌드할 수 있는 환경이 갖추어지면 위와 같은
 
 > https://developer.android.com/studio/intro/index.html
 > https://gradle.org/
-
 
 ## Jenkins를 통해 지속적인 통합하기
 
@@ -202,9 +201,7 @@ task jacocoTestReport(type: JacocoReport, dependsOn: "testDebug") {
 }
 ```
 
-Jenkins에 jacoco 플러그인을 설치한 뒤 Gradle Task를 통해 빌드가 완료 되면, 아래와 같이 테스트 Coverage 리포트를 확인 할 수 있다.
-
-<img src='http://cfile24.uf.tistory.com/image/2225B24154A13D89116569' />
+Jenkins에 jacoco 플러그인을 설치한 뒤 Gradle Task를 통해 빌드가 완료되면, 플러그인을 통해 테스트 Coverage 리포트를 확인할 수 있다.
 
 #### 마치며
 

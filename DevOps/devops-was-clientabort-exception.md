@@ -28,11 +28,20 @@ abort 미국식 [ə|bɔ:rt] 발음듣기 영국식 [ə|bɔ:t] 발음듣기 예�
 
 실제로 재현해보는 과정이 필요해 보았고 `ClientAbortException`을 발생시키기 위한 재현 시나리오는 아래와 같다.
 
+`시나리오 A`
+
 - 클라이언트에서 서버에 HTTP 요청이 된다
-- HTTP 응답을 받기 전에 동일한 클라이언트에서 다시 HTTP 요청을 한다
+- HTTP 응답을 받기 전에 동일한 End-point에 대한 HTTP 요청을 한다
+
+`시나리오 B`
+
+- 클라이언트에서 서버에 파일 업로드와 같은 비교적 긴 HTTP 요청을 한다
+- 웹 브라우져 또는 모바일 클라이언트에서 요청이 진행되는 중에 강제로 HTTP 요청을 중지한다
 
 #### 어떻게 해결해야 할까?
 
 먼저 ClientAbortException은 서버 애플리케이션에서 발생하는 버그가 아니다. 서버 애플리케이션에서는 ClientAbortException을 로그 범위에서 WARN 레벨로 변경하는 것 정도이며, 클라이언트에서 위와 같은 시나리오가 발생되는 것은 정상적인 케이스가 아니기 때문에 클라이언트에서 HTTP 응답을 받기 전에 동일한 HTTP 요청을 하는 것에 대한 Secure 대책이 필요해 보인다.
 
+#### References
 
+- https://tomcat.apache.org/tomcat-6.0-doc/api/org/apache/catalina/connector/ClientAbortException.html

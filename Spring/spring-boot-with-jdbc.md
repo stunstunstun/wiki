@@ -14,6 +14,8 @@ categories: spring-boot
 - Spring Boot에서의 DataSource 설정
 - Using JdbcTemplate
 
+## 먼저 Spring Boot 이전의 JDBC는?
+
 
 ## spring-boot-starter-jdbc
 

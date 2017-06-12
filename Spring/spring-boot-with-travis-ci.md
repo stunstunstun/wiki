@@ -4,3 +4,6 @@ date: 2016-11-29 15:14:40
 desc: 예제 중심의 Spring Boot 시작하기
 categories: spring-boot
 ---
+
+#### References
+> https://dzone.com/articles/travis-ci-tutorial-java-projects

@@ -6,7 +6,7 @@ image: https://plugins.gradle.org/shared-assets/shared/images/gradle-logo-horizo
 categories: spring-boot
 ---
 
-이전 글에서는 Spring Boot 애플리케이션을 개발하기 위해 Java, Gradle 환경을 구성하였다. 앞으로 성공적으로 프로젝트를 관리하기 위해서는 Gradle이라는 빌드도구와 친해질 필요가 있다.
+이전 글에서는 Spring Boot 애플리케이션을 개발하기 위해 Java, Gradle 환경을 구성하였다. 앞으로 성공적으로 프로젝트를 관리하기 위해서는 Gradle이라는 빌드 도구와 친해질 필요가 있다.
 
 <img src='https://gradle.org/images/homepage/gradle-org-hero.png' width='600' />
 
@@ -18,27 +18,34 @@ categories: spring-boot
 
 > 소규모의 스타트업부터 대표적으로 안드로이드, 넷플릭스, 링크드인과 같은 대규모의 서비스에서도 Gradle을 통해 프로젝트를 빌드하고 있다.
 
+이번 글에서의 우리의 목표는 생소한 Gradle과 첫 인사를 하는 것이다. 그 시작으로 Spring Boot과 JPA를 통해 Database와 연동하는 간단한 예제를 만들어 보겠다.
+
 #### STS IDE에서 Gradle 프로젝트 생성하기
 
-먼저 STS IDE를 통해서 프로젝트를 생성하는 방법을 알아보고 그 밖에 웹페이지, Spring Boot의 CLI를 통해 생성하는 방법도 살펴보자. IDE의 메뉴 `New Project > Spring Starter Project`를 통해 프로젝트를 생성할 수 있다.
+Gradle 프로젝트를 생성하는 방법은 다양한데, 먼저 IDE를 통해서 프로젝트를 생성하는 방법을 알아보고 그 밖에 웹페이지, Spring Boot의 CLI를 통해 생성하는 방법도 살펴보자. STS IDE를 실행하고 메메뉴의 `New Project > Spring Starter Project`를 통해 프로젝트를 생성할 수 있다.
 
-![create-project-1](http://image.toast.com/aaaaahq/create-boot-1.png)
-
-Spring Staters는 일종의 특정 기능을 제공하기 위한 세트인데, 이전과 같이 샘플 코드에서 모듈의 의존 관계를 설정하기 위해 코드를 Copy & Paste 할 필요가 없다. 프로젝트의 사용 목적에 따라 Spring Boot에서 제공하는 Starter를 선택하여 프로젝트를 생성하면 된다. 예를 들면 Spring과 JPA를 통해 Database에 접근이 필요한 애플리케이션을 만들고 싶다면 `spring-boot-starter-data-jpa`를 프로젝트에 추가하는 것만으로 모든 것이 해결된다.
+`spring staters`는 일종의 특정한 기능을 제공하기 위한 Module의 모음으로 이전과 같이 샘플 코드에서 Module의 의존 관계를 설정하기 위해 코드를 Copy & Paste 할 필요가 없다. 프로젝트의 사용 목적에 따라 Spring Boot에서 제공하는 starter를 선택하여 프로젝트를 생성하면 된다. 예를 들면 Spring과 JPA를 통해 Database에 접근이 필요한 애플리케이션을 만들고 싶다면 `spring-boot-starter-data-jpa`를 프로젝트에 추가하는 것만으로 모든 것이 해결된다.
 
 ![create-project-2](http://image.toast.com/aaaaahq/create-boot-2.png)
 
 #### Spring Boot Initializr 페이지에서 프로젝트 생성하기
 
-`spring.io`에서는 Spring Boot 애플리케이션을 생성하기 위해 Spring Boot Initializr라는 웹 페이지를 제공한다.
+Spring Initializr라는 웹 페이지를 통해 아래와 같이 필요한 정보를 입력하고 `Generate Project`버튼을 누르는 것만으로 프로젝트를 손쉽게 생성할 수 있다.
 
 > http://start.spring.io
+
+```
+Generate a `Gradle Project` with Spring Boot 1.4.1
+Group - com.stunstun.spring
+Artifact - spring-boot-jpa-example
+Dependencies - JPA, H2
+```
 
 ![create-project-3](http://image.toast.com/aaaaahq/create-boot-3.png)
 
 #### Spring Boot CLI를 통해 프로젝트 생성하기
 
-Spring Boot CLI는 Spring에서 제공하는 Command Line Tool이다. 프로젝트 생성을 자동화하고 싶거나 Terminal에서의 경험이 익숙하다면 IDE에서 독립적으로 Gradle 프로젝트를 생성 할 수 있다. IDE에서 생성한 프로젝트와 동일한 프로젝트를 아래와 같이 생성할 수가 있다.
+Spring Boot CLI는 Spring Boot 프로젝트를 위한 Command Line Tool이다. 프로젝트 생성을 자동화하고 싶거나 Terminal에서의 경험이 익숙하다면 IDE에서 독립적으로 Gradle 또는 Maven 프로젝트를 생성할 수 있다. 
 
 `Spring Boot CLI 설치하기`
 
@@ -66,7 +73,7 @@ Spring Boot CLI는 아래의 페이지에서 다운로드 할 수 있다.
 아래의 예제는 Spring Boot을 통해 JPA를 통해 Database를 연동하는 웹 프로젝트를 생성한다. 빌드 도구는 `--build` 옵션을 통해 지정할 수 있다.
 
 ```
-$ spring init --build=gradle --java-version=1.8 --dependencies=web, data-jpa spring-boot-jpa-example
+$ spring init --build=gradle --java-version=1.8 --dependencies=data-jpa spring-boot-jpa-example
 ```
 
 `Spring Boot CLI에 대한 더 많은 정보들은 아래를 확인하자`
@@ -83,7 +90,9 @@ $ spring init --list
 
 ## Gradle 프로젝트
 
-지금까지 다양한 방법으로 Gradle 프로젝트를 생성하는 방법을 살펴보았다. Spring Boot 애플리케이션은 Gradle Task를 통해 빌드, 테스트하는 과정에서 발생하는 다양한 요구사항을 정의할 수 있는데, 먼저 예제를 통해 생성한 Gradle 프로젝트의 구조를 살펴본 뒤 Gradle의 Task에 대해 자세히 살펴보도록 하겠다.
+지금까지 다양한 방법으로 Gradle 프로젝트를 생성하는 방법을 살펴보았다. 자! 이제 본격적으로 Spring Boot을 통해 애플리케이션을 개발해 볼 차례다. 개발하는 과정에서 프로젝트의 빌드 및 테스트하는 과정에서 다양한 요구사항이 발생할 수 있는데, Gradle Task를 통해 이를 자동화할 수 있다.
+
+먼저 예제를 통해 생성한 Gradle 프로젝트의 구조를 살펴본 뒤 Gradle의 Task에 대해 자세히 살펴보도록 하겠다.
 
 #### Gradle 프로젝트의 기본적인 구조
  
@@ -94,7 +103,6 @@ Path | Description
 /src/test/java | 테스트 환경에 필요한 자바 클래스
 /src/test/resources	| 테스트 환경에 필요한 리소스
 build.gradle | Gradle Tasks
-settings.gradle | Gradle에서 참조하는 프로젝트 정보
 
 #### Gradle 시작하기
 
