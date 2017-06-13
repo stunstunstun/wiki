@@ -116,7 +116,9 @@ Gradle | 3.5
 
 > https://github.com/stunstunstun/awesome-spring-boot
 
-## 그 밖의 Spring Framework와 관련된 Contents
+<br/>
+
+## Other Contents
 
 - [Spring MVC 살펴보기](https://github.com/stunstunstun/awesome-wiki/blob/master/Spring/spring-mvc-overview.md)
 - [Spring MVC에서 ContentNegotiatingViewResolver의 역할](https://github.com/stunstunstun/awesome-wiki/blob/master/Spring/spring-mvc-content-negotiating-view-resolver.md)
