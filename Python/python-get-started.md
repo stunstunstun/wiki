@@ -1,58 +1,163 @@
 ---
-title: Python 설치부터 PyPI 업로드까지
+title: Python 시작하기 TDD부터 PyPI에 배포까지
 date: 2017-04-30 00:24:49
 categories: Python 활용하기
 ---
 
-먼저 Python을 통해 애플리케이션 개발을 하기 위한 환경을 준비하는 것으로 시작합니다. 그리고 이후 간단한 테스트 케이스를 작성하면서 Python의 기본적인 개념을 살펴볼까 합니다.
+필자는 보통 새로운 언어를 학습하기 위해서 먼저 프로그래밍을 위한 개발 환경을 설치하고 그 이후에는 TDD(Test Driven Development)로 아주 간단한 퀴즈를 풀어보는 것으로 시작한다. 
 
-## TDD 맛보기
+`TDD`는 소프트웨어를 개발하는 방법론 중 하나이며, 우리가 작성하게 되는 모든 코드는 올바르게 작동하는지에 대한 검증이 필요한데 보통 이러한 과정을 `테스트`라고 불린다. 문자 그대로 `테스트`를 위한 코드를 먼저 작성하는 것을 의미한다. 개인적으로는 TDD를 테스트 코드를 먼저 작성하는 습관으로 말하고 싶다.
+
+#### TDD를 통해 새로운 프로그래밍 언어를 학습하면 아래와 같은 장점이 있다.
+
+- 테스트 코드는 비교적 쉬운 기본적인 문법으로 시작할 수 있다
+- 기존의 자신에게 익숙했던 언어와 새로운 언어에 대한 차이를 쉽게 파악 할 수 있다.
+- 기본적인 문법의 부재 부터 그리고 예상하지 못한 다양한 문제에 부딪히면서 주도적으로 학습할 수 있게 도와준다.
+- IDE에서 테스트 코드를 효율적으로 실행시키기 위해서 고민하다보면 새로운 개발 환경에 자연스럽게 익숙해질 수 있다.
+
+이 글에서는 이와 같이 새로운 언어를 접근하는 개인적인 습관에 대해 공유할려고 한다.
+
+## Python으로 TDD 맛보기
+
+TDD는 테스트 코드를 먼저 작성하는 습관이라고 말했는데, 아주 간단한 예제를 보면서 구체적으로 살펴보자. 
+
+#### 지금부터 작성하는 예제에 대한 요구사항은 아래와 같다
 
 
-#### What is TDD?
+#### INPUT
 
-필자는 새로운 언어를 학습하기 위해서 가장 먼저 개발환경을 설치하고 그 이후에는 TDD(Test Driven Development) 하기 위한 환경을 준비한다. TDD는 소프트웨어를 개발하는 하나의 방법이다. 우리가 작성하게 되는 모든 코드는 정상적으로 작동하는지에 대한 테스트가 필요한데, 코드를 구현하기 이전에 테스트 케이스를 정의하고, 테스트코드를 먼저 작성하는 방법이다.
+```python
 
-TDD에 대해 더욱 자세히 알고 싶다면 Kent Beck의 Test Driven Development By Example 이라는 저서를 추천한다.
-- TDDBE : https://www.amazon.com/Test-Driven-Development-Kent-Beck/dp/0321146530
+```
+
+#### OUTPUT
 
 
-#### 현재 Python3.6.0이 최신의 버전이며, TDD를 통해 새로운 언어를 학습하면 아래와 같은 장점이 있다.
+```python
 
-- 기존의 익숙했던 언어와 새로운 언어에 대한 차이를 쉽게 파악 할 수 있다.
-- 테스트 케이스를 먼저 구현해보면, 언어를 학습하는데에 필요한 기본적인 구성요소를 쉽게 찾을 수 있어 학습에 대한 스트레스를 줄여준다.
-- 다른 언어에서 이미 경험해본 TDD를 기반으로, 새로운 언어의 개발환경에 쉽게 익숙해 질수 있다.
+```
 
-그렇다면 지금부터 Python 설치를 시작으로 개발에 필요한 환경들을 준비해보도록 하겠다.
+#### 테스트 코드
 
+
+TDD에 대해 자세히 알고 싶다면 `Test Driven Development By Example`이라는 Kent Beck의 저서를 추천한다.
+> https://www.amazon.com/Test-Driven-Development-Kent-Beck/dp/0321146530
+
+그렇다면 지금부터는 Python을 설치하는것을 시작으로 Python을 통한 프로젝트 환경을 살펴보도록 하겠다.
 
 ## Python 설치하기
 
-## Python Interpreter
+#### Python Interpreter
 
-## Python 프로젝트의 기본 구성
+#### IDLE
 
-### 프로젝트 생성
+#### PyCharm
 
-## 첫 테스트케이스 만들기
+## Python 프로젝트의 기본 구조
 
-## Python 가상환경
+#### 패키지와 모듈
 
-### pyenv
+```
+fbmessage
+├── README.rst
+├── setup.cfg
+├── setup.py
+└── app
+    ├── __init__.py
+    ├── app.py
+└── fbmessage
+    ├── __init__.py
+    ├── message.py
+└── tests
+    ├── __init__.py
+    └── test_message.py
+```
 
-### virtualenv wrapper
+#### \_\_init\_\_.py
 
-## 빌드 & 테스트
+> [\[PEP 420\]](https://www.python.org/dev/peps/pep-0420/) Python 3.3 버전부터는 \_\_init\_\_.py 파일 없이도 패키지로 인식이 된다. 하지만 배포용 라이브러리를 개발한다면 하위 Version의 호환성을 위해서 \_\_init\_\_.py 파일을 생성하는 것을 추천한다.
 
-## Coverage
+#### setup.py
 
-## Coding Convention
+#### 첫 테스트 케이스 만들기
 
-## PyPI? 
+우리는 간단하게 Python의 프로젝트 구조를 살펴보았고 이제는 본격적으로 `fbmessage` 패키지의 `message` 모듈을 테스트하기 위한 클래스를 만들어 보자.
 
-## 오픈소스?
+```
+import unittest
+from fbmessage.message import Message
 
-## 라이브러리를 만드는 이유
+
+class TestMessage(unittest.TestCase): 
+    def test_send_text_message(self):
+        message_bot = Message(self.verify_token, self.page_access_token)
+        assert message_bot.send_text_message(self.recipient_id, 'This message is from unittest')
+```
+
+#### 테스트 실행
+
+## Python의 패키지 설치 도구 PIP
+
+#### 외부 Module 가져오기
+
+```python
+$ pip install googletrans
+$ python
+Python 3.6.0 |Anaconda 4.3.1 (x86_64)| (default, Dec 23 2016, 13:19:00) 
+[GCC 4.2.1 Compatible Apple LLVM 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import googletrans
+```
+
+#### 프로젝트에 외부 Module 설치하기
+
+#### Python Lint
+
+- Coding Convention
+
+## Python의 실행 환경을 지탱하는 도구들
+
+#### pyenv
+
+```
+$ brew update
+$ brew install pyenv
+```
+
+```
+$ pyenv install -list
+Available versions:
+  2.1.3
+  2.2.3
+  2.7.13
+...
+  3.6.1
+```
+
+```
+$ pyenv install 3.6.1
+$ pyenv install 2.7.13
+$ pyenv versions
+$ python -V
+```
+
+```
+$ python global 3.6.1
+$ mkdir app
+& cd app
+$ python local 2.7.13
+
+$ python -V
+Python 2.7.12
+```
+
+#### virtualenv 
+
+#### autoenv
+
+## PyPI에 자신의 Module 배포하기
+
+#### Module을 만들고 배포함으로써 얻는 이득 
 
 새로운 언어를 학습 할 때 기존의 라이브러리 프로젝트를 통해 프로젝트 구조의 Best Practice를 파악한다.
 
@@ -71,17 +176,11 @@ TDD에 대해 더욱 자세히 알고 싶다면 Kent Beck의 Test Driven Develop
 - 프로젝트 배포를 위한 빌드와 패키징은 어떻게 하는지?
 - 프로젝트의 문서 관리는 어떻게 관리하는지?
 
-## 실무 수준에 필요한
 
-## Convention
+#### 배포하기
 
-## Issues
+- PyPI?
 
-## 무엇을 만들지?
-
-이 문서에서는 한국어를 영어로 번역하는 Python 라이브러리를 만들어 나가는 과정을 통해 Python을 통해 프로젝트를 관리하는 여러가지 기법들을 정리해 나아간다.
-
-## 배포하기
 
 **Install**
 ```
@@ -111,7 +210,7 @@ python -m pip install setuptools wheel twine
 ## Usages
 
 ````
-pip install translate-bot
+pip install fbmessage
 ````
 
 ## References

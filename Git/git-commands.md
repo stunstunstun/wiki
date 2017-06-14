@@ -5,8 +5,35 @@ desc: Git Commands
 categories: git
 ---
 
+## Git 시나리오
 
-## Git Commands
+#### 소스코드의 Origin 저장소를 초기화하고 Remote와 처음으로 연결할 때
+
+```bash
+$ echo "# Hola" > README.md
+$ git init
+$ git add . && git commit -m "It's first commit"
+$ git remote add origin https://github.com/stunstunstun/awesome-wiki.git
+$ git push -u origin master
+```
+
+#### 새로운 Branch를 생성하고자 할 때
+
+#### Remote 저장소를 변경해야 할 때
+
+```bash
+$ git remote -v
+origin  https://wjdsupj@github.com/wjdsupj/awesome-wiki (fetch)
+origin  https://wjdsupj@github.com/wjdsupj/awesome-wiki (push)
+$ git remote set-url origin https://stunstunstun@github.com/stunstunstun/awesome-wiki
+$ git remote -v
+origin  https://stunstunstun@github.com/stunstunstun/awesome-wiki (fetch)
+origin  https://stunstunstun@github.com/stunstunstun/awesome-wiki (push)
+```
+
+#### Conflict로 인해 이전 Commit을 취소해야 할 때
+
+## 자주 사용하는 Git 명령어들
 
 **Configurations**
 
