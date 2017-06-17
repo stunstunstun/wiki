@@ -1,6 +1,12 @@
 ## Contents
 
-- [Python 설치부터 PyPI 업로드까지](https://github.com/stunstunstun/awesome-wiki/blob/master/Python/python-get-started.md)
+#### 파이썬 시작하기 TDD부터 PyPI에 배포까지
+- [TDD와 함께 파이썬 시작하기](https://github.com/stunstunstun/awesome-wiki/blob/master/Python/python-get-started.md)
+- [unittest와 함께하는 파이썬 테스트](https://github.com/stunstunstun/awesome-wiki/blob/master/Python/python-with-test.md)
+- [파이썬 프로젝트의 구조](https://github.com/stunstunstun/awesome-wiki/blob/master/Python/python-project-structures.md)
+- [파이썬의 실행 환경을 지탱하는 도구들](https://github.com/stunstunstun/awesome-wiki/blob/master/Python/python-dev-environments.md)
+- [파이썬 모듈 PyPI에 배포하기](https://github.com/stunstunstun/awesome-wiki/blob/master/Python/python-deploy-to-pypi.md)
+
 
 ## Other Contents
 
