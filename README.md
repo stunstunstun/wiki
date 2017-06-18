@@ -12,7 +12,7 @@
 
 | 카테고리 | 설명 |
 | --- | --- |
-| [Fundamentals](https://github.com/stunstunstun/awesome-wiki/tree/master/Fundamentals) | 개발자에게 밑천이 되는 소프트웨어 공학 전반 |
+| [Fundamental](https://github.com/stunstunstun/awesome-wiki/tree/master/Fundamental) | 개발자에게 밑천이 되는 소프트웨어 공학 전반 |
 | [Python](https://github.com/stunstunstun/awesome-wiki/tree/master/Python)| Python 관련 카테고리 |
 | [Java](https://github.com/stunstunstun/awesome-wiki/tree/master/Java) | Java의 기본지식 및 Java8에 대한 내용 |
 | [Front-End](https://github.com/stunstunstun/awesome-wiki/tree/master/Front-End) | Front-End 관련 카테고리 |

@@ -1,10 +1,10 @@
 ---
-title: 시간복잡도와 빅오표기법
-date: 2014-04-20 11:54:07
-categories: Fundamentals
+title: 알고리즘 학습 전략
+date: 2017-06-30 11:54:07
+categories: fundamentals
 ---
 
-<img src='https://i1.wp.com/texblog.org/Wordpress/wp-content/uploads/2014/06/big-o-example-latex.png' />
+<img src='https://i1.wp.com/texblog.org/Wordpress/wp-content/uploads/2014/06/big-o-example-latex.png' width='500' />
 
 ## 시간 복잡도 
 

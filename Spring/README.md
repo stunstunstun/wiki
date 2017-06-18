@@ -31,17 +31,16 @@ Gradle | 3.5
 ## 1부 재료 다지기
 
 #### 1장 목표 소개
-- [웹 애플리케이션에 필요한 요소들](https://github.com/stunstunstun/awesome-wiki/blob/master/Spring/spring-boot-what-is-next.md) 
-- Spring Framework에 대해 이해합니다.
-- Spring Boot를 통해 프로젝트 구성 및 설정 작업에서 벗어나야 합니다.
-- 실제로 Spring Boot을 중심적으로 활용한 애플리케이션을 만들어 나아가는 것이 목표입니다.
-- 프로젝트, 소스코드 Repository <> 애플리케이션 단위 <> 빌드 <> 배포 <> 운영의 큰 그림을 보여준다
+- 웹 애플리케이션에 필요한 요소들
+- 점점 작게 분리되는 서비스들
+- Spring Boot을 통한 API Gateway 서버 만들기
+- 레거시라는 괴물을 만들지 않는 습관
 
 #### 2장 Spring Boot 시작하기
 
-- Spring Framework의 출현 배경과 Spring Boot 이전의 역사들
-- XML 기반의 Bean 설정에서 발생하는 낭비
-- 다양한 모듈간의 의존관계 설정에서 발생하는 낭비
+- 객체의 생성과 소멸까지
+- Spring Framework의 출현 배경과 이전의 역사들
+- 다양한 모듈간의 의존관계와 프로젝트 설정에서 발생하는 낭비들
 - [Spring Boot를 통한 새로운 시작](https://github.com/stunstunstun/awesome-wiki/blob/master/Spring/spring-boot-get-started.md)
 
 #### 3장 Spring Boot 개발 환경 준비
@@ -49,7 +48,7 @@ Gradle | 3.5
 - [Spring Boot 개발환경 준비](https://github.com/stunstunstun/awesome-wiki/blob/master/Spring/spring-boot-environments.md)
 - Spring Boot CLI
 - [Gradle를 통해 프로젝트를 효율적으로 관리하자](https://github.com/stunstunstun/awesome-wiki/blob/master/Spring/spring-boot-and-gradle.md) 
-- [Github를 통해 맘껏 뛰어 놀기](https://github.com/stunstunstun/awesome-wiki/blob/master/Spring/spring-boot-with-github.md) 
+- Github를 통해 맘껏 뛰어 놀기
 
 ## 2부 Spring Boot 요리하기
 
@@ -57,13 +56,13 @@ Gradle | 3.5
 
 - Spring Framework와 Spring Boot
 - Spring Boot Starters
-- [Spring Boot의 자동 구성과 주요 기능](https://github.com/stunstunstun/awesome-wiki/blob/master/Spring/spring-boot-autoconfigure.md)
-- 간단하게 애플리케이션 정보 설정하기
-- Java Config와 @EnableAutoConfiguration
+- Spring Boot의 자동 구성과 주요 기능
+- 간단하게 프로젝트 정보 설정하기
+- 자바 Annotation과 @EnableAutoConfiguration
 
 #### 5장 데이터 베이스와 연동하기
 
-- H2 Database
+- H2 Database 활용하기
 - [Spring Boot에서 전통적인 JDBC를 통해 Database 연동하기](https://github.com/stunstunstun/awesome-wiki/blob/master/Spring/spring-boot-with-jdbc.md)
 - [Spring Boot과 JPA를 통해 Datasource 연동하기](https://github.com/stunstunstun/awesome-wiki/blob/master/Spring/spring-boot-with-jpa.md)
 - [Spring Boot과 myBatis를 통해 Datasource 연동하기](https://github.com/stunstunstun/awesome-wiki/blob/master/Spring/spring-boot-with-mybatis.md)
@@ -71,13 +70,12 @@ Gradle | 3.5
 
 #### 6장 애플리케이션으로 발전시키기
 
+- 독립적으로 실행되는 Spring Boot 애플리케이션
 - [Spring Boot과 Spring MVC](https://github.com/stunstunstun/awesome-wiki/blob/master/Spring/spring-boot-web-mvc.md)
+- 더 나은 REST API 제공하기
 - [Gradle과 Spring Boot 애플리케이션의 Multi 프로젝트 구조](https://github.com/stunstunstun/awesome-wiki/blob/master/Spring/spring-boot-gradle-multi-project.md)
-- 독립적으로 실행되는 애플리케이션
-- 효과적인 RESTful API를 제공하는 웹 애플리케이션 만들기
-- Vaadin을 이용해 Admin기능을 제공하는 웹 애플리케이션 만들기
 
-## 3부 Spring Boot 비법 소스 
+## 3부 Spring Boot 비법 소스
 
 #### 7장 꾸준한 맛을 내는 전략 테스트
 
@@ -89,17 +87,17 @@ Gradle | 3.5
 
 #### 8장 애플리케이션을 건강하게 만드는 습관들
 
-- [소중한 정보를 지키는 습관 Logging](https://github.com/stunstunstun/awesome-wiki/blob/master/Spring/spring-boot-logging.md) 
-- [자동화로 쿨하게 개발하자! Travis CI와 연동하기](https://github.com/stunstunstun/awesome-wiki/blob/master/Spring/spring-boot-with-travis-ci.md)
+- 소중한 정보를 지키는 습관 Logging
+- 자동화로 쿨하게 개발하자! Travis CI와 연동하기
 - Travis CI와 Jacoco를 이용한 테스트 커버리지 리포트 받기
 
-#### 9장 누구보다 빠르게 사용자에게 배달하기
+#### 9장 누구보다 빠르게 사용자에게 배포하기
 
 - 실행 가능한 JAR
 - 실행과 배포 가능한 WAR
-- [시스템 환경 변수와 Profile를 이용한 Properties 관리](https://github.com/stunstunstun/awesome-wiki/blob/master/Spring/spring-boot-properties.md)
+- 시스템 환경 변수와 Profile를 이용한 Properties 관리
 - 먼저 로컬 PC에 배포하기
-- [클라우드 서비스에 배포하기 AWS](https://github.com/stunstunstun/awesome-wiki/blob/master/Spring/spring-boot-deploying.md) 
+- 클라우드 서비스에 배포하기 AWS
 
 #### 10장 혼자서도 개발하고 운영(DevOps)하는 마법 도구들
 
@@ -110,17 +108,18 @@ Gradle | 3.5
 
 <br/>
 
-## Spring Boot 예제 프로젝트
+## 기타 레퍼런스
+
+#### Spring Boot 예제 소스들
 
 아래의 Github Repository에서 Spring Boot 예제를 위한 프로젝트를 제공하고 있습니다. Spring Boot를 학습하는 데에 조금이나마 도움이 되었으면 합니다.
 
 > https://github.com/stunstunstun/awesome-spring-boot
 
-<br/>
-
-## Other Contents
+#### Articles
 
 - [Spring MVC 살펴보기](https://github.com/stunstunstun/awesome-wiki/blob/master/Spring/spring-mvc-overview.md)
 - [Spring MVC에서 ContentNegotiatingViewResolver의 역할](https://github.com/stunstunstun/awesome-wiki/blob/master/Spring/spring-mvc-content-negotiating-view-resolver.md)
 - [Struts 2의 Interceptor의 역할](https://github.com/stunstunstun/awesome-wiki/blob/master/Spring/struts-interceptor.md)
 - [Struts와 Spring MVC의 Controller 클래스의 차이는?](https://github.com/stunstunstun/awesome-wiki/blob/master/Spring/struts-and-spring-mvc.md)
+- Spring Boot에서 myBatis의 TypeHandler와 Enum 관리하기
