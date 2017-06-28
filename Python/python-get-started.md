@@ -1,7 +1,7 @@
 ---
-title: 파이썬 시작하기 TDD부터 PyPI에 배포까지 (1)
+title: TDD로 새로운 언어 접근하기
 date: 2017-06-15 00:24:49
-desc: TDD로 새로운 언어 접근하기
+desc: 파이썬 시작하기 TDD부터 PyPI에 배포까지 
 categories: python
 ---
 
@@ -140,7 +140,7 @@ class Array(object):
 
 ```
 import unittest
-from src import array
+from algorithms import array
 
 class TestArray(unittest.TestCase):
     def test_sum(self):
@@ -166,10 +166,9 @@ class TestArray(unittest.TestCase):
 
 `Walking Skeleton`이란 실제로 동작하는 프로젝트의 골격을 말하는데, 여기서 `동작하다`라는 추상적인 표현은 기능을 말하는 것이 아닌 프로젝트가 빌드되고 배포되기까지의 과정을 위한 기반을 말한다. 문자 그대로 아래와 같이 프로젝트를 지탱하는 `뼈대(Skeleton)`되시겠다.
 
-- 테스트
-- 프로젝트 실행 환경
+- 테스트 전략
+- 프로젝트를 지탱하는 파이썬 실행 환경
 - 빌드 또는 패키징
-- 정적 분석과 코드 커버리지
 - 배포
 
 다음 글에서는 `TDD`와 `Walking Skelton`를 이용해 점차 프로젝트를 구성해 나아가는 과정을 살펴보도록 하겠다.

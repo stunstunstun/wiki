@@ -1,5 +1,5 @@
 ---
-title: Back-End 개발자의 Front-End 개발 시작하기
+title: Front-End 개발 리부트 이야기
 date: 2017-05-30 18:07:11
 categories: front-end
 ---
@@ -7,13 +7,6 @@ categories: front-end
  이 문서에서는 Front-End의 기본을 지탱하는 HTML 과 CSS 그리고 Javascript의 문법에 대해서는 다루지는 않습니다. Front-End 개발 경험이 없는 이가 Front-end 개발을 시작하면서 필요한 다양한 기술들과 이러한 기술들은 어떠한 이유 때문에 등장했는지를 다루게 됩니다.
 
 > 이 문서는 개인적인 용도로 사용하기 위한 북마크 서비스인 holaxbookmark.io를 개발하면서 개인이 학습한 내용을 바탕으로 작성되고 있습니다. 문서를 보시고 수정이 필요한 내용이나 개선해야 될 내용이 있다면 Comments를 해주시면 많은 도움이 되겠습니다!
-
-## 시작하면서, 이런 분들에게 도움이 되었으면 해요
- 
-- Front-End 개발 프로세스를 개선하고 싶으신 분
-- Front-End 개발에 관심이 있는 Back-End 개발자 
-
-> Maven, Gradle과 같은 빌드 도구를 이용해 프로젝트를 관리한 경험이 있으시면 더욱 쉽게 접근 가능합니다.
 
 ## 대체 Front-end 개발 어디서 부터 시작해야 하지..?
 
@@ -60,7 +53,7 @@ jQuery를 개발한 John의 말은 문자 그대로 파편화된 브라우저 �
 
 다양한 패키지와 패키지의 Version 그리고 각각의 패키지 간의 의존 관계(dependencies)를 효율적으로 관리하고 있을까? 지금부터는 Javascript에서 벗어나 Front-End 개발 전반에 필요한 내용을 말하려고 한다.
 
-## npm으로 시작하기
+## Node.js와 npm으로 시작하는 Javascript의 새로운 실행 환경
 
 Javascript(표준 명칭은 ECMAScript)가 Ajax, JSON, jQuery가 등장함으로서 널리 사용 되어지고 우리에게 익숙해졌다면 Node.js의 등장으로 Javascript는 황금기를 맞이하게 되었다.
 
@@ -183,20 +176,16 @@ $ npm start
 
 ## 도대체 왜?
 
-<p data-height="265" data-theme-id="dark" data-slug-hash="NjoQKo" data-default-tab="html,result" data-user="stunstun" data-embed-version="2" data-pen-title="NjoQKo" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/stunstun/pen/NjoQKo/">NjoQKo</a> by Minhyeok Jung (<a href="https://codepen.io/stunstun">@stunstun</a>) on <a href="https://codepen.io">CodePen</a>.</p>
-<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
-
 ## References
 
 - https://nodejs.org/ko/about/
-- https://trends.builtwith.com/javascript/javascript-library
-- https://techstory.shma.so/create-react-app에-관하여-1-935a21297550
-- https://github.com/petehunt/react-howto#learning-react-itself
-- https://ko.khanacademy.org/computing/computer-programming/html-js-jquery/jquery-dom-access/a/history-of-jquery
-- https://www.tokyobranch.net/archives/6598
-- http://wit.nts-corp.com/2014/08/13/1925
+- http://news.realm.io/kr/news/mobilization-konstantin-raev-taming-node_modules-at-facebook/
+- https://perfectacle.github.io/2017/06/18/what-is-node-js/
 - http://d2.naver.com/helloworld/3618177
-- https://prepros.io/
-- https://github.com/vhf/free-programming-books/blob/master/javascript-frameworks-resources.md
-- https://facebook.github.io/react/
-- https://mochajs.org
+- http://wit.nts-corp.com/2014/08/13/1925
+- https://ko.khanacademy.org/computing/computer-programming/html-js-jquery/jquery-dom-access/a/history-of-jquery
+- https://github.com/petehunt/react-howto#learning-react-itself
+- https://www.tokyobranch.net/archives/6598
+
+
+

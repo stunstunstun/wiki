@@ -1,7 +1,7 @@
 ---
-title: 파이썬 시작하기 TDD부터 PyPI에 배포까지 (4)
+title: 파이썬의 실행 환경을 지탱하는 도구들
 date: 2017-06-20 15:24:49
-desc: 파이썬의 실행 환경을 지탱하는 도구들
+desc: 파이썬 시작하기 TDD부터 PyPI에 배포까지
 categories: python
 ---
 
@@ -82,3 +82,9 @@ $ rm -rf env
 
 #### autoenv
 
+<br/>
+
+#### References
+
+> https://packaging.python.org/tutorials/installing-packages/#install-pip-setuptools-and-wheel
+> https://github.com/kennethreitz/python-guide/tree/master/docs/dev
