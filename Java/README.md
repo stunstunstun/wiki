@@ -2,6 +2,7 @@
 
 - 자바를 통한 Constants와 Variables의 삶 들여다보기
 - 자바 String 클래스와 hashCode() 이야기
+- Open JDK 적용시 고려해야 할 점
 - Lambda Expression in Java 8
 - Method Reference in Java 8
 - Streams in Java 8

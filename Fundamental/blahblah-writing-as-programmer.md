@@ -1,8 +1,7 @@
 ---
-title: 개인 기술 블로그 운영 회고 그리고 다시 기술문서 작성하기
+title: 4년간의 개인 기술 블로그 운영 회고하기
 date: 2016-11-17 15:14:40
-desc: 4년간의 기술 블로그 운영 회고하기
-categories: fundamentals
+categories: blahblah
 ---
 
 ## 4년간의 개인 기술 블로그 운영 회고하기
