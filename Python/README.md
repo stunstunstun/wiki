@@ -15,3 +15,4 @@
 - [Learn Python the Hard Way](https://learnpythonthehardway.org/python3/)
 - [Guide to Python](http://docs.python-guide.org/en/latest/)
 - [점프 투 파이썬](https://wikidocs.net/book/1)
+- [Python Tips](http://book.pythontips.com/en/latest/index.html)

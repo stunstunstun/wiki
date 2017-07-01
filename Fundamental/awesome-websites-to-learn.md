@@ -12,6 +12,7 @@
 
 #### Online Courses
 
+- [HTML & CSS Basic Courses](https://www.codeschool.com/courses/front-end-foundations)
 - [Free Code Camp](https://www.freecodecamp.com/challenges/learn-how-free-code-camp-works)
 - [Free Code Camp Online Courses](https://medium.freecodecamp.com/438-free-online-programming-computer-science-courses-you-can-start-in-may-aa316e4195fc)
 - [Free Ebooks](https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md)
