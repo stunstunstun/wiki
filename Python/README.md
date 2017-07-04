@@ -16,3 +16,4 @@
 - [Guide to Python](http://docs.python-guide.org/en/latest/)
 - [점프 투 파이썬](https://wikidocs.net/book/1)
 - [Python Tips](http://book.pythontips.com/en/latest/index.html)
+- [Advanced Python Features](https://tech.io/playgrounds/500/advanced-python-features/content/advanced-python-features)
