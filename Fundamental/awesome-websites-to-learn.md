@@ -60,7 +60,7 @@
 
 #### Articles
 
-- [https://www.reddit.com](https://www.reddit.com)
+- [Reddit](https://www.reddit.com)
 - [Hacker News](https://news.ycombinator.com/news)
 - [Toptal Developers](https://www.toptal.com/developers/blog)
 - [Free Code Camp Medium](https://medium.freecodecamp.com/)

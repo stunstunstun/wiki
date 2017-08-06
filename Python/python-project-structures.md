@@ -149,7 +149,7 @@ python_requires | 실행 환경에 필요한 파이썬 버전
 이렇게 setuptools 를 활용한 setup.py 는 파이썬에 의해 실행되는 CLI 프로그램의 역할을 하는데 기본적으로 제공되는 명령은 아래와 같다.
 
 ```bash
-$ python setup.py --help--commands
+$ python setup.py --help-commands
 Standard commands:
   build             build everything needed to install
   build_py          "build" pure Python modules (copy to build directory)
