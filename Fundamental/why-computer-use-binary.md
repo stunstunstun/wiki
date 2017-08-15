@@ -1,5 +1,5 @@
 ---
-title: 사내용 Q&A 서비스를 만들면 어떨까?
+title: 컴퓨터는 왜 불편한 이진수를 사용할까?
 date: 2013-01-11 15:54:07
 categories: fundamental
 ---
