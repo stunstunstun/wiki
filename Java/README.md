@@ -9,12 +9,10 @@
 - 자바를 통한 Constants와 Variables의 삶 들여다보기
 - [생성자가 중요한 자바 I/O](https://github.com/stunstunstun/awesome-wiki/blob/master/Java/java-basic-io.md)
 - [자바 Object 클래스](https://github.com/stunstunstun/awesome-wiki/blob/master/Java/java-basic-object-class.md)
-- String 클래스의 생성자와 Charset
-- 자바 String 클래스와 hashCode() 이야기
-- StringBuffer와 StringBuilder
-- Java의 LinkedList와 ArrayList에 대한 비교
+- [String 클래스의 생성자와 유니코드](https://github.com/stunstunstun/awesome-wiki/blob/master/Java/java-basic-string-class.md)
+- [StringBuffer와 StringBuilder](https://github.com/stunstunstun/awesome-wiki/blob/master/Java/java-string-builder.md)
+- [Java의 LinkedList와 ArrayList에 대한 비교](https://github.com/stunstunstun/awesome-wiki/blob/master/Java/java-list-interface.md)
 - [Open JDK 적용시 고려해야 할 점](https://github.com/stunstunstun/awesome-wiki/blob/master/Java/java-history.md)
-- 자바와 유니코드
 - 자바 동시성 프로그래밍
 
 #### Java EE
