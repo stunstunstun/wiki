@@ -3,24 +3,24 @@
 #### Articles
 
 - [자바의 역사와 철학](https://github.com/stunstunstun/awesome-wiki/blob/master/Java/java-history.md)
-- ByteCode와 JVM의 아키텍쳐
-- Runtime Data Area
-- Garbage Collection
-- 생성자가 중요한 자바 I/O
-- 자바 Object 클래스
+- [JVM의 개요와 자바 ByteCode](https://github.com/stunstunstun/awesome-wiki/blob/master/Java/java-jvm-bytecode.md)
+- [JVM의 Runtime Data Area](https://github.com/stunstunstun/awesome-wiki/blob/master/Java/java-jvm-runtime-data-area.md)
+- [JVM의 Garbage Collection](https://github.com/stunstunstun/awesome-wiki/blob/master/Java/java-jvm-gc.md)
+- 자바를 통한 Constants와 Variables의 삶 들여다보기
+- [생성자가 중요한 자바 I/O](https://github.com/stunstunstun/awesome-wiki/blob/master/Java/java-basic-io.md)
+- [자바 Object 클래스](https://github.com/stunstunstun/awesome-wiki/blob/master/Java/java-basic-object-class.md)
 - String 클래스의 생성자와 Charset
 - 자바 String 클래스와 hashCode() 이야기
 - StringBuffer와 StringBuilder
 - Java의 LinkedList와 ArrayList에 대한 비교
-- Open JDK 적용시 고려해야 할 점
+- [Open JDK 적용시 고려해야 할 점](https://github.com/stunstunstun/awesome-wiki/blob/master/Java/java-history.md)
 - 자바와 유니코드
-- 자바를 통한 Constants와 Variables의 삶 들여다보기
 - 자바 동시성 프로그래밍
 
-#### J2EE
+#### Java EE
 
-- 웹 개발을 위한 프레임워크는 어떻게 탄생하였는가?
-- 헬로 서블릿
+- [웹 개발을 위한 프레임워크는 어떻게 탄생하였는가?](https://github.com/stunstunstun/awesome-wiki/blob/master/Java/java-hello-j2ee.md)
+- [헬로 서블릿](https://github.com/stunstunstun/awesome-wiki/blob/master/Java/java-hello-servlet.md)
 
 #### Java 8+
 
