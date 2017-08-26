@@ -4,9 +4,7 @@ date: 2017-06-10 18:07:11
 categories: front-end
 ---
 
-### 프로젝트?
-
-### 새로운 언어를 배우기 위해 프로젝트를 살펴봐야 하는 이유
+## 새로운 언어를 배우기 위해 프로젝트 구조를 살펴봐야 하는 이유
 
 #### 프로젝트 단위로 관리하면 얻을 수 있는 이점들
 
@@ -15,7 +13,7 @@ categories: front-end
 #### 여러 모듈의 의존성을 효율적으로 관리해야 한다
 
 
-## React 중심의 프로젝트 구조
+## React 프로젝트로 시작하기
 
 > https://facebook.github.io/react/docs/installation.html
 

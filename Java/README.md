@@ -1,11 +1,7 @@
 ## Contents
 
-#### Articles
+#### Posting
 
-- [자바의 역사와 철학](https://github.com/stunstunstun/awesome-wiki/blob/master/Java/java-history.md)
-- [JVM의 개요와 자바 ByteCode](https://github.com/stunstunstun/awesome-wiki/blob/master/Java/java-jvm-bytecode.md)
-- [JVM의 Runtime Data Area](https://github.com/stunstunstun/awesome-wiki/blob/master/Java/java-jvm-runtime-data-area.md)
-- [JVM의 Garbage Collection](https://github.com/stunstunstun/awesome-wiki/blob/master/Java/java-jvm-gc.md)
 - 자바를 통한 Constants와 Variables의 삶 들여다보기
 - [자바 I/O에 대한 이야기](https://github.com/stunstunstun/awesome-wiki/blob/master/Java/java-basic-io.md)
 - [자바 Object 클래스](https://github.com/stunstunstun/awesome-wiki/blob/master/Java/java-basic-object-class.md)
@@ -14,6 +10,13 @@
 - [Java의 LinkedList와 ArrayList에 대한 비교](https://github.com/stunstunstun/awesome-wiki/blob/master/Java/java-list-interface.md)
 - [Open JDK 적용시 고려해야 할 점](https://github.com/stunstunstun/awesome-wiki/blob/master/Java/java-open-jdk.md)
 - 자바 동시성 프로그래밍
+
+#### JVM Internals
+
+- [자바의 역사와 철학](https://github.com/stunstunstun/awesome-wiki/blob/master/Java/java-history.md)
+- [JVM의 개요와 자바 ByteCode](https://github.com/stunstunstun/awesome-wiki/blob/master/Java/java-jvm-bytecode.md)
+- [JVM의 Runtime Data Area](https://github.com/stunstunstun/awesome-wiki/blob/master/Java/java-jvm-runtime-data-area.md)
+- [JVM의 Garbage Collection에 대한 개요](https://github.com/stunstunstun/awesome-wiki/blob/master/Java/java-jvm-gc.md)
 
 #### Java EE
 
