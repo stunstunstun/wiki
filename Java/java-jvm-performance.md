@@ -1,10 +1,12 @@
 ---
-title: 당신의 Java 시스탬 운영 중 알아두면 쓸데있는 지식들
+title: 당신의 Java 시스템 운영 중 알아두면 쓸데있는 지식들
 date: 2017-10-09 00:49:31
 categories: java
 ---
 
 우리가 개발한 Java 애플리케이션. 특히 서버 애플리케이션은 운영 중에 아래와 같은 메세지와 함께 장애로 이어지는 결과가 일어나곤 한다.
+
+<!-- more -->
 
 ```
 Java.lang.OutOfMemoryError: Java heap space
