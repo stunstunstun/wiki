@@ -12,7 +12,6 @@ categories: front-end
 
 #### 여러 모듈의 의존성을 효율적으로 관리해야 한다
 
-
 ## React 프로젝트로 시작하기
 
 > https://facebook.github.io/react/docs/installation.html
@@ -21,7 +20,7 @@ categories: front-end
 
 **[create-react-app](http://github.com/facebookincubator/create-react-app)** 이라는 npm 패키지를 통해서 손쉽게 React 앱을 생성 할 수 있다. Command Line에서 아래와 같이 create-react-app을 설치하고 첫 번째 React 앱을 만들어 보자
 
-```shell
+```bash
 $ npm install -g create-react-app
 $ create-react-app my-app
 
@@ -29,8 +28,18 @@ $ cd my-app
 $ npm start
 ```
 
-```shell
-$ npm run build
+#### 기존의 애플리케이션을 위한 설치 과정
+
+Node 기반의 애플리케이션은 프로젝트 루트의 `package.json` 에 정의된 모듈들을 아래와 같이 설치할 수 있습니다.
+
+```
+$ npm install
+```
+
+`package.json`에 모듈이 추가되거나 버전을 갱신했다면 아래와 같이 업데이트 합니다.
+
+```
+$ npm update
 ```
 
 #### React 프로젝트의 구조
@@ -40,16 +49,16 @@ my-app/
   README.md
   node_modules/
   package.json
+  gulpfile.json
   public/
     index.html
     favicon.ico
   src/
-    App.css
-    App.js
-    App.test.js
-    index.css
+    components/
+    containers/
+      App.js
+    app.css
     index.js
-    logo.svg
 ```
 
 
@@ -72,30 +81,34 @@ my-app/
 
 `index.js`
 
-package.json을 통해 index 페이지에서는 아래와 같은 ES6 문법을 통해 React 패키지를 참조 할 수 있다
+Node 애플리케이션은 `index.js`를 시작으로 부트스트랩핑 하며, React에서는 아래와 같이 ES2015 문법을 통해 외부 모듈을 import 키워드를 통해 참조할 수 있다.
 
 ```javascript
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import './index.css';
+import App from './containers/App';
+import './app.css';ø
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
-);
+const rootElement = document.getElementById('root')
+ReactDOM.render(<App />, rootElement);
 ```
 
+## Redux의 작동과정과 데이터의 흐름
 
+- 브라우저에서 이벤트가 발생한다.
+- 컴포넌트에서 이벤트가 발생한다.
+- 액션 메서드가 호출된다.
+- 스토어의 dispatch() 메서드가 호출된다.
+스토어에서 리듀서를 호출한다. 샘플 코드에서는 todos 리듀서를 호출한다.
+subscribe() 메서드로 등록한 리스너를 호출한다. 샘플 코드에서는 render() 메서드를 호출해 뷰를 갱신한다.
 
 
 #### References
 
 - https://facebook.github.io/react/
 - https://facebook.github.io/react/tutorial/tutorial.html
-- https://github.com/facebookincubator/create-react-app#create-react-app-
-- https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#table-of-contents
+- https://jsx.github.io/
+- https://github.com/facebookincubator/create-react-app
 - http://blog.tamizhvendan.in/blog/2015/11/23/a-beginner-guide-to-setup-react-dot-js-environment-using-babel-6-and-webpack/
-- https://jiyeonseo.github.io/2016/07/11/A-Better-File-Structure-For-React-Redux-Applications/
 - https://survivejs.com/react/advanced-techniques/structuring-react-projects/
 - http://ccoenraets.github.io/es6-tutorial-react/setup/

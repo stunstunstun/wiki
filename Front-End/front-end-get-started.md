@@ -1,10 +1,10 @@
 ---
-title: Front-End 개발 리부트 이야기
+title: Javascript 개발 리부트 이야기
 date: 2017-05-30 18:07:11
 categories: front-end
 ---
 
- 이 문서에서는 Front-End의 기본을 지탱하는 HTML 과 CSS 그리고 Javascript의 문법에 대해서는 다루지는 않습니다. Front-End 개발 경험이 없는 이가 Front-end 개발을 시작하면서 필요한 다양한 기술들과 이러한 기술들은 어떠한 이유 때문에 등장했는지를 다루게 됩니다.
+이 문서에서는 Front-End의 기본을 지탱하는 HTML 과 CSS 그리고 Javascript의 문법에 대해서는 다루지는 않습니다. Front-End 개발 경험이 없는 이가 Front-end 개발을 시작하면서 필요한 다양한 기술들과 이러한 기술들은 어떠한 이유 때문에 등장했는지를 다루게 됩니다.
 
 > 이 문서는 개인적인 용도로 사용하기 위한 북마크 서비스인 holaxbookmark.io를 개발하면서 개인이 학습한 내용을 바탕으로 작성되고 있습니다. 문서를 보시고 수정이 필요한 내용이나 개선해야 될 내용이 있다면 Comments를 해주시면 많은 도움이 되겠습니다!
 
@@ -156,11 +156,54 @@ $ npm start
 
 ## 프로젝트에 필요한 다양한 모듈들은 어떻게 관리할까?
 
-#### NPM
+#### 모듈들의 의존성 관리
 
-#### Gulp
+#### 번들러 그리고 통합
 
-#### Webpack
+`webpack`
+
+```
+$ npm install webpack@3.0.0 -g
+```
+
+```
+$ npm install webpack@3.0.0 --save-dev
+```
+
+```
+$ webpack ./entry.js bundle.js
+```
+
+<img src='http://d2.naver.com/content/images/2016/02/webpack-1.png' />
+
+```
+$ webpack --watch ./entry.js bundle.js
+```
+
+`webpack.config.js`
+
+```javascript
+module.exports = {  
+    context: __dirname + '/app',	 // 모듈 파일 폴더
+    entry: { 				 // 엔트리 파일 목록
+        app: './app.js' 
+    },
+    output: {
+        path: __dirname + '/dist',	 // 번들 파일 폴더
+        filename: '[name].bundle.js'     // 번들 파일 이름 규칙
+    }
+}
+```
+
+```
+$ webpack
+```
+
+#### required vs import
+
+## 빌드
+
+webpack은 로더를 통해 scss의 전처리를 통해 css를 통합하여 만들어 낼 수 있다.
 
 ## 테스트와 Report 생성
 
@@ -170,22 +213,19 @@ $ npm start
 
 ## 애플리케이션 배포하기
 
-## 더욱 다양한 Front-end 기반 기술들
-
-- http://www.looah.com/article/view/2054
-
 ## 도대체 왜?
 
 ## References
 
 - https://nodejs.org/ko/about/
+- https://webpack.js.org/
+- http://d2.naver.com/helloworld/12864
+- http://d2.naver.com/helloworld/0239818
+- http://d2.naver.com/helloworld/0473039
 - http://news.realm.io/kr/news/mobilization-konstantin-raev-taming-node_modules-at-facebook/
-- https://perfectacle.github.io/2017/06/18/what-is-node-js/
-- http://d2.naver.com/helloworld/3618177
-- http://wit.nts-corp.com/2014/08/13/1925
-- https://ko.khanacademy.org/computing/computer-programming/html-js-jquery/jquery-dom-access/a/history-of-jquery
 - https://github.com/petehunt/react-howto#learning-react-itself
 - https://www.tokyobranch.net/archives/6598
+- http://www.looah.com/article/view/2054
 
 
 

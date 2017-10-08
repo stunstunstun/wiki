@@ -27,7 +27,7 @@
 
 - Lambda Expression in Java 8
 - Method Reference in Java 8
-- [Streams Tutorial in Java 8](http://winterbe.com/posts/2014/07/31/java8-stream-tutorial-examples/)
+- [Java 8 Tutorials](http://winterbe.com/java/)
 
 ## Java Documents
 
