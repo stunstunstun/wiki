@@ -2,13 +2,13 @@
 
 #### Posting
 
-- 자바를 통한 Constants와 Variables의 삶 들여다보기
 - [자바 I/O에 대한 이야기](https://github.com/stunstunstun/awesome-wiki/blob/master/Java/java-basic-io.md)
 - [자바 Object 클래스](https://github.com/stunstunstun/awesome-wiki/blob/master/Java/java-basic-object-class.md)
 - [String 클래스의 생성자와 유니코드](https://github.com/stunstunstun/awesome-wiki/blob/master/Java/java-basic-string-class.md)
 - [StringBuffer와 StringBuilder](https://github.com/stunstunstun/awesome-wiki/blob/master/Java/java-string-builder.md)
 - [Java의 LinkedList와 ArrayList에 대한 비교](https://github.com/stunstunstun/awesome-wiki/blob/master/Java/java-list-interface.md)
 - [Open JDK 적용시 고려해야 할 점](https://github.com/stunstunstun/awesome-wiki/blob/master/Java/java-open-jdk.md)
+- 자바 Constants, Variables의 삶 들여다보기
 - 자바 동시성 프로그래밍
 
 #### JVM Internals
@@ -25,9 +25,13 @@
 
 #### Java 8+
 
-- Lambda Expression in Java 8
-- Method Reference in Java 8
 - [Java 8 Tutorials](http://winterbe.com/java/)
+- Lambda Expression 
+- Method Reference
+- Streams
+
+#### Java 9+
+
 
 ## Java Documents
 

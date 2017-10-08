@@ -2,7 +2,9 @@
 
 #### Infra
 
-- AWS CodeStar로 1인 DevOps 코스프레하기
+- 인터넷은 어떻게 작동하는가?
+- HTTP의 접근제한과 CORS 정책
+- [AWS CodeStar로 1인 DevOps 코스프레하기](https://github.com/stunstunstun/awesome-wiki/blob/master/DevOps/devops-aws-codestar.md)
 - [Tomcat에서 발생하는 ClientAbortException](https://github.com/stunstunstun/awesome-wiki/blob/master/DevOps/devops-was-client-abort-exception.md)
 - [AWS EC2 시작하기](https://github.com/stunstunstun/awesome-wiki/blob/master/DevOps/devops-aws-create-ec2-instance.md)
 - [AWS RDS 시작하기](https://github.com/stunstunstun/awesome-wiki/blob/master/DevOps/devops-aws-rds-get-started.md)
