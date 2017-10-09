@@ -174,13 +174,13 @@ Changes not staged for commit:
 $ git checkout -- <file>
 ```
 
-가장 최근의 commit을 취소하고 싶다면
+`git add` 이후에 변경 내역을 되돌리고자 한다면,
 
 ```bash
 $ git reset HEAD <file>
 ```
 
-HEAD에서 변경한 내역을 취소하는 새로운 commit 발행을 발행하는 경우도 있다. 이미 commit, push 한 경우 드물게 사용한다.
+HEAD에서 변경한 내역을 취소하는 새로운 commit을 발행하는 경우도 있다. 이미 commit, push 한 경우 드물게 사용한다.
 
 ```
 $ git revert HEAD
