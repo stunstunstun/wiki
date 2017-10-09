@@ -21,6 +21,43 @@ Git Flow는 다양한 branch를 관리하고 통합하기 위한 전략 중 하�
 
 ## 브랜치 전략
 
+Git Flow의 주요 브랜치는 `master`와 `develop` 이며, 이 두 브랜치를 중심으로 feature, release와 필요에 따라 hotfixes 브랜치를 정의한다.
+
+<img src='https://camo.githubusercontent.com/70f7e458a965f38831d1c50757b3a284c4280328/687474703a2f2f646f67666565742e6769746875622e696f2f61727469636c65732f323031312f612d7375636365737366756c2d6769742d6272616e6368696e672d6d6f64656c2f6d61696e2d6272616e636865732e706e67' />
+
+#### master
+
+master 브랜치에 merge된 내역은 새로운 버전이 갱신되었다는 것을 의미한다. 즉 master 브랜치에 변경 내역이 생기면 최종 버전인 Tag를 통해 Production에 배포된다. 
+
+#### develop
+
+hotfix를 제외한 모든 변경내역이 출발하는 지점이다. develop 브랜치의 코드가 안정화되고 배포할 준비가 되면 `master`를 통해 배포 버전의 태그를 단다.
+
+#### feature
+
+`feature` 브랜치는 배포하려고 하는 기능을 개발하는 브랜치다. 기능을 개발하기 시작할 때는 언제 배포할 수 있을지 알 수 없다. 기능을 다 완성할 때까지 유지하고 있다가 다 완성되면 `develop` 브랜치로 병합한다. 
+
+- 브랜치가 생성되는 대상 : develop
+- merge 대상: develop
+
+<img src='https://camo.githubusercontent.com/c9cbf25c64dc0519860230cb98d098c3d069eda3/687474703a2f2f646f67666565742e6769746875622e696f2f61727469636c65732f323031312f612d7375636365737366756c2d6769742d6272616e6368696e672d6d6f64656c2f6d657267652d776974686f75742d66662e706e67' />
+
+#### release
+
+`release` 브랜치는 실제 배포할 상태가 된 경우에 생성하는 브랜치다.
+
+- 브랜치가 생성되는 대상 : develop
+- merge 대상: develop, master
+
+#### hotfix
+
+미리 계획되지 않은 브랜치다. 기본적인 동작방식은 `release`와 비슷하다. 배포 이후에 생긴 치명적인 버그는 즉시 해결해야하기 때문에 문제가 생기면 `master` 브랜치에 만들어둔 태그`tag`로 부터 긴급수정을 위한 브랜치를 생성한다.
+
+- 브랜치가 생성되는 대상 : master
+- merge 대상 : develop, master
+
+<img src='https://camo.githubusercontent.com/aee561ae78af58c9756814432473c8dab15dada7/687474703a2f2f646f67666565742e6769746875622e696f2f61727469636c65732f323031312f612d7375636365737366756c2d6769742d6272616e6368696e672d6d6f64656c2f686f746669782d6272616e636865732e706e67' />
+
 ## 주요 Commands
 
 #### 소스코드의 origin 저장소를 초기화하고 remote 서버와 처음으로 연결할 때
@@ -231,9 +268,9 @@ $ git config --global user.email {email}
 $ git config --global color.ui “auto”
 $ git diff --name-only
 $ git reset --hard origin/{branch_name}
-
 ```
 
 ## References
 
 - https://rogerdudler.github.io/git-guide/index.ko.html
+- https://ujuc.github.io/2015/12/16/git-flow-github-flow-gitlab-flow/
