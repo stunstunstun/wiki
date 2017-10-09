@@ -43,6 +43,7 @@
 
 #### Global Tech Company Blogs
 
+- [Stripe](https://stripe.com/blog/engineering)
 - [Facebook](https://code.facebook.com/)
 - [Google](https://developers.googleblog.com/)
 - [Google Research Blog](https://research.googleblog.com/)

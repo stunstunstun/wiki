@@ -1,9 +1,11 @@
 ---
 title: PyPI에 파이썬 모듈 배포하기
-date: 2017-06-25 00:24:49
+date: 2017-09-25 00:24:49
 desc: 파이썬 시작하기 TDD부터 PyPI에 배포까지
 categories: python
 ---
+
+## Python 프로젝트 품질 관리하기
 
 #### Python Lint
 
@@ -11,7 +13,7 @@ categories: python
 
 #### Tox
 
-#### Travis CI
+## Travis CI
 
 ## PyPI에 자신의 Module 배포하기
 

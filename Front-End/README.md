@@ -2,6 +2,7 @@
 
 #### SPAs
 
+- [Modern Web Dev](https://github.com/dexteryy/spellbook-of-modern-webdev)
 - [Front-end Guide](https://github.com/grab/front-end-guide)
 - [HTML5 History API](https://developer.mozilla.org/en-US/docs/Web/API/History_API)
 - [Ajax와 CORS](https://developer.mozilla.org/ko/docs/Web/HTTP/Access_control_CORS)
@@ -38,3 +39,9 @@
 - Git Flow
 - Node.js의 가바지 컬렉션
 - CPU 와 메모리 프로파일링
+
+## References
+
+- http://mongoosejs.com/docs/harmony.html
+- https://blog.outsider.ne.kr/category/node.js?page=7
+- https://blog.outsider.ne.kr/category/Javascript

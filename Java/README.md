@@ -32,6 +32,10 @@
 
 #### Java 9+
 
+- [JDK 9](http://openjdk.java.net/projects/jdk9/)
+- [What's new](https://docs.oracle.com/javase/9/whatsnew/toc.htm#JSNEW-GUID-C23AFD78-C777-460B-8ACE-58BE5EA681F6)
+- [Jigsaw Project](http://openjdk.java.net/projects/jigsaw/)
+- [Valhalla Project](https://wiki.openjdk.java.net/display/valhalla/Main)
 
 ## Java Documents
 
