@@ -1,5 +1,5 @@
 ---
-title: 당신의 Java 시스템 운영 중 알아두면 쓸데있는 지식들
+title: Java 시스템 운영 중 알아두면 쓸모 있는 지식들
 date: 2017-10-09 00:49:31
 categories: java
 ---
@@ -328,6 +328,18 @@ JDK 8에서는 Perm 영역이 아니라 Metaspace에 클래스 정보가 올라�
 -Djava.awt.headless=true -Dfile.encoding=UTF-8 -server -Xms2048m -Xmx2048m -XX:MaxMetaspaceSize=512m -XX:+UseG1GC -XX:+DisableExplicitGC -XX:+UseStringDeduplication 
 ```
 
+## Java 9의 Garbage Collector
+
+최근에 Java 9 출시 소식이 있었다. JDK 9에 포함된 다양한 Features 중 32-bit, 64bit 서버 환경에서 G1을 디폴트 Garbage Collector로 변경한 내용이 있다. 더불어 CMS GC는 JDK 9에서 Deprecated 되었다.
+
+`JEP248: Make G1 the Default Garbage Collector`
+
+- http://openjdk.java.net/jeps/248
+
+많은 성능 개선 사항이 JDK 8의 G1과 업데이트 릴리스에 따라 이루어졌으며, 추가 개선 사항이 JDK 9에 추가되었다. 예를 들면 [JEP156](http://openjdk.java.net/jeps/156) 이슈는 G1을 완전한 품질의 Garbage Collector로 만들 수 있게 해줬다.
+
+이러한 Garbage Collector에 대한 변화는 처리량을 극대화하는 것보다 GC의 지연 시간을 제한하는 것이 더 중요하다는 가정 하에 이루어졌다. 만약 이 가정이 잘못되었다면 이 변화는 재고해야 할 필요가 있을 수 있다.
+
 #### 어떤 GC 알고리즘을 선택해야 할까?
 
 우리는 다양한 GC 알고리즘을 살펴보았지만 중요한 것은 모든 서비스에 완벽하게 맞아 떨어지는 GC 알고리즘은 없다는 것이다. 각 애플리케이션의 특정 동작에 따라 처리량을 늘리거나 줄일 수 있는 수 많은 옵션을 따져 적합한 GC를 사용하도록 하자.
@@ -394,7 +406,7 @@ $JAVA_HOME/bin/jstat
 
 지금까지 Java 시스템 운영 중 알아두면 쓸데있는 지식들을 살펴보았습니다. 대용량의 웹 애플리케이션을 운영 하다보면 다양한 문제에 노출되기 쉬운데 여러 각도에서 자신의 시스템을 바라볼 수 있다면 더욱 견고한 시스템을 만들 수 있을 것이라고 생각합니다. 아래는 이 글을 작성하면서 참고한 문서들인데 도움이 되었으면 합니다 :)
 
-## References
+## 이 문서는 아래의 글을 참고하였습니다
 
 - https://httpd.apache.org/docs/2.4/ko/misc/perf-tuning.html
 - https://tomcat.apache.org/tomcat-3.2-doc/tomcat-apache-howto.html
