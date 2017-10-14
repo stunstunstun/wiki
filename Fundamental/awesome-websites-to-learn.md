@@ -25,19 +25,30 @@
 - [LeetCode](https://leetcode.com)
 - [Codillity](https://codility.com/programmers/)
 - [IDeserve](http://www.ideserve.co.in/#dynamicProgramming)
-- https://github.com/MaximAbramchuck/awesome-interview-questions
+- [개발을 잘하고 싶어요](https://www.slideshare.net/deview/ss-58739254)
+
 
 #### Computer Science
 
 - [CS50](https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/info)
 - [Computational and Inferential Thinking](https://www.inferentialthinking.com/)
 - [About Programming](http://composingprograms.com/)
-- [OSS University](https://github.com/open-source-society/computer-science)
 
 #### Playground
 
 - [repl.it](https://repl.it/languages/)
 - [codepen.io](https://codepen.io/pen)
+
+#### Github Repos
+
+- [Every Programmer Should Know 🤔](https://github.com/mr-mig/every-programmer-should-know)
+- [Awesome Coureses](https://github.com/prakhar1989/awesome-courses)
+- [OSS University](https://github.com/open-source-society/computer-science)
+- [Free Code Camp](https://github.com/freeCodeCamp/freeCodeCamp)
+- [Algo Wiki](https://github.com/vicky002/AlgoWiki)
+- [Interview Questions](https://github.com/MaximAbramchuck/awesome-interview-questions)
+- [Awesome Programmers]
+(https://github.com/rekihattori/awesome-programmers)
 
 ## Advanced
 
@@ -70,7 +81,6 @@
 - [Zapier Engineering](https://zapier.com/engineering/)
 - [Josh Long's Blog](http://joshlong.com/)
 
-
 #### Tutorials
 
 - [HTML5 Tutorials](https://www.w3schools.com/html/)
@@ -79,7 +89,6 @@
 - [Codecademy Tutorials](https://www.codecademy.com/learn/all)
 - [Code Tutorials](https://code.tutsplus.com/tutorials)
 - [Advanced Tutorials](https://semaphoreci.com/community/tutorials)
-
 
 #### Interview Questions
 

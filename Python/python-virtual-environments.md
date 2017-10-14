@@ -20,9 +20,9 @@ categories: python
 
 이 글에서는 새롭게 생긴 의문들을 해소하기 위해서 파이썬의 실행 환경을 지탱하는 도구들을 살펴보도록 하겠습니다.
 
-## site-package
+## 파이썬의 패키지들
 
-우리는 앞서 `pip`을 통해 개발에 필요한 유용한 모듈을 프로젝트에 포함시킬 수 있었습니다. 이러한 외부의 모듈은 시스템의 아래의 경로에 설치되게 됩니다.
+우리는 앞서 `pip`을 통해 개발에 필요한 유용한 모듈을 프로젝트에 포함시킬 수 있었습니다. 이러한 외부의 모듈은 시스템의 아래의 경로에 설치됩니다.
 
 `Linux`
 
@@ -54,11 +54,15 @@ pip 9.0.1 from /Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/s
 
 이렇게 설치된 모듈은 파이썬 인터프리터와 시스템에 설치된 모든 애플리케이션에서 사용할 수 있습니다.
 
-## virtualenv
+## Virtual Environments
 
 파이썬의 패키징 표준은 위와 같이 한 시스템에서 다양한 애플리케이션을 설치하는 방식으로 시작되었습니다. 하지만 이러한 점은 다양한 애플리케이션에서 의존하는 모듈의 버전이 다를 때 문제가 됩니다.
 
-여러 프로젝트를 동시에 작업하는 경우 이와 같이 모듈의 버전 충돌 문제를 우회할 필요가 있습니다. `virtualenv`는 이러한 문제를 해결하기 위해 프로젝트마다 독립적인 실행 환경을 만들도록 도와줍니다. 
+파이썬의 `Virtual Environments`는 특정 애플리케이션을 위해 필요한 모듈을 구분하여 관리할 수 있도록 합니다.
+
+#### virtualenv
+
+이 의미는 시스템에서 다양한 파이썬 프로젝트를 동시에 작업하는 경우 모듈의 버전 충돌 문제를 우회할 필요가 있다는 것입니다. `virtualenv`는 이러한 문제를 해결하기 위해 프로젝트마다 독립적인 실행 환경을 만들도록 도와줍니다. 
 
 이 의미는 `A 프로젝트`에서 특정 Module을 1.x 버전을 사용해 유지 보수하면서 `B 프로젝트`에서는 2.x 버전을 사용하는 것을 말합니다. 뿐만 아니라 파이썬 인터프리터의 버전도 프로젝트별로 구분할 수 있습니다. 
 
@@ -122,15 +126,24 @@ $ deactivate
 $ rm -rf env
 ```
 
-## Python Virtual Environments
+#### venv
 
-만약 파이썬의 버전을 3.3 이상만을 사용한다면 아래와 같이 실행 환경을 생성할 수 있다. 파이썬 3.3에서는 실행 환경을 다루는 기능이 내장되어 있기 때문이다.
+만약 파이썬의 버전을 3.3 이상만을 사용한다면 아래와 같은 방법으로도 실행 환경을 생성할 수 있습니다. 버전 3.3 부터 추가된 기능으로 `venv` 모듈을 통해 실행 환경을 다루는 기능이 내장되어 있습니다.
 
 ```bash
-$ python -m venv venv
+$ python3 -m venv venv
 ```
 
+> https://docs.python.org/3/library/venv.html
 > https://www.python.org/dev/peps/pep-0405/
+
+파이썬의 가상 환경을 관리하는 방법을 정리하면 다음과 같습니다.
+
+- `virtualenv`는 버전 `2.6+` 그리고 `3.3+`를 동시에 사용한다면 추천한다. pip, setuptools 그리고 wheel은 언제나 디폴트로 새로운 가상 환경에 설치된다.
+- `venv` 버전 3.3 부터 내장되었다. 역시 pip, setuptools가 새로운 가상 환경에 설치된다.
+
+> 파이썬 버전 `3.3` `3.4`에서는 `pyvenv`를 통해 가상 환경을 생성하는 것을 추천하였지만 `3.6` 에서 Deprecated 되었다.
+
 
 ## virtualenvwrapper
 
@@ -209,14 +222,14 @@ $ pyenv virtualenvwrapper
 
 ## 정리하며
 
-지금까지 우리는 파이썬을 시작하면서 생길 수 있는 다양한 의문을 만나고 테스트 코드를 작성하면서 이를 해결해왔다. 
+지금까지 우리는 파이썬을 시작할 때 테스트 코드를 작성하면서 다양한 문제를 만났습니다. 이러한 문제들을 해결하는 과정을 아래와 같이 정리하였고
 
 - [파이썬 시작하기 TDD부터 PyPI에 배포까지](https://www.holaxprogramming.com/2017/06/15/python-get-started/)
 - [unittest와 함께하는 파이썬 테스트](https://www.holaxprogramming.com/2017/06/17/python-with-test/)
 - [파이썬 프로젝트의 구조](https://www.holaxprogramming.com/2017/06/28/python-project-structures/)
 - [파이썬의 실행 환경을 지탱하는 도구들](https://www.holaxprogramming.com/2017/07/15/python-virtual-environments.md/)
 
-다음 글에서는 지금까지의 내용을 통해 이상적인 파이썬 프로젝트 구조와 실행 환경을 통해 다양한 환경에서 작동하는 라이브러리를 직접 배포하는 내용으로 `파이썬 시작하기 TDD부터 PyPI에 배포까지`로 시작된 글타래를 마무리할 예정이다.
+다음 글에서는 지금까지의 내용을 통해 다양한 환경에서 작동하는 라이브러리를 직접 배포하는 내용으로 `파이썬 시작하기 TDD부터 PyPI에 배포까지`로 시작된 글타래를 마무리할 예정입니다.
 
 ## References
 - https://docs.python.org/3/library/site.html

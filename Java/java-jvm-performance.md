@@ -4,7 +4,7 @@ date: 2017-10-09 00:49:31
 categories: java
 ---
 
-우리가 개발한 Java 애플리케이션. 특히 서버 애플리케이션은 운영 중에 아래와 같은 메세지와 함께 장애로 이어지는 결과가 일어나곤 한다.
+우리가 개발한 Java 애플리케이션, 특히 서버 애플리케이션은 운영 중에 아래와 같은 메세지와 함께 장애로 이어지는 결과가 일어나곤 합니다.
 
 <!-- more -->
 
@@ -16,39 +16,47 @@ Java.lang.OutOfMemoryError: Java heap space
 Java.lang.OutOfMemoryError: Permgen space
 ```
 
-Java 기반의 시스템은 메모리를 JVM에서 관리하기 때문에 Full GC 발생으로 인한 Stop The World 현상에서 자유로울 수 없다. 우리가 개발하고 운영하는 서비스에서도 하루에도 몇 번씩 GC가 발생하고 있고, 이런 상황에서 장애로 인한 Notification을 받지 않아도 우리의 생각과는 다르게 사용자에게 503 오류가 반환되고 있을지도 모르는 일이다.
+Java 기반의 애플리케이션의 메모리는 운영체제의 JVM에서 관리하기 때문에 `Full GC`로 인해 애플리케이션이 멈추어버리는 Stop The World 현상에서 자유로울 수 없습니다.
+
+우리가 개발하고 운영하는 서비스에서도 하루에도 몇 번씩 GC가 발생하고 있고, 이런 상황에서 장애로 인한 Notification을 받지 않아도 우리의 생각과는 다르게 사용자에게 `503` 오류가 반환되고 있을지도 모르는 일입니다.
+
+이 글에서는 Java 시스템을 운영 중 문제가 발생할 때 기본적으로 알아두어야할 내용을 다룹니다.
 
 ## 프로세스와 쓰레드
 
-운영체제는 컴퓨터의 자원을 여러 프로세스가 효율적으로 사용할 수 있도록 도와준다. 우리가 사용하는 애플리케이션은 이 중 하나의 프로세스 공간을 차지하게 된다.
+서버 또는 웹 애플리케이션은 많은 사용자의 요청을 처리해야 하기 때문에 효과적으로 컴퓨터의 자원을 활용하는 것이 중요하다. 운영체제는 컴퓨터의 자원을 여러 프로세스가 효율적으로 사용할 수 있도록 도와준다.
 
-예를 들면 웹 애플리케이션을 운영하기 위한 Apache와 Tomcat 역시 운영체제로 부터 프로세스를 할당받아 컴퓨터의 자원을 사용한다. 이 문서에서는 웹 애플리케이션을 운영하면서 만나게 되는 장애를 효율적으로 해결하기 위해 프로세스와 쓰레드의 관점을 통해 이야기를 풀어나가도록 하겠다.
+예를 들면 웹 애플리케이션을 효율적으로 운영하기 위한 `Apache`, `Tomcat` 역시 운영체제로부터 프로세스를 할당받아 컴퓨터의 자원을 사용한다. 이 의미는 Apache, Tomcat는 각각 웹 애플리케이션을 운영하기위해 어떠한 특성을 가지고 있는지 이해해야 한다는 것이다.
 
 #### 정적 리소스 관리
 
-웹 애플리케이션을 구성하면서 이미지나 HTML 페이지와 같은 정적 리소스와 요청에 따라 변하게 되는 동적 리소스는 Tomcat과 같은 WAS에서 모두 제공할 수도 있지만 이 중 정적 리소스는 Apache를 통해 관리하는 것이 유리하다.
+웹 애플리케이션을 구성하면서 이미지나 HTML 페이지와 같은 `정적(static)` 리소스를 Tomcat과 같은 WAS에서 모두 제공할 수도 있지만 정적 리소스는 Apache를 통해 관리하는 것이 유리하다.
 
 - Tomcat은 정적 페이지에 대해 Apache만큼 빠르지 못하다.
 - Tomcat은 Apache 만큼 Reverse Proxy 서버를 구성하기 위한 다양한 설정을 제공하지 않는다.
 
-그럼 Apache를 통해 얻을 수 있는 유리한 점들을 살펴보도록 하자.
+그럼 Apache를 통해 얻을 수 있는 유리한 점들을 더 살펴보도록 하자.
 
 #### Apache와 프로세스
 
-웹서버 성능에 가장 큰 영향을 주는 것은 메모리다. 스왑은 요청당 지연시간을 늘리기 때문에 웹서버는 스왑을 하면 안된다. 느려지면 사용자는 정지하고 다시 접속하여 부하가 계속 증가한다. Apache에서는 `MaxClients` 지시어를 조절하여 웹서버가 스왑을 할 정도로 많은 자식을 만들지않도록 해야 한다. 
+웹서버 성능에 가장 큰 영향을 주는 것은 메모리다. 스왑은 요청당 지연시간을 늘리기 때문에 웹서버는 스왑을 하면 안된다. 지연시간이 늘어나면 사용자는 정지하고 다시 접속하면 접차 부하가 계속 증가한다. Apache에서는 `MaxClients` 지시어를 조절하여 웹서버가 스왑을 할 정도로 많은 자식을 만들지않도록 해야 한다.
 
-방법은 간단하다: 리눅스의 `top`과 같은 도구에서 프로세스 목록을 보고 아파치 프로세스의 평균 메모리 사용량을 알아낸 후 전체 사용가능한 메모리에서 다른 프로세스들이 사용할 공간을 뺀 값에서 나눈다.
+`MaxClients`의 이상적인 값을 찾는 방법은 간단하다, 리눅스의 `top`과 같은 도구에서 프로세스 목록을 보고 아파치 프로세스의 평균 메모리 사용량을 알아낸 후 전체 사용가능한 메모리에서 다른 프로세스들이 사용할 공간을 뺀 값에서 나눈다.
 
-Apache를 단순한 Proxy로 사용하는 웹 서비스의 경우 하나의 httpd 프로세스 크기를 4m(top의 RES를 기준) 정도로 잡으면 된다. 따라서 운영체제에서 Apache를 위해 700m 메모리를 할당한다면 적당한 MaxClients 최대 설정 값은 175이다. Apache는 `prefork` 방식으로는 멀티 프로세스, `worker` 방식으로는 멀티 쓰레드를 통해 요청을 처리할 수 있다.
+> 모든 설정값은 이와 같이 이론적으로 판단할 수 있지만 정답이라는 것은 없다. 최적화를 위해서는 꼭 성능테스트를 동반하여야 한다.
 
-나머지는 평범하다. 충분히 빠른 CPU, 충분히 빠른 네트워크 카드, 충분히 빠른 디스크, 여기서 `충분히 빠른`은 실험을 해서 결정해야 한다. 운영체제는 보통 각자 알아서 선택할 일이다. 그러나 일반적으로 유용하다고 판명된 몇가지 지침이 있다
+나머지는 평범하다. 충분히 빠른 CPU, 충분히 빠른 네트워크 카드, 충분히 빠른 디스크, 여기서 `충분히 빠른`이란 의미는 실험을 통해 결정해야 한다. 운영체제는 보통 각자 알아서 선택할 일이지만 일반적으로 유용하다고 판명된 몇가지 지침은 아래와 같다.
 
 - 선택한 운영체제의 최신 안정 버전과 패치를 실행한다. 많은 운영체제 제작사는 최근 TCP 스택과 쓰레드 라이브러리에 많은 속도향상을 했다.
 - 클라이언트와 서버에 쓰이는 CPU와 메모리 모두 성능이 과거와는 비교할 수 없을 정도로 매우 좋아졌다.
 
-#### HTTPS는 HTTP 보다 느리다?
+`Keep-Alive`를 사용한다면 자식들은 이미 열린 연결에서 추가 요청을 기다리며 아무것도 하지않기 때문에 계속 바쁘다. KeepAliveTimeout의 기본값 15초는 이런 현상을 최소화한다. 네트워크 대역폭과 서버 자원 간의 균형이 맞게 설정한다. 연결유지의 대부분의 이점이 사라지기때문에 어떤 경우에도 이 값을 60 초 이상으로 올리지 마라.
 
-`암호화 비용`
+#### Keep-Alive
+
+앞서 말한 `Keep-Alive`를 활용하는 예를 설명하자면 HTTPS를 들 수 있다.
+
+`HTTPS의 암호화 비용`
 
 웹 애플리케이션에서 클라이언트 서버간에 주고 받는 메세지를 보호하기 위해서는 암호화 과정이 필요하다. HTTP는 외부의 공격이나 스니핑에 매우 취약한 프로토콜이기 때문이다. 암호화는 위해서는 HTTP에 TLS 레이어를 입힌 HTTPS 프로토콜을 일반적으로 사용한다.
 
@@ -58,13 +66,9 @@ Apache를 단순한 Proxy로 사용하는 웹 서비스의 경우 하나의 http
 
 > https://tech.ssut.me/2017/05/07/https-is-faster-than-http/
 
-`Keep-Alive`
+<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/HTTP_persistent_connection.svg/450px-HTTP_persistent_connection.svg.png' />
 
 매 요청마다 이런 handshake를 진행하고 비용이 큰 RSA 알고리즘을 통해 통신을 한다면 서버와 클라이언트 모두 큰 부하가 발생할 수 밖에 없다. 다행인 점은 위 과정이 모두 마친 후의 실제 데이터 통신은 대칭키로 암호화하여 진행된다는 점이다, 여기에 Keep-Alive를 이용하면 세션이 유지될테니 암호화 비용은 줄어 들게 된다.
-
-Keep-Alive를 사용한다면 자식들은 이미 열린 연결에서 추가 요청을 기다리며 아무것도 하지않기때문에 계속 바쁘다. KeepAliveTimeout의 기본값 15초는 이런 현상을 최소화한다. 네트워크 대역폭과 서버 자원 간의 균형이 맞게 설정한다. 연결유지의 대부분의 이점이 사라지기때문에 어떤 경우에도 이 값을 60 초 이상으로 올리지 마라.
-
-<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/HTTP_persistent_connection.svg/450px-HTTP_persistent_connection.svg.png' />
 
 `httpd.conf`
 
@@ -85,10 +89,7 @@ KeepAliveTimeout 15
 
 `CPU와 메모리 모두 성능이 과거와는 비교할 수 없을 정도로 매우 좋아졌다`
 
-나머지는 평범하다, 충분히 빠른 CPU, 충분히 빠른 네트웍카드, 충분히 빠른 디스크, 여기서 "충분히 빠른"은 실험을 해서 결정해야 한다. 그리고 운영체제는 보통 각자 알아서 선택할 일이다. 그러나 일반적으로 유용하다고 판명된 몇가지 지침이 있다.
-
-- 선택한 운영체제의 최신 안정 버전과 패치를 실행한다. 많은 운영체제 제작사는 최근 TCP 스택과 쓰레드 라이브러리에 많은 속도향상을 했다.
-- HTTPS 암호화에 쓰이는 TLS는 크게 변한 것이 없는데 반해, 클라이언트와 서버에 쓰이는 CPU와 메모리 모두 성능이 과거와는 비교할 수 없을 정도로 매우 좋아졌다.
+HTTPS 암호화에 쓰이는 TLS는 크게 변한 것이 없는데 반해, 클라이언트와 서버에 쓰이는 CPU와 메모리 모두 성능이 과거와는 비교할 수 없을 정도로 매우 좋아졌다. HTTPS가 HTTP보다 느리다는 논쟁은 앞으로 무의미할 것으로 보인다.
 
 #### Tomcat 인스턴스를 2개 이상 구성하기
 
@@ -96,14 +97,14 @@ KeepAliveTimeout 15
 
 주로 읽기 전용인 환경에 있어서는 처리 능력 향상과 가용성의 증대라는 이점도 있다. 이는 하나의 서버가 장애를 일으켜도 다른 서버로 즉시 처리를 할 수 있는 로드 밸런싱을 의미한다.
 
-> 스케일 아웃은 개개의 처리는 비교적 단순하지만 다수의 처리를 동시 병행적으로 실시하지 않으면 안 되는 경우에 적합한데 갱신 데이터의 정합성 유지에 대한 요건이 별로 어렵지 않은 경우에 적절하다. 즉 높은 병렬성을 실현하기 쉬운 경우이다. 
+> 스케일 아웃은 개개의 처리는 비교적 단순하지만 다수의 처리를 동시 병행적으로 실시하지 않으면 안 되는 경우에 적합한데 갱신 데이터의 정합성 유지에 대한 요건이 별로 어렵지 않은 경우에 적절하다. 즉 높은 병렬성을 실현하기 쉬운 경우이다.
 
 #### Tomcat 인스턴스 설정하기
 
 `인스턴스별 배포경로 및 로그파일 저장경로`
 ```
-$ mkdir -p /home/irteam/deploy/application
-$ mkdir -p /home/irteam/logs/application
+$ mkdir -p /home/jungminhyuck/deploy/application
+$ mkdir -p /home/jungminhyuck/logs/application
 ```
 
 `/scripts/application-tomcat-configurations.xml`
@@ -121,7 +122,7 @@ $ mkdir -p /home/irteam/logs/application
 
     <Engine name="Catalina" defaultHost="localhost">
       <Host name="localhost"  appBase="webapps" unpackWARs="false" autoDeploy="false" xmlValidation="false" xmlNamespaceAware="false">
-            <Context docBase="/home1/irteam/deploy/application/" path="" reloadable="false" />
+            <Context docBase="/home1/jungminhyuck/deploy/application/" path="" reloadable="false" />
       </Host>
     </Engine>
   </Service>
@@ -132,17 +133,17 @@ $ mkdir -p /home/irteam/logs/application
 ```bash
 #!/usr/bin/env bash
 
-XML="/home1/irteam/scripts/application-tomcat-configurations.xml"
+XML="/home1/jungminhyuck/scripts/application-tomcat-configurations.xml"
 
 export LC_ALL="en_US.utf8"
 export LANG="en_US.utf8"
-export JAVA_HOME="/home1/irteam/apps/jdk"
-export CATALINA_HOME="/home1/irteam/apps/tomcat"
-export CATALINA_BASE="/home1/irteam/apps/tomcat"
-export CATALINA_TMPDIR="/home1/irteam/apps/tomcat/temp"
-export CLASSPATH="/home1/irteam/apps/tomcat/bin/bootstrap.jar"
-export CATALINA_LOG="/home1/irteam/logs/application/catalina.log"
-export CATALINA_OUT="/home1/irteam/logs/application/catalina.log"
+export JAVA_HOME="/home1/jungminhyuck/apps/jdk"
+export CATALINA_HOME="/home1/jungminhyuck/apps/tomcat"
+export CATALINA_BASE="/home1/jungminhyuck/apps/tomcat"
+export CATALINA_TMPDIR="/home1/jungminhyuck/apps/tomcat/temp"
+export CLASSPATH="/home1/jungminhyuck/apps/tomcat/bin/bootstrap.jar"
+export CATALINA_LOG="/home1/jungminhyuck/logs/application/catalina.log"
+export CATALINA_OUT="/home1/jungminhyuck/logs/application/catalina.log"
 
 ${CATALINA_BASE}/bin/startup.sh -config ${XML}
 ```
@@ -173,13 +174,13 @@ export CATALINA_OPTS="$CATALINA_OPTS -Dspring.profiles.active=dev"
 
 `maxThread`는 Tomcat이 요청을 처리하기 위해 만들어내는 최대 Thread 개수를 의미한다. Tomcat과 같은 WAS에서 설정해야 하는 값이 굉장히 많지만 그 중 가장 성능에 많은 영향을 주는 부분은 maxThread와 같이 Thread Pool에 직접적으로 연관된 설정일 것이다.
 
-Thread Pool에 대한 설정은 메모리를 얼마나 할당할 것인가와 관련이 있기 때문에 Thread를 수를 많이 사용할 수록 메모리를 많이 점유하게 된다. 그렇다고 반대로 메모리를 위해 적게 지정한다면, 서버에서는 많은 요청을 처리하지 못하고 대기하는 상황이 생길수 있다. 
+Thread Pool에 대한 설정은 메모리를 얼마나 할당할 것인가와 관련이 있기 때문에 Thread를 수를 많이 사용할 수록 메모리를 많이 점유하게 된다. 그렇다고 반대로 메모리를 위해 적게 지정한다면, 서버에서는 많은 요청을 처리하지 못하고 대기하는 상황이 생길수 있다.
 
-#### Thread Pool 관리 어떻게 하면 좋을까?
+#### 쓰레드 풀 관리는 어떻게 하면 좋을까?
 
-Tomcat의 maxThread 개수를 위해 고려할 점은 웹 애플리케이션과 연관되는 시스템도 고려할 필요가 있다. 예를 들면 실제 운영중인 서비스에서 DB connection pool 값이 200에 가까운 수치가 설정되어 있어, 문제가 발생된 경우를 보았다. 무엇보다 WAS의 maxThread의 개수는 DB connection pool의 개수 보다 적게 설정 되어 있었는데 이는 효율적이지 못하다.
+Tomcat의 maxThread 개수를 위해 고려할 점은 웹 애플리케이션과 연관되는 시스템도 고려할 필요가 있다. 예를 들면 실제 운영중인 서비스에서 DB connection pool 값이 200에 가까운 수치가 설정되어 있어, 문제가 발생된 경우를 보았다. 무엇보다 WAS의 maxThread의 개수는 DB 커넥션 풀의 개수에 비해 적게 설정 되어 있었는데 이는 효율적이지 못하다.
 
-그 이유는 애플리케이션에 대한 모든 요청이 DB에 접근하는 것은 아니기 때문이다. WAS의 maxThread는 DB connection pool의 수보다 여유있게 설정하는 것이 좋다. DB connection pool은 서비스의 상황에 따라 다르지만 보통 50개로 지정하면 Thread는 이보다 10-20개 정도 더 지정하는 것이 바람직하다. 하지만 무엇보다 중요한 것은 성능 테스트로 다수의 서버에서 옵션을 달리해 결과를 비교하는 것이 가장 빠른 검토 결과를 얻을 수 있다는 것이다. 
+그 이유는 애플리케이션에 대한 모든 요청이 DB에 접근하는 것은 아니기 때문이다. WAS의 maxThread는 DB connection pool의 수보다 여유있게 설정하는 것이 좋다. DB connection pool은 서비스의 상황에 따라 다르지만 보통 50개로 지정하면 Thread는 이보다 10-20개 정도 더 지정하는 것이 바람직하다. 하지만 무엇보다 중요한 것은 성능 테스트로 다수의 서버에서 옵션을 달리해 결과를 비교하는 것이 가장 빠른 검토 결과를 얻을 수 있다는 것이다.
 
 ## 컴퓨터 자원과 운영체제에 따라 달라지는 GC 성능
 
@@ -198,7 +199,7 @@ Tomcat의 인스턴스 개수를 정하여 효율적으로 컴퓨터의 자원�
 
 64bit JVM은 32bit보다 30~40%의 Heap을 더 사용한다. 따라서 더 많은 메모리 할당이 필요하고, GC할 때 더 많은 시간이 걸린다. 하지만 32bit의 JVM은 아래와 같은 제약사항을 가진다.
 
-운영체제 | 제약사항 
+운영체제 | 제약사항
 --|--
 리눅스 | 최대 2GB Heap, hugemem 커널의 경우 3GB
 윈도우 | 최대 1.5GB Heap
@@ -218,20 +219,21 @@ Tomcat 인스턴스를 다수를 확보하는 요인중의 하나가 인스턴�
 
 `JVM의 Garbage Collector`
 
-JVM에서 어떤 GC를 사용할 것인지, 즉 GC 알고리즘에 따라 성능이 결정되기도 한다. 
+JVM에서 어떤 GC를 사용할 것인지, 즉 GC 알고리즘에 따라 성능이 결정되기도 한다.
 
 #### 정말로 한 BOX에서 다수의 Tomcat 인스턴스를 구성하는 것이 효율적일까?
 
 우리는 지금까지 다수의 Tomcat 인스턴스를 통해 `컴퓨터의 자원을 효율적`으로 사용하고 `가용성`의 측면에서 이득을 본다고 했는데 Tomcat 인스턴스를 한대만 운영하는 것이 좋은 경우도 있을까?
 
-다수의 장비를 운용할 수 있는 환경이 주어진다면 오히려 하나의 인스턴스를 운영하는 것이 대게 성능이 좋은 경우가 많은데 이는 운영체제에서 `CPU의 자원을 각 프로세스에 Scheduling 정책`에 따라서 할당하기 때문이다. 이는 JVM에서 어떤 GC를 사용할 것인지, 즉 `GC 알고리즘`에 따라 그대로 성능에 반영되게 된다. 
+다수의 장비를 운용할 수 있는 환경이 주어진다면 오히려 하나의 인스턴스를 운영하는 것이 대게 성능이 좋은 경우가 많은데 이는 운영체제에서 `CPU의 자원을 각 프로세스에 Scheduling 정책`에 따라서 할당하기 때문이다. 거기다 Tomcat의 인스턴스를 다수를 운영할 때에는 한 장비에서 수용할 수 있는 maxThread 설정을 분산해야하는 등 고려해야할 일이 많아지는 것도 단점이다.
 
-거기다 Tomcat의 인스턴스를 다수를 운영할 때에는 한 장비에서 수용할 수 있는 maxThread 설정을 분산해야하는 등 고려해야할 일이 많아지는 것도 단점이다.
+하지만 물론 정답이라는 것은 없으며 최적화를 위해서는 꼭 성능테스트를 동반하여야 한다.
+
+중요한 것은 서비스의 성격에 따라 어떤 Garbage Collection을 사용할 것인지에 대한 고민은 해야한다는 의미이다. 모든 서비스에 완벽하게 맞아 떨어지는 GC 알고리즘은 없다. 각 애플리케이션의 특정 동작에 따라 처리량을 늘리거나 줄일 수 있는 수 많은 옵션을 따져 적합한 GC를 사용하도록 하자.
 
 #### `"그렇다면 어떤 컴퓨팅 환경과 JVM의 Garbage Collector에 따라서 전략이 달라질까?"`
 
 우리가 GC에 대해 이야기할 때, 우리 대부분은 그 개념을 알고 있으며 우리의 일상적인 프로그래밍에 그것을 사용하고 있다. 그럼에도 불구하고, 우리가 이해할 수 없는 일이 발생한다. JVM에 대한 가장 큰 오해 중 하나는 하나의 GC를 보유하고 있다는 점인데 그렇지 않다. 아래에서는 각각 고유한 장점과 단점이 있는 네개의 서로 다른 Garbage Collector를 살펴보도록 하겠다.
-
 
 ## JVM의 다양한 Garbage Collector
 
@@ -272,7 +274,7 @@ Serial GC는 가장 단순한 GC이지만 사용하지 않는 것을 추천한�
 다음 Parallel GC은 JVM의 디폴트 Collector로 말 그대로 병렬로 GC한다. 메모리가 충분하고 CPU의 성능과 코어 개수가 많아 순간적으로 트래픽이 몰려도 일시 중단을 견딜 수 있고 GC에 의해 야기된 CPU 오버 헤드에 대해 최적화할 수 있는 애플리케이션에 가장 적합합니다.
 
 - `-XX:+UseParallelGC` 옵션을 사용하여 Minor GC 에서 활성화 할 수 있다.
-- `-XX:+UseParallelOldGC` 옵션을 사용하여 Major GC에서 활성화 할 수 있다. 
+- `-XX:+UseParallelOldGC` 옵션을 사용하여 Major GC에서 활성화 할 수 있다.
 
 #### The Concurrent Mark & Sweep GC
 
@@ -290,23 +292,25 @@ Serial GC는 가장 단순한 GC이지만 사용하지 않는 것을 추천한�
 
 만약 운영체제에서 JVM 인스턴스에 할당할 수 있는 메모리의 크기가 4GB보다 큰 경우에는 G1 GC 알고리즘을 사용할 수 있다. CMS는 애플리케이션의 Thread 정지 시간을 최소화 하여 응답시간 지연을 줄이고자 하는 웹 애플리케이션에 적당하다.
 
-- Major GC 실행시 Application Thread와 GC Thread가 동시에 수행된다. 
-- `-XX:+UseConcMarkSweepGC` 옵션을 사용하여 활성화 할 수 있다. 
+- Major GC 실행시 Application Thread와 GC Thread가 동시에 수행된다.
+- `-XX:+UseConcMarkSweepGC` 옵션을 사용하여 활성화 할 수 있다.
 - Minor GC에서 Parallel Collector를 활성화하기 위해서는 `-XX:+UseParNewGC` 옵션을 사용해야 하며 `-XX:+UseParallelGC`와 같이 사용해서는 안된다!
 
 #### The G1(Garbage First) GC
 
 G1 GC는 Java 1.7 부터 도입되었으며 4GB보다 더욱 큰 자원을 제공하도록 설계되었다. G1 GC를 이해하려면 지금까지의 Young 영역과 Old 영역에 대해서는 잊는 것이 좋다.
 
-GC GC는 Generational 한 알고리즘과는 다르게 백그라운드의 멀티 쓰레드를 활용해 1MB에서 32MB까지의 수 많은 리젼으로 Heap을 분할한다. 
+GC GC는 Generational 한 알고리즘과는 다르게 백그라운드의 멀티 쓰레드를 활용해 1MB에서 32MB까지의 수 많은 리젼으로 Heap을 분할한다.
 
 <img src='http://d2.naver.com/content/images/2015/06/helloworld-1329-6.png' width='400' />
+
+> http://d2.naver.com/helloworld/1329
 
 G1 GC는 위와 같이 바둑판의 각 영역에 객체를 할당하고 GC를 실행한다. 그러다가, 해당 영역이 꽉 차면 다른 영역에서 객체를 할당하고 GC를 실행한다. 즉, 지금까지 설명한 Young의 세가지 영역에서 데이터가 Old 영역으로 이동하는 단계가 사라진 GC 방식이라고 이해하면 된다. G1 GC는 장기적으로 말도 많고 탈도 많은 CMS GC를 대체하기 위해서 만들어 졌다.
 
 G1 GC의 가장 큰 장점은 성능이다. 지금까지 설명한 어떤 GC 방식보다도 빠르다.
 
-하지만 이와 같이 4GB 이상의 큰 Heap을 가지는 것은 요즘과 같이 마이크로 서비스 아키텍쳐에서는 논쟁 거리가 될만하다. 지난 몇 년동안 많은 개발자들이 거대한 시스템을 작은 마이크로 단위로 옮기는 노력을 해왔기 때문이다. 
+하지만 이와 같이 4GB 이상의 큰 Heap을 가지는 것은 요즘과 같이 마이크로 서비스 아키텍쳐에서는 논쟁 거리가 될만하다. 지난 몇 년동안 많은 개발자들이 거대한 시스템을 작은 마이크로 단위로 옮기는 노력을 해왔기 때문이다.
 
 이는 다양한 애플리케이션을 서로 격리하고 효율적인 배포 프로세스를 통해 거대한 애플리케이션 클래스를 메모리에 로드하는데 소요되는 비용을 절감하는 등 많은 요인을 포함하고 있다. 이는 애플리케이션을 동일한 물리적 머신에 배포할 수 있도록 하는 Docker와 같은 컨테이너 기술에 의해 가속화 되어 왔다.
 
@@ -325,7 +329,7 @@ JDK 8에서는 Perm 영역이 아니라 Metaspace에 클래스 정보가 올라�
 `JVM Options 예시`
 
 ```
--Djava.awt.headless=true -Dfile.encoding=UTF-8 -server -Xms2048m -Xmx2048m -XX:MaxMetaspaceSize=512m -XX:+UseG1GC -XX:+DisableExplicitGC -XX:+UseStringDeduplication 
+-Djava.awt.headless=true -Dfile.encoding=UTF-8 -server -Xms2048m -Xmx2048m -XX:MaxMetaspaceSize=512m -XX:+UseG1GC -XX:+DisableExplicitGC -XX:+UseStringDeduplication
 ```
 
 ## Java 9의 Garbage Collector
@@ -340,29 +344,27 @@ JDK 8에서는 Perm 영역이 아니라 Metaspace에 클래스 정보가 올라�
 
 이러한 Garbage Collector에 대한 변화는 처리량을 극대화하는 것보다 GC의 지연 시간을 제한하는 것이 더 중요하다는 가정 하에 이루어졌다. 만약 이 가정이 잘못되었다면 이 변화는 재고해야 할 필요가 있을 수 있다.
 
-#### 어떤 GC 알고리즘을 선택해야 할까?
+## 어떤 GC 알고리즘을 선택해야 할까?
+
+<img src='https://blogs.thomsonreuters.com/answerson/wp-content/uploads/sites/3/2015/09/519915153-getty-competition-pursuit-push-performance-800x450.jpg' />
 
 우리는 다양한 GC 알고리즘을 살펴보았지만 중요한 것은 모든 서비스에 완벽하게 맞아 떨어지는 GC 알고리즘은 없다는 것이다. 각 애플리케이션의 특정 동작에 따라 처리량을 늘리거나 줄일 수 있는 수 많은 옵션을 따져 적합한 GC를 사용하도록 하자.
 
 ## JVM 튜닝 꼭 해야할까?
 
-JVM 튜닝은 가장 마지막에 고려하는 것이 좋다. 애플리케이션을 구동하는 운영체제에 메모리가 해제되지 않는 등의 이상 징후가 생긴다면 먼저 애플리케이션에서 과도하게 많은 메모리를 차지하는 객체를 추적할 필요가 있다. 특히 웹 애플리케이션과 같은 멀티 쓰레드 환경에서는 한 자원에 여러 쓰레드가 동시에 접근하면서 메모리 참조에 이상이 생기는 경우가 있다. 
+JVM 튜닝은 가장 마지막에 고려하는 것이 좋다. 
 
-메모리 참조에 이상이 생기면 해제해야 하는 Garbage 객체가 누수되어 시스템에 큰 영향을 미치게 된다. 가장 많이 하는 실수는 메모리를 이용하는 LruCache과 같은 클래스를 구현하면서 `HashMap`를 잘못 사용하는 경우이다. `HashMap`의 put(), get()를 사용할때에는 동기화를 통해 Thread Safe하게 코드를 작성하거나 ConcurrentHashMap를 사용해야 한다.
+#### `"JVM 튜닝을 하기전에 스스로에게 3번정도 꼭 다시 물어보자."`
 
-#### `"꼬리를 잡자!"`
+그 이유는 대게의 문제는 JVM 튜닝이 필요한 것이 아니라 애플리케이션 내부에 이슈가 있는 경우가 많기 때문이다. 애플리케이션을 구동하는 운영체제에 메모리가 해제되지 않는 등의 이상 징후가 생긴다면, 먼저 애플리케이션에서 과도하게 많은 메모리를 차지하는 객체를 추적할 필요가 있다. 
 
-만약 Heap 메모리의 최대 용량이 1,398,144K 까지 가능할 때 Full GC후에는 약 10% 이하가 유지되어야 한다. 아래와 같이 Full GC 후에도 점차 Heap영역이 증가 한다면 이상 징후에 대한 조치가 필요한 상태일 것이다.
+특히 웹 애플리케이션과 같은 멀티 쓰레드 환경에서는 한 자원에 여러 쓰레드가 동시에 접근하면서 메모리 참조에 이상이 생기는 경우가 있다.
 
-```
-[Full 1397073K -> 116835K (1398144K)]
-[Full 1395193K -> 142874K (1398144K)]
-[Full 1395081K -> 146435K (1398144K)]
-[Full 1395310K -> 374266K (1398144K)]
-[Full 1395357K -> 629070K(1398144K)]
-```
+이 의미는 Garbage 객체가 누수되어 시스템에 좋지 않은 영향을 미친다는 것이다. 가장 많이 하는 실수는 메모리를 이용하는 클래스를 구현하면서 클래스 내부의 `HashMap`을 잘못 사용하는 경우이다. `HashMap`의 put(), get()를 사용할 때에는 동기화 기법을 통해 Thread Safe하게 코드를 작성하거나 `ConcurrentHashMap` 를 사용하는 것을 추천한다.
 
-이외에도 운영중에 다양한 이슈가 생길수가 있는데 메모리 참조에 이상이 생긴 객체들을 찾아내는 다양한 기법을 알아보도록 하자.
+이어서 메모리 참조에 이상이 생긴 객체들을 효과적으로 찾는 다양한 기법을 알아보도록 하자.
+
+## GC 모니터링
 
 #### GC 로그를 위한 JVM Options
 
@@ -394,7 +396,7 @@ $ kill -3 :PID
 
 #### jstat 명령을 통한 GC 모니터링
 
-현재 JVM의 메모리 상태를 확인해 볼 수 있다.
+현재 JVM의 메모리 상태를 확인할 수 있다.
 
 ```
 $JAVA_HOME/bin/jstat
@@ -402,7 +404,11 @@ $JAVA_HOME/bin/jstat
 
 #### Memory Analyzer(MAT)
 
+이클립스를 사용한다면 MAT 플러그인도 도움이 된다. MAT은 hprof 파일을 분석해서 메모리 분석, 통계를 내는 기능을 제공한다.
+
 - http://eclipse.org/mat
+
+## 정리하며
 
 지금까지 Java 시스템 운영 중 알아두면 쓸데있는 지식들을 살펴보았습니다. 대용량의 웹 애플리케이션을 운영 하다보면 다양한 문제에 노출되기 쉬운데 여러 각도에서 자신의 시스템을 바라볼 수 있다면 더욱 견고한 시스템을 만들 수 있을 것이라고 생각합니다. 아래는 이 글을 작성하면서 참고한 문서들인데 도움이 되었으면 합니다 :)
 
