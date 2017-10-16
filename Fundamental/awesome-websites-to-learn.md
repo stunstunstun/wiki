@@ -1,6 +1,4 @@
 
-입문자 부터 숙련자까지 프로그래밍을 학습하기 위한 단계별 웹사이트를 소개한다.
-
 ## Beginner
 
 #### MOCC
@@ -27,7 +25,6 @@
 - [IDeserve](http://www.ideserve.co.in/#dynamicProgramming)
 - [개발을 잘하고 싶어요](https://www.slideshare.net/deview/ss-58739254)
 
-
 #### Computer Science
 
 - [CS50](https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/info)
@@ -41,14 +38,14 @@
 
 #### Github Repos
 
-- [Every Programmer Should Know 🤔](https://github.com/mr-mig/every-programmer-should-know)
+- [Every Programmer Should Know](https://github.com/mr-mig/every-programmer-should-know)
 - [Awesome Coureses](https://github.com/prakhar1989/awesome-courses)
 - [OSS University](https://github.com/open-source-society/computer-science)
 - [Free Code Camp](https://github.com/freeCodeCamp/freeCodeCamp)
 - [Algo Wiki](https://github.com/vicky002/AlgoWiki)
 - [Interview Questions](https://github.com/MaximAbramchuck/awesome-interview-questions)
-- [Awesome Programmers]
-(https://github.com/rekihattori/awesome-programmers)
+- [Tech Interview Guidelines](https://github.com/yangshun/tech-interview-handbook)
+- [Awesome Programmers](https://github.com/rekihattori/awesome-programmers)
 
 ## Advanced
 
@@ -85,7 +82,7 @@
 
 - [HTML5 Tutorials](https://www.w3schools.com/html/)
 - [CSS3 Layout Tutorials](http://ko.learnlayout.com/)
-- [생활코딩 야학](https://yah.ac/1)
+- [코딩야학](https://yah.ac/1)
 - [Codecademy Tutorials](https://www.codecademy.com/learn/all)
 - [Code Tutorials](https://code.tutsplus.com/tutorials)
 - [Advanced Tutorials](https://semaphoreci.com/community/tutorials)

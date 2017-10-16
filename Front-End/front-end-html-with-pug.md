@@ -1,5 +1,5 @@
 ---
-title: Pug로 HTML을 개발해보자 
+title: Pug를 통한 템플릿 개발
 date: 2017-06-02 13:07:11
 categories: front-end
 ---
@@ -45,6 +45,7 @@ $ npm install pug gulp-pug --save-dev
 
 ## References
 
+- https://pugjs.org/api/getting-started.html
 - http://www.luisgamero.com/setting-up-pug-jade-in-an-ionic-project-using-gulp/
 - http://learn.shayhowe.com/advanced-html-css/preprocessors/
 - https://blog.codepen.io/documentation/editor/using-html-preprocessors/

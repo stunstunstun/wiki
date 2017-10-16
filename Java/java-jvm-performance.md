@@ -4,7 +4,7 @@ date: 2017-10-09 00:49:31
 categories: java
 ---
 
-우리가 개발한 Java 애플리케이션, 특히 서버 애플리케이션은 운영 중에 아래와 같은 메세지와 함께 장애로 이어지는 결과가 일어나곤 합니다.
+Java 기반의 서버 애플리케이션은 운영 중에 아래와 같은 메세지와 함께 장애로 이어지는 결과가 일어나곤 합니다.
 
 <!-- more -->
 
@@ -16,19 +16,23 @@ Java.lang.OutOfMemoryError: Java heap space
 Java.lang.OutOfMemoryError: Permgen space
 ```
 
-Java 기반의 애플리케이션의 메모리는 운영체제의 JVM에서 관리하기 때문에 `Full GC`로 인해 애플리케이션이 멈추어버리는 Stop The World 현상에서 자유로울 수 없습니다.
+Java 기반의 애플리케이션의 메모리는 운영체제의 JVM에서 관리하기 때문에 최악의 효율이 발생한다면 `Full GC(Garbage Collection)`로 인해 애플리케이션이 멈추어버리는 Stop The World 현상에서 자유로울 수 없습니다.
 
-우리가 개발하고 운영하는 서비스에서도 하루에도 몇 번씩 GC가 발생하고 있고, 이런 상황에서 장애로 인한 Notification을 받지 않아도 우리의 생각과는 다르게 사용자에게 `503` 오류가 반환되고 있을지도 모르는 일입니다.
+이렇게 우리가 운영하고 있는 서비스는 하루에도 몇 번씩 `Garbage Collection`가 발생하고 있고, 이런 상황에서 시스템 이슈로 인한 장애 알람을 받지 않아도 우리의 생각과는 다르게 사용자에게 `503(SERVICE UNAVAILABLE)` 오류가 반환되고 있을지도 모르는 일입니다.
 
 이 글에서는 Java 시스템을 운영 중 문제가 발생할 때 기본적으로 알아두어야할 내용을 다룹니다.
 
 ## 프로세스와 쓰레드
 
-서버 또는 웹 애플리케이션은 많은 사용자의 요청을 처리해야 하기 때문에 효과적으로 컴퓨터의 자원을 활용하는 것이 중요하다. 운영체제는 컴퓨터의 자원을 여러 프로세스가 효율적으로 사용할 수 있도록 도와준다.
+웹 애플리케이션은 일반적인 경우에는 처리량을 극대화하는 것보다는 많은 사용자에게 지연 시간을 최대한 줄이면서 안정적인 서비스를 제공하는 것이 중요하다.
 
-예를 들면 웹 애플리케이션을 효율적으로 운영하기 위한 `Apache`, `Tomcat` 역시 운영체제로부터 프로세스를 할당받아 컴퓨터의 자원을 사용한다. 이 의미는 Apache, Tomcat는 각각 웹 애플리케이션을 운영하기위해 어떠한 특성을 가지고 있는지 이해해야 한다는 것이다.
+좋은 시스템은 이와 같이 어떻게 서비스의 특징에 맞게 컴퓨터의 자원을 효율적으로 사용하는지에 대한 고민으로 시작된다.
 
-#### 정적 리소스 관리
+우리가 알다시피 운영체제는 컴퓨터의 자원을 여러 프로세스가 효율적으로 사용할 수 있도록 도와준다. 예를 들면 웹 애플리케이션을 효율적으로 운영하기 위해 `Apache`, `Tomcat`를 사용한다고 가정해보자. Apache, Tomcat 역시 운영체제로부터 프로세스를 할당받아 컴퓨터의 자원을 사용하고 애플리케이션 내부에서는 프로세스의 자원을 활용해 쓰레드를 생성한다.
+
+이것은 운영체제에서 서버 애플리케이션을 효율적으로 운영하기위해서는 먼저 Apache, Tomcat의 특성을 파악해야하는 것을 의미한다.
+
+#### Apache는 정적 리소스를 효율적으로 제공한다
 
 웹 애플리케이션을 구성하면서 이미지나 HTML 페이지와 같은 `정적(static)` 리소스를 Tomcat과 같은 WAS에서 모두 제공할 수도 있지만 정적 리소스는 Apache를 통해 관리하는 것이 유리하다.
 
@@ -70,7 +74,7 @@ Java 기반의 애플리케이션의 메모리는 운영체제의 JVM에서 관�
 
 매 요청마다 이런 handshake를 진행하고 비용이 큰 RSA 알고리즘을 통해 통신을 한다면 서버와 클라이언트 모두 큰 부하가 발생할 수 밖에 없다. 다행인 점은 위 과정이 모두 마친 후의 실제 데이터 통신은 대칭키로 암호화하여 진행된다는 점이다, 여기에 Keep-Alive를 이용하면 세션이 유지될테니 암호화 비용은 줄어 들게 된다.
 
-`httpd.conf`
+`예) httpd.conf 에서의 Keep-Alive 설정`
 
 ```
 # KeepAlive: Whether or not to allow persistent connections (more than
@@ -87,17 +91,19 @@ MaxKeepAliveRequests 100
 KeepAliveTimeout 15
 ```
 
-`CPU와 메모리 모두 성능이 과거와는 비교할 수 없을 정도로 매우 좋아졌다`
+#### CPU와 메모리 모두 성능이 과거와는 비교할 수 없을 정도로 매우 좋아졌다
 
 HTTPS 암호화에 쓰이는 TLS는 크게 변한 것이 없는데 반해, 클라이언트와 서버에 쓰이는 CPU와 메모리 모두 성능이 과거와는 비교할 수 없을 정도로 매우 좋아졌다. HTTPS가 HTTP보다 느리다는 논쟁은 앞으로 무의미할 것으로 보인다.
 
-#### Tomcat 인스턴스를 2개 이상 구성하기
+## Tomcat 인스턴스의 구성
 
-웹 애플리케이션은 `scale-up` 보다는 `scale-out` 하기 적합한 구조적인 특성을 갖고 있다. 이로 인해 장비의 성능에 따라 한 대의 물리적인 장비에 한 개의 Apache 서버와 여러 개의 Tomcat 인스턴스를 구성하는 것이 일반적이다.
+웹 애플리케이션은 `스케일-업` 보다는 `스케일-아웃` 하기 적합한 구조적인 특성을 가지고 있어 장비의 성능에 따라 한 대의 물리적인 장비에 한 개의 Apache 서버와 여러 개의 Tomcat 인스턴스를 구성하는 것이 일반적이였다.
 
-주로 읽기 전용인 환경에 있어서는 처리 능력 향상과 가용성의 증대라는 이점도 있다. 이는 하나의 서버가 장애를 일으켜도 다른 서버로 즉시 처리를 할 수 있는 로드 밸런싱을 의미한다.
+<img src='http://static.richardnichols.net/wp-content/uploads/2010/08/Tomcat-cluster-diagram.png' />
 
-> 스케일 아웃은 개개의 처리는 비교적 단순하지만 다수의 처리를 동시 병행적으로 실시하지 않으면 안 되는 경우에 적합한데 갱신 데이터의 정합성 유지에 대한 요건이 별로 어렵지 않은 경우에 적절하다. 즉 높은 병렬성을 실현하기 쉬운 경우이다.
+주로 읽기 전용인 환경에 있어서 처리 능력 향상과 가용성의 증대라는 이점도 있다. 이는 하나의 서버가 장애를 일으켜도 다른 서버로 즉시 처리를 할 수 있는 로드 밸런싱을 의미한다.
+
+> 스케일 아웃은 개개의 처리는 비교적 단순하지만 다수의 처리를 동시 병행적으로 실시하지 않으면 안 되는 경우에 적합한데 갱신 데이터의 정합성 유지에 대한 요건이 별로 어렵지 않은 경우에 적절하다
 
 #### Tomcat 인스턴스 설정하기
 
@@ -168,28 +174,41 @@ fi
 export CATALINA_OPTS="$CATALINA_OPTS -Dspring.profiles.active=dev"
 ```
 
-지금까지의 과정을 통해 우리는 2개 이상의 Tomcat 인스턴스를 운영하기 위한 준비를 마쳤다. 앞으로 생각해보아야 할 문제는 아래와 같다.
-
 #### Tomcat의 애플리케이션의 maxThread는 어떤 기준으로 정의해야 하나?
 
-`maxThread`는 Tomcat이 요청을 처리하기 위해 만들어내는 최대 Thread 개수를 의미한다. Tomcat과 같은 WAS에서 설정해야 하는 값이 굉장히 많지만 그 중 가장 성능에 많은 영향을 주는 부분은 maxThread와 같이 Thread Pool에 직접적으로 연관된 설정일 것이다.
+`maxThread`는 Tomcat이 요청을 처리하기 위해 만들어내는 최대 Thread 개수를 의미한다. Tomcat과 같은 WAS는 설정해야 하는 값이 굉장히 많지만 그 중 가장 성능에 많은 영향을 주는 부분은 maxThread와 같이 Thread Pool에 직접적으로 연관된 설정일 것이다.
 
 Thread Pool에 대한 설정은 메모리를 얼마나 할당할 것인가와 관련이 있기 때문에 Thread를 수를 많이 사용할 수록 메모리를 많이 점유하게 된다. 그렇다고 반대로 메모리를 위해 적게 지정한다면, 서버에서는 많은 요청을 처리하지 못하고 대기하는 상황이 생길수 있다.
 
-#### 쓰레드 풀 관리는 어떻게 하면 좋을까?
+#### 웹 애플리케이션은 외부의 어떤 시스템과 연관되어 있나?
 
-Tomcat의 maxThread 개수를 위해 고려할 점은 웹 애플리케이션과 연관되는 시스템도 고려할 필요가 있다. 예를 들면 실제 운영중인 서비스에서 DB connection pool 값이 200에 가까운 수치가 설정되어 있어, 문제가 발생된 경우를 보았다. 무엇보다 WAS의 maxThread의 개수는 DB 커넥션 풀의 개수에 비해 적게 설정 되어 있었는데 이는 효율적이지 못하다.
+Tomcat의 maxThread 개수를 위해 고려할 점은 웹 애플리케이션과 연관되는 시스템도 고려할 필요가 있다. 예를 들면 실제 운영 중인 서비스에서 DB 커넥션값이 200에 가까운 수치가 설정되어 있어 문제가 발생된 경우를 보았다. 무엇보다 WAS의 maxThread의 개수는 DB 커넥션 풀의 개수에 비해 적게 설정 되어 있었는데 이는 효율적이지 못하다.
 
-그 이유는 애플리케이션에 대한 모든 요청이 DB에 접근하는 것은 아니기 때문이다. WAS의 maxThread는 DB connection pool의 수보다 여유있게 설정하는 것이 좋다. DB connection pool은 서비스의 상황에 따라 다르지만 보통 50개로 지정하면 Thread는 이보다 10-20개 정도 더 지정하는 것이 바람직하다. 하지만 무엇보다 중요한 것은 성능 테스트로 다수의 서버에서 옵션을 달리해 결과를 비교하는 것이 가장 빠른 검토 결과를 얻을 수 있다는 것이다.
+그 이유는 애플리케이션에 대한 모든 요청이 DB에 접근하는 것은 아니기 때문이다. WAS의 maxThread는 DB 커넥션 수보다 여유있게 설정하는 것이 좋다.
+
+#### 전환하기
+
+지금까지의 과정을 통해 우리는 다수의 Tomcat 인스턴스를 운영하기 위한 준비를 마쳤다. 하지만 앞으로 생각해보아야 할 문제가 더욱 중요하다.
+
+## 정말로 한 Box에서 다수의 Tomcat 인스턴스를 구성하는 것이 효율적일까?
+
+우리는 지금까지 다수의 Tomcat 인스턴스를 통해 `컴퓨터의 자원을 효율적`으로 사용하고 `가용성`의 측면에서 이득을 본다고 했지만 안정적인 시스템을 위한 설계는 컴퓨터의 자원과 운영체제에 따라 언제든지 달라질 수 있다.
+
+이보다는 다수의 장비를 운용하면서 한 Box에서 하나의 인스턴스를 운영하는 것이 대게 성능이 좋은 경우가 많은데 이는 운영체제에서 `CPU의 자원을 각 프로세스에 Scheduling 정책`에 따라서 할당하기 때문이다. 
+
+거기다 Tomcat의 인스턴스를 다수를 운영할 때에는 한 장비에서 수용할 수 있는 `maxThread` 설정을 분산해야하는 등 고려해야할 일이 많아지는 것도 단점이다.
+
+덧붙히면 이 이슈는 마이크로 서비스 아키텍쳐에서는 논쟁 거리가 될만하다. 지난 몇 년동안 많은 개발자들이 거대한 시스템을 작은 마이크로 단위로 옮기는 노력을 해왔기 때문이다. 
+
+거기다 JVM과 컴퓨터의 성능은 점점 향상되고 있다는 것이다. G1 GC가 안정적으로 작동하는 지금은 한 장비에서 4GB 이하로 자원을 나누어 다수의 Tomcat 인스턴스를 운영하는 것은 재고할만 하다.
+
+> http://openjdk.java.net/jeps/156
+
+물론 정답이라는 것은 없으며 최적화를 위해서는 꼭 성능테스트를 동반하여야 한다.
 
 ## 컴퓨터 자원과 운영체제에 따라 달라지는 GC 성능
 
 Tomcat의 인스턴스 개수를 정하여 효율적으로 컴퓨터의 자원을 활용하기 위해서는 CPU의 코어의 개수, 운영체제가 32bit인지 64bit인지, JVM에서는 어떤 Garbage Collector를 사용하는지에 따라 달라질 수 있기 때문에 단순하게 접근하기는 힘들다고 볼 수 있다.
-
-- CPU 코어의 수
-- 메모리 크기, 운영체제의 비트 체계
-- 가용성(Fail Over)
-- JVM의 Garbage Collector
 
 `CPU 코어의 수`
 
@@ -205,35 +224,22 @@ Tomcat의 인스턴스 개수를 정하여 효율적으로 컴퓨터의 자원�
 윈도우 | 최대 1.5GB Heap
 Mac OS X | 3.8GB
 
-JVM Heap을 무한정 늘리면 Full GC 시간 증가로 인해 오히려 성능 병목이 될 수 있다. 32bit JVM을 사용하고 2-4GB 이하의 Heap 설정을 사용하는게 나을 수 있다. JVM의 Heap을 증가시키기 보다는 JVM의 인스턴스를 늘려 클러스터링이나 로드밸런서로 가용성을 확보하는 방법을 권장한다.
+G1 GC를 제외한 GC에서는 JVM Heap을 무한정 늘리면 Full GC 시간 증가로 인해 오히려 성능 병목이 될 수 있다. 32bit JVM을 사용하고 2-4GB 이하의 Heap 설정을 사용하는게 나을 수 있다. JVM의 Heap을 증가시키기 보다는 JVM의 인스턴스를 늘려 클러스터링이나 로드밸런서로 가용성을 확보하는 방법을 권장한다.
 
-`예) 32bit의 운영체제에서 2GB의 메모리를 활용하는 JVM의 권장 Option`
-
+> 32bit의 운영체제에서 2GB의 메모리를 활용하는 JVM의 권장 Option
 ```
 -Djava.awt.headless=true -server -Xmx1024m –Xms1024m -XX:NewSize=384m -XX:MaxNewSize=384m -XX:MaxPermSize=128m
 ```
-
-`가용성(Fail Over)`
-
-Tomcat 인스턴스를 다수를 확보하는 요인중의 하나가 인스턴스에 대한 장애시에 Fail Over이다. 전체 시스템을 하나의 인스턴스로 구성하는것보다 최소 2개 이상의 instance 로 구성해서 장애에 대비할 필요가 있다.
 
 `JVM의 Garbage Collector`
 
 JVM에서 어떤 GC를 사용할 것인지, 즉 GC 알고리즘에 따라 성능이 결정되기도 한다.
 
-#### 정말로 한 BOX에서 다수의 Tomcat 인스턴스를 구성하는 것이 효율적일까?
-
-우리는 지금까지 다수의 Tomcat 인스턴스를 통해 `컴퓨터의 자원을 효율적`으로 사용하고 `가용성`의 측면에서 이득을 본다고 했는데 Tomcat 인스턴스를 한대만 운영하는 것이 좋은 경우도 있을까?
-
-다수의 장비를 운용할 수 있는 환경이 주어진다면 오히려 하나의 인스턴스를 운영하는 것이 대게 성능이 좋은 경우가 많은데 이는 운영체제에서 `CPU의 자원을 각 프로세스에 Scheduling 정책`에 따라서 할당하기 때문이다. 거기다 Tomcat의 인스턴스를 다수를 운영할 때에는 한 장비에서 수용할 수 있는 maxThread 설정을 분산해야하는 등 고려해야할 일이 많아지는 것도 단점이다.
-
-하지만 물론 정답이라는 것은 없으며 최적화를 위해서는 꼭 성능테스트를 동반하여야 한다.
-
-중요한 것은 서비스의 성격에 따라 어떤 Garbage Collection을 사용할 것인지에 대한 고민은 해야한다는 의미이다. 모든 서비스에 완벽하게 맞아 떨어지는 GC 알고리즘은 없다. 각 애플리케이션의 특정 동작에 따라 처리량을 늘리거나 줄일 수 있는 수 많은 옵션을 따져 적합한 GC를 사용하도록 하자.
-
 #### `"그렇다면 어떤 컴퓨팅 환경과 JVM의 Garbage Collector에 따라서 전략이 달라질까?"`
 
-우리가 GC에 대해 이야기할 때, 우리 대부분은 그 개념을 알고 있으며 우리의 일상적인 프로그래밍에 그것을 사용하고 있다. 그럼에도 불구하고, 우리가 이해할 수 없는 일이 발생한다. JVM에 대한 가장 큰 오해 중 하나는 하나의 GC를 보유하고 있다는 점인데 그렇지 않다. 아래에서는 각각 고유한 장점과 단점이 있는 네개의 서로 다른 Garbage Collector를 살펴보도록 하겠다.
+우리가 GC에 대해 이야기할 때, 우리 대부분은 그 개념을 알고 있으며 우리의 일상적인 프로그래밍에 그것을 사용하고 있다. 그럼에도 불구하고, 우리가 이해할 수 없는 일이 발생한다. JVM에 대한 가장 큰 오해 중 하나는 하나의 GC를 보유하고 있다는 점인데 그렇지 않다.
+
+아래에서는 각각 고유한 장점과 단점이 있는 네개의 서로 다른 Garbage Collector를 살펴보도록 하겠다.
 
 ## JVM의 다양한 Garbage Collector
 
@@ -271,7 +277,7 @@ Serial GC는 가장 단순한 GC이지만 사용하지 않는 것을 추천한�
 
 #### The Parallel GC Threads
 
-다음 Parallel GC은 JVM의 디폴트 Collector로 말 그대로 병렬로 GC한다. 메모리가 충분하고 CPU의 성능과 코어 개수가 많아 순간적으로 트래픽이 몰려도 일시 중단을 견딜 수 있고 GC에 의해 야기된 CPU 오버 헤드에 대해 최적화할 수 있는 애플리케이션에 가장 적합합니다.
+Java 8의 디폴트 GC인 Parallel GC는 문자 그대로 병렬로 GC한다. 메모리가 충분하고 CPU의 성능과 코어 개수가 많아 순간적으로 트래픽이 몰려도 일시 중단을 견딜 수 있고 GC에 의해 야기된 CPU 오버 헤드에 대해 최적화할 수 있는 애플리케이션에 가장 적합합니다.
 
 - `-XX:+UseParallelGC` 옵션을 사용하여 Minor GC 에서 활성화 할 수 있다.
 - `-XX:+UseParallelOldGC` 옵션을 사용하여 Major GC에서 활성화 할 수 있다.
@@ -286,9 +292,9 @@ Serial GC는 가장 단순한 GC이지만 사용하지 않는 것을 추천한�
 
 초기 Initial Mark 단계에서는 Class Loader에서 가장 가까운 객체 중 살아 있는 객체만 찾는 것으로 끝낸다. 따라서, 멈추는 시간은 매우 짧다. 그리고 Concurrent Mark 단계에서는 방금 살아있다고 확인한 객체에서 참조하고 있는 객체들을 따라가면서 확인한다. 이 단계의 특징은 다른 스레드가 실행 중인 상태에서 동시에 진행된다는 것이다.
 
-<img src='http://d2.naver.com/content/images/2015/06/helloworld-329631-2.png' />
+<img src='https://plumbr.eu/wp-content/uploads/2015/06/g1-06.png' />
 
-위의 빨간색의 객체와 같이 더이상 Root와 연관된 객체로 부터 참조되지 않는 객체를 Unreachable 객체라고 하며 GC의 대상으로 삼는다. CMS의 단점은 같은 성능을 위해 Parallel GC에 비해 더욱 많은 CPU 자원을 사용한다는 것인데 이와 같이 많은 CPU 리소스를 할당하려는 경우 메모리의 크기가 4GB 미만인 것으로 가정할 때 사용할 수 있는 GC 알고리즘이다.
+위의 화살표가 없는 객체와 같이 더이상 Root와 연관된 객체로 부터 참조되지 않는 객체를 Unreachable 객체라고 하며 GC의 대상으로 삼는다. CMS의 단점은 같은 성능을 위해 Parallel GC에 비해 더욱 많은 CPU 자원을 사용한다는 것인데 이와 같이 많은 CPU 리소스를 할당하려는 경우 메모리의 크기가 4GB 미만인 것으로 가정할 때 사용할 수 있는 GC 알고리즘이다.
 
 만약 운영체제에서 JVM 인스턴스에 할당할 수 있는 메모리의 크기가 4GB보다 큰 경우에는 G1 GC 알고리즘을 사용할 수 있다. CMS는 애플리케이션의 Thread 정지 시간을 최소화 하여 응답시간 지연을 줄이고자 하는 웹 애플리케이션에 적당하다.
 
@@ -296,9 +302,9 @@ Serial GC는 가장 단순한 GC이지만 사용하지 않는 것을 추천한�
 - `-XX:+UseConcMarkSweepGC` 옵션을 사용하여 활성화 할 수 있다.
 - Minor GC에서 Parallel Collector를 활성화하기 위해서는 `-XX:+UseParNewGC` 옵션을 사용해야 하며 `-XX:+UseParallelGC`와 같이 사용해서는 안된다!
 
-#### The G1(Garbage First) GC
+## The G1(Garbage First) GC
 
-G1 GC는 Java 1.7 부터 도입되었으며 4GB보다 더욱 큰 자원을 제공하도록 설계되었다. G1 GC를 이해하려면 지금까지의 Young 영역과 Old 영역에 대해서는 잊는 것이 좋다.
+G1 GC는 `JDK 7u4` 부터 도입되었으며 4GB이상의 더욱 큰 자원을 제공하고 장기적으로 CMS를 대체하기 위해 설계되었다. G1 GC를 이해하려면 지금까지의 Young 영역과 Old 영역에 대해서는 잊는 것이 좋다.
 
 GC GC는 Generational 한 알고리즘과는 다르게 백그라운드의 멀티 쓰레드를 활용해 1MB에서 32MB까지의 수 많은 리젼으로 Heap을 분할한다.
 
@@ -306,9 +312,9 @@ GC GC는 Generational 한 알고리즘과는 다르게 백그라운드의 멀티
 
 > http://d2.naver.com/helloworld/1329
 
-G1 GC는 위와 같이 바둑판의 각 영역에 객체를 할당하고 GC를 실행한다. 그러다가, 해당 영역이 꽉 차면 다른 영역에서 객체를 할당하고 GC를 실행한다. 즉, 지금까지 설명한 Young의 세가지 영역에서 데이터가 Old 영역으로 이동하는 단계가 사라진 GC 방식이라고 이해하면 된다. G1 GC는 장기적으로 말도 많고 탈도 많은 CMS GC를 대체하기 위해서 만들어 졌다.
+G1 GC는 위와 같이 바둑판의 각 영역에 객체를 할당하고 GC를 실행한다. 그러다가, 해당 영역이 꽉 차면 다른 영역에서 객체를 할당하고 GC를 실행한다. 즉, 지금까지 설명한 Young의 세가지 영역에서 데이터가 Old 영역으로 이동하는 단계가 사라진 GC 방식이라고 이해하면 된다. 
 
-G1 GC의 가장 큰 장점은 성능이다. 지금까지 설명한 어떤 GC 방식보다도 빠르다.
+G1 GC의 가장 큰 장점은 성능이다. G1은 지연 시간을 줄이기 위해서 지금까지 설명한 어떤 GC 방식보다도 빠르다.
 
 하지만 이와 같이 4GB 이상의 큰 Heap을 가지는 것은 요즘과 같이 마이크로 서비스 아키텍쳐에서는 논쟁 거리가 될만하다. 지난 몇 년동안 많은 개발자들이 거대한 시스템을 작은 마이크로 단위로 옮기는 노력을 해왔기 때문이다.
 
@@ -332,23 +338,35 @@ JDK 8에서는 Perm 영역이 아니라 Metaspace에 클래스 정보가 올라�
 -Djava.awt.headless=true -Dfile.encoding=UTF-8 -server -Xms2048m -Xmx2048m -XX:MaxMetaspaceSize=512m -XX:+UseG1GC -XX:+DisableExplicitGC -XX:+UseStringDeduplication
 ```
 
-## Java 9의 Garbage Collector
+## Java 9의 디폴트 GC는 G1이다
 
 최근에 Java 9 출시 소식이 있었다. JDK 9에 포함된 다양한 Features 중 32-bit, 64bit 서버 환경에서 G1을 디폴트 Garbage Collector로 변경한 내용이 있다. 더불어 CMS GC는 JDK 9에서 Deprecated 되었다.
 
-`JEP248: Make G1 the Default Garbage Collector`
+`Make G1 the Default Garbage Collector`
 
-- http://openjdk.java.net/jeps/248
+- [JEP248](http://openjdk.java.net/jeps/248)
 
 많은 성능 개선 사항이 JDK 8의 G1과 업데이트 릴리스에 따라 이루어졌으며, 추가 개선 사항이 JDK 9에 추가되었다. 예를 들면 [JEP156](http://openjdk.java.net/jeps/156) 이슈는 G1을 완전한 품질의 Garbage Collector로 만들 수 있게 해줬다.
 
-이러한 Garbage Collector에 대한 변화는 처리량을 극대화하는 것보다 GC의 지연 시간을 제한하는 것이 더 중요하다는 가정 하에 이루어졌다. 만약 이 가정이 잘못되었다면 이 변화는 재고해야 할 필요가 있을 수 있다.
+이러한 Garbage Collector에 대한 변화는 Parallel GC와 같이 처리량을 극대화하는 것보다 GC의 지연 시간을 제한하는 것이 더 중요하다는 가정 하에 이루어졌다. 만약 이 가정이 잘못되었다면 이 변화는 재고해야 할 필요가 있을 수 있다.
+
+`G1은 튜닝하기 쉽게 설계되었다`
+
+Stop The World로 인한 지연 시간을 기본으로 하는 튜닝
+
+```
+-server -Xmx32G -XX:MaxGCPauseMillis=100
+```
+
+> -XX:MaxGCPauseMillis의 디폴트 값은 250ms 이다.
 
 ## 어떤 GC 알고리즘을 선택해야 할까?
 
 <img src='https://blogs.thomsonreuters.com/answerson/wp-content/uploads/sites/3/2015/09/519915153-getty-competition-pursuit-push-performance-800x450.jpg' />
 
-우리는 다양한 GC 알고리즘을 살펴보았지만 중요한 것은 모든 서비스에 완벽하게 맞아 떨어지는 GC 알고리즘은 없다는 것이다. 각 애플리케이션의 특정 동작에 따라 처리량을 늘리거나 줄일 수 있는 수 많은 옵션을 따져 적합한 GC를 사용하도록 하자.
+우리는 다양한 GC 알고리즘을 살펴보았지만 중요한 것은 모든 서비스에 완벽하게 맞아 떨어지는 GC 알고리즘은 없다는 것이다. 각 애플리케이션의 특정 동작에 따라 처리량을 극대화하거나 지연 시간을 줄이는 옵션을 따져 적합한 GC를 사용하도록 하자.
+
+Java 9에서도 여전히 ParallelGC를 사용할 수 있기 때문이다.
 
 ## JVM 튜닝 꼭 해야할까?
 
@@ -415,7 +433,9 @@ $JAVA_HOME/bin/jstat
 ## 이 문서는 아래의 글을 참고하였습니다
 
 - https://httpd.apache.org/docs/2.4/ko/misc/perf-tuning.html
-- https://tomcat.apache.org/tomcat-3.2-doc/tomcat-apache-howto.html
+- http://presentations2015.s3.amazonaws.com/40_presentation.pdf
+- http://product.hubspot.com/blog/g1gc-fundamentals-lessons-from-taming-garbage-collection
+- https://www.optaplanner.org/blog/2015/07/31/WhatIsTheFastestGarbageCollectorInJava8.html
 - https://docs.oracle.com/javase/8/docs/technotes/guides/vm/gctuning/toc.html
 - http://www.oracle.com/technetwork/tutorials/tutorials-1876574.html
 - http://www.oracle.com/technetwork/java/javase/gc-tuning-6-140523.html#available_collectors.selecting
