@@ -1,28 +1,23 @@
 ---
-title: Javascript 개발 리부트 이야기
+title: 자바스크립트 개발 시작하기
 date: 2017-05-30 18:07:11
 categories: front-end
 ---
 
-이 문서에서는 Front-End의 기본을 지탱하는 HTML 과 CSS 그리고 Javascript의 문법에 대해서는 다루지는 않습니다. Front-End 개발 경험이 없는 이가 Front-end 개발을 시작하면서 필요한 다양한 기술들과 이러한 기술들은 어떠한 이유 때문에 등장했는지를 다루게 됩니다.
-
-> 이 문서는 개인적인 용도로 사용하기 위한 북마크 서비스인 holaxbookmark.io를 개발하면서 개인이 학습한 내용을 바탕으로 작성되고 있습니다. 문서를 보시고 수정이 필요한 내용이나 개선해야 될 내용이 있다면 Comments를 해주시면 많은 도움이 되겠습니다!
+이 문서는 개인적인 용도로 사용하기 위한 서비스인 [블라블라 테크](http://blahblah.tech)를 개발하면서 개인이 학습한 내용을 바탕으로 작성되고 있습니다. 많은 분들에게 더욱 좋은 정보가 전달 될 수 있도록 개선이 필요한 내용이 있다면 코멘트 해주세요.
 
 ## 대체 Front-end 개발 어디서 부터 시작해야 하지..?
 
-안타깝게도 현재 글을 작성하고 있는 이는 Javascript, jQuery를 6년전에 경험해 본 것을 마지막으로 Front-End 기술과는 인연이 없었다. 그 이후에는 Front-End 개발 경험이 없어 이전의 기억을 되짚어 보기로 한다. 
+안타깝게도 현재 글을 작성하고 있는 이는 Javascript, jQuery를 6년전 경험해 본 것을 마지막으로 Front-End 기술과는 인연이 없었다.
 
-#### Before
-
-- javascript (ES5)
-- jQuery
+## Javascript와 DOM 그리고 jQuery
 
 다양한 브라우저와 각각의 변덕스러운 성격:브라우저 마다 다른 DOM 구조와 Javascript를 해석하는 스펙의 미묘한 차이와 같은 문제들을 가지고 있는 덕분에 Front-End 환경에서의 개발은 힘들고 쉽지 않은 일이였다. 하지만 다행스럽게 다양한 브라우저에서 원하는 결과를 얻어 낼 수 있는 jQuery 덕분에 많은 도움을 얻을 수가 있었다.
 
 > 아래의 링크는 jQuery를 만든 John Resig의 jQuery를 만들게 된 계기에 대한 인터뷰이다.
 https://ko.khanacademy.org/computing/computer-programming/html-js-jquery/jquery-dom-access/a/history-of-jquery
 
-#### Now
+#### 현재의 자바스크립트의 개발 환경은 어떨까?
 
 그럼 2017년인 지금은 어떨까? 아래의 통계가 정확한 자료인지는 불분명하나 상위 10k의 사이트에서 jQuery를 사용하는 비율은 65%, 상위 1M의 사이트에서는 83%로 여전히 jQuery는 사랑받고 있는 Javascript Library인듯 보인다.
 
@@ -140,80 +135,6 @@ $ npm start
 ```
 
 #### `npm update`
-
-
-## 다양한 Front-end 기술들의 등장
-
-이제는 다시 본론으로 돌아가 Front-end에 필요한 기술들을 살펴보도록 하자
-
-#### Pug, SCSS, Less, Stylus
-
-#### ES6
-
-#### Babel
-
-#### React, Redux
-
-## 프로젝트에 필요한 다양한 모듈들은 어떻게 관리할까?
-
-#### 모듈들의 의존성 관리
-
-#### 번들러 그리고 통합
-
-`webpack`
-
-```
-$ npm install webpack@3.0.0 -g
-```
-
-```
-$ npm install webpack@3.0.0 --save-dev
-```
-
-```
-$ webpack ./entry.js bundle.js
-```
-
-<img src='http://d2.naver.com/content/images/2016/02/webpack-1.png' />
-
-```
-$ webpack --watch ./entry.js bundle.js
-```
-
-`webpack.config.js`
-
-```javascript
-module.exports = {  
-    context: __dirname + '/app',	 // 모듈 파일 폴더
-    entry: { 				 // 엔트리 파일 목록
-        app: './app.js' 
-    },
-    output: {
-        path: __dirname + '/dist',	 // 번들 파일 폴더
-        filename: '[name].bundle.js'     // 번들 파일 이름 규칙
-    }
-}
-```
-
-```
-$ webpack
-```
-
-#### required vs import
-
-## 빌드
-
-webpack은 로더를 통해 scss의 전처리를 통해 css를 통합하여 만들어 낼 수 있다.
-
-## 테스트와 Report 생성
-
-#### Jest
-
-#### Mocha
-
-## 애플리케이션 배포하기
-
-## 도대체 왜?
 
 ## References
 

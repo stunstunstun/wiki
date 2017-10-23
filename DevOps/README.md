@@ -3,7 +3,13 @@
 #### Infra
 
 - 인터넷은 어떻게 작동하는가?
+- [HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP)
+- HTTP 완벽 가이드
 - HTTP의 접근제한과 CORS 정책
+- [마이크로소프트의 REST API 가이드 라인](https://github.com/Microsoft/api-guidelines)
+- [HTTP/2
+](http://httpwg.org/specs/rfc7540.html)
+- [더 빠른 웹을 위해 HTTP/2](https://www.slideshare.net/eungjun/http2-40582114)
 - [AWS CodeStar로 1인 DevOps 코스프레하기](https://github.com/stunstunstun/awesome-wiki/blob/master/DevOps/devops-aws-codestar.md)
 - [Tomcat에서 발생하는 ClientAbortException](https://github.com/stunstunstun/awesome-wiki/blob/master/DevOps/devops-was-client-abort-exception.md)
 - [AWS EC2 시작하기](https://github.com/stunstunstun/awesome-wiki/blob/master/DevOps/devops-aws-create-ec2-instance.md)

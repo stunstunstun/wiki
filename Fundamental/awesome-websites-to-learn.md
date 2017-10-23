@@ -10,6 +10,7 @@
 
 #### Online Courses
 
+- [생활코딩 WEB1](https://opentutorials.org/module/3097)
 - [HTML & CSS Basic Courses](https://www.codeschool.com/courses/front-end-foundations)
 - [Free Code Camp](https://www.freecodecamp.com/challenges/learn-how-free-code-camp-works)
 - [Free Code Camp Online Courses](https://medium.freecodecamp.com/438-free-online-programming-computer-science-courses-you-can-start-in-may-aa316e4195fc)
@@ -30,6 +31,7 @@
 - [CS50](https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/info)
 - [Computational and Inferential Thinking](https://www.inferentialthinking.com/)
 - [About Programming](http://composingprograms.com/)
+- [Category Theory for Programmers](https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/)
 
 #### Playground
 
@@ -82,7 +84,6 @@
 
 - [HTML5 Tutorials](https://www.w3schools.com/html/)
 - [CSS3 Layout Tutorials](http://ko.learnlayout.com/)
-- [코딩야학](https://yah.ac/1)
 - [Codecademy Tutorials](https://www.codecademy.com/learn/all)
 - [Code Tutorials](https://code.tutsplus.com/tutorials)
 - [Advanced Tutorials](https://semaphoreci.com/community/tutorials)

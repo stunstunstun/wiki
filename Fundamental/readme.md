@@ -8,7 +8,6 @@
 - 가상 메모리와 페이지 폴트
 - 64비트와 32비트의 차이점은 무엇일까?
 - [RSA를 이용한 암호화와 서명](https://github.com/stunstunstun/awesome-wiki/blob/master/Fundamental/encryption-with-rsa.md)
-- [마이크로소프트의 REST API 가이드 라인](https://github.com/Microsoft/api-guidelines)
 
 #### Data Structures & Algorithms
 
@@ -20,7 +19,7 @@
 
 - [DB Connection에 대한 이야기](https://github.com/stunstunstun/awesome-wiki/blob/master/Fundamental/database-connection-pool.md)
 - [Google Analytics 활용하기](https://github.com/stunstunstun/awesome-wiki/blob/master/Fundamental/data-analysis-google-analytics.md)
-- [Elastic Search 시작하기]()
+- Elastic Search 시작하기
 
 #### Blah-Blah
 

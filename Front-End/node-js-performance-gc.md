@@ -1,4 +1,13 @@
 
+## Node.js with Big Companies
+
+- https://www.paypal-engineering.com/2013/11/22/node-js-at-paypal/
+- https://medium.com/netflix-techblog/node-js-in-flames-ddd073803aa4
+- https://medium.com/building-with-x/building-with-node-js-at-linkedin-ae4ea6af12f2
+- https://engineering.groupon.com/category/node-js/
+
+## New V8 is coming
+
 - [New V8 is coming](https://medium.com/the-node-js-collection/get-ready-a-new-v8-is-coming-node-js-performance-is-changing-46a63d6da4de)
 
 ## References

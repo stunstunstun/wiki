@@ -17,7 +17,7 @@
 - [JVM의 개요와 자바 ByteCode](https://github.com/stunstunstun/awesome-wiki/blob/master/Java/java-jvm-bytecode.md)
 - [JVM의 Runtime Data Area](https://github.com/stunstunstun/awesome-wiki/blob/master/Java/java-jvm-runtime-data-area.md)
 - [JVM의 Garbage Collection에 대한 개요](https://github.com/stunstunstun/awesome-wiki/blob/master/Java/java-jvm-gc.md)
-- [당신의 Java 시스템 운영 중 알아두면 쓸데있는 지식들](https://github.com/stunstunstun/awesome-wiki/blob/master/Java/java-jvm-performance.md)
+- [Java 시스템 운영 중 알아두면 쓸모 있는 지식들](https://github.com/stunstunstun/awesome-wiki/blob/master/Java/java-jvm-performance.md)
 
 #### Java EE
 

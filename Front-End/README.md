@@ -1,54 +1,55 @@
-## Contents
+## Basics
 
 #### SPAs
 
-- [Modern Web Dev](https://github.com/dexteryy/spellbook-of-modern-webdev)
-- [Grab's Front-end Guide](https://github.com/grab/front-end-guide)
+- [Front-End Checklist](https://github.com/thedaviddias/Front-End-Checklist)
 - [HTML5 History API](https://developer.mozilla.org/en-US/docs/Web/API/History_API)
 - [Ajax와 CORS](https://developer.mozilla.org/ko/docs/Web/HTTP/Access_control_CORS)
 - [Debugging JavaScript in WebStorm and Chrome](https://www.youtube.com/watch?v=a-IsnxZpRrQ)
 
+#### React
+
+- [React Tutorials](https://facebook.github.io/react/docs/hello-world.html)
+- [React 참고 자료 모음](https://github.com/reactkr/learn-react-in-korean)
+- [Redux](https://deminoth.github.io/redux/)
+- React와 Git Pages로 Reddit 클론하기 
+
 #### New-age JavaScript and CSS
 
-- [Javascript을 다시 소개합니다 by ES6](https://developer.mozilla.org/ko/docs/A_re-introduction_to_JavaScript)
-- [You don't know JS](https://maximdenisov.gitbooks.io/you-don-t-know-js/content/)
+- [ES6 Languages Specification](http://www.ecma-international.org/ecma-262/6.0/)
 - [Airbnb Javascript Style Guide](https://github.com/airbnb/javascript)
+- [CSS Modules](https://github.com/css-modules/css-modules)
 - Pug를 통한 템플릿 개발
 - CSS는 Preprocessor가 필요할까?
-- [CSS Modules](https://github.com/css-modules/css-modules)
 
-#### User Interface
+#### Manage Project
 
-- 프로젝트 구조부터 살펴보는 React.js
-- [React Tutorials](https://facebook.github.io/react/docs/hello-world.html)
-- [Redux](https://deminoth.github.io/redux/)
-- [리액트 자료 모음](https://github.com/reactkr/learn-react-in-korean)
+- [자바스크립트 프로젝트 가이드 라인](https://github.com/wearehive/project-guidelines)
+- [Modern Web Dev](https://github.com/dexteryy/spellbook-of-modern-webdev)
+- [Grab's Front-end Guide](https://github.com/grab/front-end-guide)
+- [Github Flow](https://guides.github.com/introduction/flow/)
+- Github에 Codecov를 통해 자동으로 테스트 커버리지 확인하기
 
-#### Node 개발 환경
+## Environments
 
-- Node.js가 가져온 자바스크립트 개발 환경의 변화
-- [npm](https://www.npmjs.com/)
-- [yeoman](http://yeoman.io/generators/)
-- TDD로 Node.js 시작하기
-- Mocha, Chai로 시작하는 Node 테스트
-- Node의 프로젝트 구조
-- Node의 실행환경을 지탱하는 도구들
-- 자신의 모듈을 npm에 배포하기
+- http://devdocs.io/
+
+#### Prerequisite
+
+- `npm`, `Node`, `yeoman`
+- `Mocha`, `Chai`, `Jasmine`, `Karma`
+- `Jest`, `Enzyme`
+- `Codecov`, `Babel`, `ESLint`, `Flow`
+- `Webpack`
+
+#### Packages
+
 - `requests`, `Moment.js`, `slate`, `rxjs`, `async`, `Passport`, `stripe`
 
-#### Basics
+## Articles
 
-- [ECMAScript 2015](http://www.ecma-international.org/ecma-262/6.0/)
-- [Babel](http://babeljs.io/repl/)
-- `Jasmine`, `Karma`, `Mocha`, `Chai`, `Jest`
-- `Codecov`, `ESLint`, `Flow`
-- Webpack
+#### Node.js
 
-#### Back-end
-
-- [](https://github.com/wearehive/project-guidelines)
-- Github Flow
-- Github에 Codecov를 통해 자동으로 테스트 커버리지 확인하기
 - Express
 - Node는 어떻게 동작하는가
 - Node V8의 가바지 컬렉션
@@ -69,6 +70,17 @@
 - [Node Schedule](https://github.com/node-schedule/node-schedule)
 - [Agenda](https://github.com/agenda/agenda)
 - [Gulp](https://gulpjs.com/)를 통해 배치 스크립트 실행하기
+
+#### More
+
+- [JavaScript Top 10 Articles - Sep](https://medium.mybridge.co/javascript-top-10-articles-for-the-past-month-v-sep-2017-168efb9a3b0f)
+- [JavaScript Top 10 Articles - Oct](https://medium.mybridge.co/javascript-top-10-articles-for-the-past-month-v-oct-2017-e51b3b1a34d2)
+- [Node.js Top 10 Articles - Sep](https://medium.mybridge.co/node-js-top-10-articles-for-the-past-month-v-sep-2017-46e904272856)
+- [Node.js Top 10 Articles - Oct](https://medium.mybridge.co/node-js-top-10-articles-for-the-past-month-v-oct-2017-5cfa2e44278f)
+- [동네 커피샵도 사이렌 오더를 사용할 수 있을까?](https://www.slideshare.net/deview/123-80843907) 
+
+> `Service Worker`, `Physical Web`, `Push Notification`, `Web Payment`
+
 
 ## Geeks
 
