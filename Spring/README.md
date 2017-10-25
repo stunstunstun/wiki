@@ -24,9 +24,10 @@ Java, Gradle, Spring Boot을 이용해 자신이 상상하는 웹 애플리케�
 
 Enviroments | Version 
 ---|---
-Java | JDK 8
+Java | JDK 9
 Spring Boot | 2.0.0.RELEASE
-Gradle | 3.5
+Spring | 5.0.0 RELEASE
+Gradle | 4.0
 
 ## 1부 재료 다지기
 
@@ -109,6 +110,10 @@ Gradle | 3.5
 <br/>
 
 ## 기타 레퍼런스
+
+#### Spring Current Documents
+ 
+- https://docs.spring.io/spring/docs/current/spring-framework-reference/index.html
 
 #### Spring Boot 예제 소스들
 

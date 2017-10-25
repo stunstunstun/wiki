@@ -4,6 +4,13 @@ date: 2018-01-10 12:54:07
 categories: blahblah
 ---
 
+#### 번역
+
+- https://www.transifex.com/bitcoinbook/mastering-bitcoin/dashboard/
+
+## References
+
+- https://github.com/bitcoinbook/bitcoinbook
 - [awesome-blockchains](https://github.com/openblockchains/awesome-blockchains)
 - [awesome-ethereum](https://github.com/btomashvili/awesome-ethereum)
 - https://github.com/Xel/Blockchain-stuff 

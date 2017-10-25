@@ -35,8 +35,10 @@
 
 - [JDK 9](http://openjdk.java.net/projects/jdk9/)
 - [What's new](https://docs.oracle.com/javase/9/whatsnew/toc.htm#JSNEW-GUID-C23AFD78-C777-460B-8ACE-58BE5EA681F6)
-- [Jigsaw Project](http://openjdk.java.net/projects/jigsaw/)
+- [Java9 in Action](https://github.com/bentolor/java9-in-action)
+- [Modular JDK, Jigsaw Project](http://openjdk.java.net/projects/jigsaw/)
 - [Valhalla Project](https://wiki.openjdk.java.net/display/valhalla/Main)
+
 
 ## Java Documents
 
@@ -73,6 +75,7 @@
 	- [Method References](https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html)
 	- [Java SE8 Streams - Part1](http://www.oracle.com/technetwork/articles/java/ma14-java-se-8-streams-2177646.html)
 	- [Java SE8 Streams - Part2](http://www.oracle.com/technetwork/articles/java/architect-streams-pt2-2227132.html)
+- [Java 9](https://docs.oracle.com/javase/9/index.html#javase9)
 
 #### Recommended Books
 

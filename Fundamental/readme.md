@@ -7,6 +7,7 @@
 - 컴퓨터는 왜 불편한 2진수를 사용할까?
 - 가상 메모리와 페이지 폴트
 - 64비트와 32비트의 차이점은 무엇일까?
+- Deep Learning 학습 자료 모음
 - [RSA를 이용한 암호화와 서명](https://github.com/stunstunstun/awesome-wiki/blob/master/Fundamental/encryption-with-rsa.md)
 
 #### Data Structures & Algorithms
@@ -15,11 +16,29 @@
 - [이진 탐색 알고리즘](https://github.com/stunstunstun/awesome-wiki/blob/master/Fundamental/algorithms-binary-search.md)
 - [피보나치 수열과 동적 프로그래밍](https://github.com/stunstunstun/awesome-wiki/blob/master/Fundamental/algorithms-fibo-and-dynamic-programming.md)
 
-#### Data
+#### Database, NoSQL
 
 - [DB Connection에 대한 이야기](https://github.com/stunstunstun/awesome-wiki/blob/master/Fundamental/database-connection-pool.md)
 - [Google Analytics 활용하기](https://github.com/stunstunstun/awesome-wiki/blob/master/Fundamental/data-analysis-google-analytics.md)
+- MongoDB 시작하기
 - Elastic Search 시작하기
+
+#### HTTP
+
+- 인터넷은 어떻게 작동하는가?
+- [HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP)
+- HTTP 완벽 가이드
+- HTTP의 접근제한과 CORS 정책
+- [마이크로소프트의 REST API 가이드 라인](https://github.com/Microsoft/api-guidelines)
+- [HTTP/2
+](http://httpwg.org/specs/rfc7540.html)
+- [더 빠른 웹을 위해 HTTP/2](https://www.slideshare.net/eungjun/http2-40582114)
+- REST API 논문
+- [그런 REST API로 괜찮은가](http://slides.com/eungjun/rest) 
+
+#### Blockchain
+
+- 블록체인 시작하기
 
 #### Blah-Blah
 

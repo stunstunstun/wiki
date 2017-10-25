@@ -10,17 +10,13 @@
 #### React
 
 - [React Tutorials](https://facebook.github.io/react/docs/hello-world.html)
-- [React 참고 자료 모음](https://github.com/reactkr/learn-react-in-korean)
 - [Redux](https://deminoth.github.io/redux/)
-- React와 Git Pages로 Reddit 클론하기 
 
 #### New-age JavaScript and CSS
 
 - [ES6 Languages Specification](http://www.ecma-international.org/ecma-262/6.0/)
 - [Airbnb Javascript Style Guide](https://github.com/airbnb/javascript)
 - [CSS Modules](https://github.com/css-modules/css-modules)
-- Pug를 통한 템플릿 개발
-- CSS는 Preprocessor가 필요할까?
 
 #### Manage Project
 
@@ -28,7 +24,6 @@
 - [Modern Web Dev](https://github.com/dexteryy/spellbook-of-modern-webdev)
 - [Grab's Front-end Guide](https://github.com/grab/front-end-guide)
 - [Github Flow](https://guides.github.com/introduction/flow/)
-- Github에 Codecov를 통해 자동으로 테스트 커버리지 확인하기
 
 ## Environments
 
@@ -36,10 +31,11 @@
 
 #### Prerequisite
 
-- `npm`, `Node`, `yeoman`
-- `Mocha`, `Chai`, `Jasmine`, `Karma`
+- `npm`, `Node`, `yeoman`, `yarn`
+- `Mocha`, `Chai`, `Sinon`, `Karma`, `Jasmine`
 - `Jest`, `Enzyme`
-- `Codecov`, `Babel`, `ESLint`, `Flow`
+- `Codecov`, `Instanbul`
+- `Babel`, `ESLint`, `Flow`
 - `Webpack`
 
 #### Packages
@@ -48,9 +44,25 @@
 
 ## Articles
 
+#### DevOps
+
+- RP시 Codecov를 통해 자동으로 테스트 커버리지 확인하기
+
+#### Front-end
+
+- Angular, Babel, Pug, Sass, MongoDB 
+- Pug를 통한 템플릿 개발
+- CSS는 Preprocessor가 필요할까?
+- React와 Git Pages로 Reddit 클론하기
+- TDD Using React and ES6
+
 #### Node.js
 
-- Express
+- 자바스크립트 개발 시작하기
+- Scope와 Strict Mode
+- 일목요연 ES6
+- Modern JavaScript Explained For Dinosaurs
+- Express, MongoDB를 통해 API 개발하기
 - Node는 어떻게 동작하는가
 - Node V8의 가바지 컬렉션
 - Node의 프로세스 관리 도구 [PM2](http://pm2.keymetrics.io/)
@@ -58,18 +70,26 @@
 
 #### Database
 
-- [Mongoose](http://mongoosejs.com/)
+- `Mongoose`
 - `Mongoskin` `Mongo Shell` `RoboMongo`
-- [elasticsearch.js](https://www.elastic.co/guide/en/elasticsearch/client/javascript-api/current/index.html)
-- [MySQL](https://github.com/redblaze/node-mysql)
-- [Redis](https://github.com/NodeRedis/node_redis)
+- `elasticsearch.js`
 
 #### Batch 프로세스
 
 - [node-cron](https://github.com/kelektiv/node-cron)
 - [Node Schedule](https://github.com/node-schedule/node-schedule)
 - [Agenda](https://github.com/agenda/agenda)
-- [Gulp](https://gulpjs.com/)를 통해 배치 스크립트 실행하기
+- Gulp를 통해 배치 스크립트 실행하기
+
+## Blogs
+
+- https://medium.com/@mikeal
+- https://derickbailey.com/
+- http://sculove.github.io/blog/
+- https://blog.outsider.ne.kr/category/Javascript
+- https://blog.outsider.ne.kr/category/node.js
+- http://blog.jeonghwan.net/
+- http://dev-momo.tistory.com/
 
 #### More
 
@@ -81,25 +101,10 @@
 
 > `Service Worker`, `Physical Web`, `Push Notification`, `Web Payment`
 
-
-## Geeks
-
-- https://medium.com/@mikeal
-- https://derickbailey.com/
-- http://sculove.github.io/blog/
-- http://blog.jeonghwan.net/
-- http://dev-momo.tistory.com/
-
 ## References
 
+- [React 참고 자료 모음](https://github.com/reactkr/learn-react-in-korean)
 - http://d2.naver.com/helloworld/4994500
-- http://yeoman.io/generators/
-- https://pugjs.org/api/getting-started.html
-- http://www.geeksforgeeks.org/category/javascript/
 - https://www.toptal.com/nodejs/top-10-common-nodejs-developer-mistakes
-- https://thenewstack.io/open-source-profile-mikeal-rogers-node-js/
-- https://nodejs.org/ko/docs/
-- https://expressjs.com/
-- http://mongoosejs.com/docs/harmony.html
-- https://blog.outsider.ne.kr/category/node.js?page=7
-- https://blog.outsider.ne.kr/category/Javascript
+
+
