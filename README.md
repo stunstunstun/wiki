@@ -4,11 +4,11 @@
 
 > 점점 어디론가 흩어져가고 있지 않으세요?
 
- 위키 페이지를 통해서 기술 문서 관리에 대한 일관성을 유지하고 꾸준히 지속적으로 리마인드 하기 위해 만들었습니다. 이렇게 쌓인 Reference들이 제 자신은 물론이고 프로그래밍을 업으로 시작하는 주니어 엔지니어 스스로 성장하기 위한 좋은 자료가 되기를 바랍니다.
- 
-#### `"작성하신 문서는 안녕 프로그래밍(https://holaxprogramming.com) 이라는 기술 블로그 페이지에 포스팅 됩니다"`
+## 안녕 프로그래밍의 저자가 되어주세요
 
-`카테고리`
+위키 페이지를 통해서 기술 문서 관리에 대한 일관성을 유지하고 꾸준히 지속적으로 리마인드 하기 위해 만들었습니다. 이렇게 쌓인 Reference들이 제 자신은 물론이고 프로그래밍을 업으로 시작하는 주니어 엔지니어 스스로 성장하기 위한 좋은 자료가 되기를 바랍니다.
+ 
+## 카테고리
 
 | 카테고리 | 설명 |
 | --- | --- |
@@ -22,10 +22,13 @@
 | [DevOps](https://github.com/stunstunstun/awesome-wiki/tree/master/DevOps) | 개발환경 및 인프라 운영에 대한 내용 |
 | [Git](https://github.com/stunstunstun/awesome-wiki/tree/master/Git) | Git에 대한 사용 경험과 그 밖의 협업도구에 대한 이야기 |
 
+> 추가가 필요한 카테고리는 이슈에 등록해주세요.
+
 ## 직접 참여하고 싶으시다구요?
 
 이 글에 공감하시는 모든 분이 참여가 가능해요. 작성하신 문서는 [`안녕 프로그래밍`](https://holaxprogramming.com) 페이지에 포스팅 됩니다.
 
+- 먼저 RP전에 글에 대한 간략한 소개를 [Issues](https://github.com/stunstunstun/awesome-wiki/issues)에 등록해주세요.
 - Markdown 문서를 통해 작성해 주세요. 
 - 문서의 이름은 `post-name.md`와 같이 영문 소문자와 '-'를 이용하여 생성하시면 됩니다.
 - 문서의 내용에는 상단에 아래와 같이 제목, 일시를 필수적으로 포함시켜 주세요.
@@ -34,19 +37,19 @@
 ---
 title: Github Page와 Hexo를 통해 30분만에 기술 블로그 만들기
 desc: 부제목
+author: stunstunstun
 date: 2017-04-16 15:14:40
 ---
 ```
 
 > Github Markdown Guide - https://guides.github.com/features/mastering-markdown/
 
-#### Pull Request를 위한 절차
+## Pull Request를 위한 절차
 
 1. 우측 상단의 버튼을 통해 Repository를 Fork합니다. 
 2. Fork한 Repository를 통해 문서를 추가합니다.
 3. New Pull Request버튼을 통해 Merge요청을 합니다.
 
-> 언제든지 가벼운 마음으로 Pull Request 해주시면 됩니다.
 
 ## 유용한 Markdown Editor
 
