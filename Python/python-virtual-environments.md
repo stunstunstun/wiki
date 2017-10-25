@@ -1,11 +1,11 @@
 ---
 title: 파이썬의 실행 환경을 지탱하는 도구들
 date: 2017-07-15 15:24:49
-desc: 파이썬 시작하기 TDD부터 PyPI에 배포까지
+desc: 파이썬 TDD로 시작하기
 categories: python
 ---
 
-지금까지 파이썬을 통해 테스트 코드를 작성해 나아가면서 점차적으로 프로젝트를 구조화하는 모습을 살펴보았습니다. [이전  글들](https://www.holaxprogramming.com/2017/06/28/python-project-structures/)을 통해서 아래와 같은 의문이 다소 해소되었기를 바랍니다. (물론 저에게도 말이죠)
+지금까지 파이썬을 통해 테스트 코드를 작성해 나아가면서 점차적으로 프로젝트를 구조화하는 모습을 살펴보았습니다. [이전 글들](https://www.holaxprogramming.com/2017/06/28/python-project-structures/)을 통해서 아래와 같은 의문이 다소 해소되었기를 바랍니다. (물론 저에게도 말이죠)
 
 - 파이썬 프로그래밍을 위한 기본적인 개발 환경은 무엇인가
 - 테스트에 필요한 도구 그리고 테스트 코드는 어떻게 작성하는가
@@ -222,14 +222,12 @@ $ pyenv virtualenvwrapper
 
 ## 정리하며
 
-지금까지 우리는 파이썬을 시작할 때 테스트 코드를 작성하면서 다양한 문제를 만났습니다. 이러한 문제들을 해결하는 과정을 아래와 같이 정리하였고
+지금까지 우리는 파이썬을 시작할 때 TDD를 통해 테스트 코드를 작성하면서 다양한 문제를 만났습니다. 이러한 문제들을 해결하는 과정을 아래와 같이 다시 한번 정리하면서 마무리를 짓겠습니다.
 
-- [파이썬 시작하기 TDD부터 PyPI에 배포까지](https://www.holaxprogramming.com/2017/06/15/python-get-started/)
+- [파이썬 TDD로 시작하기](https://www.holaxprogramming.com/2017/06/15/python-get-started/)
 - [unittest와 함께하는 파이썬 테스트](https://www.holaxprogramming.com/2017/06/17/python-with-test/)
 - [파이썬 프로젝트의 구조](https://www.holaxprogramming.com/2017/06/28/python-project-structures/)
 - [파이썬의 실행 환경을 지탱하는 도구들](https://www.holaxprogramming.com/2017/07/15/python-virtual-environments.md/)
-
-다음 글에서는 지금까지의 내용을 통해 다양한 환경에서 작동하는 라이브러리를 직접 배포하는 내용으로 `파이썬 시작하기 TDD부터 PyPI에 배포까지`로 시작된 글타래를 마무리할 예정입니다.
 
 ## References
 - https://docs.python.org/3/library/site.html
