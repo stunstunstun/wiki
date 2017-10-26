@@ -158,11 +158,25 @@ $ git branch -a
 $ git checkout -t origin/some_function
 ````
 
+```
+$ git checkout -b new_some_function origin/some_function
+```
+
 `fatal: Cannot update paths and switch to branch 'some_function' at the same time.` 에러가 발생한다면 아래와 같이 원격 저장소를 갱신한다.
 
 ```
 $ git remote update
 ```
+
+#### 원격 저장소 참고하기
+
+어떤 경우에는 수정 내역을 원격 저장소에 push 하지는 않지만 해당 branch를 참고하기 위해 로컬에 받아서 테스트 해보고 싶은 경우도 있다.
+
+```
+$ git checkout [원격 저장소의 branch 이름]
+```
+
+아무런 옵션없이 원격 저장소의 branch를 checkout 하면 ‘detached HEAD’ 상태로 소스를 보고 변경 해볼 수도 있지만 변경사항들은 commit, push 할 수 없으며 다른 branch로 checkout하면 사라진다.
 
 #### 개발한 내역을 master branch에 merge하는 과정
 
