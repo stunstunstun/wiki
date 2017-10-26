@@ -131,11 +131,37 @@ $ git checkout master
 $ git push origin some_function
 ```
 
-만약 branch를 여러명과 협업하고 있는 도중 push시에 remote 서버의 최신 내용을 로컬에 반영하지 않았다면 아래와 같이 remote 서버와 연결후 git pull을 통해 merge 한다.
+만약 branch를 여러명과 협업하고 있는 도중 push시에 remote 서버의 최신 내용을 로컬에 반영하지 않았다면 아래와 같이 remote 서버와 연결 후 `git pull`을 통해 merge 한다.
 
 ```bash
 $ git branch --set-upstream-to=origin/some_function some_function
 $ git pull
+```
+
+#### 원격 저장소의 기존 branch 확인 후 로컬에 가져오기
+
+원격 저장소의 브랜치 리스트를 조회한다.
+
+```
+$ git branch -r
+```
+
+로컬, 원격 저장소의 브랜치 리스트를 모두 조회한다.
+
+```
+$ git branch -a
+```
+
+원격 저장소로부터 로컬의 동일한 이름의 branch를 생성하면서 해당 branch로 checkout을 한다.
+
+````
+$ git checkout -t origin/some_function
+````
+
+`fatal: Cannot update paths and switch to branch 'some_function' at the same time.` 에러가 발생한다면 아래와 같이 원격 저장소를 갱신한다.
+
+```
+$ git remote update
 ```
 
 #### 개발한 내역을 master branch에 merge하는 과정
@@ -264,7 +290,7 @@ $ git --version
 $ git clone {address}
 $ git status
 $ git config --global --list
-$ git config --global user.name {username} 
+$ git config --global user.name {username}
 $ git config --global user.email {email}
 $ git config --global color.ui “auto”
 $ git diff --name-only
