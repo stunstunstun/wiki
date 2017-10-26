@@ -135,6 +135,7 @@ $ git push origin some_function
 
 ```bash
 $ git branch --set-upstream-to=origin/some_function some_function
+$ git pull
 ```
 
 #### 개발한 내역을 master branch에 merge하는 과정
