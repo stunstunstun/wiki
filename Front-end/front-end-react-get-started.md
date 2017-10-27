@@ -1,5 +1,5 @@
 ---
-title: 프로젝트 구조부터 살펴보는 React JS
+title: React, GitHub Pages로 Reddit 클론하기
 date: 2017-06-10 18:07:11
 categories: front-end
 ---
@@ -105,6 +105,7 @@ subscribe() 메서드로 등록한 리스너를 호출한다. 샘플 코드에�
 
 #### References
 
+- [React 참고 자료 모음](https://github.com/reactkr/learn-react-in-korean)
 - https://facebook.github.io/react/
 - https://facebook.github.io/react/tutorial/tutorial.html
 - https://jsx.github.io/

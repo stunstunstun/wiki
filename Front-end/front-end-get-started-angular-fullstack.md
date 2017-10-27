@@ -1,5 +1,5 @@
 ---
-title: Angular, Babel, Pug, Sass, MongoDB
+title: AngularJS, Babel, Pug, Sass, MongoDB
 date: 2017-10-25 18:07:11
 categories: front-end
 ---

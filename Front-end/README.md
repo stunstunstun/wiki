@@ -48,27 +48,28 @@
 
 #### DevOps
 
-- RP시 Codecov를 통해 자동으로 테스트 커버리지 확인하기
+- PR시 자동으로 브랜치의 테스트 커버리지 확인하기 `Jenkins` `Codecov`
 
 #### Front-end
 
-- Angular, Babel, Pug, Sass, MongoDB 
+- TDD로 ES6, Node.js 시작하기 
+- 일목요연 ES6
+- `AngularJS`, `Babel`, `Pug`, `Sass`, `MongoDB` 프로젝트 
 - Pug를 통한 템플릿 개발
 - CSS는 Preprocessor가 필요할까?
-- React와 Git Pages로 Reddit 클론하기
-- TDD Using React and ES6
+- React, GitHub Pages로 Reddit 클론하기
+- 프론트엔드를 위한 다양한 API Mocking 전략
 
-#### Node.js
+#### Node,js & Back-end
 
-- 자바스크립트 개발 시작하기
+- 자바스크립트 패키지 매니저 Yarn
 - Scope와 Strict Mode
-- 일목요연 ES6
-- Modern JavaScript Explained For Dinosaurs
-- Express, MongoDB를 통해 API 개발하기
-- Node는 어떻게 동작하는가
-- Node V8의 가바지 컬렉션
-- Node의 프로세스 관리 도구 [PM2](http://pm2.keymetrics.io/)
+- Node.js는 어떻게 동작하는가
+- Node.js의 V8의 가바지 컬렉션
+- Node.js의 프로세스 관리 도구 [PM2](http://pm2.keymetrics.io/)
 - Node 애플리케이션 모니터링을 위한 CPU, 메모리 프로파일링
+- MongoDB 시작하기
+- jQuery를 넘어서 JavaScript의 개발 생태계는 어떻게 발전해 왔을까?
 
 #### Database
 
@@ -85,7 +86,9 @@
 
 ## Blogs
 
+- https://toddmotto.com/
 - https://medium.com/@mikeal
+- https://blog.sessionstack.com/@zlatkov
 - https://derickbailey.com/
 - http://sculove.github.io/blog/
 - https://blog.outsider.ne.kr/category/Javascript
@@ -102,11 +105,4 @@
 - [동네 커피샵도 사이렌 오더를 사용할 수 있을까?](https://www.slideshare.net/deview/123-80843907) 
 
 > `Service Worker`, `Physical Web`, `Push Notification`, `Web Payment`
-
-## References
-
-- [React 참고 자료 모음](https://github.com/reactkr/learn-react-in-korean)
-- http://d2.naver.com/helloworld/4994500
-- https://www.toptal.com/nodejs/top-10-common-nodejs-developer-mistakes
-
 
