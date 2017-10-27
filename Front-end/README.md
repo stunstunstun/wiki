@@ -31,16 +31,18 @@
 
 #### Prerequisite
 
-- `npm`, `Node`, `yeoman`, `yarn`
-- `Mocha`, `Chai`, `Sinon`, `Karma`, `Jasmine`
-- `Jest`, `Enzyme`
-- `Codecov`, `Instanbul`
-- `Babel`, `ESLint`, `Flow`
-- `Webpack`
+- `Node`, `npm`, `yarn`, `yo`, `generator-webapp`, `generator-node`
+- `mocha`, `chai`, `sinon`, `nock`, `karma`, `jasmine`
+- `codecov`, `instanbul`
+- `babel`, `eslint`, `flow`
+- `react`, `jest`, `enzyme`
+- `gulp`,`webpack`
 
-#### Packages
+#### Webapps
 
-- `requests`, `Moment.js`, `slate`, `rxjs`, `async`, `Passport`, `stripe`
+- `express`, `mongoose`, `bluebird`, `body-parser`, `helmet`, `morgan`
+- `browser-sync`, `nodemon`
+- `requests`, `lodash`, `async`, `moment`,  `rxjs`
 
 ## Articles
 
