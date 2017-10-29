@@ -6,10 +6,43 @@ categories: devops
 
 ## Table
 
+- [Accounts and login](#accounts-and-login)
 - [System](#system)
 - [Files](#files)
 - [Resources](#resources)
 - [Network](#network)
+
+## Accounts and login
+
+```
+$ telnet 127.0.0.1 80
+```
+
+```
+$ rlogin
+```
+
+```
+$ rsync
+```
+
+```
+$ ssh -x -l irteam 127.0.0.1
+```
+
+```
+$ ssh root@210.89.178.113 -p 1024
+```
+
+```bash
+$ passwd root
+```
+
+```bash
+$ useradd irteam
+$ cat /etc/passwd | grep irteam
+$ echo '123!@#' | passwd --stdin irteam
+```
 
 ## System
 
@@ -142,22 +175,6 @@ $ free -m
 ```
 
 ## Network
-
-```
-$ telnet 127.0.0.1 80
-```
-
-```
-$ ssh -x -l irteam 127.0.0.1
-```
-
-```
-$ rlogin
-```
-
-```
-$ rsync
-```
 
 #### TIME_WAIT Socket이 서비스에 미치는 영향
 
