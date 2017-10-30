@@ -52,17 +52,15 @@
 
 #### Front-end
 
-- TDD로 ES6, Node.js 시작하기 
 - 일목요연 ES6
-- `AngularJS`, `Babel`, `Pug`, `Sass`, `MongoDB` 프로젝트 
 - Pug를 통한 템플릿 개발
 - CSS는 Preprocessor가 필요할까?
-- React, GitHub Pages로 Reddit 클론하기
 - 프론트엔드를 위한 다양한 API Mocking 전략
 
-#### Node,js & Back-end
+#### Node.js & Back-end
 
-- 자바스크립트 패키지 매니저 Yarn
+- TDD로 ES6 그리고 Node.js 시작하기
+- Node의 실행 환경을 지탱하는 도구들
 - Scope와 Strict Mode
 - Node.js는 어떻게 동작하는가
 - Node.js의 V8의 가바지 컬렉션

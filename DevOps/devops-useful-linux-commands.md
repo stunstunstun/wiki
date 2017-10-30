@@ -131,10 +131,6 @@ $ df -h
 ## Files
 
 ```bash
-$ cp -i python-get-started.md ~/github/awesome-wiki/Python
-```
-
-```bash
 $ mkdir -p
 ```
 
@@ -142,7 +138,27 @@ $ mkdir -p
 $ cat
 ```
 
+```bash
+$ echo 'Hello World' > README.md
 ```
+
+```bash
+$ echo $JAVA_HOME
+```
+
+```bash
+$ touch .gitignore
+```
+
+```bash
+$ ln -s ~/Github/holaxapps.github.io/source/_posts ~/posts
+```
+
+```bash
+$ cp -i ./Python/python-get-started.md ~/posts
+```
+
+```bash
 $ tail -f catalina.out
 ```
 

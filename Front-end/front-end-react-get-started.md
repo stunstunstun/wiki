@@ -4,14 +4,6 @@ date: 2017-06-10 18:07:11
 categories: front-end
 ---
 
-## 새로운 언어를 배우기 위해 프로젝트 구조를 살펴봐야 하는 이유
-
-#### 프로젝트 단위로 관리하면 얻을 수 있는 이점들
-
-#### 바퀴를 다시 만들 필요는 없으니깐요
-
-#### 여러 모듈의 의존성을 효율적으로 관리해야 한다
-
 ## React 프로젝트로 시작하기
 
 > https://facebook.github.io/react/docs/installation.html
@@ -27,21 +19,6 @@ $ create-react-app my-app
 $ cd my-app
 $ npm start
 ```
-
-#### 기존의 애플리케이션을 위한 설치 과정
-
-Node 기반의 애플리케이션은 프로젝트 루트의 `package.json` 에 정의된 모듈들을 아래와 같이 설치할 수 있습니다.
-
-```
-$ npm install
-```
-
-`package.json`에 모듈이 추가되거나 버전을 갱신했다면 아래와 같이 업데이트 합니다.
-
-```
-$ npm update
-```
-
 #### React 프로젝트의 구조
 
 ```
