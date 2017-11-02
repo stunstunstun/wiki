@@ -155,6 +155,10 @@ $ ln -s ~/Github/holaxapps.github.io/source/_posts ~/posts
 ```
 
 ```bash
+$ find ./ -type f -name '*.sh'
+```
+
+```bash
 $ cp -i ./Python/python-get-started.md ~/posts
 ```
 
