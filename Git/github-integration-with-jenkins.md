@@ -1,6 +1,4 @@
-
-## Jenkins with Github private repository webhook 
-
+## Jenkins with Github private repository webhook
 
 ```
 $ sudo service jenkins start
@@ -13,7 +11,7 @@ $ sudo service jenkins start
 ## Set ssh key up for deployment on Jenkins with Github.
 
 - Create ssh key.
-    
+
     ```
     $ cd $HOME/.ssh
     $ ssh-keygen -t rsa -b 4096 -C "deploy_key_for_myproject"
@@ -33,7 +31,7 @@ $ sudo service jenkins start
 
 - Add ssh key to your github project setting > Deploy keys.
     + Copy public key and paste it on github project setting > Deploy keys menu.
-    
+
     ```
     $ cat deploy_key_for_myproject.pub
     ```
