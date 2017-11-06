@@ -1,9 +1,10 @@
 ## Git Overview
 
+- [Git Flow 와 자주 사용하는 명령어들](https://github.com/stunstunstun/awesome-wiki/blob/master/Git/git-commands.md)
+- [시나리오별 Git 명령어들](https://github.com/k88hudson/git-flight-rules)
 - [An Introduction Git and GitHub](https://www.youtube.com/watch?v=MJUJ4wbFm_A)
 - [Git Basic Tutorials](https://try.github.io)
 - [Git Guides](http://guides.github.com)
-- [Git Flow 와 자주 사용하는 명령어들](https://github.com/stunstunstun/awesome-wiki/blob/master/Git/git-commands.md)
 - [Git Tips](https://github.com/mingrammer/git-tips)
 - [Pro Git Book 2nd](https://git-scm.com/book/en/v2)
 

@@ -2,7 +2,7 @@
 title: Git Flow 와 자주 사용하는 명령어들
 date: 2017-08-26 15:14:40
 desc: Git 시작하기
-categories: devops
+categories: git
 ---
 
 `Git Flow`는 git을 통해 효율적으로 프로젝트를 관리하기 위한 전략이다. 기본적으로 Git은 로컬 저장소와 원격 저장소간의 동기화를 위해 아래와 같은 과정을 거친다.
@@ -116,7 +116,7 @@ git은 강력한 점은 효율적으로 분산된 환경은 제공한다는 것�
 아래의 명령을 통해 `develop` 이라는 새로운 branch를 만들고 갈아탄다.
 
 ```bash
-$ git checkout -b some_function
+$ git checkout -b develop
 ```
 
 아래와 같이 다시 master branch로 돌아올 수 있다.
@@ -125,10 +125,16 @@ $ git checkout -b some_function
 $ git checkout master
 ```
 
-당신이 새롭게 만든 branch는 remote 서버에 전송하기 전까지는 동료들이 접근할 수가 없다. branch에 대한 검증이 완료되면 여러분은 Github에서 PR(Pull Request)를 전송할 수 있게된다.
+기존의 특정 브랜치로부터 새로운 브랜치를 생성한다.
+
+```
+$ git checkout -b develop origin/stage
+```
+
+당신이 새롭게 만든 branch는 remote 서버에 전송하기 전까지는 동료들이 접근할 수가 없다. branch에 대한 검증이 완료되면 여러분은 Github에서 Pull Request를 전송할 수 있게된다.
 
 ```bash
-$ git push origin some_function
+$ git push -u origin develop
 ```
 
 만약 branch를 여러명과 협업하고 있는 도중 push시에 remote 서버의 최신 내용을 로컬에 반영하지 않았다면 아래와 같이 remote 서버와 연결 후 `git pull`을 통해 merge 한다.
@@ -157,10 +163,6 @@ $ git branch -a
 ````
 $ git checkout -t origin/some_function
 ````
-
-```
-$ git checkout -b new_some_function origin/some_function
-```
 
 `fatal: Cannot update paths and switch to branch 'some_function' at the same time.` 에러가 발생한다면 아래와 같이 원격 저장소를 갱신한다.
 
@@ -260,8 +262,8 @@ $ git reset HEAD <file>
 
 HEAD에서 변경한 내역을 취소하는 새로운 commit을 발행하는 경우도 있다. 이미 commit, push 한 경우 드물게 사용한다.
 
-```
-$ git revert HEAD
+```bash
+$ git revert HEAD <file>
 ```
 
 #### remote 서버를 변경해야 할 때
@@ -283,9 +285,8 @@ origin  https://stunstunstun@github.com/stunstunstun/awesome-wiki (push)
 애플리케이션의 빌드 및 테스트가 완료되어 새 버전을 릴리즈한다면 읽기 전용 상태의 tag 버전를 생성하는 것이 좋다.
 
 ```bash
-$ git tag 0.1.0 1b2e1d63ff
+$ git tag 1.0.0
 ```
-위의 명령에서 1b2e1d63ff 부분은 꼬리표가 가리킬 확정본 식별자이다. 아래 명령으로 확정본 식별자를 얻을 수 있다.
 
 ```bash
 $ git log
@@ -315,3 +316,4 @@ $ git reset --hard origin/{branch_name}
 
 - https://rogerdudler.github.io/git-guide/index.ko.html
 - https://ujuc.github.io/2015/12/16/git-flow-github-flow-gitlab-flow/
+- https://github.com/k88hudson/git-flight-rules
