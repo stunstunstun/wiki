@@ -4,7 +4,7 @@ date: 2017-10-30 10:07:11
 categories: node
 ---
 
-ECMAScript(JavaScript)가 Ajax, JSON, jQuery가 등장함으로서 널리 사용 되어지고 우리에게 익숙해졌다면 서버의 실행 환경을 위한 Node.js의 등장으로 Javascript는 황금기를 맞이하게 되었습니다. 이 글에서는 Node.js를 시작하기 전에 시스템에서 필요한 Node.js의 실행환경에 대해 이야기 합니다.
+ECMAScript(JavaScript)가 Ajax, JSON, jQuery가 등장함으로서 널리 사용 되어지고 우리에게 익숙해졌다면 서버의 실행 환경을 위한 Node.js의 등장으로 JavaScript는 황금기를 맞이하게 되었습니다. 이 글에서는 Node.js를 시작하기 전에 시스템에서 필요한 Node.js의 실행환경에 대해 이야기 합니다.
 
 <img src='https://nodejs.org/static/images/logos/nodejs-new-pantone-black.png' width='400' />
 
