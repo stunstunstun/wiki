@@ -254,9 +254,9 @@ $ yarn add --dev
 $ yarn list
 ```
 
-> > https://yarnpkg.com/en/docs
+> https://yarnpkg.com/en/docs
  
-#### yarn을 통해 create-react-app 패키지를 시스템 전역으로 설치하기
+#### yarn을 통해 리액트 개발을 한다면 create-react-app 패키지를 사용해보자.
 
 ```bash
 $ yarn global add create-react-app --prefix /usr/local
