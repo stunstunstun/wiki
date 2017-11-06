@@ -5,10 +5,13 @@ categories: front-end
 description: ECMAScript 6 한눈에 살펴보기
 ---
 
-이 문서는 `Udacity`의 [ES6 - JavaScript Improved](https://classroom.udacity.com/courses/ud356) 강의와 Nicholas C. Zakas의 [Underderstanding ES6](https://www.amazon.com/Understanding-ECMAScript-Definitive-JavaScript-Developers/dp/1593277571)를 읽고 학습한 내용을 요약한 내용으로 구성되어 있습니다. 요약한 내용을 먼저 훏어보시고 참고한 강의와 자료를 통해 학습하시면 작게나마 도움이 될 것입니다.
+이 문서는 `Udacity`의 `ES6 - JavaScript Improved`와 Nicholas C. Zakas의 [`Underderstanding ES6`](https://www.amazon.com/Understanding-ECMAScript-Definitive-JavaScript-Developers/dp/1593277571)를 읽고 학습한 내용을 요약한 내용으로 구성되어 있습니다. 요약한 내용을 먼저 훏어보시고 첨부된 자료를 통해 도움이 되길 바랍니다.
 
-> Underderstanding ES6은 GitBook에서 이북으로도 즐길 수 있습니다.
-> - https://francisfeng.gitbooks.io/understanding-es6/content/manuscript/00-Introduction.html
+#### ES6 - JavaScript Improved
+- https://classroom.udacity.com/courses/ud356
+
+#### Underderstanding ES6은 GitBook에서 이북으로도 즐길 수 있습니다.
+- https://francisfeng.gitbooks.io/understanding-es6/content/manuscript/00-Introduction.html
 
 
 ## Tables
