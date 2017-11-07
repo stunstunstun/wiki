@@ -2,13 +2,9 @@
 title: Git Flow 와 자주 사용하는 명령어들
 date: 2017-08-26 15:14:40
 desc: Git 시작하기
-<<<<<<< HEAD:source/_posts/devops-git-commands.md
-profile: https://scontent-hkg3-1.xx.fbcdn.net/v/t1.0-9/22449744_1604324526273884_8642263448069374244_n.jpg?oh=899bd2996c0f4d2fcb9b6603ea96994c&oe=5AA370C4
+profile: https://scontent-hkg3-1.xx.fbcdn.net/v/t1.0-9/22449744_1604324526273884_8642263448069374244_n.jpg
 profile_url: https://www.facebook.com/minhyeok.jung
-categories: devops
-=======
 categories: git
->>>>>>> 4f49cc1b017dc2197d81798e0323fbc4c6cc2a6e:source/_posts/git-commands.md
 ---
 
 `Git Flow`는 git을 통해 효율적으로 프로젝트를 관리하기 위한 전략이다. 기본적으로 Git은 로컬 저장소와 원격 저장소간의 동기화를 위해 아래와 같은 과정을 거친다.
