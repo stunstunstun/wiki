@@ -33,7 +33,7 @@
 
 ## 직접 참여하고 싶으시다구요?
 
-이 글에 공감하시는 모든 분이 참여가 가능해요. 작성하신 문서는 [`안녕 프로그래밍`](https://holaxprogramming.com) 페이지에 포스팅 됩니다.
+이 글에 공감하시는 모든 분이 참여가 가능해요. 작성하신 문서는 [`안녕 프로그래밍`](https://holaxprogramming.com)과 [페이스북 페이지](https://www.facebook.com/holaxprogramming/)에 포스팅 됩니다.
 
 - 문서의 이름은 `post-name.md`와 같이 영문 소문자와 '-'를 이용하여 생성하시면 됩니다.
 - Markdown 문서를 통해 작성해 주세요.
