@@ -35,10 +35,14 @@
 
 이 글에 공감하시는 모든 분이 참여가 가능해요. 작성하신 문서는 [`안녕 프로그래밍`](https://holaxprogramming.com)과 [페이스북 페이지](https://www.facebook.com/holaxprogramming/)에 포스팅 됩니다.
 
-- 문서의 이름은 `post-name.md`와 같이 영문 소문자와 '-'를 이용하여 생성하시면 됩니다.
+`위키 GitHub Repo`
+- https://github.com/stunstunstun/awesome-wiki
+
+`문서 작성하기`
 - Markdown 문서를 통해 작성해 주세요.
+- 문서의 이름은 주제에 맞는 카테고리 폴더에 `post-name.md`와 같이 영문 소문자와 '-'를 이용하여 생성하시면 됩니다.
 - PR(Pull Request)시에 글에 대한 간략한 소개를 첨부해주세요.
-- 문서의 내용 상단에는 아래와 같은 형식으로 title(필수), date(필수), desc(Optional), profile(Optional), profile_url(Optional)을 포함해야 합니다.
+- Markdown 문서의 상단에는 아래와 같은 형식으로 title(필수), date(필수), desc(Optional), category(Optional), profile(Optional), profile_url(Optional)을 포함해야 합니다.
 
 ```
 ---
