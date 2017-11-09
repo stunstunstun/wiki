@@ -61,7 +61,6 @@
 
 - [Node의 실행 환경을 지탱하는 도구들](https://github.com/stunstunstun/awesome-wiki/blob/master/Front-end/node-environments.md)
 - Yarn 제대로 이해하기
-- TDD로 Node.js 시작하기
 - Scope와 Strict Mode
 - Node.js는 어떻게 동작하는가
 - Node.js의 V8의 가바지 컬렉션
