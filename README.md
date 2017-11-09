@@ -4,7 +4,10 @@
 
 > 점점 어디론가 흩어져가고 있지 않으세요?
 
-<img src='https://www.holaxprogramming.com/logo.png'/>
+<div align="center">
+  <img src='https://www.holaxprogramming.com/logo.png'/>
+</div>
+
 
 ## 저자로 참여해주세요!
 
