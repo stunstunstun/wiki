@@ -1,7 +1,7 @@
 ---
-title: TDD로 ES6, Node.js 시작하기
+title: TDD로 Node.js 시작하기
 date: 2017-11-01 18:07:11
-categories: front-end
+categories: node
 ---
 
 ## Development Ecosystem
