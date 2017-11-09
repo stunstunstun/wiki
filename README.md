@@ -42,9 +42,10 @@
 
 ```
 ---
-title: Github Page와 Hexo를 통해 30분만에 기술 블로그 만들기
-desc: 부제목
-date: 2017-04-16 15:14:40
+title: Java 시스템 운영 중 알아두면 쓸모 있는 지식들
+date: 2017-10-09 00:49:31
+categories: java
+desc: Java 제대로 이해하기
 profile: https://avatars0.githubusercontent.com/u/2571320?s=125&v=1
 profile_url: https://github.com/stunstunstun
 ---
