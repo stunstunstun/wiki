@@ -1,4 +1,4 @@
-## Basics
+## Front-end
 
 #### SPAs
 
@@ -25,22 +25,21 @@
 - [Grab's Front-end Guide](https://github.com/grab/front-end-guide)
 - [Github Flow](https://guides.github.com/introduction/flow/)
 
-## Environments
+## Node.js Environments
 
 - http://devdocs.io/
 
 #### Prerequisite
 
-- `Node`, `npm`, `yarn`, `yo`, `generator-webapp`, `generator-node`
-- `mocha`, `chai`, `sinon`, `nock`, `karma`, `jasmine`
-- `codecov`, `instanbul`
-- `babel`, `eslint`, `flow`
+- `node.js`, `nvm`, `npm`, `yarn`
+- `mocha`, `chai`, `sinon`, `nock`, `supertest`, `karma`, `jasmine`
+- `babel`, `eslint`, `eslint-config-airbnb`, `instanbul`, `flow`
 - `react`, `jest`, `enzyme`
-- `gulp`,`webpack`
+- `gulp`, `run-sequence`, `webpack`
 
 #### Webapps
 
-- `express`, `mongoose`, `bluebird`, `body-parser`, `helmet`, `morgan`
+- `express`, `mongoose`, `body-parser`, `cors`, `helmet`, `morgan`, `dotenv`, `joi`, `log4js`
 - `browser-sync`, `nodemon`
 - `requests`, `lodash`, `async`, `moment`,  `rxjs`
 
@@ -48,26 +47,27 @@
 
 #### DevOps
 
-- PR시 자동으로 브랜치의 테스트 커버리지 확인하기 `Jenkins` `Codecov`
+- JavaScript 프로젝트 Jenkins CI 서버와 통합하기 `Github PR`, `Comment`, `Lint`, `Test coverage`
 
 #### Front-end
 
+- jQuery를 넘어서 JavaScript의 개발 생태계는 어떻게 발전해 왔을까?
 - 일목요연 ES6
 - Pug를 통한 템플릿 개발
 - CSS는 Preprocessor가 필요할까?
 - 프론트엔드를 위한 다양한 API Mocking 전략
 
-#### Node.js & Back-end
+#### Back-end
 
-- TDD로 ES6 그리고 Node.js 시작하기
-- Node의 실행 환경을 지탱하는 도구들
+- [Node의 실행 환경을 지탱하는 도구들](https://github.com/stunstunstun/awesome-wiki/blob/master/Front-end/node-environments.md)
+- Yarn 제대로 이해하기
 - Scope와 Strict Mode
 - Node.js는 어떻게 동작하는가
 - Node.js의 V8의 가바지 컬렉션
 - Node.js의 프로세스 관리 도구 [PM2](http://pm2.keymetrics.io/)
 - Node 애플리케이션 모니터링을 위한 CPU, 메모리 프로파일링
 - MongoDB 시작하기
-- jQuery를 넘어서 JavaScript의 개발 생태계는 어떻게 발전해 왔을까?
+- [What's new in Node.js 9](https://nemethgergely.com/what-is-new-in-nodejs-9/)
 
 #### Database
 

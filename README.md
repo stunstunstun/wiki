@@ -4,11 +4,18 @@
 
 > 점점 어디론가 흩어져가고 있지 않으세요?
 
-## 안녕 프로그래밍의 저자가 되어주세요
+<div align="center">
+  <img src='https://www.holaxprogramming.com/logo.png'/>
+</div>
 
-위키 페이지를 통해서 기술 문서 관리에 대한 일관성을 유지하고 꾸준히 지속적으로 리마인드 하기 위해 만들었습니다. 이렇게 쌓인 Reference들이 제 자신은 물론이고 프로그래밍을 업으로 시작하는 주니어 엔지니어 스스로 성장하기 위한 좋은 자료가 되기를 바랍니다.
- 
-## 카테고리
+
+## 저자로 참여해주세요!
+
+✔️  위키 페이지를 통해서 문서에 대한 일관성을 유지하고 꾸준히 지속적으로 리마인드 하기 위해 만들었습니다.<br/>
+✔️  더욱 많은 분들에게 좋은 글이 전해지기를 바라면서, 기술 문서 작성에 관심이 있으신 분은 관심있게 읽어주세요.<br/>
+✔️  이렇게 쌓인 문서들이 자신은 물론이고 프로그래밍을 업으로 시작하는 주니어 엔지니어 스스로 성장하기 위한 좋은 자료가 되기를 바랍니다.<br/>
+
+## 주제
 
 | 카테고리 | 설명 |
 | --- | --- |
@@ -26,32 +33,31 @@
 
 ## 직접 참여하고 싶으시다구요?
 
-이 글에 공감하시는 모든 분이 참여가 가능해요. 작성하신 문서는 [`안녕 프로그래밍`](https://holaxprogramming.com) 페이지에 포스팅 됩니다.
+이 글에 공감하시는 모든 분이 참여가 가능해요. 작성하신 문서는 [`안녕 프로그래밍`](https://holaxprogramming.com)과 [페이스북 페이지](https://www.facebook.com/holaxprogramming/)에 포스팅 됩니다.
 
-- 먼저 RP전에 글에 대한 간략한 소개를 [Issues](https://github.com/stunstunstun/awesome-wiki/issues)에 등록해주세요.
-- Markdown 문서를 통해 작성해 주세요. 
-- 문서의 이름은 `post-name.md`와 같이 영문 소문자와 '-'를 이용하여 생성하시면 됩니다.
-- 문서의 내용에는 상단에 아래와 같이 제목, 일시를 필수적으로 포함시켜 주세요.
+`위키 GitHub Repo`
+- https://github.com/stunstunstun/awesome-wiki
+
+`문서 작성하기`
+- Markdown 문서를 통해 작성해 주세요.
+- 문서의 이름은 주제에 맞는 카테고리 폴더에 `post-name.md`와 같이 영문 소문자와 '-'를 이용하여 생성하시면 됩니다.
+- PR(Pull Request)시에 글에 대한 간략한 소개를 첨부해주세요.
+- Markdown 문서의 상단에는 아래와 같은 형식으로 title(필수), date(필수), desc(Optional), category(Optional), profile(Optional), profile_url(Optional)을 포함해야 합니다.
 
 ```
 ---
-title: Github Page와 Hexo를 통해 30분만에 기술 블로그 만들기
-desc: 부제목
-author: stunstunstun
-date: 2017-04-16 15:14:40
+title: Java 시스템 운영 중 알아두면 쓸모 있는 지식들
+date: 2017-10-09 00:49:31
+categories: java
+desc: Java 제대로 이해하기
+profile: https://avatars0.githubusercontent.com/u/2571320?s=125&v=1
+profile_url: https://github.com/stunstunstun
 ---
 ```
 
 > Github Markdown Guide - https://guides.github.com/features/mastering-markdown/
 
-## Pull Request를 위한 절차
-
-1. 우측 상단의 버튼을 통해 Repository를 Fork합니다. 
-2. Fork한 Repository를 통해 문서를 추가합니다.
-3. New Pull Request버튼을 통해 Merge요청을 합니다.
-
-
 ## 유용한 Markdown Editor
 
-- https://yhatt.github.io/marp/
 - http://pad.haroopress.com/
+- https://yhatt.github.io/marp/
