@@ -31,6 +31,8 @@ QA(Quality Assurance)를 위한 CI서버. QA는 아래와 같은 내용을 포�
 - NodeJS Plugin
 - MongoDB Plugin
 - GitHub Pull Request Builder
+- Coverage status for GitHub Pull Requests
+- GitHub Pull Requests
 - Environment Injector Plugin
 - Corbertura Plugin
 - HTML Publisher Plugin
