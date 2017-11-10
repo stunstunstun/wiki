@@ -33,7 +33,7 @@
 
 ## 직접 참여하고 싶으시다구요?
 
-이 글에 공감하시는 모든 분이 참여가 가능해요. 작성하신 문서는 [`안녕 프로그래밍`](https://holaxprogramming.com)과 [페이스북 페이지](https://www.facebook.com/holaxprogramming/)에 포스팅 됩니다.
+이 글에 공감하시는 모든 분이 참여가 가능해요. 작성하신 문서는 일 1000명이 방문하는 [`안녕 프로그래밍`](https://holaxprogramming.com)과 [페이스북 페이지](https://www.facebook.com/holaxprogramming/)에서 프로그래밍에 관심있는 분들에게 공유됩니다.
 
 `위키 GitHub Repo`
 - https://github.com/stunstunstun/awesome-wiki
