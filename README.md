@@ -44,6 +44,8 @@
 - 작성이 완료되면 PR(Pull Request)시에 글에 대한 간략한 소개를 첨부해주세요.
 - Markdown 문서의 상단에는 아래와 같은 형식으로 메타 정보를 포함해야합니다. [기존 글](https://github.com/stunstunstun/awesome-wiki/blob/master/Java/java-jvm-performance.md)을 참고해주세요.
 
+`메타정보 예시`
+
 ```
 ---
 title: Java 시스템 운영 중 알아두면 쓸모 있는 지식들
@@ -54,8 +56,6 @@ profile: https://avatars0.githubusercontent.com/u/2571320?s=125&v=1
 profile_url: https://github.com/stunstunstun
 ---
 ```
-
-`메타정보`
 
 Key | Value | Required
 --|--|--
