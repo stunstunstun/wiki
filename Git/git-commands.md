@@ -111,26 +111,34 @@ git add, commit, push 하는 일련의 과정은 내 컴퓨터에서 일어난 �
 $ git pull
 ```
 
+```bash
+$ git pull <remote> <branch>
+```
+
 #### 새로운 기능을 위해 branch를 생성하는 방법
 
 git은 강력한 점은 효율적으로 분산된 환경은 제공한다는 것이다. 우리는 master branch가 아닌 더욱 안전하고 격리된 상태에서 새로운 기능을 추가할 수 있다. 새로운 branch를 이용해 개발을 진행하고 개발이 완료가 되면 나중에 master 로 돌아와 merge 하는 프로세스를 의미한다.
 
-아래의 명령을 통해 `develop` 이라는 새로운 branch를 만들고 갈아탄다.
+아래의 명령을 통해 `master branch`에서 `develop` 이라는 새로운 branch를 만들고 갈아탄다.
 
 ```bash
 $ git checkout -b develop
+```
+
+develop이라는 특정 branch로 부터 새로운 branch를 만들고 싶다면,
+
+```bash
+$ git checkout -b develop origin/stage
 ```
 
 아래와 같이 다시 master branch로 돌아올 수 있다.
 
 ```bash
 $ git checkout master
-```
-
-기존의 특정 브랜치로부터 새로운 브랜치를 생성한다.
-
-```
-$ git checkout -b develop origin/stage
+$ git branch
+* master
+  stage
+  develop
 ```
 
 당신이 새롭게 만든 branch는 remote 서버에 전송하기 전까지는 동료들이 접근할 수가 없다. branch에 대한 검증이 완료되면 여러분은 Github에서 Pull Request를 전송할 수 있게된다.
@@ -142,7 +150,7 @@ $ git push -u origin develop
 만약 branch를 여러명과 협업하고 있는 도중 push시에 remote 서버의 최신 내용을 로컬에 반영하지 않았다면 아래와 같이 remote 서버와 연결 후 `git pull`을 통해 merge 한다.
 
 ```bash
-$ git branch --set-upstream-to=origin/some_function some_function
+$ git branch --set-upstream-to=origin/develop develop
 $ git pull
 ```
 
@@ -150,25 +158,41 @@ $ git pull
 
 원격 저장소의 브랜치 리스트를 조회한다.
 
-```
+```bash
 $ git branch -r
+  origin/develop
+  origin/master
+  origin/stage
 ```
 
 로컬, 원격 저장소의 브랜치 리스트를 모두 조회한다.
 
-```
+```bash
 $ git branch -a
+  master
+  stage
+* develop
+  remotes/origin/develop
+  remotes/origin/master
+  remotes/origin/stage
 ```
 
-원격 저장소로부터 로컬의 동일한 이름의 branch를 생성하면서 해당 branch로 checkout을 한다.
+원격 저장소의 `develop`이라는 branch를 로컬 저장소에 가져오고 싶다면
 
+````bash
+$ git checkout -t origin/1.0.0
+Branch 1.0.0 set up to track remote branch 1.0.0 from origin.
+Switched to a new branch '1.0.0'
+$ git branch
+* 1.0.0
+  master
+  stage
+  develop
 ````
-$ git checkout -t origin/some_function
-````
 
-`fatal: Cannot update paths and switch to branch 'some_function' at the same time.` 에러가 발생한다면 아래와 같이 원격 저장소를 갱신한다.
+`fatal: Cannot update paths and switch to branch 'develop' at the same time.`이라는 에러가 발생한다면 아래와 같이 원격 저장소를 최신 상태를 로컬 저장소에 갱신한다.
 
-```
+```bash
 $ git remote update
 ```
 
@@ -176,8 +200,8 @@ $ git remote update
 
 어떤 경우에는 수정 내역을 원격 저장소에 push 하지는 않지만 해당 branch를 참고하기 위해 로컬에 받아서 테스트 해보고 싶은 경우도 있다.
 
-```
-$ git checkout [원격 저장소의 branch 이름]
+```bash
+$ git checkout <branch>
 ```
 
 아무런 옵션없이 원격 저장소의 branch를 checkout 하면 ‘detached HEAD’ 상태로 소스를 보고 변경 해볼 수도 있지만 변경사항들은 commit, push 할 수 없으며 다른 branch로 checkout하면 사라진다.
@@ -204,6 +228,8 @@ $ git branch -D some_function
 ```
 
 #### merge conflict가 발생한다면?
+
+개발이 완료되면 branch를 merge하는 과정에서 충분히 conflic가 발생할 수 있다.
 
 ```bash
 CONFLICT (content): Merge conflict in foo.java Automatic merge failed; fix conflicts and then commit the result.
@@ -241,7 +267,7 @@ $ git diff some_function master
 
 Merge 중에 발생한 충돌을 해결하는 방법은 몇 가지가 있다. 첫 번째는 그저 이 상황을 벗어나는 것이다. 예상하고 있던 일도 아니고 지금 당장 처리할 일도 아니라면 git merge --abort 명령으로 간단히 Merge 하기 전으로 되돌린다.
 
-```
+```bash
 $ git merge --abort
 ```
 
@@ -272,10 +298,32 @@ $ git checkout -- <file>
 $ git reset HEAD <file>
 ```
 
-HEAD에서 변경한 내역을 취소하는 새로운 commit을 발행하는 경우도 있다. 이미 commit, push 한 경우 드물게 사용한다.
+이미 commit된 내역을 과거로 되돌리고 싶은 경우가 있을 것이다! 먼저 commit history를 살펴보자
 
 ```bash
-$ git revert HEAD <file>
+$ git log --oneline
+8ed5068 (HEAD -> unit-test, origin/unit-test) Update README.md
+dfff29e (origin/master, master) Merge pull request #8 from stunstunstun/unit-test
+eec3b7a Integration runner is completed
+0a087cf #2 Specification list, create, get, update
+a603da7 Inialize unit test environments
+55c3e73 (origin/stage, stage) Update README.md
+c354d50 Merge pull request #7 from stunstunstun/api-test
+2e6b522 (origin/api-test) #3 Add eslint to devDendencies
+5e35c21 #3 Add eslint to devDendencies
+f9bbe2a #3 version fixed
+```
+
+`a603da7` 이후의 모든 내역을 삭제하고 돌아가고 싶다면 `--hard` 옵션과 함께 `reset` 명령을 이용하자
+
+```bash
+$ git reset --hard a603da7
+```
+
+특정 commit의 변경 내역을 취소하는 새로운 commit을 발행해야하는 경우도 있다. 이미 commit, push 한 경우 드물게 사용하는 것을 권장한다.
+
+```bash
+$ git revert <commit_id>
 ```
 
 #### remote 서버를 변경해야 할 때
@@ -310,22 +358,11 @@ $ git log
 $ git push origin 0.1.0
 ```
 
-#### 그 밖에 자주 사용하는 명령어들
+지금까지 Git Flow를 통해 기본적인 명령들을 살펴보았다. Git에 대해 더 알고 싶다면 아래의 자료를 참고하면 많은 도움이 될 것이다!
 
-```bash
-$ git --version
-$ git clone {address}
-$ git status
-$ git config --global --list
-$ git config --global user.name {username}
-$ git config --global user.email {email}
-$ git config --global color.ui “auto”
-$ git diff --name-only
-$ git reset --hard origin/{branch_name}
-```
-
-## References
-
-- https://rogerdudler.github.io/git-guide/index.ko.html
-- https://ujuc.github.io/2015/12/16/git-flow-github-flow-gitlab-flow/
-- https://github.com/k88hudson/git-flight-rules
+- [Git Flight Rules](https://github.com/k88hudson/git-flight-rules)
+- [An Introduction Git and GitHub](https://www.youtube.com/watch?v=MJUJ4wbFm_A)
+- [Git Basic Tutorials](https://try.github.io)
+- [Git Guides](http://guides.github.com)
+- [Git Tips](https://github.com/mingrammer/git-tips)
+- [Pro Git Book 2nd](https://git-scm.com/book/en/v2)
