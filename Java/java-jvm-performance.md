@@ -2,6 +2,9 @@
 title: Java 시스템 운영 중 알아두면 쓸모 있는 지식들
 date: 2017-10-09 00:49:31
 categories: java
+desc: Java 제대로 이해하기
+profile: https://avatars0.githubusercontent.com/u/2571320?s=125&v=1
+profile_url: https://github.com/stunstunstun
 ---
 
 Java 기반의 서버 애플리케이션은 운영 중에 아래와 같은 메세지와 함께 장애로 이어지는 결과가 일어나곤 합니다.
