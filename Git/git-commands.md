@@ -230,7 +230,17 @@ $ git commit -am 'Fixed conflicted issue'
 > merge 전에 변경 내용을 확인하는 방법
 
 ```bash
+$ git status -sb
+```
+
+```bash
 $ git diff some_function master
+```
+
+Merge 중에 발생한 충돌을 해결하는 방법은 몇 가지가 있다. 첫 번째는 그저 이 상황을 벗어나는 것이다. 예상하고 있던 일도 아니고 지금 당장 처리할 일도 아니라면 git merge --abort 명령으로 간단히 Merge 하기 전으로 되돌린다.
+
+```
+$ git merge --abort
 ```
 
 #### 로컬 변경 내용을 되돌리기
