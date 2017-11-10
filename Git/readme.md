@@ -1,12 +1,16 @@
 ## Git Overview
 
-- [Git Flow 와 자주 사용하는 명령어들](https://github.com/stunstunstun/awesome-wiki/blob/master/Git/git-commands.md)
-- [시나리오별 Git 명령어들](https://github.com/k88hudson/git-flight-rules)
+- [Git Flight Rules](https://github.com/k88hudson/git-flight-rules)
 - [An Introduction Git and GitHub](https://www.youtube.com/watch?v=MJUJ4wbFm_A)
 - [Git Basic Tutorials](https://try.github.io)
 - [Git Guides](http://guides.github.com)
 - [Git Tips](https://github.com/mingrammer/git-tips)
 - [Pro Git Book 2nd](https://git-scm.com/book/en/v2)
+
+## Articles
+
+- [Git Flow 와 자주 사용하는 명령어들](https://github.com/stunstunstun/awesome-wiki/blob/master/Git/git-commands.md)
+- Jenkins를 통해 GitHub PR시에 자동으로 빌드하자
 
 ## GitHub Page
 
