@@ -55,6 +55,8 @@ profile_url: https://github.com/stunstunstun
 ---
 ```
 
+`메타정보`
+
 Key | Value | Required
 --|--|--
 title | 제목 | O
