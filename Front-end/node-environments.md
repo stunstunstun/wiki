@@ -255,7 +255,7 @@ $ yarn list
 ```
 
 > https://yarnpkg.com/en/docs
- 
+
 #### yarn을 통해 리액트 개발을 한다면 create-react-app 패키지를 사용해보자.
 
 ```bash

@@ -223,7 +223,7 @@ $ free -m
 #### 시스템에서 운영중인 Port 확인하기
 
 ```
-$ netstat -nap | grep LISTEN | grep :80
+$ netstat -nap | grep LISTEN | grep -i :80
 ```
 
 ```
