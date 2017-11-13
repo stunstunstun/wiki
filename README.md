@@ -22,6 +22,7 @@
 | [Fundamental](https://github.com/stunstunstun/awesome-wiki/tree/master/Fundamental) | 개발자에게 밑천이 되는 소프트웨어 공학 전반 |
 | [Python](https://github.com/stunstunstun/awesome-wiki/tree/master/Python)| Python 관련 카테고리 |
 | [Java](https://github.com/stunstunstun/awesome-wiki/tree/master/Java) | Java의 기본지식 및 Java8, Java9 Features |
+| [Scala](https://github.com/stunstunstun/awesome-wiki/tree/master/Scala) | Scala 을 통한 Functional Language 에 대한 지식 |
 | [Front-end](https://github.com/stunstunstun/awesome-wiki/tree/master/Front-end) | JavaScript 및 프론트엔드 관련 기술 |
 | [Android](https://github.com/stunstunstun/awesome-wiki/tree/master/Android) | Android 관련 기술 |
 | [iOS](https://github.com/stunstunstun/awesome-wiki/tree/master/iOS) | Swift를 통한 iOS 개발에 관한 지식 |
