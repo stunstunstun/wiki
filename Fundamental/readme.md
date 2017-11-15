@@ -29,12 +29,9 @@
 - [HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP)
 - HTTP 완벽 가이드
 - HTTP의 접근제한과 CORS 정책
-- [마이크로소프트의 REST API 가이드 라인](https://github.com/Microsoft/api-guidelines)
 - [HTTP/2
 ](http://httpwg.org/specs/rfc7540.html)
 - [더 빠른 웹을 위해 HTTP/2](https://www.slideshare.net/eungjun/http2-40582114)
-- REST API 논문
-- [그런 REST API로 괜찮은가](http://slides.com/eungjun/rest) 
 
 #### Blockchain
 

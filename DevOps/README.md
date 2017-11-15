@@ -18,8 +18,13 @@
 
 #### API Design
 
+- [Roy T. Fielding의 REST API 논문](http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm)
+- [REST API 논문 요약](https://blog.npcode.com/2017/03/02/%EB%B0%94%EC%81%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%93%A4%EC%9D%84-%EC%9C%84%ED%95%9C-rest-%EB%85%BC%EB%AC%B8-%EC%9A%94%EC%95%BD/)
+- [마이크로소프트의 REST API 가이드 라인](https://github.com/Microsoft/api-guidelines)
+- [그런 REST API로 괜찮은가](http://slides.com/eungjun/rest)
+- [API Versioning](https://stripe.com/blog/api-versioning)
 - [API 디자인은 왜 중요한가?](https://github.com/stunstunstun/awesome-wiki/blob/master/DevOps/devops-api-design.md)
 - [API Gateway 패턴](https://github.com/stunstunstun/awesome-wiki/blob/master/DevOps/devops-api-gateway.md)
-- [API Gateway의 인증 및 API 요청에 대한 검증](https://github.com/stunstunstun/awesome-wiki/blob/master/DevOps/devops-api-gateway-authentication.md)
+- [API Gateway의 인증 및 API 요청의 검증](https://github.com/stunstunstun/awesome-wiki/blob/master/DevOps/devops-api-gateway-authentication.md)
 
 
