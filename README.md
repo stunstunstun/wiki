@@ -72,7 +72,9 @@ desc | 부제목 | Optional
 
 #### Updating
 
-이미 포스팅된 문서도 지속적으로 업데이트하고 있습니다. 위에 가이드된 내용 이외의 제약사항은 없습니다. 변경 내역이 있다면 Pull Request의 이슈내에서 검토후에 반영 됩니다.
+`문서 수정하기` > `Pull Request` > `Review` > `Merge & Updating`
+
+이미 포스팅된 문서도 지속적으로 업데이트하고 있습니다. 위에 가이드된 내용 이외의 제약사항은 없습니다. 변경 내역이 있다면 Pull Request의 이슈내에서 리뷰후에 반영됩니다.
 
 ## 유용한 Markdown Editor
 
