@@ -39,7 +39,10 @@
 `위키 GitHub Repo`
 - https://github.com/stunstunstun/awesome-wiki
 
-`문서 작성하기`
+#### Posting
+
+`문서 작성하기` > `Pull Request` > `Review` > `Merge & Posting`
+
 - Markdown 문서를 통해 작성해 주세요.
 - 문서의 이름은 주제에 맞는 카테고리 폴더에 `post-name.md`와 같이 영문 소문자와 '-'를 이용하여 생성하시면 됩니다.
 - 작성이 완료되면 PR(Pull Request)시에 글에 대한 간략한 소개를 첨부해주세요.
@@ -66,6 +69,10 @@ category | 카테고리 | O
 profile | 글에 노출될 프로필 이미지 URL | O
 profile_url | 프로필 이미지의 링크되는 홈페이지, 블로그, SNS URL | Optional
 desc | 부제목 | Optional
+
+#### Updating
+
+이미 포스팅된 문서도 지속적으로 업데이트하고 있습니다. 위에 가이드된 내용 이외의 제약사항은 없습니다. 변경 내역이 있다면 Pull Request의 이슈내에서 검토후에 반영 됩니다.
 
 ## 유용한 Markdown Editor
 
