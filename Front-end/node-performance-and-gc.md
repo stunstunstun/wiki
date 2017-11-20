@@ -1,3 +1,8 @@
+---
+title: Node.js의 V8의 가바지 컬렉션
+date: 2017-10-20 18:07:11
+categories: front-end
+---
 
 ## Node.js with Big Companies
 
@@ -9,6 +14,8 @@
 ## New V8 is coming
 
 - [New V8 is coming](https://medium.com/the-node-js-collection/get-ready-a-new-v8-is-coming-node-js-performance-is-changing-46a63d6da4de)
+
+## Garbage Collection
 
 ## References
 

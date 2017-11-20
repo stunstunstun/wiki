@@ -55,7 +55,7 @@
 - 일목요연 ES6
 - Pug를 통한 템플릿 개발
 - CSS는 Preprocessor가 필요할까?
-- 프론트엔드를 위한 다양한 API Mocking 전략
+- AngularJS 프로젝트 테스트환경 구축하기
 
 #### Back-end
 
