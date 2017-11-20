@@ -126,4 +126,4 @@ object Simple extends App {
 
 #### 다음에는...
 
-지금까지 Scala 를 설치하는 방법, Scala 를 웹에서 사용하는 방법, Scala 의 Entry point 에 대해서 알아보았고, Scala 에서 Hello world 를 찍는 코드를 실행해보았다. 다음 글에서는 Scala 에서 값에 이름을 붙이는 방법에 대해서 알아보고, 순차적인 Code 를 작성하는 것에 대해 공부해 볼 것이다.
+지금까지 Scala 를 설치하는 방법, Scala 를 웹에서 사용하는 방법, Scala 의 Entry point 에 대해서 알아보았고, Scala 에서 Hello world 를 찍는 코드를 실행해보았다. 다음 글에서는 Scala 에서 값에 이름을 붙이는 방법에 대해서 알아볼 것이다.
