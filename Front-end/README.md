@@ -1,8 +1,7 @@
-## Front-end
+## Overview
 
 #### SPAs
 
-- [Front-End Checklist](https://github.com/thedaviddias/Front-End-Checklist)
 - [HTML5 History API](https://developer.mozilla.org/en-US/docs/Web/API/History_API)
 - [Ajax와 CORS](https://developer.mozilla.org/ko/docs/Web/HTTP/Access_control_CORS)
 - [Debugging JavaScript in WebStorm and Chrome](https://www.youtube.com/watch?v=a-IsnxZpRrQ)
@@ -15,16 +14,20 @@
 #### New-age JavaScript and CSS
 
 - [ES6 Languages Specification](http://www.ecma-international.org/ecma-262/6.0/)
-- [Airbnb Javascript Style Guide](https://github.com/airbnb/javascript)
 - [CSS Modules](https://github.com/css-modules/css-modules)
 
-#### Manage Project
+#### Best Practices
 
-- [자바스크립트 프로젝트 가이드 라인](https://github.com/wearehive/project-guidelines)
-- [Modern Web Dev](https://github.com/dexteryy/spellbook-of-modern-webdev)
-- [Grab's Front-end Guide](https://github.com/grab/front-end-guide)
 - [Github Flow](https://guides.github.com/introduction/flow/)
+- [Airbnb Javascript Style Guide](https://github.com/airbnb/javascript)
+- [JavasScript Project Guidelines](https://github.com/wearehive/project-guidelines)
+- [Modern Web Dev](https://github.com/dexteryy/spellbook-of-modern-webdev)
+- [Front-End Checklist](https://github.com/thedaviddias/Front-End-Checklist)
+- [Grab's Front-end Guide](https://github.com/grab/front-end-guide)
+- [Example microservice app](https://github.com/elgris/microservice-app-example)
+- [Node.js Best Practices](https://github.com/i0natan/nodebestpractices)
 
+- https://github.com/elgris/microservice-app-example
 ## Node.js Environments
 
 - http://devdocs.io/
@@ -39,44 +42,47 @@
 
 #### Webapps
 
-- `express`, `mongoose`, `body-parser`, `cors`, `helmet`, `morgan`, `dotenv`, `joi`, `log4js`
-- `browser-sync`, `nodemon`
+- `express`, `body-parser`, `cors`, `helmet`, `morgan`, `dotenv`, `joi`, `log4js`
 - `requests`, `lodash`, `async`, `moment`,  `rxjs`
+- `browser-sync`, `nodemon`
+
+#### Database
+
+- `mongoose`, `mongoose-mock`, `elasticsearch.js`
 
 ## Articles
 
 #### DevOps
 
-- JavaScript 프로젝트 Jenkins CI 서버와 통합하기 `Github PR`, `Comment`, `Lint`, `Test coverage`
+- [Node의 실행 환경을 지탱하는 도구들](https://github.com/stunstunstun/awesome-wiki/blob/master/Front-end/node-environments.md)
+- Yarn 제대로 이해하기
+- Webpack 시작하기
+- 프로젝트와 Webpack 통합하기
+- TDD로 시작하는 Node.js, Express
+- AngularJS 프로젝트의 테스트 환경 구축하기
+- React 프로젝트의 테스트 환경 구축하기
+- Integration with Jenkins CI `Github PR`, `Comment`, `Lint`, `Test coverage`
+
+#### Javascript 공통
+
+- jQuery를 넘어서 JavaScript의 개발 생태계는 어떻게 발전해 왔을까?
+- Scope와 Strict Mode
+- 일목요연 ES6
 
 #### Front-end
 
-- jQuery를 넘어서 JavaScript의 개발 생태계는 어떻게 발전해 왔을까?
-- 일목요연 ES6
 - Pug를 통한 템플릿 개발
 - CSS는 Preprocessor가 필요할까?
-- AngularJS 프로젝트 테스트환경 구축하기
 
 #### Back-end
 
-- [Node의 실행 환경을 지탱하는 도구들](https://github.com/stunstunstun/awesome-wiki/blob/master/Front-end/node-environments.md)
-- Yarn 제대로 이해하기
-- Scope와 Strict Mode
+
 - Node.js는 어떻게 동작하는가
 - Node.js의 V8의 가바지 컬렉션
 - Node.js의 프로세스 관리 도구 [PM2](http://pm2.keymetrics.io/)
 - Node 애플리케이션 모니터링을 위한 CPU, 메모리 프로파일링
 - MongoDB 시작하기
 - [What's new in Node.js 9](https://nemethgergely.com/what-is-new-in-nodejs-9/)
-
-#### Database
-
-- `Mongoose`
-- `Mongoskin` `Mongo Shell` `RoboMongo`
-- `elasticsearch.js`
-
-#### Batch 프로세스
-
 - [node-cron](https://github.com/kelektiv/node-cron)
 - [Node Schedule](https://github.com/node-schedule/node-schedule)
 - [Agenda](https://github.com/agenda/agenda)
@@ -94,7 +100,7 @@
 - http://blog.jeonghwan.net/
 - http://dev-momo.tistory.com/
 
-#### More
+#### +More
 
 - [JavaScript Top 10 Articles - Sep](https://medium.mybridge.co/javascript-top-10-articles-for-the-past-month-v-sep-2017-168efb9a3b0f)
 - [JavaScript Top 10 Articles - Oct](https://medium.mybridge.co/javascript-top-10-articles-for-the-past-month-v-oct-2017-e51b3b1a34d2)

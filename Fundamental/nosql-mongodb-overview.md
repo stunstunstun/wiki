@@ -1,5 +1,5 @@
 ---
-title: 몽고DB 시작하기
+title: MongoDB 시작하기
 date: 2017-12-11 15:54:07
 categories: mongodb
 ---
@@ -60,25 +60,7 @@ var mydoc = {
 
 ## CRUD Operations
 
-## Indexes
-
-## Storage Engine 
-
-## Replication
-
-## Sharding
-
-## Administration
-
-#### Performance
-
-#### Monitoring
-
-#### MongoDB Backup Methods
-
-#### Configurations
-
 ## Tools
 
-`Robo Mongo` - https://robomongo.org/
+> `Robo Mongo` - https://robomongo.org/
 

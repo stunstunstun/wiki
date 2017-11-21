@@ -21,7 +21,9 @@
 - [DB Connection에 대한 이야기](https://github.com/stunstunstun/awesome-wiki/blob/master/Fundamental/database-connection-pool.md)
 - [Google Analytics 활용하기](https://github.com/stunstunstun/awesome-wiki/blob/master/Fundamental/data-analysis-google-analytics.md)
 - MongoDB 시작하기
+- MongoDB 이해하기
 - Elastic Search 시작하기
+- Elastic Search 이해하기
 
 #### HTTP
 
@@ -36,6 +38,8 @@
 #### Blockchain
 
 - 블록체인 시작하기
+- 블록체인 이해하기
+- 블록체인 구현하기
 
 #### Blah-Blah
 

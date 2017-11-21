@@ -1,7 +1,7 @@
 ---
-title: Yarn으로 JavaScript 프로젝트 제대로 관리하기
+title: Yarn으로 제대로 이해하기
 date: 2017-11-13 10:07:11
-categories: node
+categories: nodejs
 ---
 
 Yarn은 프로젝트의 의존성을 관리하는 JavaScript의 패키지 매니저입니다. Java의 Gradle, Python의 pip과 같이 말이죠. 물론 npm이 있지만 Yarn은 보다 더 빠르고 거기다 더욱 안전합니다. npm과 같이 JavaScript 패키지의 저장소일 뿐만 아니라 시스템에서 의존 패키지를 설치하거나 업데이트하는 등의 다양한 명령어를 제공합니다.
