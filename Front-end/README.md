@@ -28,6 +28,7 @@
 - [Node.js Best Practices](https://github.com/i0natan/nodebestpractices)
 
 - https://github.com/elgris/microservice-app-example
+
 ## Node.js Environments
 
 - http://devdocs.io/
@@ -50,12 +51,19 @@
 
 - `mongoose`, `mongoose-mock`, `elasticsearch.js`
 
+#### Batch
+
+- [What's new in Node.js 9](https://nemethgergely.com/what-is-new-in-nodejs-9/)
+- [node-cron](https://github.com/kelektiv/node-cron)
+- [Node Schedule](https://github.com/node-schedule/node-schedule)
+- [Agenda](https://github.com/agenda/agenda)
+
 ## Articles
 
 #### DevOps
 
 - [Node의 실행 환경을 지탱하는 도구들](https://github.com/stunstunstun/awesome-wiki/blob/master/Front-end/node-environments.md)
-- Yarn 제대로 이해하기
+- [Yarn 제대로 사용하기](https://github.com/stunstunstun/awesome-wiki/blob/master/Front-end/node-yarn-tutorials.md)
 - Webpack 시작하기
 - 프로젝트와 Webpack 통합하기
 - TDD로 시작하는 Node.js, Express
@@ -77,15 +85,10 @@
 #### Back-end
 
 
-- Node.js는 어떻게 동작하는가
+- Node.js는 어떻게 동작하는가?
 - Node.js의 V8의 가바지 컬렉션
 - Node.js의 프로세스 관리 도구 [PM2](http://pm2.keymetrics.io/)
 - Node 애플리케이션 모니터링을 위한 CPU, 메모리 프로파일링
-- MongoDB 시작하기
-- [What's new in Node.js 9](https://nemethgergely.com/what-is-new-in-nodejs-9/)
-- [node-cron](https://github.com/kelektiv/node-cron)
-- [Node Schedule](https://github.com/node-schedule/node-schedule)
-- [Agenda](https://github.com/agenda/agenda)
 - Gulp를 통해 배치 스크립트 실행하기
 
 ## Blogs

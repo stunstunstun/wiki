@@ -1,6 +1,6 @@
 ---
-title: Yarn으로 제대로 이해하기
-date: 2017-11-13 10:07:11
+title: Yarn 제대로 사용하기
+date: 2017-11-24 10:07:11
 categories: nodejs
 ---
 

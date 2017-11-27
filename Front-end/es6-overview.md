@@ -5,21 +5,26 @@ categories: front-end
 description: ECMAScript 6 한눈에 살펴보기
 ---
 
-이 문서는 `Udacity`의 `ES6 - JavaScript Improved`와 Nicholas C. Zakas의 [`Underderstanding ES6`](https://www.amazon.com/Understanding-ECMAScript-Definitive-JavaScript-Developers/dp/1593277571)를 읽고 학습한 내용을 요약한 내용으로 구성되어 있습니다. 요약한 내용을 먼저 훏어보시고 첨부된 자료를 통해 도움이 되길 바랍니다.
+이 문서는 Udacity의 `ES6 JavaScript Improved`와 Nicholas C. Zakas의 `Underderstanding ES6`을 통해 학습한 내용을 요약한 내용입니다. 요약한 내용을 먼저 훏어보시고 첨부된 자료를 통해 ES6 학습에 도움이 되길 바랍니다.
 
-#### ES6 - JavaScript Improved
+#### Udacity ES6
 - https://classroom.udacity.com/courses/ud356
 
-#### Underderstanding ES6은 GitBook에서 이북으로도 즐길 수 있습니다.
+#### Underderstanding ES6의 GitBook
 - https://francisfeng.gitbooks.io/understanding-es6/content/manuscript/00-Introduction.html
 
+## 목차
 
-## Tables
+- Syntax
+    - [Variables](#Variables)
+    - [Template Literals](#Template-Literals)
+    - [Destructuring](#Destructuring)
+    - [Object literal shorthand](#object-literal-shorthand)
+    - [Iteration](#iteration)
+    - [Spread operator](#spread-operator)
+    - [Rest Parameter](#rest-parameter)
+- Function
 
-- [Variables](#Variables) 
-- [Template Literals](#Template-Literals)
-- [Destructuring](#Destructuring)
-- [Object literal shorthand](#object-literal-shorthand)
 
 ## Variables
 
@@ -40,7 +45,7 @@ function getClothing(isCold) {
 getClothing(false); // undefined
 ```
 
-```
+```javascript
 function getClothing(isCold) {
   if (isCold) {
     let freezing = 'Grab a jacket!';
@@ -53,11 +58,11 @@ function getClothing(isCold) {
 
 #### let and const
 
-```
+```javascript
 getClothing(false); // ReferenceError
 ```
 
-```
+```javascript
 {
   let a = 1;
   const b = 1;
@@ -98,7 +103,7 @@ console.log(instructor); // Richard
 
 #### Convention
 
-```
+```javascript
 // bad
 var count = 1;
 if (true) {
@@ -155,7 +160,7 @@ Richard Kalehoff
 
 Please excuse Mrs. Wilson.
 He is recovering from the flu.
-  
+
 Thanks
 ```
 
@@ -183,7 +188,7 @@ var [first, second, third] = someArray;
 
 #### More examples
 
-```
+```javascript
 const circle = {
   radius: 10,
   color: 'orange',
@@ -204,7 +209,7 @@ getArea(); // NaN
 
 #### Convention
 
-```
+```javascript
 // bad
 function getFullName(user) {
   const firstName = user.firstName;
@@ -225,7 +230,7 @@ function getFullName({ firstName, lastName }) {
 }
 ```
 
-```
+```javascript
 const arr = [1, 2, 3, 4];
 
 // bad
@@ -236,7 +241,7 @@ const second = arr[1];
 const [first, second] = arr;
 ```
 
-```
+```javascript
 // bad
 function processInput(input) {
   // then a miracle occurs
@@ -287,7 +292,8 @@ console.log(gemstone);
 ```
 
 `ES5`
-```
+
+```javascript
 var gemstone = {
   type: type,
   color: color,
@@ -297,7 +303,8 @@ var gemstone = {
 ```
 
 `ES6+`
-```
+
+```javascript
 let gemstone = {
   type,
   color,
@@ -309,12 +316,90 @@ let gemstone = {
 
 ## Iteration
 
+
+`ES5`
+
+```javascript
+const digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+for (let i = 0; i < digits.length; i++) {
+  console.log(digits[i]);
+}
+```
+```javascript
+const digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+for (const index of digits) {
+  console.log(digits[index]);
+}
+```
+
+`ES6+`
+
+
+```javascript
+const digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+for (const digit of digits) {
+  console.log(digit);
+}
+
+```
+
+<br/>
+
+## Spread operator
+
+`ES5`
+
+```javascript
+const fruits = ["apples", "bananas", "pears"];
+const vegetables = ["corn", "potatoes", "carrots"];
+const produce = fruits.concat(vegetables);
+console.log(produce); // [ 'apples', 'bananas', 'pears', 'corn', 'potatoes', 'carrots' ]
+console.log(produce.shift()); // apples
+console.log(produce.pop()); // carrots
+console.log(produce);	// [ 'bananas', 'pears', 'corn', 'potatoes' ]
+console.log(produce.unshift('apples')); // 5
+console.log(produce); // [ 'apples', 'bananas', 'pears', 'corn', 'potatoes' ]
+```
+
+`ES6+`
+
+```javascript
+const books = ["Don Quixote", "The Hobbit", "Alice in Wonderland", "Tale of Two Cities"];
+const books2 = books;
+console.log(...books); // Don Quixote The Hobbit Alice in Wonderland Tale of Two Cities
+console.log(books == books2); // true
+console.log(books === books2);// true
+
+const copiedBooks = [...books];
+console.log(books == copiedBooks); // false
+console.log(books === copiedBooks);// false
+
+const fruits = ["apples", "bananas", "pears"];
+const vegetables = ["corn", "potatoes", "carrots"];
+const produce = [...fruits, ...vegetables];
+
+console.log(produce); // [ 'apples', 'bananas', 'pears', 'corn', 'potatoes', 'carrots' ]
+
+```
+
+```javascript
+const primes = new Set([2, 3, 5, 7, 11, 13, 17, 19, 23, 29]);
+console.log(...primes);
+```
+
+<br/>
+
+## Rest Parameter
+
 <br/>
 
 ## Promises
 
 ```
-var p = new Promise(function(resolve, reject) {  
+var p = new Promise(function(resolve, reject) {
    if (/* condition */) {
       resolve(/* value */);  // fulfilled successfully
    }
@@ -326,8 +411,8 @@ var p = new Promise(function(resolve, reject) {
 
 ```
 // A Promise that throws, rather than explicitly reject
-var p1 = new Promise((resolve, reject) => {  
-  if (true)  
+var p1 = new Promise((resolve, reject) => {
+  if (true)
     throw new Error("rejected!"); // same as rejection
   else
     resolve(4);
