@@ -121,8 +121,20 @@ In general, a package is simply a folder with code and a package.json file that 
 
 This will also update your `package.json` and your `yarn.lock` so that other developers working on the project will get the same dependencies as you when they run yarn or yarn install.
 
+```bash
+$ yarn global add eslint
 ```
+
+```bash
+$ yarn add eslint-html-reporter
+```
+
+```bash
 $ yarn add eslint-html-reporter@^0.5.2
+```
+
+```bash
+$ yarn add eslint-html-reporter@^0.5.2 --dev
 ```
 
 #### yarn upgrade
