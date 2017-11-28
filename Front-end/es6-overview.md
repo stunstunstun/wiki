@@ -16,15 +16,19 @@ description: ECMAScript 6 한눈에 살펴보기
 ## 목차
 
 - Syntax
-    - [Variables](#Variables)
-    - [Template Literals](#Template-Literals)
-    - [Destructuring](#Destructuring)
+    - [Variables](#variables)
+    - [Template Literals](#template-Literals)
+    - [Array](#array)
+    - [Destructuring](#destructuring)
     - [Object literal shorthand](#object-literal-shorthand)
     - [Iteration](#iteration)
     - [Spread operator](#spread-operator)
     - [Rest Parameter](#rest-parameter)
 - Function
+- Built-in
+- Promises
 
+<br/>
 
 ## Variables
 
@@ -41,7 +45,7 @@ function getClothing(isCold) {
 }
 ```
 
-```
+```javascript
 getClothing(false); // undefined
 ```
 
@@ -138,7 +142,7 @@ const teacher = {
 
 `ES5`
 ```javascript
-let message = student.name + ' please see ' + teacher.name + ' in ' + teacher.room + ' to pick up your report card.';
+var message = student.name + ' please see ' + teacher.name + ' in ' + teacher.room + ' to pick up your report card.';
 ```
 
 `ES6+`
@@ -151,7 +155,7 @@ const note = `${teacher.name},
 
   Please excuse ${student.name}.
   He is recovering from the flu.
-  
+
   Thanks`;
 ```
 
@@ -166,6 +170,32 @@ Thanks
 
 <br/>
 
+## Array
+
+`ES5`
+```javascript
+var fruits = ["apples", "bananas", "pears"];
+var vegetables = ["corn", "potatoes", "carrots"];
+
+let produce = fruits.concat(vegetables);
+console.log(produce);
+console.log(produce.shift());
+console.log(produce.pop());
+```
+
+`ES6+
+```javascript
+const fruits = ["apples", "bananas", "pears"];
+const vegetables = ["corn", "potatoes", "carrots"];
+
+produce = [...fruits, ...vegetables];
+console.log(produce);
+console.log(produce.unshift('apples'));
+console.log(produce);
+```
+
+<br/>
+
 ## Destructuring
 
 디스트럭처링은 배열 또는 객체에서 데이터를 별개(distinct) 변수로 추출할 수 있게 하는 식(expression)입니다.
@@ -174,7 +204,7 @@ Thanks
 
 디스트럭처링 할당이 없을 경우, 어떤 배열의 처음 3개 요소에 접근하는 코드는 다음과 같을 것입니다.
 
-```
+```javascript
 var first = someArray[0];
 var second = someArray[1];
 var third = someArray[2];
@@ -182,8 +212,8 @@ var third = someArray[2];
 
 디스트럭처링 할당을 이용하면, 똑같은 코드가 좀 더 간결하고 읽기 쉬워집니다.
 
-```
-var [first, second, third] = someArray;
+```javascript
+const [first, second, third] = someArray;
 ```
 
 #### More examples
@@ -271,7 +301,7 @@ var type = 'quartz';
 var color = 'rose';
 var carat = 21.29;
 
-const gemstone = {
+var gemstone = {
   type: type,
   color: color,
   carat: carat
@@ -305,7 +335,7 @@ var gemstone = {
 `ES6+`
 
 ```javascript
-let gemstone = {
+const gemstone = {
   type,
   color,
   carat,
@@ -320,22 +350,22 @@ let gemstone = {
 `ES5`
 
 ```javascript
-const digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+var digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 for (let i = 0; i < digits.length; i++) {
   console.log(digits[i]);
 }
 ```
-```javascript
-const digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-
-for (const index of digits) {
-  console.log(digits[index]);
-}
-```
 
 `ES6+`
 
+```javascript
+const digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+for (const index in digits) {
+  console.log(digits[index]);
+}
+```
 
 ```javascript
 const digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -353,9 +383,9 @@ for (const digit of digits) {
 `ES5`
 
 ```javascript
-const fruits = ["apples", "bananas", "pears"];
-const vegetables = ["corn", "potatoes", "carrots"];
-const produce = fruits.concat(vegetables);
+var fruits = ["apples", "bananas", "pears"];
+var vegetables = ["corn", "potatoes", "carrots"];
+var produce = fruits.concat(vegetables);
 console.log(produce); // [ 'apples', 'bananas', 'pears', 'corn', 'potatoes', 'carrots' ]
 console.log(produce.shift()); // apples
 console.log(produce.pop()); // carrots
@@ -376,13 +406,6 @@ console.log(books === books2);// true
 const copiedBooks = [...books];
 console.log(books == copiedBooks); // false
 console.log(books === copiedBooks);// false
-
-const fruits = ["apples", "bananas", "pears"];
-const vegetables = ["corn", "potatoes", "carrots"];
-const produce = [...fruits, ...vegetables];
-
-console.log(produce); // [ 'apples', 'bananas', 'pears', 'corn', 'potatoes', 'carrots' ]
-
 ```
 
 ```javascript
@@ -394,29 +417,82 @@ console.log(...primes);
 
 ## Rest Parameter
 
+`ES5 Using the arguments object`
+
+```javascript
+function sum() {
+  let total = 0;
+  for(const argument of arguments) {
+    total += argument;
+  }
+  return total;
+}
+
+```
+
+`ES6+ Using the rest parameter`
+
+```javascript
+function sum(...nums) {
+  let total = 0;
+  for(const num of nums) {
+    total += num;
+  }
+  return total;
+}
+
+const total = sum(1, 2, 3, 4, 5);
+console.log(total); // 15
+```
+
 <br/>
 
 ## Promises
 
-```
-var p = new Promise(function(resolve, reject) {
-   if (/* condition */) {
-      resolve(/* value */);  // fulfilled successfully
-   }
-   else {
-      reject(/* reason */);  // error, rejected
-   }
+```javascript
+function onEvent(timeout) {
+  return new Promise(function(resolve, reject) {
+    if (true) {
+      setTimeout(() => {
+        resolve(10);
+      }, timeout);
+    } else {
+      throw new Error('Cause!');
+    }
+  });
+}
+onEvent(2000)
+.then((res) => {
+  res -= 10;
+  console.log(res);
 });
+
+const res = onEvent(2000);
+console.log(res);
+
+onEvent(1000)
+.then((res) => {
+  res += 10;
+  console.log(res);
+});
+
+onEvent(0)
+.then((res) => {
+  console.log(res);
+});
+
+const p = Promise.resolve('foo');
+p.then((res) => console.log(res));
 ```
 
+`Result`
+
 ```
-// A Promise that throws, rather than explicitly reject
-var p1 = new Promise((resolve, reject) => {
-  if (true)
-    throw new Error("rejected!"); // same as rejection
-  else
-    resolve(4);
-});
+Promise { <pending> }
+foo
+10
+20
+0
 ```
 
 ## 더 볼만한 것들
