@@ -132,6 +132,26 @@ $ dmidecode -t memory | grep -i size:
 
 ```bash
 $ df -h
+Filesystem      Size   Used  Avail Capacity iused               ifree %iused  Mounted on
+/dev/disk1s1   233Gi   47Gi  182Gi    21% 1408775 9223372036853367032    0%   /
+devfs          191Ki  191Ki    0Bi   100%     662                   0  100%   /dev
+/dev/disk1s4   233Gi  4.0Gi  182Gi     3%       4 9223372036854775803    0%   /private/var/vm
+map -hosts       0Bi    0Bi    0Bi   100%       0                   0  100%   /net
+map auto_home    0Bi    0Bi    0Bi   100%       0                   0  100%   /home
+```
+
+디렉토리별로 용량 체크하기
+
+```bash
+$ du -hs *
+808M    clove
+111M    HostAgent_KR
+0       l7check
+3.6G    naver
+8.0K    scripts
+4.0K    set_oracleclient.sh
+4.0K    set_webapps.sh
+36M     watchBiz
 ```
 
 ## Files
