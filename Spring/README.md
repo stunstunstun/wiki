@@ -106,10 +106,6 @@ Gradle | 4.0
 - Spring Boot Actuator
 - AWS CodeStar
 
-## 4부 Spring Framework 5와 Spring Boot 2.0
-
-#### 11장
-
 <br/>
 
 ## 기타 레퍼런스
