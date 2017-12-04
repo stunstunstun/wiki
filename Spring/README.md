@@ -22,7 +22,7 @@ Java, Gradle, Spring Boot을 이용해 자신이 상상하는 웹 애플리케�
 
 #### 이 문서에 포함된 예제는 아래의 개발 환경을 기준으로 작성 되었습니다.
 
-Enviroments | Version 
+Enviroments | Version
 ---|---
 Java | JDK 9
 Spring Boot | 2.0.0.RELEASE
@@ -48,7 +48,7 @@ Gradle | 4.0
 
 - [Spring Boot 개발환경 준비](https://github.com/stunstunstun/awesome-wiki/blob/master/Spring/spring-boot-environments.md)
 - Spring Boot CLI
-- [Gradle를 통해 프로젝트를 효율적으로 관리하자](https://github.com/stunstunstun/awesome-wiki/blob/master/Spring/spring-boot-and-gradle.md) 
+- [Gradle를 통해 프로젝트를 효율적으로 관리하자](https://github.com/stunstunstun/awesome-wiki/blob/master/Spring/spring-boot-and-gradle.md)
 - Github를 통해 맘껏 뛰어 놀기
 
 ## 2부 Spring Boot 요리하기
@@ -90,7 +90,7 @@ Gradle | 4.0
 
 - 소중한 정보를 지키는 습관 Logging
 - 자동화로 쿨하게 개발하자! Travis CI와 연동하기
-- Travis CI와 Jacoco를 이용한 테스트 커버리지 리포트 받기
+- Travis CI와 Jacoco를 이용한 테스트 커버리지 생성하기
 
 #### 9장 누구보다 빠르게 사용자에게 배포하기
 
@@ -100,31 +100,30 @@ Gradle | 4.0
 - 먼저 로컬 PC에 배포하기
 - 클라우드 서비스에 배포하기 AWS
 
-#### 10장 혼자서도 개발하고 운영(DevOps)하는 마법 도구들
+#### 10장 혼자서도 개발하고 운영(DevOps)하는 마법의 도구들
 
 - Spring Boot DevTools
 - Spring Boot Actuator
 - AWS CodeStar
-- Ansible
+
+## 4부 Spring Framework 5와 Spring Boot 2.0
+
+#### 11장
 
 <br/>
 
 ## 기타 레퍼런스
 
-#### Spring Current Documents
- 
+#### Spring Framework 5 Current Documents
+
 - https://docs.spring.io/spring/docs/current/spring-framework-reference/index.html
+
+#### Spring Boot 2.0 Current Documents
+
+- https://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle
 
 #### Spring Boot 예제 소스들
 
 아래의 Github Repository에서 Spring Boot 예제를 위한 프로젝트를 제공하고 있습니다. Spring Boot를 학습하는 데에 조금이나마 도움이 되었으면 합니다.
 
 > https://github.com/stunstunstun/awesome-spring-boot
-
-#### Articles
-
-- [Spring MVC 살펴보기](https://github.com/stunstunstun/awesome-wiki/blob/master/Spring/spring-mvc-overview.md)
-- [Spring MVC에서 ContentNegotiatingViewResolver의 역할](https://github.com/stunstunstun/awesome-wiki/blob/master/Spring/spring-mvc-content-negotiating-view-resolver.md)
-- [Struts 2의 Interceptor의 역할](https://github.com/stunstunstun/awesome-wiki/blob/master/Spring/struts-interceptor.md)
-- [Struts와 Spring MVC의 Controller 클래스의 차이는?](https://github.com/stunstunstun/awesome-wiki/blob/master/Spring/struts-and-spring-mvc.md)
-- Spring Boot에서 myBatis의 TypeHandler와 Enum 관리하기
