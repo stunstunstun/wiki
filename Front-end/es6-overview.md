@@ -24,11 +24,13 @@ description: ECMAScript 6 한눈에 살펴보기
     - [Iteration](#iteration)
     - [Spread operator](#spread-operator)
     - [Rest Parameter](#rest-parameter)
-- Function
-- Built-in
+- Functions
+- Built-ins
 - Promises
 
 <br/>
+
+# Syntax
 
 ## Variables
 
@@ -447,6 +449,65 @@ console.log(total); // 15
 
 <br/>
 
+# Functions
+
+## Arrow Functions
+
+Regular functions can be either `function declarations` or `function expressions`, however arrow functions are always expressions. In fact, their full name is "arrow function expressions", so they can only be used where an expression is valid. This includes being:
+
+stored in a variable,
+passed as an argument to a function,
+and stored in an object's property.
+One confusing syntax is when an arrow function is stored in a variable.
+
+
+`ES5`
+```javascript
+var upperizedNames = ['Farrin', 'Kagure', 'Asser'].map(function(name) {
+  return name.toUpperCase();
+});
+console.log(upperizedNames);
+```
+
+`ES6+`
+```javascript
+const upperizedNames = ['Farrin', 'Kagure', 'Asser'].map(name => name.toUpperCase());
+console.log(upperizedNames);
+```
+> Prints: [ 'FARRIN', 'KAGURE', 'ASSER' ]
+
+In the code above, the arrow function is stored in the greet variable and you'd call it like this:
+
+```javascript
+const greet = name => `Hello ${name}!`;
+console.log(greet('Minhyeok'));
+```
+> Prints: Hello Minhyeok!
+
+## Parentheses and arrow function parameteres
+
+```javascript
+// empty parameter list requires parentheses
+const sayHello = () => console.log('Hello Udacity Student!');
+sayHello();
+```
+> Prints: Hello Udacity Student!
+
+```javascript
+// multiple parameters requires parentheses
+const orderIceCream = (flavor, cone) => console.log(`Here's your ${flavor} ice cream in a ${cone} cone.`);
+orderIceCream('chocolate', 'waffle');
+```
+> Prints: Here's your chocolate ice cream in a waffle cone.
+
+<br>
+
+# Built-ins
+
+<br/>
+
+# Advanced
+
 ## Promises
 
 ```javascript
@@ -494,6 +555,8 @@ foo
 20
 0
 ```
+
+## async/wait
 
 ## 더 볼만한 것들
 
