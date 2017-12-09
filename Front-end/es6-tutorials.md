@@ -2,18 +2,21 @@
 title: 일목요연 ES6
 date: 2017-10-12 13:07:11
 categories: front-end
-description: ECMAScript 6 한눈에 살펴보기
+description: ES6 한 눈에 살펴보기
 ---
 
 이 문서는 Udacity의 `ES6 JavaScript Improved`와 Nicholas C. Zakas의 `Underderstanding ES6`을 통해 학습한 내용을 요약한 내용입니다. 요약한 내용을 먼저 훏어보시고 첨부된 자료를 통해 ES6 학습에 도움이 되길 바랍니다.
 
-#### Udacity ES6
+`Udacity ES6`
 - https://classroom.udacity.com/courses/ud356
 
-#### Underderstanding ES6의 GitBook
+`Underderstanding ES6의 GitBook`
 - https://francisfeng.gitbooks.io/understanding-es6/content/manuscript/00-Introduction.html
 
-## 목차
+`AirBnb JavaScript Style Guilde`
+- https://github.com/airbnb/javascript
+
+#### 목차
 
 - Syntax
     - [Variables](#variables)
@@ -25,8 +28,11 @@ description: ECMAScript 6 한눈에 살펴보기
     - [Spread operator](#spread-operator)
     - [Rest Parameter](#rest-parameter)
 - Functions
+	- [Arrow Functions](#arrow-functions)
 - Built-ins
-- Promises
+- Advanced
+	- [Promises](#promises)
+	- [Async and wait](#async-and-wait)
 
 <br/>
 
@@ -484,7 +490,7 @@ console.log(greet('Minhyeok'));
 ```
 > Prints: Hello Minhyeok!
 
-## Parentheses and arrow function parameteres
+#### Parentheses and arrow function parameteres
 
 ```javascript
 // empty parameter list requires parentheses
@@ -499,6 +505,11 @@ const orderIceCream = (flavor, cone) => console.log(`Here's your ${flavor} ice c
 orderIceCream('chocolate', 'waffle');
 ```
 > Prints: Here's your chocolate ice cream in a waffle cone.
+
+#### Regular Functions and the `this` keyword
+
+
+#### Arrow Functions and the `this` keyword
 
 <br>
 
@@ -556,9 +567,11 @@ foo
 0
 ```
 
-## async/wait
+## Async and wait
 
-## 더 볼만한 것들
+# More
+
+## References
 
 - http://es6katas.org/
 - http://ccoenraets.github.io/es6-tutorial/

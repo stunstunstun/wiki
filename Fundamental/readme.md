@@ -4,9 +4,6 @@
 
 - 프로그래밍 학습자료가 풍부한 놀라운 웹사이트 모음
 - Product의 소스코드를 공개하고 있는 놀라운 저장소 모음
-- 컴퓨터는 왜 불편한 2진수를 사용할까?
-- 가상 메모리와 페이지 폴트
-- 64비트와 32비트의 차이점은 무엇일까?
 - Deep Learning 학습 자료 모음
 - [RSA를 이용한 암호화와 서명](https://github.com/stunstunstun/awesome-wiki/blob/master/Fundamental/encryption-with-rsa.md)
 
@@ -15,6 +12,13 @@
 - [알고리즘 학습 전략](https://github.com/stunstunstun/awesome-wiki/blob/master/Fundamental/algorithmsalgorithms-learning-strategy.md)
 - [이진 탐색 알고리즘](https://github.com/stunstunstun/awesome-wiki/blob/master/Fundamental/algorithms-binary-search.md)
 - [피보나치 수열과 동적 프로그래밍](https://github.com/stunstunstun/awesome-wiki/blob/master/Fundamental/algorithms-fibo-and-dynamic-programming.md)
+
+#### OS
+
+- 컴퓨터는 왜 불편한 2진수를 사용할까?
+- 64비트와 32비트의 차이점은 무엇일까?
+- 가상 메모리와 페이지 폴트
+- CPU 사용률과 CPU로드
 
 #### Database, NoSQL
 

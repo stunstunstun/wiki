@@ -1,5 +1,5 @@
 ---
-title: Spring Boot의 Java Config, myBatis를 통해 Datasource 연동하기
+title: Spring Boot에서 myBatis를 통해 Datasource 연동하기
 date: 2016-09-18 15:14:40
 desc: 예제 중심의 Spring Boot 시작하기
 categories: spring-boot
@@ -282,15 +282,15 @@ public class UserMapperTests {
 }
 ```
 
-#### Summary
+## Summary
 
-이 포스팅의 글을 통해 Spring Boot에서 myBatis를 연동하면서 부딪힐수 있는 문제를 모두 해결하는데는 제한이 있을수 있어 아래에 Git에 샘플 프로젝트를 첨부해보았다.
+이 포스팅의 글을 통해 Spring Boot에서 myBatis를 연동하면서 부딪힐수 있는 문제를 모두 해결하는데는 제한이 있을수 있어 아래에 Git에 샘플 프로젝트를 첨부하였다.
 
-- https://github.com/stunstunstun/awesome-spring-boot/spring-boot-mybatis-example
+- https://github.com/stunstunstun/awesome-spring-boot/
 
-<br>
 
-#### References
+## References
+
 - https://docs.spring.io/spring-boot/docs/current/reference/html/using-boot-auto-configuration.html
 - https://docs.spring.io/spring-boot/docs/current/reference/html/howto-data-access.html
 - https://docs.spring.io/spring-boot/docs/current/reference/html/howto-database-initialization.html

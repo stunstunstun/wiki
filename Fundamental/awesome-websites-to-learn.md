@@ -18,7 +18,7 @@
 - [Problem Solving with Algorithms and Data Structures using Python](http://interactivepython.org/runestone/static/pythonds/index.html)
 - [Google C++ Basic Courses](https://developers.google.com/edu/c++/)
 
-#### Data Structures & Algorithms Practices 
+#### Data Structures & Algorithms Practices
 
 - [Hacker Rank](https://www.hackerrank.com/)
 - [LeetCode](https://leetcode.com)
@@ -26,30 +26,40 @@
 - [IDeserve](http://www.ideserve.co.in/#dynamicProgramming)
 - [개발을 잘하고 싶어요](https://www.slideshare.net/deview/ss-58739254)
 
-#### Computer Science
+## Computer Science
 
-- [CS50](https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/info)
+#### Fundamentals Courses
+
+- [Internet History](https://www.coursera.org/learn/internet-history)
+- [CS50](https://cs50.harvard.edu)
+- [CS61A](https://cs61a.org/)
+- [CS101](https://web.stanford.edu/class/cs101/)
+- [CS106A](https://see.stanford.edu/Course/CS106A)
+- [CS212](https://classroom.udacity.com/courses/cs212/)
+
+
+#### Advanced Courses
+
+- [Programming for Everybody](https://www.coursera.org/learn/python/home/welcome)
+- [Learn To Program: The Fundamentals](https://www.coursera.org/learn/learn-to-program/home/welcome)
+- [Python Data Structures](https://www.coursera.org/learn/python-data/home/welcome)
+- [Algorithmic Toolbox](https://www.coursera.org/learn/algorithmic-toolbox/home/welcome)
+- [Computer Architecture](https://www.coursera.org/learn/comparch)
+
+#### Good Stuffs
+
 - [Computational and Inferential Thinking](https://www.inferentialthinking.com/)
 - [About Programming](http://composingprograms.com/)
 - [Category Theory for Programmers](https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/)
-
-#### Playground
-
-- [repl.it](https://repl.it/languages/)
-- [codepen.io](https://codepen.io/pen)
-
-#### Github Repos
-
-- [Every Programmer Should Know](https://github.com/mr-mig/every-programmer-should-know)
-- [Awesome Coureses](https://github.com/prakhar1989/awesome-courses)
+- [Computer History](https://www.computerhope.com/history/)
+- [Computer](https://en.wikipedia.org/wiki/Computer)
+- [Timeline of Computer History](http://www.computerhistory.org/timeline/computers/)
 - [OSS University](https://github.com/open-source-society/computer-science)
-- [Free Code Camp](https://github.com/freeCodeCamp/freeCodeCamp)
-- [Algo Wiki](https://github.com/vicky002/AlgoWiki)
-- [Interview Questions](https://github.com/MaximAbramchuck/awesome-interview-questions)
-- [Tech Interview Guidelines](https://github.com/yangshun/tech-interview-handbook)
-- [Awesome Programmers](https://github.com/rekihattori/awesome-programmers)
+- [Composing Programs](http://composingprograms.com/)
+- [Shell Workshop](https://www.udacity.com/course/shell-workshop--ud206)
+- [Deep Learning](https://www.facebook.com/dgtgrade/posts/1340177956041067?hc_location=ufi)
 
-## Advanced
+## Best Practices
 
 #### Global Tech Company Blogs
 
@@ -87,6 +97,22 @@
 - [Codecademy Tutorials](https://www.codecademy.com/learn/all)
 - [Code Tutorials](https://code.tutsplus.com/tutorials)
 - [Advanced Tutorials](https://semaphoreci.com/community/tutorials)
+
+#### Playground
+
+- [repl.it](https://repl.it/languages/)
+- [codepen.io](https://codepen.io/pen)
+
+#### Github Repos
+
+- [Every Programmer Should Know](https://github.com/mr-mig/every-programmer-should-know)
+- [Awesome Coureses](https://github.com/prakhar1989/awesome-courses)
+- [OSS University](https://github.com/open-source-society/computer-science)
+- [Free Code Camp](https://github.com/freeCodeCamp/freeCodeCamp)
+- [Algo Wiki](https://github.com/vicky002/AlgoWiki)
+- [Interview Questions](https://github.com/MaximAbramchuck/awesome-interview-questions)
+- [Tech Interview Guidelines](https://github.com/yangshun/tech-interview-handbook)
+- [Awesome Programmers](https://github.com/rekihattori/awesome-programmers)
 
 #### Interview Questions
 

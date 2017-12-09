@@ -67,14 +67,14 @@
 - Webpack 시작하기
 - 프로젝트와 Webpack 통합하기
 - TDD로 시작하는 Node.js, Express
-- AngularJS 프로젝트의 테스트 환경 구축하기
 - React 프로젝트의 테스트 환경 구축하기
 - Integration with Jenkins CI `Github PR`, `Comment`, `Lint`, `Test coverage`
 
-#### Javascript 공통
+#### JavaScript, ES6+
 
 - jQuery를 넘어서 JavaScript의 개발 생태계는 어떻게 발전해 왔을까?
 - Scope와 Strict Mode
+- JavaScript의 ArrayBuffer와 String
 - 일목요연 ES6
 
 #### Front-end
@@ -87,8 +87,8 @@
 
 - Node.js는 어떻게 동작하는가?
 - Node.js의 V8의 가바지 컬렉션
-- Node.js의 프로세스 관리 도구 [PM2](http://pm2.keymetrics.io/)
-- Node 애플리케이션 모니터링을 위한 CPU, 메모리 프로파일링
+- Node.js의 프로세스 관리 도구 PM2
+- Node.js 애플리케이션 모니터링을 위한 CPU, 메모리 프로파일링
 - Gulp를 통해 배치 스크립트 실행하기
 
 ## Blogs

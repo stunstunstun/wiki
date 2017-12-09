@@ -1,10 +1,10 @@
 ---
-title: Yarn 제대로 사용하기
-date: 2017-11-24 10:07:11
+title: Yarn 제대로 이해하기
+date: 2017-12-07 09:00
 categories: nodejs
 ---
 
-Yarn은 프로젝트의 의존성을 관리하는 JavaScript의 패키지 매니저입니다. Java의 Gradle, Python의 pip과 같이 말이죠. 물론 npm이 있지만 Yarn은 보다 더 빠르고 거기다 더욱 안전합니다. npm과 같이 JavaScript 패키지의 저장소일 뿐만 아니라 시스템에서 의존 패키지를 설치하거나 업데이트하는 등의 다양한 명령어를 제공합니다.
+Yarn은 프로젝트의 의존성을 관리하는 JavaScript의 패키지 매니저입니다. Java의 Gradle, Python의 pip과 같이 말이죠. 물론 npm이 있지만 Yarn은 보다 더 빠르고 거기다 더욱 안전합니다. npm과 같이 JavaScript 패키지의 저장소를 제공할 뿐만 아니라 시스템에서 의존 패키지를 설치하거나 업데이트하는 등의 다양한 명령을 제공합니다.
 
 Yarn은 npm과 마찬가지로 `package.json`을 통해 각각의 패키지를 구분하고 프로젝트에서 어떠한 일들을 해야할지 결정합니다.
 
@@ -20,11 +20,11 @@ $ npm install -g yarn
 $ yarn self-update
 ```
 
-간단하게 `pet-kitten`이라는 이름의 프로젝트를 `yarn init` 명령을 통해 생성합니다.
+이 문서에서는 간단하게 `pet-kitten`이라는 이름의 프로젝트를 `yarn init` 명령을 통해 생성합니다.
 
 ```bash
 $ mkdir pet-kitten
-$ cd petkitten
+$ cd pet-kitten
 $ yarn init
 yarn init v1.3.2
 question name (pet-kitten):
@@ -34,31 +34,45 @@ question entry point (index.js):
 ...
 ```
 
+위와 같이 프로젝트에 필요한 기본적인 정보를 입력하면 `package.json` 파일이 생성됩니다.
+
 ## package.json
 
-최소한의 정보를 통해 아래와 같이 프로젝트의 루트에는 `package.json`파일이 생성 됩니다. 이 파일에는 최소한 패지키의 이름과 버전을 포함해야하며 프로젝트에 필요한 의존 프로젝트는 추가로 `dependencies`라는 키에 정의하게 됩니다.
+이 파일에는 최소한 패지키의 이름과 버전을 포함해야하며 프로젝트에 필요한 의존 프로젝트는 추가로 `dependencies`라는 키에 정의하게 됩니다.
 
 ```javascript
 {
   "name": "pet-kitten",
-  "version": "0.1.0",
-  "main": "main.js",
-  "dependencies": {
-    "requests": "1.0.0"
-  }
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "stunstunstun",
+  "license": "MIT"
 }
 ```
-
 
 ## dependencies 패키지의 버전의 범위
 
-프로젝트에서 request 패키지의 1.0.0 버전을 사용한다면 아래와 같이 정의하면 된다. 하지만 가장 많이 사용되는 방식은 틸드, 캐럿방식으로 버전을 표기하는 것인데 이 두 방식이 패키지 버전의 범위를 어떻게 정의하는지 정확하게 알 필요가 있다.
+프로젝트에서 HTTP 요청을 위해 npm의 request 패키지를 사용한다면 아래와 같이 정의하면 됩니다.
+
+- npm 패키지의 이름
+- npm 패키지의 Version을 표기합니다.
 
 ```javascript
-"dependencies": {
-  "requests": "1.0.0"
+{
+  "name": "pet-kitten",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "requests": "^2.0.0"
+  },
+  "author": "stunstunstun",
+  "license": "MIT"
 }
 ```
+
+하지만 npm 패키지의 Version 표기 방식이 낮설어 보일수도 있는데, 프로젝트의 의존 패키지의 Version을 정의하기 위해 가장 많이 사용되는 방식은 틸드(~), 캐럿(^)입니다. 이 두 방식이 패키지 버전의 범위를 어떻게 표현하는지 이해할 필요가 있습니다.
+
+
 
 #### 틸드(~)
 
@@ -66,30 +80,38 @@ question entry point (index.js):
 
 예시 | 범위
 --|--
-~0.0.1 | >=0.0.1 <0.1.0
-~0.1.1 | >=0.1.1 <0.2.0
+~0.0.1 | `>=0.0.1 and <0.1.0`
+~0.1.1 | `>=0.1.1 and <0.2.0`
 
 #### 캐럿(^)
 
-캐럿(^)은 Node.js 모듈이 이 [Semantic Versioning](http://semver.org/)의 규약을 따른다는 것을 신뢰한다는 가정하에서 동작하는데, Minor나 Patch버전은 하위 호환성이 보장되어야 하므로 최신 버전이 존재한다면 업그레이드 하게 되다.
+캐럿(^)은 Node.js 모듈이 이 [Semantic Versioning](http://semver.org/)의 규약을 따른다는 것을 신뢰한다는 가정하에서 동작하는데, Minor나 Patch버전은 하위 호환성이 보장되어야 하므로 최신 버전이 존재한다면 업그레이드 진행할 수 있습니다.
 
 예시 | 범위
 --|--
-^1.0.2 | >=1.0.2 <2.0
-^1.0 | >=1.0.0 <2.0
-^1 | >=1.0.0 <2.0
+^1.0.2 | `>=1.0.2 and <2.0`
+^1.0 | `>=1.0.0 and <2.0`
+^1 | `>=1.0.0 and <2.0`
 
-하지만 아직 npm 저장소의 생태계의 몇몇 패키지는 Minor, Patch 버전이 업데이트 되었을때 하위 호환성을 보장하지 않고 에러메세지를 발생시키는 경우가 발생하기 때문에 의존 패키지를 효율적으로 관리하기 위해서는 Yarn이 어떻게 동작하는지 이해해야할 필요가 있습니다.
+하지만 아직 npm 저장소의 생태계의 몇몇 패키지는 Minor, Patch 버전이 업데이트 되었을때 하위 호환성을 보장하지 않고 원하는 방식으로 동작하지 않는 경우가 있습니다. 이러한 이슈는 엔터프라이즈 환경에서는 치명적이기 때문에 Node 애플리케이션에서 의존 패키지를 효율적으로 관리하기 위해서는 Yarn이 어떻게 동작하는지 정확히 이해할 필요가 있습니다.
+
+#### 하위 호환성이 보장되지 않는 사례
+
+```bash
+sdsd
+```
 
 ## yarn.lock
 
-Yarn은 `package.json`에 정의된 버전의 범위에 따라 최신에 상태도 자동으로 업데이트 될 때의 이슈를 방지하고 다양한 시스템에서 일관적으로 빠르게 동작하기 위해서 `yarn.lock` 파일을 프로젝트의 루트에 자동으로 생성합니다.
+Yarn은 위와 같이 `package.json`에 정의된 버전의 범위에 따라 패키지를 관리합니다. 이는 로컬 환경 마다 `yarn install`이 되는 시점에 따라 패키지의 버전이 다를 수도 있다는 것을 의미합니다.
 
-사용자는 이 파일을 직접 수정해서는 안되며 Yarn을 통해 의존 패키지를 관리하면 자동으로 업데이트되게 됩니다. 애플리케이션을 안정적으로 운영하고자 한다면 이 파일을 Repository에 같이 저장하는 것을 추천합니다.
+Yarn은 다양한 시스템에서 일관적으로 동작하기 위해서 `yarn.lock` 파일을 프로젝트의 루트에 자동으로 생성합니다. 사용자는 이 파일을 직접 수정해서는 안되며 Yarn CLI을 통해 패키지를 관리하면 자동으로 업데이트됩니다.
 
-## CLI commands
+애플리케이션을 안정적으로 운영하고자 한다면 이 파일을 Repository에 같이 저장하는 것을 추천합니다.
 
-지금까지는 Yarn의 기본적인 개념을 알아봤다면 지금부터는 Yarn이 제공하는 명령을 통해 프로젝트에 필요한 패키지를 관리할 필요가 있습니다.
+## Yarn commands
+
+지금까지는 Yarn의 기본적인 개념을 알아봤다면 지금부터는 Yarn이 제공하는 명령을 CLI를 통해 프로젝트에 필요한 패키지를 관리할 필요가 있습니다.
 
 #### yarn install
 
@@ -97,6 +119,10 @@ Install or update in the local `node_modules` but the yarn.lock file will not be
 
 ```
 $ yarn install
+```
+
+```
+$ yarn
 ```
 
 Yarn will not install any package listed in devDependencies if the NODE_ENV environment variable is set to production. Use this flag to instruct Yarn to ignore NODE_ENV and take its production-or-not status from this flag instead.
@@ -205,11 +231,11 @@ Verifies that versions of the package dependencies in the current project’s pa
 $ yarn check
 ```
 
-## 제안
+## 정리 그리고 이렇게 제안합니다.
 
 - `yarn.lock`은 절대 직접 수정하지 않는다.
-- `package.json`을 직접 수정하는 대신 yarn command를 통해 설치, 업데이트하자.
-- `yarn upgrade` 명령은 프로젝트의 호환성 이슈에 대참사를 불러올 수 있기 때문에 사용을 지양하자.
+- `package.json`을 직접 수정하는 대신 yarn CLI를 통해 추가, 삭제, 업데이트하는 것을 추천합니다.
+- `yarn upgrade` 명령은 프로젝트의 호환성 이슈에 대참사를 불러올 수 있기 때문에 사용을 지양합니다.
 
 ## References
 
