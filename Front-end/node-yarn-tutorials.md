@@ -61,13 +61,37 @@ $ curl -o- -L https://yarnpkg.com/install.sh | bash
 
 #### yarn global
 
-이 명령은 패키지를 시스템 전역에서 설치, 업데이트, 삭제하는 것을 의미합니다. 패지키가 설치되는 경로는 현재 시스템의 node가 설치된 경로에서 관리합니다. nvm을 통해 node를 관리한다면 설치 경로는 아래와 같습니다.
+이 명령은 패키지를 시스템 전역에서 설치, 업데이트, 삭제하는 것을 의미합니다. 패지키가 설치되는 경로를 지정할 수 있습니다.
 
 ```bash
-$ which node
-$HOME/.nvm/versions/node/v8.9.1/bin/node
-$ ls $HOME/.nvm/versions/node/v8.9.1/lib/node_modules
-gulp    hexo    npm    npm-check    pm2    yarn
+$ yarn config set prefix ~/.yarn
+$ yarn global add pm2 npm-check create-react-app
+```
+
+아래의 명령을 통해 현재 전역에 설치된 패키지 리스트와 실행 파일의 위치를 확인할 수 있습니다.
+
+```bash
+$ yarn global list
+yarn global v1.3.2
+info "create-react-app@1.4.3" has binaries:
+   - create-react-app
+info "npm-check@5.5.2" has binaries:
+   - npm-check
+info "pm2@2.8.0" has binaries:
+   - pm2
+...
+✨ Done in 1.51s.
+```
+
+```bash
+$ yarn global bin
+$HOME/.yarn/bin
+```
+
+```bash
+$ ls $HOME/.yarn/bin
+create-react-app	pm2-dev			yarn			yarnpkg
+npm-check		pm2-docker		pm2			pm2-runtime
 ```
 
 #### yarn init

@@ -123,7 +123,7 @@ git은 강력한 점은 효율적으로 분산된 환경은 제공한다는 것�
 $ git checkout -b develop
 ```
 
-develop이라는 특정 branch로 부터 새로운 branch를 만들고 싶다면,
+stage라는 특정 branch로 부터 새로운 branch를 만들고 싶다면,
 
 ```bash
 $ git checkout -b develop origin/stage
