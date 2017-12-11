@@ -45,9 +45,11 @@ $ echo '123!@#' | passwd --stdin irteam
 ```
 
 ```bash
-$ whoami
-user
-$ sudo chown -R user /data/db
+$ sudo chown -R irteam /data/dd
+```
+
+```bash
+$ su irteam -c /usr/local/bin/jenkins.sh
 ```
 
 ## System
@@ -157,6 +159,10 @@ $ du -hs *
 ## Files
 
 ```bash
+$ wget -P /usr/share/jenkins http://mirrors.jenkins-ci.org/war/2.92/jenkins.war
+```
+
+```bash
 $ mkdir -p
 ```
 
@@ -165,11 +171,11 @@ $ cat
 ```
 
 ```bash
-$ echo 'Hello World' > README.md
+$ echo $JAVA_HOME
 ```
 
 ```bash
-$ echo $JAVA_HOME
+$ echo 'Hello World' > README.md
 ```
 
 ```bash
@@ -177,7 +183,7 @@ $ touch .gitignore
 ```
 
 ```bash
-$ ln -s ~/Github/holaxapps.github.io/source/_posts ~/posts
+$ ln -s ~/.pm2/logs ~/logs
 ```
 
 ```bash
@@ -209,28 +215,34 @@ Option | Desc
 -x | 원본과 대상 파일의 파일시스템이 다를 경우에는 복사하지 않는다.
 -R | 디렉터리를 복사할 경우 그 안에 포함된 모든 하위경로와 파일들을 모두 복사한다.
 
+```bash
+$ cp -i README.md ~/repository
+overwrite posts/README.md? (y/n [n]) y
+$ cat ~/repository/README.md
+```
 
 ## Resources
 
 ```bash
-$ ps -ef | grep node
+$ ps -ef | grep -i node
 ```
 
-```
+```bash
 $ top
 ```
 
 #### CPU Load average
 
-```
+```bash
 $ uptime
+9:36  up 28 days, 16:37, 2 users, load averages: 1.93 1.92 1.98
 ```
 
 ```bash
 $ vmstat
 ```
 
-##### Memory resources
+#### Memory resources
 
 리눅스 시스템의 메모리의 전체적인 현황을 가장 빠르게 살펴볼 수 있는 명령은 free 명령이다. free명령은 전체 메모리 용량과, 사용 중 인 용량 그리고 buffers와 cached로 명명되는 캐싱 영역의 용량을 확인하는 데 사용된다.
 
@@ -242,11 +254,11 @@ $ free -m
 
 #### 시스템에서 운영중인 Port 확인하기
 
-```
+```bash
 $ netstat -nap | grep LISTEN | grep -i :80
 ```
 
-```
+```bash
 $ sudo lsof -i -n -P | grep TCP | grep :80
 ```
 
