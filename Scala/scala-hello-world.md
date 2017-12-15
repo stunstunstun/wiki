@@ -1,6 +1,6 @@
 ---
 title: Scala 로 시작하는 Hello World
-date: 2017-11-14 15:20
+date: 2017-11-14 15:20:00
 categories: scala
 profile: https://avatars3.githubusercontent.com/u/12473268?s=400&u=3337a754192e339ee81bc1b4e8a9d223412c6f33&v=4
 profile_url: https://github.com/ailrun

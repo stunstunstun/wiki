@@ -1,7 +1,7 @@
 ---
 title: 소소한 GitHub Tips
-date: 2017-12-01 15:14:40
-desc: Github 활용하기
+date: 2017-12-01 15:00:00
+desc: GitHub 활용하기
 image: https://assets-cdn.github.com/images/modules/open_graph/github-logo.png
 categories: git
 ---
@@ -58,5 +58,3 @@ resolved
 - https://github.com/request/request/network/dependencies
 
 > 현재 이 기능은 GitHub Enterprise에서는 제공되지 않고 있습니다. 
-
-
