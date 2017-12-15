@@ -22,11 +22,11 @@ $ touch PULL_REQUEST_TEMPLATE.md  # PR 등록시 템플릿 파일
 
 2. 새로운 이슈를 등록합니다.
 
-<img src='https://help.github.com/assets/images/help/issues/new_issues_button.png'  width='100'/>
+<img src='http://image.toast.com/aaaaahq/new_issues_button.png'  width='100'/>
 
 3. 적용된 Template를 확인합니다.
 
-<img width="768" alt="github-templates" src="https://media.oss.navercorp.com/user/7994/files/0c099be0-d9ec-11e7-962d-df3b88f29401">
+<img width="768" alt="github-templates" src="http://image.toast.com/aaaaahq/0c099be0-d9ec-11e7-962d-df3b88f29401.png">
 
 <br/>
 
@@ -45,7 +45,7 @@ resolves
 resolved
 ```
 
-<img width="711" alt="github-templates2" src="https://media.oss.navercorp.com/user/7994/files/d70a1c7a-d9ec-11e7-8910-9686d333d378">
+<img width="711" alt="github-templates2" src="http://image.toast.com/aaaaahq/d70a1c7a-d9ec-11e7-8910-9686d333d378.png">
 
 > 참고 - https://help.github.com/articles/closing-issues-using-keywords/
 
