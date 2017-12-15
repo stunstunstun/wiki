@@ -1,5 +1,5 @@
 ---
-title: 유용한 리눅스 명령어 모음
+title: 유용한 리눅스 명령어 시나리오
 date: 2017-11-01 15:24:49
 categories: devops
 ---
