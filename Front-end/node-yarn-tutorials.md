@@ -303,10 +303,10 @@ $ yarn add eslint@^4.0.0 --dev
 $ yarn upgrade
 ```
 
-위에서 살펴본대로 대규모의 프로젝트에서는 의존된 모든 패키지가 호환성을 보장하기 힘들기 때문에 이 명령을 통해 일괄적으로 패지키를 업데이트하는 것은 좋지 않습니다. 필요하다면 아래와 같이 패키지별로 업데이트하는 것을 추천합니다.
+위에서 살펴본대로 대규모의 프로젝트에서는 의존된 모든 패키지가 호환성을 보장하기 힘들기 때문에 이 명령을 통해 일괄적으로 패지키를 업데이트하는 것은 좋지 않습니다. 기존 패키지의 업데이트가 필요하다면 아래와 같이 패키지를 지정해 업데이트하는 것을 추천합니다.
 
-```
-$ yarn upgrade mocha@^3.5.0
+```bash
+$ yarn upgrade mocha@^4.0.0
 ```
 
 #### yarn remove
@@ -331,7 +331,7 @@ $ yarn remove foo
 
 Verifies that versions of the package dependencies in the current project’s package.json matches that of yarn’s lock file.
 
-```
+```bash
 $ yarn check
 ```
 
@@ -357,11 +357,11 @@ supertest                2.0.1          2.0.1   3.0.0  blahblah.sh
 
 #### npm-check
 
-```
+```bash
 $ yarn global install npm-check
 ```
 
-```
+```bash
 $ npm-check -u
 ```
 
@@ -371,9 +371,12 @@ $ npm-check -u
 
 - `yarn.lock`은 절대 직접 수정하지 않습니다.
 - `package.json`을 직접 수정하는 대신 yarn CLI를 통해 추가, 삭제, 업데이트하는 것을 추천합니다.
-- `yarn upgrade` 명령은 프로젝트의 호환성 이슈에 대참사를 불러올 수 있기 때문에 사용을 지양합니다.
+- 새로운 패키지는 `yarn add package@^version`
+- 기존 패키지의 업데이트를 위해서는 `yarn upgrade package@^version`
+- `yarn upgrade` 명령을 통해 모든 패키지를 업데이트 하는 행위는 호환성이 보장되지 않는 대참사를 불러올 수 있기 때문에 사용을 지양합니다.
 
-> 오직 install, add, remove, 그리고 upgrade 명령만이 `yarn.lock`을 업데이트 합니다.
+> 1. 오직 add, remove, 그리고 upgrade 명령만이 `yarn.lock`을 업데이트 합니다.
+> 2. 단, 만약에 `yarn.lock`이 `package.json`을 만족하지 않는다면 yarn install 명령으로 패키지가 업데이트 되고 `package.json`을 만족하기 위해 필요한 만큼 수정됩니다.
 
 ## References
 
