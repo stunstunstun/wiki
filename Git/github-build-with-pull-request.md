@@ -1,3 +1,10 @@
+---
+title: Jenkins를 통해 GitHub PR시 자동으로 빌드하기
+date: 2017-08-26 15:14:40
+desc: GitHub 활용하기
+categories: git
+---
+
 QA(Quality Assurance)를 위한 CI서버. QA는 아래와 같은 내용을 포함합니다.
 
 - 빌드
@@ -27,7 +34,6 @@ QA(Quality Assurance)를 위한 CI서버. QA는 아래와 같은 내용을 포�
 
 ## Jenkins Plugins
 
-- PASTA Auth Plugin
 - NodeJS Plugin
 - MongoDB Plugin
 - GitHub Pull Request Builder
