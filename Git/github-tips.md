@@ -18,7 +18,7 @@ $ cd .github
 $ touch ISSUE_TEMPLATE.md    # 이슈 등록시 템플릿 파일
 $ touch PULL_REQUEST_TEMPLATE.md  # PR 등록시 템플릿 파일
 ```
-> Example - https://oss.navercorp.com/bizServiceLab/clove/tree/master/.github
+
 
 2. 새로운 이슈를 등록합니다.
 

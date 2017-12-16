@@ -64,7 +64,7 @@ $ tar -zxvf sdk-tools-linux-3859397.zip
 
 ```shell
 ...
-export ANDROID_HOME=/home1/irteam/android
+export ANDROID_HOME=/home1/user/android
 export PATH=${PATH}:$ANDROID_HOME/tools
 ```
 

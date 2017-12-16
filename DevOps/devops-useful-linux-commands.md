@@ -27,7 +27,7 @@ $ rsync
 ```
 
 ```
-$ ssh -x -l irteam 127.0.0.1
+$ ssh -x -l guest 127.0.0.1
 ```
 
 ```
@@ -39,17 +39,17 @@ $ passwd root
 ```
 
 ```bash
-$ useradd irteam
-$ cat /etc/passwd | grep irteam
-$ echo '123!@#' | passwd --stdin irteam
+$ useradd guest
+$ cat /etc/passwd | grep guest
+$ echo '123!@#' | passwd --stdin guest
 ```
 
 ```bash
-$ sudo chown -R irteam /data/dd
+$ sudo chown -R guest /data/dd
 ```
 
 ```bash
-$ su irteam -c /usr/local/bin/jenkins.sh
+$ su guest -c /usr/local/bin/jenkins.sh
 ```
 
 ## System
