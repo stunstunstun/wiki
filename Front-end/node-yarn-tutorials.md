@@ -1,7 +1,7 @@
 ---
 title: Yarn 톺아보기
 date: 2017-12-07 09:00
-image: https://blog-assets.risingstack.com/2017/01/yarn-node-js-package-manager.png
+image: https://designmodo.com/wp-content/uploads/2016/10/Yarn-1.jpg
 categories: nodejs
 ---
 

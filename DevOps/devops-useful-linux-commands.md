@@ -19,7 +19,7 @@ $ telnet 127.0.0.1 80
 ```
 
 ```
-$ rlogin
+$ rlogin -l root [hostname]
 ```
 
 ```
@@ -45,7 +45,7 @@ $ echo '123!@#' | passwd --stdin guest
 ```
 
 ```bash
-$ sudo chown -R guest /data/dd
+$ sudo chown -R guest /data/db
 ```
 
 ```bash
