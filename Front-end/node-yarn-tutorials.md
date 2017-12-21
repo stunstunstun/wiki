@@ -7,6 +7,8 @@ categories: nodejs
 
 <img src='https://designmodo.com/wp-content/uploads/2016/10/Yarn-1.jpg' width='400' />
 
+> 톺아보다 [동사] 샅샅이 톺아 나가면서 살피다.
+
 Yarn은 프로젝트의 의존성을 관리하는 JavaScript의 패키지 매니저입니다. Java의 gradle이나 Python의 pip과 같이 말이죠. 물론 우리에겐 npm이 있지만 Yarn은 보다 더 빠르고 거기다 더욱 안전합니다. npm과 같이 JavaScript 패키지의 저장소를 제공할 뿐만 아니라 시스템에서 의존 패키지를 설치하거나 업데이트하는 등의 다양한 명령을 제공합니다.
 
 Yarn은 npm과 마찬가지로 `package.json`을 통해 의존 패키지를 구분하고 프로젝트에서 어떠한 일들을 해야할지 결정합니다.
@@ -19,9 +21,9 @@ Facebook은 점차 거대해지는 프로젝트에서 npm을 사용하면서 일
 
 npm 저장소의 취약한 보안 이슈를 시작으로, 의존 패키지의 버저닝 이슈, 무엇보다 패키지가 많아짐에 따라 빌드 성능이 좋지 않다는 점이 가장 큰 문제입니다.
 
-> 최근의 보안 이슈 - http://blog.npmjs.org/post/163723642530/crossenv-malware-on-the-npm-registry
+버저닝 이슈는 예를 들면 로컬에서 특정 패키지의 버전이 1.0.0인데 배포를 위한 빌드 서버에서는 시점에 따라 1.0.3으로 업데이트 될 수도 있음을 말합니다.
 
-> 버저닝 이슈를 예를 들면 로컬에서 특정 패키지의 버전이 1.0.0인데 배포를 위한 빌드 서버에서는 시점에 따라 1.0.3으로 업데이트 될 수도 있음을 말합니다.
+> 최근의 보안 이슈 - http://blog.npmjs.org/post/163723642530/crossenv-malware-on-the-npm-registry
 
 #### Yarn은 npm에 비해 얼마나 빠른가?
 
@@ -323,9 +325,11 @@ $ yarn remove foo
 
 > yarn remove will always update your package.json and yarn.lock. This ensures that different developers on the same project get the same set of dependencies. It is not possible to disable this behavior.
 
-## dependencies 패키지간의 올바른 버전 체크하기
+## yarn config와 `.yarnrc`
 
-더욱 안정적으로 버전 관리하기
+## 더욱 안정적으로 버전 관리하기
+
+npm, yarn을 통해서 dependencies 패키지간 올바른 버전을 체크하는 다양하 옵션이 존재합니다.
 
 #### yarn check
 
