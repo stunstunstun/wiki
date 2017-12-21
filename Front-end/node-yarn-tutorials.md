@@ -44,7 +44,7 @@ yarn install | 22.9s | 976ms
 
 ```bash
 $ yarn cache dir
-$HOMELibrary/Caches/Yarn/v1
+$HOME/Library/Caches/Yarn/v1
 ```
 
 ## 시작하기
@@ -59,6 +59,13 @@ $ curl -o- -L https://yarnpkg.com/install.sh | bash
 
 ```bash
 $ npm install -g yarn
+```
+
+어디에 설치되어 있을까요?
+
+```bash
+$ which yarn
+$HOME/.nvm/versions/node/v8.9.0/bin/yarn
 ```
 
 #### yarn global
@@ -188,7 +195,7 @@ mongoose@^4.9.8:
 ...
 ```
 
-애플리케이션을 안정적으로 운영하고자 한다면 이 파일을 Git Repository에 함께 저장하는 것을 추천합니다.
+`package.json`과 `yarn.lock`은 Version control 시스템과 긴밀하게 연결되어야 합니다. 많은 사람들과 애플리케이션을 안정적으로 운영하고자 한다면 이 파일들을 Git Repository에 함께 저장하는 것을 추천합니다.
 
 #### 하위 호환성을 보장하지 않는 사례
 
@@ -259,6 +266,12 @@ $ NODE_ENV=production yarn install
 $ yarn install --production=false
 ```
 
+강제로 모든 패키지를 다시 다운로드해야하는 경우도 있습니다.
+
+```bash
+yarn install --force
+```
+
 CI 서버와 같이 재생 가능한 의존 패키지가 필요한 경우 `--fronzen-lockfile` 플래그는 유용합니다. `yarn.lock`과 `package.json`이 동기화 되지 않은 상태에서 업데이트가 필요한 경우에는 설치를 실패하고 `yarn.lock`을 생성하지 않습니다.
 
 ```bash
@@ -313,57 +326,108 @@ $ yarn upgrade mocha@^4.0.0
 
 #### yarn remove
 
-Running `yarn remove foo` will remove the package named foo from your direct dependencies updating your package.json and yarn.lock files in the process.
+`yarn remove foo` 명령은 `foo`라는 패키지를 프로젝트에서 제거하는 것을 의미합니다.
 
-Other developers working on the project can run yarn install to sync their own node_modules directories with the updated set of dependencies.
+- `package.json`에서 제거됩니다.
+- `yarn.lock`에서 제거됩니다.
 
-When you remove a package, it is removed from all types of dependencies: dependencies, devDependencies, etc.
+dependencies, devDependencies등 모든 타입에서 패키지가 삭제됩니다.
 
 ```
 $ yarn remove foo
 ```
 
-> yarn remove will always update your package.json and yarn.lock. This ensures that different developers on the same project get the same set of dependencies. It is not possible to disable this behavior.
+> yarn remove는 package.json과 yarn.lock을 언제나 업데이트합니다. 이는 같은 프로젝트에서 협업하는 동료들도 동일한 의존 패키지를 사용하는 것을 보장하는 것을 의미합니다.
 
 ## yarn config와 `.yarnrc`
 
-## 더욱 안정적으로 버전 관리하기
+`yarn config` 명령을 통해 Yarn에서 참조하는 설정 파일을 지정할 수 있습니다. 아래와 같이 npm 패키지 저장소의 URL을 변경하거나 라이센스를 지정하는 경우를 말합니다.
 
-npm, yarn을 통해서 dependencies 패키지간 올바른 버전을 체크하는 다양하 옵션이 존재합니다.
+```
+$ yarn config set registry 'https://registry.yarnpkg.com'
+$ yarn config set init-license MIT
+$ yarn config list
+...
+registry: 'https://registry.yarnpkg.com',
+init-license: 'MIT'
+```
+
+프로젝트의 로컬에서는 아래와 같이 `.yarnrc` 파일을 통해 별도의 명령 없이 config list를 관리할 수 있습니다.
+
+`.yarnrc`
+
+```
+registry: 'https://registry.yarnpkg.com'
+init-license: 'MIT'
+```
+
+```
+$ yarn config list
+...
+registry: 'https://registry.yarnpkg.com',
+init-license: 'MIT'
+```
+
+## 프로젝트의 패키지 버전 안정적으로 관리하기
+
+npm, yarn을 통해서 dependencies 패키지 버전을 지속적으로 체크하는 다양한 옵션이 존재합니다.
 
 #### yarn check
 
-Verifies that versions of the package dependencies in the current project’s package.json matches that of yarn’s lock file.
+패키지 버전에 따른 의존 패키지들이 프로젝트에서 유효한지 체크합니다. 이 기준은 현재의 `package.json`이 `yarn.lock`과 일치하는지 확인하는 것을 말합니다.
 
 ```bash
 $ yarn check
+yarn check v1.3.2
+warning "chokidar#fsevents#node-pre-gyp@^0.6.39" could be deduped from "0.6.39" to "node-pre-gyp@0.6.39"
+success Folder in sync.
+✨  Done in 6.65s.
 ```
 
-#### npm outdated
+`yarn check` 명령 후에 위와 같이 warning, error를 만난다면 의존 패키지의 버전을 조정할 필요가 있습니다.
+
+#### yarn outdated
+
+`yarn outdated`는 업데이트가 필요한 모듈이 정리되어 출력되기 때문에 의존 패키지의 버전을 조종하는데 유용하게 사용됩니다.
 
 ```bash
-$ npm outdated
-Package                Current         Wanted  Latest  Location
-chai                     3.5.0          3.5.0   4.1.2  blahblah.sh
-debug                    2.6.9          2.6.9   3.1.0  blahblah.sh
-eslint                  4.10.0         4.11.0  4.11.0  blahblah.sh
-gulp-babel               6.1.2          6.1.2   7.0.0  blahblah.sh
-gulp-sourcemaps         1.12.0         1.12.0   2.6.1  blahblah.sh
-istanbul         1.1.0-alpha.1  1.1.0-alpha.1   0.4.5  blahblah.sh
-mocha                    3.5.3          3.5.3   4.0.1  blahblah.sh
-mongoose                4.13.0         4.13.0  4.13.1  blahblah.sh
-supertest                2.0.1          2.0.1   3.0.0  blahblah.sh
+$ yarn outdated
+yarn outdated v1.3.2
+info Color legend :
+ "<red>"    : Major Update backward-incompatible updates
+ "<yellow>" : Minor Update backward-compatible features
+ "<green>"  : Patch Update backward-compatible bug fixes
+Package           Current Wanted Latest Package Type    URL
+@types/jest       21.1.8  21.1.9 21.1.9 devDependencies https://www.github.com/DefinitelyTyped/DefinitelyTyped.git
+@types/koa        2.0.39  2.0.39 2.0.43 devDependencies https://www.github.com/DefinitelyTyped/DefinitelyTyped.git
+@types/koa-router 7.0.23  7.0.23 7.0.27 devDependencies https://www.github.com/DefinitelyTyped/DefinitelyTyped.git
+cross-env         5.0.5   5.0.5  5.1.1  devDependencies https://github.com/kentcdodds/cross-env#readme
+jest              21.2.1  21.2.1 22.0.3 devDependencies http://facebook.github.io/jest/
+koa               2.3.0   2.3.0  2.4.1  dependencies    https://github.com/koajs/koa#readme
+koa-router        7.2.1   7.2.1  7.3.0  dependencies    https://github.com/alexmingoia/koa-router#readme
+nodemon           1.12.0  1.12.0 1.14.1 devDependencies http://nodemon.io
+ts-jest           21.2.4  21.2.4 22.0.0 devDependencies https://github.com/kulshekhar/ts-jest#readme
+ts-node           3.3.0   3.3.0  4.0.2  devDependencies https://github.com/TypeStrong/ts-node
+tslint            5.7.0   5.7.0  5.8.0  devDependencies https://github.com/palantir/tslint.git
+typescript        2.5.2   2.5.2  2.6.2  devDependencies http://typescriptlang.org/
+✨  Done in 1.71s.
 ```
 
-위처럼 업데이트가 필요한 모듈만 정리되어 나온다. "Current"는 현재 설치된 버전이고 "Wanted"는 package.json에 지정한 버전 범위로 설치되는 최대 범위를 의미한다. 즉, npm update를 실행하면 설치되는 버전이다. "Latest"는 모듈의 최신 버전이다. 위 화면에서는 "Wanted"와 "Latest"가 같은 모듈이 빨간색으로 표시되었고 "Latest"가 "Wanted"보다 높은 모듈은 구별할 수 있게 노란색으로 표시되었다.
+`Current`는 프로젝트에 현재 설치된 버전이고 `Wanted`는 package.json에 지정한 패키지의 버전에서 호환성을 보장하는 버전을 의미합니다. 즉, yarn upgrade를 통해 변경 되는 버전을 말합니다. 
 
-여기서 확인을 한 뒤에 일일이 원하는 모듈을 업데이트해도 되지만 꽤 귀찮은 일이다
+`Latest`는 패키지의 현재의 최신 버전입니다. 위 화면에서는 `jest`와 같이 Major 업데이트가 필요한 패키지는 붉은색으로 표시됩니다.
 
 #### npm-check
+
+`yarn outdated`를 통해 원하는 모듈을 업데이트해도 되지만 꽤 귀찮은 작업으로 보입니다. `npm-check`는 Iteractive한 UI를 터미널에서 제공해 조금 더 쉽게 패키지의 버전을 관리할 수 있도록 도와줍니다.
+
+- https://www.npmjs.com/package/npm-check
 
 ```bash
 $ yarn global install npm-check
 ```
+
+프로젝트의 루트경로에서 아래와 같이 사용할 수 있습니다.
 
 ```bash
 $ npm-check -u
@@ -371,7 +435,7 @@ $ npm-check -u
 
 ## 마치며
 
-이미 npm을 통해 효율적으로 프로젝트를 관리하고 계시다면 꼭 Yarn을 사용해야 하는 것은 아닙니다. 각자의 용도에 따라 필요한 수준의 도구를 이용하면 됩니다. 만약 Yarn을 통해 더 나은 경험을 얻고자 하신다면 2017년 12월 현재, 아래의 지침으로 정리할 수 있겠습니다.
+이미 npm을 통해 효율적으로 프로젝트를 관리하고 계시다면 꼭 Yarn을 사용해야 하는 것은 아닙니다. 각자의 용도에 따라 필요한 수준의 도구를 이용하면 됩니다. 만약 Yarn을 통해 더 나은 경험을 얻고자 하신다면 2017년 1월 현재, 아래의 지침으로 정리할 수 있겠습니다.
 
 - `yarn.lock`은 절대 직접 수정하지 않습니다.
 - `package.json`을 직접 수정하는 대신 yarn CLI를 통해 추가, 삭제, 업데이트하는 것을 추천합니다.
@@ -379,8 +443,9 @@ $ npm-check -u
 - 기존 패키지의 업데이트를 위해서는 `yarn upgrade package@^version`
 - `yarn upgrade` 명령을 통해 모든 패키지를 업데이트 하는 행위는 호환성이 보장되지 않는 대참사를 불러올 수 있기 때문에 사용을 지양합니다.
 
-> 1. 오직 add, remove, 그리고 upgrade 명령만이 `yarn.lock`을 업데이트 합니다.
-> 2. 단, 만약에 `yarn.lock`이 `package.json`을 만족하지 않는다면 yarn install 명령으로 패키지가 업데이트 되고 `package.json`을 만족하기 위해 필요한 만큼 수정됩니다.
+> 오직 add, remove, 그리고 upgrade 명령만이 `yarn.lock`을 업데이트 합니다.
+
+> 단, `yarn.lock`이 `package.json`과 일치하지 않는 상태라면 install 명령으로 패키지가 업데이트 되고 `package.json`을 만족하기 위해 필요한 만큼 수정됩니다.
 
 ## References
 
@@ -390,5 +455,3 @@ $ npm-check -u
 - https://yarnpkg.com/en/docs/cli/add
 - https://yarnpkg.com/lang/en/docs/cli/upgrade/
 - https://yarnpkg.com/en/docs/cli/check
-- https://www.vobour.com/book/view/Y5vcMHJGHyN5ayheM
-- http://fetobe.co.kr/%EC%83%88%EB%A1%9C%EC%9A%B4-npm-client-yarn/
