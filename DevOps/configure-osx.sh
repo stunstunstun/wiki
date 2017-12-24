@@ -54,7 +54,7 @@ git --version
 brew cask install visual-studio-code
 
 # Install JDK, jenv
-home install java
+brew install java
 git clone https://github.com/gcuisinier/jenv.git ~/.jenv
 echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.bash_profile
 echo 'eval "$(jenv init -)"' >> ~/.bash_profile

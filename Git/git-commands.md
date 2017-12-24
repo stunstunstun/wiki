@@ -355,10 +355,31 @@ $ git log
 $ git push origin 0.1.0
 ```
 
+#### git config
+
+이 명령을 통해 시스템 또는 로컬에서 참고하는 다양한 옵션을 설정한다. 예를 들면 Git Repository에서 참조하는 계정을 아래와 같이 설정할 수 있다.
+
+`global`
+
+```
+$ git config --global user.name "stunstunstun"
+$ git config --global user.email "wjdsupj@gmail.com"
+```
+
+`local`
+
+```
+$ git config --local user.name "stunstunstun"
+$ git config --local user.email "wjdsupj@gmail.com"
+```
+
+## 마치며
+
 지금까지 Git Flow를 통해 기본적인 명령들을 살펴보았다. Git에 대해 더 알고 싶다면 아래의 자료를 참고하면 많은 도움이 될 것이다!
 
 ## References
 
+- [Git Docs](https://git-scm.com/docs/)
 - [Git Flight Rules](https://github.com/k88hudson/git-flight-rules)
 - [An Introduction Git and GitHub](https://www.youtube.com/watch?v=MJUJ4wbFm_A)
 - [Git Basic Tutorials](https://try.github.io)

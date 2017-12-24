@@ -1,6 +1,6 @@
 ---
 title: 소소한 GitHub Tips
-date: 2017-12-01 15:00:00
+date: 2017-12-20 10:00:00
 desc: GitHub 활용하기
 image: https://assets-cdn.github.com/images/modules/open_graph/github-logo.png
 categories: git
@@ -22,11 +22,11 @@ $ touch PULL_REQUEST_TEMPLATE.md  # PR 등록시 템플릿 파일
 
 2. 새로운 이슈를 등록합니다.
 
-<img src='http://image.toast.com/aaaaahq/new_issues_button.png'  width='100'/>
+<img src='https://image.toast.com/aaaaahq/new_issues_button.png'  width='100'/>
 
 3. 적용된 Template를 확인합니다.
 
-<img width="768" alt="github-templates" src="http://image.toast.com/aaaaahq/0c099be0-d9ec-11e7-962d-df3b88f29401.png">
+<img width="768" alt="github-templates" src="https://image.toast.com/aaaaahq/0c099be0-d9ec-11e7-962d-df3b88f29401.png">
 
 <br/>
 
@@ -45,7 +45,7 @@ resolves
 resolved
 ```
 
-<img width="711" alt="github-templates2" src="http://image.toast.com/aaaaahq/d70a1c7a-d9ec-11e7-8910-9686d333d378.png">
+<img width="711" alt="github-templates2" src="https://image.toast.com/aaaaahq/d70a1c7a-d9ec-11e7-8910-9686d333d378.png">
 
 > 참고 - https://help.github.com/articles/closing-issues-using-keywords/
 
@@ -57,4 +57,4 @@ resolved
 
 - https://github.com/request/request/network/dependencies
 
-> 현재 이 기능은 GitHub Enterprise에서는 제공되지 않고 있습니다. 
+> 현재 이 기능은 GitHub Enterprise에서는 제공되지 않고 있습니다.
