@@ -1,6 +1,6 @@
 ---
 title: 유용한 리눅스 명령어 시나리오
-date: 2017-11-01 15:24:49
+date: 2018-01-02 15:24:49
 categories: devops
 ---
 
@@ -10,6 +10,7 @@ categories: devops
 - [System](#system)
 - [Files](#files)
 - [Resources](#resources)
+- [Bash](#bash)
 - [Network](#network)
 
 ## Accounts and login
@@ -163,6 +164,14 @@ $ wget -P /usr/share/jenkins http://mirrors.jenkins-ci.org/war/2.92/jenkins.war
 ```
 
 ```bash
+$ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash
+```
+
+```bash
+$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+```bash
 $ mkdir -p
 ```
 
@@ -249,6 +258,10 @@ $ vmstat
 ```bash
 $ free -m
 ```
+
+## Bash
+
+#### 스크립트에서 exit 코드 활용하기
 
 ## Network
 
@@ -369,5 +382,7 @@ TCP Keepalive와 용어가 비슷해서 헷갈릴 수 있지만 두 항목은 �
 
 ## 참고
 
+- https://www.gnu.org/software/wget/manual/wget.html
+- http://bencane.com/2014/09/02/understanding-exit-codes-and-how-to-use-them-in-bash-scripts/
 - [DevOps와 SE를 위한 리눅스 커널 이야기](http://www.yes24.com/24/goods/44376723)
 
