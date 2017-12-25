@@ -16,7 +16,7 @@ description: ES6 한 눈에 살펴보기
 `AirBnb JavaScript Style Guilde`
 - https://github.com/airbnb/javascript
 
-#### 목차
+# Table
 
 - Syntax
     - [Variables](#variables)
@@ -29,6 +29,10 @@ description: ES6 한 눈에 살펴보기
     - [Rest Parameter](#rest-parameter)
 - Functions
 	- [Arrow Functions](#arrow-functions)
+  - [this and Arrow Functions](#this-and-arrow-functions)
+  - [Default Functions Parameters](#default-functions-parameters)
+  - [Class](#class)
+  - [Super and Extends](#super-and-extends)
 - Built-ins
 - Advanced
 	- [Promises](#promises)
@@ -466,7 +470,6 @@ passed as an argument to a function,
 and stored in an object's property.
 One confusing syntax is when an arrow function is stored in a variable.
 
-
 `ES5`
 ```javascript
 var upperizedNames = ['Farrin', 'Kagure', 'Asser'].map(function(name) {
@@ -506,10 +509,130 @@ orderIceCream('chocolate', 'waffle');
 ```
 > Prints: Here's your chocolate ice cream in a waffle cone.
 
+## this and Arrow Functions
+
 #### Regular Functions and the `this` keyword
 
+일반적으로 JavaScript에서 `this`는 어떤 의미인가?
 
+```javascript
+const mySundae = new Sundae('Chocolate', ['Sprinkles', 'Hot Fudge']);
+```
+
+```javascript
+const result = obj1.printName.call(obj2);
+```
+
+```javascript
+data.teleport();
+```
+
+```javascript
+teleport();
+```
 #### Arrow Functions and the `this` keyword
+
+```javascript
+function IceCream() {
+  this.scoops = 0;
+}
+
+IceCream.prototype.addScoop = function() {
+  const cone = this;
+  setTimeout(function() {
+    cone.scoops++;
+    console.log(cone.__proto__)
+    console.log(cone.scoops);
+    console.log('scoop added!');
+  }, 500)
+};
+
+IceCream.prototype.removeScoop = function() {
+  setTimeout(() => {
+    this.scoops--;
+    console.log(this.__proto__)
+    console.log(this.scoops);
+    console.log('scoop removed!');
+  }, 500)
+};
+
+const dessert = new IceCream();
+dessert.addScoop();
+dessert.removeScoop();
+```
+
+## Default Parameters
+
+#### Default Functions Parameters
+
+```javascript
+// ES5
+function greet(name, greeting) {
+  name = (typeof name !== 'undefined') ?  name : 'Student';
+  greeting = (typeof greeting !== 'undefined') ?  greeting : 'Welcome';
+  return `${greeting} ${name}!`;
+}
+
+console.log(greet());                   // Welcome Student!
+console.log(greet('James'));            // Welcome James!
+console.log(greet('Richard', 'Howdy')); // Howdy Richard!
+
+// ES6
+function hello(name = 'Student', greeting = 'Welcome') {
+  return `${greeting} ${name}`;
+}
+
+console.log(hello());                   // Welcome Student!
+console.log(hello('James'));            // Welcome James!
+console.log(hello('Richard', 'Howdy')); // Howdy Richard!
+```
+
+#### Defaults and destructuring arrays
+
+```javascript
+function createGrid([width = 5, height = 5] = []) {
+  return `Generates a ${width} x ${height} grid`;
+}
+
+createGrid(); // Generates a 5 x 5 grid
+createGrid([10, 10]); // Generates a 10 x 10 grid
+createGrid([undefined, 10]); // Generates a 5 x 10 grid
+```
+
+#### Defaults and destructuring objects
+
+```javascript
+function createSundae({scoops = 1, toppings = ['Hot Fudge']} = {}) {
+  const scoopText = scoops === 1 ? 'scoop' : 'scoops';
+  return `Your sundae has ${scoops} ${scoopText} with ${toppings.join(' and ')} toppings.`;
+}
+
+console.log(createSundae());
+console.log(createSundae({
+  scoops: 2,
+  toppings: ['Hot', 'Cold'] 
+}));
+```
+
+#### Array defaults vs. object defaults
+
+```javascript
+function createSundae({scoops = 1, toppings = ['Hot Fudge']} = {}) { … }
+createSundae({toppings: ['Hot Fudge', 'Sprinkles', 'Caramel']});
+```
+
+```javascript
+function createSundae([scoops = 1, toppings = ['Hot Fudge']] = []) { … }
+createSundae([undefined, ['Hot Fudge', 'Sprinkles', 'Caramel']]);
+```
+
+Since arrays are positionally based, we have to pass undefined to "skip" over the first argument (and accept the default) to get to the second argument.
+
+Unless you've got a strong reason to use array defaults with array destructuring, we recommend going with object defaults with object destructuring!
+
+## Class
+
+## Super and Extends
 
 <br>
 
@@ -569,10 +692,11 @@ foo
 
 ## Async and wait
 
-# More
 
-## References
+## Other References
 
+- https://github.com/getify/You-Dont-Know-JS/blob/master/this%20%26%20object%20prototypes/ch2.md
+- https://developers.google.com/web/fundamentals/primers/async-functions
 - http://es6katas.org/
 - http://ccoenraets.github.io/es6-tutorial/
 - http://hacks.mozilla.or.kr/category/es6-in-depth/
