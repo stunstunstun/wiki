@@ -632,7 +632,9 @@ Unless you've got a strong reason to use array defaults with array destructuring
 
 ## Class
 
-## Super and Extends
+#### Constructor
+
+#### Super and Extends
 
 <br>
 

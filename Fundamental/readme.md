@@ -39,14 +39,6 @@
 ](http://httpwg.org/specs/rfc7540.html)
 - [더 빠른 웹을 위해 HTTP/2](https://www.slideshare.net/eungjun/http2-40582114)
 
-#### Blockchain
-
-- 블록체인 시작하기
-- 블록체인 이해하기
-- 블록체인 구현하기
-
-> https://github.com/codechain-edu/minichain
-
 #### Blah-Blah
 
 - [4년간의 개인 기술 블로그 운영 회고하기](https://github.com/stunstunstun/awesome-wiki/blob/master/Fundamental/blahblah-writing-as-programmer.md)
