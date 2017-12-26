@@ -1,10 +1,12 @@
 ## Overview
 
-#### SPAs
+#### Web Fundamentals
 
 - [HTML5 History API](https://developer.mozilla.org/en-US/docs/Web/API/History_API)
 - [Ajax와 CORS](https://developer.mozilla.org/ko/docs/Web/HTTP/Access_control_CORS)
 - [Debugging JavaScript in WebStorm and Chrome](https://www.youtube.com/watch?v=a-IsnxZpRrQ)
+- [Google Web Fundamentals](https://developers.google.com/web/fundamentals/)
+- [Google Web Updates](https://developers.google.com/web/updates/2017/)
 
 #### React
 
@@ -30,8 +32,6 @@
 - https://github.com/elgris/microservice-app-example
 
 ## Node.js Environments
-
-- http://devdocs.io/
 
 #### Prerequisite
 
