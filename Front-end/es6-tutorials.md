@@ -632,9 +632,74 @@ Unless you've got a strong reason to use array defaults with array destructuring
 
 ## Class
 
-#### Constructor
+Class is a mirage over prototypal inheritance!
 
-#### Super and Extends
+#### Class is just function
+
+ES6에서 Class를 지원한다고 해서 JavaScript가 Object-oriented를 지향하는 언어로 변한 것은 아니다. Class를 사용해도 여전히 JavaScript의 객체는 Function 이며 Class는 이를 숨기고 쉽게 구현할 수 있도록 도와주는 신기루일 뿐이다.
+
+```javascript
+class Dessert {
+  constructor(calories = 250) {
+    this.calories = calories;
+  }
+}
+
+class IceCream extends Dessert {
+  constructor(flavor, calories, toppings = []) {
+    super(calories);
+    this.flavor = flavor;
+    this.toppings = toppings;
+  }
+  addTopping(topping) {
+    this.toppings.push(topping);
+  }
+}
+
+const choco = new IceCream('sweet', 100, ['choco'])
+console.log(typeof IceCream); // function
+console.log(choco);
+console.log(choco.toString());
+console.log(typeof choco);
+console.log(choco.__proto__);
+console.log(choco instanceof IceCream);
+console.log(choco instanceof Dessert);
+```
+
+```
+IceCream { calories: 100, flavor: 'sweet', toppings: [ 'choco' ] }
+[object Object]
+object
+IceCream {}
+true
+true
+```
+
+## Benefits of classes
+
+`Less setup`
+
+There's a lot less code that you need to write to create a function
+
+`Clearly defined constructor function`
+
+Inside the class definition, you can clearly specify the constructor function.
+
+`Everything's contained`
+
+All code that's needed for the class is contained in the class declaration. Instead of having the constructor function in one place, then adding methods to the prototype one-by-one, you can do everything all at once!
+
+#### `super` must be called before `this`
+
+```javascript
+class Apple {}
+class GrannySmith extends Apple {
+  constructor(tartnessLevel, energy) {
+    this.tartnessLevel = tartnessLevel; // `this` before `super` will throw an error!
+    super(energy); 
+  }
+}
+```
 
 <br>
 
@@ -642,7 +707,7 @@ Unless you've got a strong reason to use array defaults with array destructuring
 
 <br/>
 
-# Advanced
+# Professional Developer-fu
 
 ## Promises
 
