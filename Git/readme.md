@@ -10,13 +10,13 @@
 ## Articles
 
 - [Git Flow 와 자주 사용하는 명령어들](..master/Git/git-commands.md)
-- [소소한 GitHub Tips](../master/Git/github-tips.md)
+- [소소한 GitHub Tips](../../master/Git/github-tips.md)
 - Jenkins를 통해 GitHub PR시에 자동으로 빌드하자
 
 ## GitHub Page
 
-- [Github Page와 Hexo를 통해 30분만에 기술 블로그 만들기](../master/Git/github-pages-and-hexo.md)
-- [Github Pages에 Custom Domain 적용하기](../master/Git/github-pages-and-custom-domain.md)
+- [Github Page와 Hexo를 통해 30분만에 기술 블로그 만들기](../../master/Git/github-pages-and-hexo.md)
+- [Github Pages에 Custom Domain 적용하기](master/Git/github-pages-and-custom-domain.md)
 
 ## Useful GitHub Plugins
 

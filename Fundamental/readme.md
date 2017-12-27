@@ -6,7 +6,7 @@
 - Product의 소스코드를 공개하고 있는 놀라운 저장소 모음
 - Deep Learning 학습 자료 모음
 - [RSA를 이용한 암호화와 서명](https://github.com/stunstunstun/awesome-wiki/blob/master/Fundamental/encryption-with-rsa.md)
-- [정규 표현식 쉽게 시작하기](../master/Fundamental/awesome-regular-expression.md)
+- [정규 표현식 쉽게 시작하기](../../master/Fundamental/awesome-regular-expression.md)
 
 #### Data Structures & Algorithms
 
