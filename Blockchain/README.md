@@ -16,12 +16,19 @@
 
 ## Articles
 
-- 블록체인 이론
-- 블록체인 시작하기
-- 블록체인 이해하기
-- 블록체인 구현하기
+#### 시작하기
+
+#### 질문하기
+
+#### 구현하기
+
+- [A blockchain implementation in 200 lines of code](https://github.com/lhartikk/naivechain)
+- [pyethereum](https://github.com/ethereum/pyethereum)
 
 ## References
 
 - https://www.blockchain.com/
 - https://github.com/codechain-edu/minichain
+- https://www.transifex.com/bitcoinbook/mastering-bitcoin/dashboard/
+- https://github.com/openblockchains/awesome-blockchains
+- https://github.com/btomashvili/awesome-ethereum
