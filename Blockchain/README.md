@@ -10,6 +10,7 @@
 - [The first steps](https://lisk.io/get_started)
 - [Lisk Documentation](https://docs.lisk.io/docs)
 - [Lisk GitHub](https://github.com/LiskHQ)
+- [List Blogs](https://blog.lisk.io/)
 - [List Careers](https://lisk.io/careers)
 - [Lastest Transactions](https://explorer.lisk.io/)
 
