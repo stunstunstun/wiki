@@ -147,14 +147,8 @@ map auto_home    0Bi    0Bi    0Bi   100%       0                   0  100%   /h
 
 ```bash
 $ du -hs *
-808M    clove
-111M    HostAgent_KR
-0       l7check
-3.6G    naver
+111M    bin
 8.0K    scripts
-4.0K    set_oracleclient.sh
-4.0K    set_webapps.sh
-36M     watchBiz
 ```
 
 ## Files
@@ -201,6 +195,13 @@ $ find ./ -type f -name '*.sh'
 
 ```bash
 $ tail -f catalina.out
+```
+
+```bash
+$ ls -al | wc -l
+100
+$ find ./ -type f -name '*.log' | wc -l
+295
 ```
 
 ## cp
@@ -265,14 +266,38 @@ $ free -m
 
 ## Network
 
+## IP Address
+
+```bash
+$ ifconfig eth0
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.123.456.789  netmask 255.255.252.0  broadcast 0.0.0.0
+        ether 02:42:0a:71:89:e3  txqueuelen 0  (Ethernet)
+        RX packets 372612  bytes 48984396 (46.7 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 10954  bytes 2831331 (2.7 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+```
+
 #### 시스템에서 운영중인 Port 확인하기
 
 ```bash
 $ netstat -nap | grep LISTEN | grep -i :80
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      -
+$ 
 ```
 
+grep을 AND, OR 조건은 아래와 같이 표현한다.
+
 ```bash
-$ sudo lsof -i -n -P | grep TCP | grep :80
+$ netstat -na | grep LISTEN | grep -e :80 -e :443
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN
+tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN
+```
+
+
+```bash
+$ sudo lsof -i -n -P | grep TCP | grep :27017
 ```
 
 #### TIME_WAIT Socket이 서비스에 미치는 영향
