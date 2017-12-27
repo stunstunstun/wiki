@@ -20,7 +20,7 @@ description: ES6 한 눈에 살펴보기
 
 - Syntax
     - [Variables](#variables)
-    - [Template Literals](#template-Literals)
+    - [Template Literals](#template-literals)
     - [Array](#array)
     - [Destructuring](#destructuring)
     - [Object literal shorthand](#object-literal-shorthand)
@@ -32,10 +32,13 @@ description: ES6 한 눈에 살펴보기
   - [this and Arrow Functions](#this-and-arrow-functions)
   - [Default Functions Parameters](#default-functions-parameters)
   - [Class](#class)
-  - [Super and Extends](#super-and-extends)
 - Built-ins
-- Advanced
-	- [Promises](#promises)
+  - [Symbols](#symbols)
+  - [Iterable Protocols](#iterable-protocols)
+  - [Sets](#sets)
+  - [Maps](#maps)
+  - [Promises](#promises)
+- Professional Developer-fu
 	- [Async and wait](#async-and-wait)
 
 <br/>
@@ -675,7 +678,7 @@ true
 true
 ```
 
-## Benefits of classes
+#### Benefits of classes
 
 `Less setup`
 
@@ -705,9 +708,30 @@ class GrannySmith extends Apple {
 
 # Built-ins
 
-<br/>
+We'll explore the latest batch of new built-ins provided in ES6. We now have sets, maps, promises and a whole new bunch of other built-ins at our disposal.
 
-# Professional Developer-fu
+It's taken a while for JavaScript to catch up, but these built-ins make it much easier for us to execute tasks that were once more difficult in earlier versions of language.
+
+As you go through this lesson you'll see how these new built-ins are structured, how they work and when it's the most appropriate time to use them.
+
+To get started, let's kick it off with Symbols!
+
+## Symbols
+
+Symbols는 ES6에 새롭게 추가된 기본형(Primitive data type)이다. ES6 이전에는 아래의 기본형을 제공해 왔다.
+
+- numbers
+- strings
+- booleans
+- null
+- undefined
+
+
+## Iterable Protocols
+
+## Sets
+
+## Maps
 
 ## Promises
 
@@ -757,8 +781,11 @@ foo
 0
 ```
 
-## Async and wait
+<br/>
 
+# Professional Developer-fu
+
+## Async and wait
 
 ## Other References
 

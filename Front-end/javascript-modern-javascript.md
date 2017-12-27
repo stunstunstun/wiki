@@ -1,6 +1,6 @@
 ---
-title: jQuery를 넘어서 JavaScript의 개발 생태계는 어떻게 발전해 왔을까?
-date: 2017-10-30 11:54:07
+title: jQuery를 넘어서 JavaScript의 생태계는 어떻게 발전해 왔을까?
+date: 2018-01-02 11:54:07
 categories: front-end
 ---
 
