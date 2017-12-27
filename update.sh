@@ -1,4 +1,6 @@
 #!/bin/bash
 
-git add . && git commit -m 'Update Contents'
+DEFAULT=document
+CATEGORY=${1:-$DEFAULT}
+git add . && git commit -m "Update $CATEGORY contents"
 git push -u origin master
