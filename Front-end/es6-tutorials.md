@@ -789,6 +789,7 @@ foo
 
 ## Other References
 
+- http://exploringjs.com/es6/index.html
 - http://exploringjs.com/es6/ch_arrays.html
 - https://github.com/getify/You-Dont-Know-JS/blob/master/this%20%26%20object%20prototypes/ch2.md
 - https://developers.google.com/web/fundamentals/primers/async-functions
