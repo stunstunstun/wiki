@@ -25,6 +25,10 @@
 - [A blockchain implementation in 200 lines of code](https://github.com/lhartikk/naivechain)
 - [pyethereum](https://github.com/ethereum/pyethereum)
 
+#### 암호학
+
+- https://www.udacity.com/course/applied-cryptography--cs387
+
 ## References
 
 - https://www.blockchain.com/
