@@ -61,28 +61,33 @@
 
 ## Articles
 
-#### JavaScript
+#### JavaScript 시작하기
 
-- jQuery를 넘어서 JavaScript의 생태계는 어떻게 발전해 왔을까?
+- Primitive data types
+- Bit operators
+- 십진수를 팔진수로 변환하는 함수
+- JavaScript에서 정확하게 부동 소수점 계산하기
+- String과 ASCII, Unicode 다루기 그리고 ArrayBuffer에 관해서
+- JavaScript를 통해 LRU 캐싱 알고리듬 구현하기
+- JavaScript를 통해 파일을 읽어들여 특정 키의 개수를 카운팅하는 함수
 - Scope와 Strict Mode
-- JavaScript의 ArrayBuffer와 String
-- `fetch()`를 소개합니다
 
 #### 일목요연 ES6
 
+- jQuery를 넘어서 JavaScript의 생태계는 어떻게 발전해 왔을까?
 - ES6 시작하기
 - Variables
 - Template Literals
 - Array
 - Destructuring
+- `fetch()`를 소개합니다
 
 #### DevOps
 
 - [Node의 실행 환경을 지탱하는 도구들](../../master/Front-end/node-environments.md)
 - [Yarn 톺아보기](../../master/Front-end/node-yarn-tutorials.md)
-- Webpack 시작하기
-- 프로젝트와 Webpack 통합하기
-- TDD로 시작하는 Node.js, Express
+- TDD로 시작하는 Node.js
+- Webpack으로 효율적으로 Front-end 리소스 빌드하기
 - Integration with Jenkins CI
 
 #### Front-end
@@ -95,9 +100,9 @@
 
 - Node.js는 어떻게 동작하는가?
 - Node.js의 V8의 가바지 컬렉션
-- Node.js의 프로세스 관리 도구 PM2
+- Node.js, Koa.js 프로젝트의 테스트 환경 구축
+- Node.js 애플리케이션 배포하기, Node의 프로세스 관리 도구 PM2
 - Node.js 애플리케이션 모니터링을 위한 CPU, 메모리 프로파일링
-- Koa.js를 이용한 웹 애플리케이션 개발
 - Koa.js Fork부터 Contribute까지
 
 #### Upcoming
