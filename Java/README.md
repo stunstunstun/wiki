@@ -1,6 +1,6 @@
-## Contents
+## Articles
 
-#### Posting
+#### Basic
 
 - [자바 I/O에 대한 이야기](https://github.com/stunstunstun/awesome-wiki/blob/master/Java/java-basic-io.md)
 - [자바 Object 클래스](https://github.com/stunstunstun/awesome-wiki/blob/master/Java/java-basic-object-class.md)
@@ -42,7 +42,7 @@
 
 ## Java Documents
 
-문제의 해결 능력을 위해서는 `Google Search` 또는 `Stack Over Flow`를 통해 단편적으로도 해결 가능하겠지만, 실무 경험이 있는 Java Developer라면 Oracle에서 제공하고 있는 공식 문서를 참고하기를 바란다.
+문제의 해결을 위해 `Google` 또는 `Stack Over Flow`를 참고하는 것도 가능하지만, 실무 경험을 탄탄하게 쌓고자하는 개발자라면 Oracle에서 제공하는 공식 문서를 참고하는 것이 더욱 유용할 것이다.
 
 #### Java Tutorials Learning Paths
 - http://docs.oracle.com/javase/tutorial/tutorialLearningPaths.html)

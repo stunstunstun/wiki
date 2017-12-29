@@ -3,14 +3,13 @@
 #### Basic
 
 - 프로그래밍 학습자료가 풍부한 놀라운 웹사이트 모음
-- Product의 소스코드를 공개하고 있는 놀라운 저장소 모음
-- Deep Learning 학습 자료 모음
+- Real world의 프로젝트 코드를 공개하고 있는 놀라운 저장소 모음
 - [RSA를 이용한 암호화와 서명](https://github.com/stunstunstun/awesome-wiki/blob/master/Fundamental/encryption-with-rsa.md)
 - [정규 표현식 쉽게 시작하기](../../master/Fundamental/awesome-regular-expression.md)
 
 #### Data Structures & Algorithms
 
-- [알고리즘 학습 전략]()
+- [알고리즘 학습 전략](../../master/Fundamental/algorithms-learning-strategy.md)
 - [이진 탐색 알고리즘](https://github.com/stunstunstun/awesome-wiki/blob/master/Fundamental/algorithms-binary-search.md)
 - [피보나치 수열과 동적 프로그래밍](https://github.com/stunstunstun/awesome-wiki/blob/master/Fundamental/algorithms-fibo-and-dynamic-programming.md)
 

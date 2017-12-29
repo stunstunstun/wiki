@@ -18,4 +18,5 @@
 
 ## Useful GitHub Plugins
 
-- Integration with Codecov
+- Github Webhooks 활용하기
+- Coveralls를 통해 Coverage 리포트 효율적으로 확인하기
