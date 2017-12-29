@@ -718,7 +718,7 @@ To get started, let's kick it off with Symbols!
 
 ## Symbols
 
-Symbols는 ES6에 새롭게 추가된 기본형(Primitive data type)이다. ES6 이전에는 아래의 기본형을 제공해 왔다.
+ES6 이전에는 아래의 기본형을 제공해 왔다. Symbols는 ES6에 새롭게 추가된 기본형(Primitive data type)이다.
 
 - numbers
 - strings
@@ -726,8 +726,50 @@ Symbols는 ES6에 새롭게 추가된 기본형(Primitive data type)이다. ES6 
 - null
 - undefined
 
+A symbol is a unique and immutable data type that is often used to identify object properties.
+
+To create a symbol, you write `Symbol()` with an optional string as its description.
+
+```javascript
+const sym1 = Symbol('apple');
+console.log(sym1);
+
+const sym2 = Symbol('banana');
+const sym3 = Symbol('banana');
+console.log(sym2 === sym3);     // false
+```
+
+```javascript
+const bowl = {
+  'apple': { color: 'red', weight: 136.078 },
+  'banana': { color: 'yellow', weight: 183.151 },
+  'orange': { color: 'orange', weight: 170.097 },
+  'banana': { color: 'yellow', weight: 176.845 }
+};
+console.log(bowl);                  // Object {apple: Object, banana: Object, orange: Object}
+console.log(Object.entries(bowl));  // 3
+
+
+const bowl2 = {
+  [Symbol('apple')]: { color: 'red', weight: 136.078 },
+  [Symbol('banana')]: { color: 'yellow', weight: 183.15 },
+  [Symbol('orange')]: { color: 'orange', weight: 170.097 },
+  [Symbol('banana')]: { color: 'yellow', weight: 176.845 }
+};
+console.log(bowl2)
+console.log(Object.getOwnPropertySymbols(bowl2).length);
+```
+
+> Object {Symbol(apple): Object, Symbol(banana): Object, Symbol(orange): Object, Symbol(banana): Object}
+> 4
+
+#### Enum patterns with Symbols
+
+- http://2ality.com/2016/01/enumify.html
 
 ## Iterable Protocols
+
+
 
 ## Sets
 
@@ -789,6 +831,7 @@ foo
 
 ## Other References
 
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures
 - https://github.com/getify/You-Dont-Know-JS/blob/master/this%20%26%20object%20prototypes/ch2.md
 - https://developers.google.com/web/fundamentals/primers/async-functions
 - http://es6katas.org/

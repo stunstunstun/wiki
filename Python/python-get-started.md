@@ -162,7 +162,7 @@ class TestArray(unittest.TestCase):
 
 #### Walking Skeleton
 
-<img src='http://blog.codeclimate.com/images/posts/skeleton.gif' width='500' />
+<img src='https://d341kum51qu34d.cloudfront.net/images/posts/skeleton-83d0cd49.gif' width='500' />
 
 > http://alistair.cockburn.us/Walking+skeleton
 

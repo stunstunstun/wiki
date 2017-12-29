@@ -96,7 +96,7 @@ Java는 이렇게 애플릿이 쇠퇴하였지만 여전히 서버측 애플리�
 
 #### 스프링 프레임워크
 
-<img src='http://docs.spring.io/spring/docs/current/spring-framework-reference/html/images/spring-overview.png' />
+<img src='https://docs.spring.io/spring/docs/current/spring-framework-reference/images/spring-overview.png' />
 
 스프링은 로드 존슨(Rod Johnson)이 2002년에 출판한 저서 Expert One-on-One J2EE Design and Development에서 선보인 소스 코드를 시작으로 점점 발전하게 되었다. 2003년 6월에 최초로 아파치 라이선스 2.0으로 공개되었다.
 
