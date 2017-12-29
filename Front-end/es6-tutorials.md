@@ -831,12 +831,8 @@ foo
 
 ## Other References
 
-<<<<<<< HEAD
-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures
-=======
 - http://exploringjs.com/es6/index.html
 - http://exploringjs.com/es6/ch_arrays.html
->>>>>>> 47c7a9226be00f8a182df3ef8e83ed03206915de
 - https://github.com/getify/You-Dont-Know-JS/blob/master/this%20%26%20object%20prototypes/ch2.md
 - https://developers.google.com/web/fundamentals/primers/async-functions
 - http://es6katas.org/
