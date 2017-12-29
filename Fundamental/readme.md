@@ -10,7 +10,7 @@
 
 #### Data Structures & Algorithms
 
-- [알고리즘 학습 전략](https://github.com/stunstunstun/awesome-wiki/blob/master/Fundamental/algorithmsalgorithms-learning-strategy.md)
+- [알고리즘 학습 전략]()
 - [이진 탐색 알고리즘](https://github.com/stunstunstun/awesome-wiki/blob/master/Fundamental/algorithms-binary-search.md)
 - [피보나치 수열과 동적 프로그래밍](https://github.com/stunstunstun/awesome-wiki/blob/master/Fundamental/algorithms-fibo-and-dynamic-programming.md)
 
