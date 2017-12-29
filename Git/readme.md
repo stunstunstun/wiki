@@ -1,4 +1,4 @@
-## Git Overview
+## To Get Started Git
 
 - [Git Flight Rules](https://github.com/k88hudson/git-flight-rules)
 - [An Introduction Git and GitHub](https://www.youtube.com/watch?v=MJUJ4wbFm_A)
@@ -14,7 +14,6 @@
 - [Git Flow 와 자주 사용하는 명령어들](../../master/Git/git-commands.md)
 - [소소한 GitHub Tips](../../master/Git/github-tips.md)
 - [GitHub Webhook and CI](../../master/Git/github-webhook-and-ci.md)
-- Jenkins를 통해 GitHub PR시에 자동으로 빌드하자
 
 ## Useful GitHub Plugins
 

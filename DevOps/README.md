@@ -15,6 +15,9 @@
 - [Mac에서는 Homebrew를 통해 패키지를 설치하자](https://github.com/stunstunstun/awesome-wiki/blob/master/DevOps/devops-get-started-homebrew.md)
 - [Mac환경에서 Gradle기반의 Java개발환경 준비하기](https://github.com/stunstunstun/awesome-wiki/blob/master/DevOps/devops-java-programming-environment.md)
 - [빌드 도구를 모르면 생기는 재앙들](https://github.com/stunstunstun/awesome-wiki/blob/master/DevOps/devops-build-tool.md)
+- Jenkins Pipeline 만들기
+- GitHub Pull Request 생성시 Jenkins에서 지속적으로 빌드하기
+- Jenkins Blue Ocean으로 지속적으로 배포하기
 
 #### API Design
 

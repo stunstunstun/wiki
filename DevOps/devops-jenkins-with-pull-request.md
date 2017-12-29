@@ -1,8 +1,8 @@
 ---
-title: Jenkins를 통해 GitHub PR시 자동으로 빌드하기
-date: 2017-08-26 15:14:40
+title: GitHub Pull Request 생성시 Jenkins에서 지속적으로 빌드하기
 desc: GitHub 활용하기
-categories: git
+date: 2018-02-20 13:37:31
+categories: devops
 ---
 
 QA(Quality Assurance)를 위한 CI서버. QA는 아래와 같은 내용을 포함합니다.
@@ -51,3 +51,8 @@ QA(Quality Assurance)를 위한 CI서버. QA는 아래와 같은 내용을 포�
 $ yum install make
 $ yum install gcc gcc-c++ kernel-devel
 ```
+
+## References
+
+- https://jenkins.lisk.io/job/lisk-core/
+- https://go.cloudbees.com/docs/cloudbees-documentation/cje-user-guide/index.html#github-branch-source
