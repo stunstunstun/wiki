@@ -1,6 +1,6 @@
 ---
-title: 유용한 리눅스 명령어 시나리오
-date: 2018-01-02 15:24:49
+title: 시스템 운영에 유용한 리눅스 명령 시나리오
+date: 2018-01-07 15:24:49
 categories: devops
 ---
 
@@ -234,11 +234,21 @@ $ cat ~/repository/README.md
 ## Resources
 
 ```bash
-$ ps -ef | grep -i node
+$ top
 ```
 
 ```bash
-$ top
+$ ps -ef | grep -i mongod
+  501 31788     1   0  4:09AM ttys001    0:00.92 mongod --dbpath /data/db
+  501 31795 31619   0  4:10AM ttys001    0:00.00 grep -i mongod
+```
+
+```bash
+$ kill -9 31788
+```
+
+```
+$ pkill -f mongod -9
 ```
 
 #### CPU Load average
