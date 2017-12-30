@@ -45,7 +45,7 @@ Hello World!
 
 ## TDD로 Python 시작하기
 
-만약 파이썬이 처음이라면 프로젝트를 구성하고 파이썬을 더욱 유용하게 활용할 수 있도록 아래의 글을 참고하도록 하자. 글을 통해 구성한 프로젝트의 소스코드는 GitHub 링크를 첨부하였다.
+만약 파이썬이 처음이라면 TDD를 통해 프로젝트를 구성하고 파이썬을 더욱 멋지게 활용할 수 있는 아래의 글을 참고하도록 하자. 프로젝트의 소스코드는 GitHub링크를 아래에 첨부하였다. 도움이 될 듯하다면 ★ Star를 누르는 센스도 잊지 말자!
 
 - [시작하기](https://www.holaxprogramming.com/2017/06/15/python-get-started/)
 - [unittest와 함께하는 파이썬 테스트](https://www.holaxprogramming.com/2017/06/17/python-with-test/)
