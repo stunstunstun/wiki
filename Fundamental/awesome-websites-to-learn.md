@@ -4,15 +4,19 @@
 #### MOCC
 
 - [TED](http://www.ted.com/topics/technology)
-- [Udemy](https://www.udemy.com)
 - [Coursera](https://www.coursera.org/)
 - [Udacity](https://www.udacity.com)
+- [Udemy](https://www.udemy.com)
 
-#### Courses
+#### 국내 Courses
 
 - [생활코딩 WEBn](https://opentutorials.org/course/3083)
 - [구름 EDU](https://edu.goorm.io/)
 - [엘리스 아카데미](https://academy.elice.io/)
+- [코드잇](http://www.codeit.kr/)
+
+#### 해외 Courses
+
 - [HTML & CSS Basic Courses](https://www.codeschool.com/courses/front-end-foundations)
 - [Free Code Camp](https://www.freecodecamp.com/challenges/learn-how-free-code-camp-works)
 - [Free Code Camp Online Courses](https://medium.freecodecamp.com/438-free-online-programming-computer-science-courses-you-can-start-in-may-aa316e4195fc)
@@ -43,15 +47,13 @@
 - [CS101](https://web.stanford.edu/class/cs101/)
 - [CS106A](https://see.stanford.edu/Course/CS106A)
 - [CS212](https://classroom.udacity.com/courses/cs212/)
-
-
-#### Problem Solve
-
-- [Hacker Rank](https://www.hackerrank.com/)
-- [LeetCode](https://leetcode.com)
-- [Codillity](https://codility.com/programmers/)
-- [IDeserve](http://www.ideserve.co.in/#dynamicProgramming)
-- [개발을 잘하고 싶어요](https://www.slideshare.net/deview/ss-58739254)
+- [OS](https://classroom.udacity.com/courses/ud923)
+- [Advanced OS](https://www.udacity.com/course/advanced-operating-systems--ud189)
+- [Applied Cryptography](https://www.udacity.com/course/applied-cryptography--cs387)
+- [CODE - 컴퓨터 아키텍쳐, 저 수준의 프로그래밍 언어의 대한 이해](http://www.yes24.com/24/goods/16667186?scode=032&OzSrank=1)
+- [Network - 성공과 실패를 결정하는 1% 네트워크 원리](http://www.yes24.com/24/goods/17286237?scode=032&OzSrank=1)
+- [HTTP - 완벽 가이드](http://www.yes24.com/24/goods/15381085?scode=032&OzSrank=1)
+- [DB - 데이터베이스 설계와 구축](http://www.yes24.com/24/goods/3000991?scode=032&OzSrank=2)
 
 #### Advanced Courses
 
@@ -60,6 +62,14 @@
 - [Python Data Structures](https://www.coursera.org/learn/python-data/home/welcome)
 - [Algorithmic Toolbox](https://www.coursera.org/learn/algorithmic-toolbox/home/welcome)
 - [Computer Architecture](https://www.coursera.org/learn/comparch)
+
+#### Problem Solve
+
+- [Hacker Rank](https://www.hackerrank.com/)
+- [LeetCode](https://leetcode.com)
+- [Codillity](https://codility.com/programmers/)
+- [IDeserve](http://www.ideserve.co.in/#dynamicProgramming)
+- [개발을 잘하고 싶어요](https://www.slideshare.net/deview/ss-58739254)
 
 #### Good Stuffs
 
