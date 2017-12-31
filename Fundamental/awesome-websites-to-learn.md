@@ -8,23 +8,30 @@
 - [Coursera](https://www.coursera.org/)
 - [Udacity](https://www.udacity.com)
 
-#### Online Courses
+#### Courses
 
-- [생활코딩 WEB1](https://opentutorials.org/module/3097)
+- [생활코딩 WEBn](https://opentutorials.org/course/3083)
+- [구름 EDU](https://edu.goorm.io/)
+- [엘리스 아카데미](https://academy.elice.io/)
 - [HTML & CSS Basic Courses](https://www.codeschool.com/courses/front-end-foundations)
 - [Free Code Camp](https://www.freecodecamp.com/challenges/learn-how-free-code-camp-works)
 - [Free Code Camp Online Courses](https://medium.freecodecamp.com/438-free-online-programming-computer-science-courses-you-can-start-in-may-aa316e4195fc)
-- [Free Ebooks](https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md)
 - [Problem Solving with Algorithms and Data Structures using Python](http://interactivepython.org/runestone/static/pythonds/index.html)
 - [Google C++ Basic Courses](https://developers.google.com/edu/c++/)
+- [Google Learn How to Develop the Next Generation of Applications for the Web](https://developers.google.com/web/)
 
-#### Data Structures & Algorithms Practices
+#### Tutorials
 
-- [Hacker Rank](https://www.hackerrank.com/)
-- [LeetCode](https://leetcode.com)
-- [Codillity](https://codility.com/programmers/)
-- [IDeserve](http://www.ideserve.co.in/#dynamicProgramming)
-- [개발을 잘하고 싶어요](https://www.slideshare.net/deview/ss-58739254)
+- [HTML5 Tutorials](https://www.w3schools.com/html/)
+- [CSS3 Layout Tutorials](http://ko.learnlayout.com/)
+- [Codecademy Tutorials](https://www.codecademy.com/learn/all)
+- [Code Tutorials](https://code.tutsplus.com/tutorials)
+- [Advanced Tutorials](https://semaphoreci.com/community/tutorials)
+
+#### Playground
+
+- [repl.it](https://repl.it/languages/)
+- [codepen.io](https://codepen.io/pen)
 
 ## Computer Science
 
@@ -37,6 +44,14 @@
 - [CS106A](https://see.stanford.edu/Course/CS106A)
 - [CS212](https://classroom.udacity.com/courses/cs212/)
 
+
+#### Problem Solve
+
+- [Hacker Rank](https://www.hackerrank.com/)
+- [LeetCode](https://leetcode.com)
+- [Codillity](https://codility.com/programmers/)
+- [IDeserve](http://www.ideserve.co.in/#dynamicProgramming)
+- [개발을 잘하고 싶어요](https://www.slideshare.net/deview/ss-58739254)
 
 #### Advanced Courses
 
@@ -58,6 +73,7 @@
 - [Composing Programs](http://composingprograms.com/)
 - [Shell Workshop](https://www.udacity.com/course/shell-workshop--ud206)
 - [Deep Learning](https://www.facebook.com/dgtgrade/posts/1340177956041067?hc_location=ufi)
+- [Free Ebooks](https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md)
 
 ## Best Practices
 
@@ -89,19 +105,6 @@
 - [Github Trends](https://github.com/trending)
 - [Zapier Engineering](https://zapier.com/engineering/)
 - [Josh Long's Blog](http://joshlong.com/)
-
-#### Tutorials
-
-- [HTML5 Tutorials](https://www.w3schools.com/html/)
-- [CSS3 Layout Tutorials](http://ko.learnlayout.com/)
-- [Codecademy Tutorials](https://www.codecademy.com/learn/all)
-- [Code Tutorials](https://code.tutsplus.com/tutorials)
-- [Advanced Tutorials](https://semaphoreci.com/community/tutorials)
-
-#### Playground
-
-- [repl.it](https://repl.it/languages/)
-- [codepen.io](https://codepen.io/pen)
 
 #### Github Repos
 
