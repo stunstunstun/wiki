@@ -183,26 +183,44 @@ Available versions:
   2.2.3
   2.7.13
 ...
-  3.6.1
+  3.6.3
 ```
 
 `지정한 버전의 파이썬 설치`
 
 ```
-$ pyenv install 3.6.1
+$ pyenv install 3.6.3
+```
+
+`.bash_profile에 환경 변수 설정 후 적용`
+
+pyenv를 설치하고 Python의 버전을 관리하면 패키지도 아래와 같은 `.pyenv` 폴더에서 관리하게 된다.
+
+```
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+```
+
+```bash
+$ source .bash_profile
+$ pip -V
+pip 9.0.1 from /Users/user/.pyenv/versions/3.6.3/lib/python3.6.3/site-packages
 ```
 
 `시스템에 설치된 버전 조회`
 
 ```
 $ pyenv versions
+*  system
+   3.6.3
 ```
 
 `지정한 버전을 시스템의 디폴트로 사용`
 
 ```
-$ pyenv global 3.6.1
+$ pyenv global 3.6.3
 $ python -V
+Python 3.6.3
 ```
 
 > https://github.com/pyenv/pyenv
