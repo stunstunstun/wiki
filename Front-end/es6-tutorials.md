@@ -34,7 +34,7 @@ description: ES6 한 눈에 살펴보기
   - [Class](#class)
 - Built-ins
   - [Symbols](#symbols)
-  - [Iterable Protocols](#iterable-protocols)
+  - [Iteration and Iterable Protocols](#iteration-and-iterable-protocols)
   - [Sets](#sets)
   - [Maps](#maps)
   - [Promises](#promises)
@@ -767,9 +767,118 @@ console.log(Object.getOwnPropertySymbols(bowl2).length);
 
 - http://2ality.com/2016/01/enumify.html
 
-## Iterable Protocols
+## Iteration and Iterable Protocols
 
+다음 단계로 넘어가기전 ES6의 새로운 프로토콜 둘을 살펴보려 한다. 비록 이 프로토콜들은 Built-in 스펙은 아니지만 ES6의 새로운 반복 개념을 이해하고 Symbols의 사용 사례를 위하여 꼭 이해해야 한다.
 
+The following values are iterable:
+
+- Arrays
+- Strings
+- Maps
+- Sets
+- DOM data structures (work in progress)
+
+<img src='http://exploringjs.com/es6/images/iteration----consumers_sources.jpg' />
+
+The idea of iterability is as follows.
+
+- Data consumers: JavaScript has language constructs that consume data. For example, for-of loops over values and the spread operator (...) inserts values into Arrays or function calls.
+
+- Data sources: The data consumers could get their values from a variety of sources. For example, you may want to iterate over the elements of an Array, the key-value entries in a Map or the characters of a string.
+
+It’s not practical for every consumer to support all sources, especially because it should be possible to create new sources (e.g. via libraries). Therefore, ES6 introduces the interface Iterable. Data consumers use it, data sources implement it:
+
+```typescript
+interface Iterable {
+    [Symbol.iterator]() : Iterator;
+}
+interface Iterator {
+    next() : IteratorResult;
+}
+interface IteratorResult {
+    value: any;
+    done: boolean;
+}
+```
+
+#### The Iterable Protocol
+
+```javascript
+const digits = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+for (const index in digits) {
+  console.log(digits[index]);
+}
+
+const arrayIterator = digits[Symbol.iterator]();
+for (const digit of arrayIterator) {
+  console.log(digit);
+}
+```
+
+`How it Works`
+
+In order for an object to be iterable, it must implement the iterable interface. If you come from a language like Java or C, then you’re probably familiar with interfaces, but for those of you who aren’t, that basically means that in order for an object to be iterable it must contain a default iterator method. This method will define how the object should be iterated.
+
+The iterator method, which is available via the constant [Symbol.iterator], is a zero arguments function that returns an iterator object. An iterator object is an object that conforms to the iterator protocol.
+
+#### The Iterator Protocol
+
+The iterator protocol is used to define a standard way that an object produces a sequence of values. What that really means is you now have a process for defining how an object will iterate. This is done through implementing the .next() method.
+
+`How it Works`
+
+An object becomes an iterator when it implements the `.next()` method. The `.next()` method is a zero arguments function that returns an object with two properties:
+
+- value : the data representing the next value in the sequence of values within the object
+- done : a boolean representing if the iterator is done going through the sequence of values
+  - If done is true, then the iterator has reached the end of its sequence of values.
+  - If done is false, then the iterator is able to produce another value in its sequence of values
+
+```javascript
+const digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+const arrayIterator = digits[Symbol.iterator]();
+
+console.log(arrayIterator.next()); // Object {value: 0, done: false}
+console.log(arrayIterator.next()); // Object {value: 1, done: false}
+console.log(arrayIterator.next()); // Object {value: 2, done: false}
+```
+
+```javascript
+const james = {
+  name: 'James',
+  height: `5'10"`,
+  weight: 185,
+  [Symbol.iterator]() {
+    let index = 0;
+    const that = this;
+    const keys = Object.keys(this);
+    const iterator = {
+      [Symbol.iterator]() {
+        return this;
+      },
+      next() {
+        if (index < keys.length) {
+          const key = keys[index++];
+          return { key, value: that[key], done: false };
+        } else {
+          return { value: undefined, done: true };
+        }
+      }
+    }
+    return iterator;
+  }
+};
+
+const iterator = james[Symbol.iterator]();
+
+console.log(iterator.next()); // { key: 'name', value: 'James', done: false }
+console.log(iterator.next()); // { key: 'height', value: '5\'10"', done: false }
+console.log(iterator.next()); // { key: 'weight', value: 185, done: false }
+console.log(iterator.next()); // { value: undefined, done: true }
+```
+
+> http://exploringjs.com/es6/ch_iteration.html
 
 ## Sets
 
