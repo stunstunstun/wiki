@@ -1,5 +1,5 @@
 ---
-title: Git Flow와 자주 사용하는 명령어들
+title: Git Flow와 자주 사용되는 Git 명령어들
 date: 2017-08-26 15:14:40
 desc: Git 시작하기
 categories: git
@@ -249,7 +249,7 @@ int b = 2;
 ```
 
 ```
-$ git commit -am 'Fixed conflicted issue'
+$ git commit -a -m 'Conclude merge'
 ```
 
 > merge 전에 변경 내용을 확인하는 방법
@@ -340,6 +340,32 @@ $ git log
 ```bash
 $ git push origin 0.1.0
 ```
+
+#### `gh-pages` 브랜치를 통해 정적 페이지 관리하기
+
+GitHub Repository를 운영하다 보면 비어 있는 브랜치를 생성해야할 때가 있다. REST API를 제공하는 프로젝트에서 자동으로 생성되는 API Documentation를 정적 페이지를 통해 제공하는 경우가 좋은 예이다.
+
+```bash
+$ cd /path/to/repo-name
+$ git symbolic-ref HEAD refs/heads/gh-pages
+$ rm .git/index
+$ git clean -fdx
+$ echo "My GitHub Page" > index.html
+$ git add .
+$ git commit -a -m "First pages commit"
+$ git push origin gh-pages
+```
+
+`git checkout -b gh-pages`를 통해 브랜치를 생성할 수도 있겠지만 이는 master 브랜치의 과거내역을 가지고 있음을 의미한다. 위와 같은 방법을 참고하면 `root branch`로 부터 과거 내역이 깔끔히 빈 새로운 브랜치를 생성할 수 있다.
+
+`gh-pages` 브랜치가 생성되면 아래의 경로를 통해서 정적 페이지에 접속할 수 있다.
+
+```
+http://<username>.github.io/<projectname>
+```
+
+
+> https://gist.github.com/ramnathv/2227408
 
 #### remote 서버를 변경해야 할 때
 
@@ -439,6 +465,7 @@ $ git config --local user.email "wjdsupj@gmail.com"
 ```
 
 > https://git-scm.com/docs/git-config
+ 
 
 ## 마치며
 
