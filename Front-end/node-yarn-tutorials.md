@@ -190,7 +190,7 @@ Yarn은 이 문제를 해결하고 시스템간에 일관적으로 패키지 버
 ...
 mongoose@^4.9.8:
   version "4.9.8"
-  resolved "https://npm.navercorp.com/mongoose/-/mongoose-4.9.8.tgz#ef64304231dc2455ab15a0c0cb6c149ce8c787bb"
+  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-4.9.8.tgz#ef64304231dc2455ab15a0c0cb6c149ce8c787bb"
   dependencies:
 ...
 ```
@@ -224,7 +224,7 @@ $ yarn upgrade
 ```
 mongoose@^4.9.8:
   version "4.13.6"
-  resolved "https://npm.navercorp.com/mongoose/-/mongoose-4.13.6.tgz#48102f0b0d797a9bd273e581eef16d0505ef3d79"
+  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-4.13.6.tgz#48102f0b0d797a9bd273e581eef16d0505ef3d79"
   dependencies:
 ...
 ```
