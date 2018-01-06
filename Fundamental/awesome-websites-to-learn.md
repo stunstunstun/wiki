@@ -31,10 +31,13 @@
 - [Codecademy Tutorials](https://www.codecademy.com/learn/all)
 - [Code Tutorials](https://code.tutsplus.com/tutorials)
 - [Advanced Tutorials](https://semaphoreci.com/community/tutorials)
+- [Devdocs](http://devdocs.io/)
 
 #### Playground
 
+- [c9.io](https://c9.io/holaxapps)
 - [repl.it](https://repl.it/languages/)
+- [coding.sh](http://coding.sh/)
 - [codepen.io](https://codepen.io/pen)
 
 ## Computer Science
