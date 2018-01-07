@@ -17,6 +17,8 @@ categories: front-end
 > 아래의 링크는 jQuery를 만든 John Resig의 jQuery를 만들게 된 계기에 대한 인터뷰이다.
 https://ko.khanacademy.org/computing/computer-programming/html-js-jquery/jquery-dom-access/a/history-of-jquery
 
+## TC39 프로세스
+
 ## 현재의 자바스크립트의 개발 환경은 어떨까?
 
 그렇다면 지금은 어떨까? 아래의 통계가 정확한 자료인지는 불분명하나 상위 10k의 사이트에서 jQuery를 사용하는 비율은 65%, 상위 1M의 사이트에서는 83%로 여전히 jQuery는 사랑받고 있는 Javascript Library 인듯 보인다.
@@ -141,6 +143,7 @@ webpack은 로더를 통해 scss의 전처리를 통해 css를 통합하여 만�
 
 ## References
 
+- http://ahnheejong.name/articles/ecmascript-tc39/
 - https://medium.com/@peterxjang/modern-javascript-explained-for-dinosaurs-f695e9747b70
 - https://nodejs.org/ko/about/
 - https://webpack.js.org/

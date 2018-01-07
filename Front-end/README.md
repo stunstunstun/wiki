@@ -61,17 +61,29 @@
 
 #### JavaScript 시작하기
 
-- JavaScript의 역사와 철학
+- [JavaScript의 역사와 철학](../../master/Front-end/javascript-more-modern.md)
 - Primitive data types
-- JavaScript의 Object 객체
 - Bit operators
+- JavaScript로 RSA 구현하기
 - 십진수를 팔진수로 변환하는 함수
 - JavaScript에서 정확하게 부동 소수점 계산하기
-- String과 ASCII, Unicode 다루기 그리고 ArrayBuffer에 관해서
-- JavaScript를 통해 LRU 캐싱 알고리듬 구현하기
+- ASCII, Unicode 그리고 ArrayBuffer, String에 관해서
 - JavaScript I/O 이야기
 - JavaScript를 통해 파일을 읽어들여 특정 키의 개수를 카운팅하는 함수
+- JavaScript를 통해 LRU 캐싱 알고리듬 구현하기
+
+#### Function
+
+- JavaScript에서의 함수
+- JavaScript의 Object
+- JavaScript의 객체지향 프로그래밍
+
+#### Scope와 Closure
+
+- Hoisting
 - Scope와 Strict Mode
+
+#### Functional Programming in JavaScripts
 
 #### 일목요연 ES6
 
@@ -88,12 +100,12 @@
 - [Node의 실행 환경을 지탱하는 도구들](../../master/Front-end/node-environments.md)
 - [Yarn 톺아보기](../../master/Front-end/node-yarn-tutorials.md)
 - TDD로 시작하는 Node.js
-- Integration with Jenkins CI
+- Continuous Integration with Jenkins
 
 #### Front-end
 
 - Pug를 통한 템플릿 개발
-- CSS는 Preprocessor가 왜 필요할까?
+- CSS 개발에 Preprocessor가 필요할까?
 - React 프로젝트의 테스트 환경 구축하기
 - Webpack으로 효율적으로 Front-end 리소스 빌드하기
 

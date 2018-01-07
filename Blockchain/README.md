@@ -4,6 +4,12 @@
 - [Mastering Bitcoin](https://www.safaribooksonline.com/library/view/mastering-bitcoin-2nd/9781491954379/)
 - [Bitcoin: A Peer-to-Peer Electronic Cash System](https://bitcoin.org/bitcoin.pdf)
 - [Bitcoin Developer Guide](https://bitcoin.org/en/developer-guide)
+- [이더리움 백서](https://github.com/ethereum/wiki/wiki/%5BKorean%5D-White-Paper)
+- [비트코인 논문](https://encodent.com/bitcoin)
+
+## Courses
+
+- [Cryptography courses](https://www.udacity.com/course/applied-cryptography--cs387)
 
 ## lisk.io
 
@@ -24,10 +30,7 @@
 
 - [A blockchain implementation in 200 lines of code](https://github.com/lhartikk/naivechain)
 - [pyethereum](https://github.com/ethereum/pyethereum)
-
-#### 암호학
-
-- https://www.udacity.com/course/applied-cryptography--cs387
+- [The original Bitcoin source code](http://www.bitcointrading.com/forum/bitcoin-clients/original-bitcoin-source-code-archives/)
 
 ## References
 
