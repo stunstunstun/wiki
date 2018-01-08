@@ -1,6 +1,6 @@
 ---
 title: 일목요연 ES6
-date: 2017-10-12 13:07:11
+date: 2018-01-20 13:07:11
 categories: front-end
 description: ES6 한 눈에 살펴보기
 ---
@@ -27,17 +27,19 @@ description: ES6 한 눈에 살펴보기
     - [Iteration](#iteration)
     - [Spread operator](#spread-operator)
     - [Rest Parameter](#rest-parameter)
-- Functions
+- Function
 	- [Arrow Functions](#arrow-functions)
   - [this and Arrow Functions](#this-and-arrow-functions)
   - [Default Functions Parameters](#default-functions-parameters)
   - [Class](#class)
-- Built-ins
+- Built-in
   - [Symbols](#symbols)
   - [Iteration and Iterable Protocols](#iteration-and-iterable-protocols)
   - [Sets](#sets)
   - [Maps](#maps)
   - [Promises](#promises)
+  - [Proxies](#proxies)
+  - [Generators](#generators)
 - Professional Developer-fu
 	- [Async and wait](#async-and-wait)
 
@@ -882,6 +884,8 @@ console.log(iterator.next()); // { value: undefined, done: true }
 
 ## Sets
 
+
+
 ## Maps
 
 ## Promises
@@ -938,8 +942,10 @@ foo
 
 ## Async and wait
 
-## Other References
+## References
 
+- https://classroom.udacity.com/courses/ud356
+- https://github.com/airbnb/javascript
 - http://exploringjs.com/es6/index.html
 - http://exploringjs.com/es6/ch_arrays.html
 - https://github.com/getify/You-Dont-Know-JS/blob/master/this%20%26%20object%20prototypes/ch2.md
@@ -948,3 +954,6 @@ foo
 - http://ccoenraets.github.io/es6-tutorial/
 - http://hacks.mozilla.or.kr/category/es6-in-depth/
 - http://www.datchley.name/es6-promises/
+- http://blog.jeonghwan.net/2016/07/19/babel.html
+
+  
