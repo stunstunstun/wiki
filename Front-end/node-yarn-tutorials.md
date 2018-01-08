@@ -70,10 +70,12 @@ $HOME/.nvm/versions/node/v8.9.0/bin/yarn
 
 #### yarn global
 
-이 명령은 패키지를 시스템 전역에서 설치, 업데이트, 삭제하는 것을 의미합니다. 패지키가 설치되는 경로를 지정할 수 있습니다.
+이 명령은 패키지를 시스템 전역에서 설치, 업데이트, 삭제하는 것을 의미합니다. `yarn config`를 통해 전역에서 설치되는 경로를 지정할 수 있습니다.
 
 ```bash
 $ yarn config set prefix ~/.yarn
+$ yarn global bin
+/Users/user/.yarn/bin
 $ yarn global add pm2 npm-check create-react-app
 ```
 
