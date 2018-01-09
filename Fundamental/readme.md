@@ -12,6 +12,8 @@
 - [알고리즘 학습 전략](../../master/Fundamental/algorithms-learning-strategy.md)
 - [이진 탐색 알고리즘](https://github.com/stunstunstun/awesome-wiki/blob/master/Fundamental/algorithms-binary-search.md)
 - [피보나치 수열과 동적 프로그래밍](https://github.com/stunstunstun/awesome-wiki/blob/master/Fundamental/algorithms-fibo-and-dynamic-programming.md)
+- [왜 Cache를 사용하는가?](https://charsyam.wordpress.com/2016/07/27/%EC%9E%85-%EA%B0%9C%EB%B0%9C-%EC%99%9C-cache%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%98%EB%8A%94%EA%B0%80/)
+
 
 #### OS
 
@@ -26,12 +28,18 @@
 - [Google Analytics 활용하기](https://github.com/stunstunstun/awesome-wiki/blob/master/Fundamental/data-analysis-google-analytics.md)
 - MongoDB 시작하기
 - MongoDB 이해하기
+- [MongoDB Postings](https://charsyam.wordpress.com/category/cloud/mongodb/)
+- [아주 심플한 검색엔진의 원리](https://www.slideshare.net/charsyam2/soma-search)
 - Elastic Search 시작하기
 - Elastic Search 이해하기
+
 
 #### HTTP
 
 - 인터넷은 어떻게 작동하는가?
+- DNS는 어떻게 동작하는가?
+- [IPv4 TCP Socket과 Listen에서 Accept까지](https://charsyam.wordpress.com/2018/01/09/%EC%9E%85-%EA%B0%9C%EB%B0%9C-ipv4-tcp-socket-listen-%EC%97%90%EC%84%9C-accept-%EA%B9%8C%EC%A7%80/)
+- [I don't know DNS Caching](https://charsyam.wordpress.com/category/cloud/)
 - [HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP)
 - HTTP 완벽 가이드
 - HTTP의 접근제한과 CORS 정책

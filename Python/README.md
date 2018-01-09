@@ -7,8 +7,7 @@
 - [파이썬 프로젝트의 구조](https://github.com/stunstunstun/awesome-wiki/blob/master/Python/python-project-structures.md)
 - [파이썬의 실행 환경을 지탱하는 도구들](https://github.com/stunstunstun/awesome-wiki/blob/master/Python/python-virtual-environments.md/)
 
-
-## Other Contents
+#### References
 
 - [Python3 Documents](https://docs.python.org/3/)
 - [Installing Jupyter Notebook](https://jupyter.readthedocs.io/en/latest/install.html)
