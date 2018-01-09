@@ -1,4 +1,4 @@
-## Overview
+## Contents
 
 #### Web Fundamentals
 
@@ -29,9 +29,7 @@
 - [Example microservice app](https://github.com/elgris/microservice-app-example)
 - [Node.js Best Practices](https://github.com/i0natan/nodebestpractices)
 
-## Node.js Environments
-
-#### Prerequisite
+#### Node.js Environments
 
 - `node`, `npm`, `nvm`, `yarn`
 - `jest`, `supertest`, `mocha`, `chai`, `sinon`, `nock`, `karma`, `jasmine`
@@ -39,14 +37,11 @@
 - `TypeScript`, `Flow`
 - `react`, `enzyme`
 - `webpack`, `gulp`, `run-sequence`
-
-#### Webapps
-
 - `expressjs`, `koajs`, `sd`, `dotenv`, `joi`, `log4js`
 - `requests`, `lodash`, `async`, `moment`,  `rxjs`
 - `browser-sync`, `nodemon`
 
-#### Database
+#### Integration with Databases
 
 - `mongoose`, `mongoose-mock`, `elasticsearch.js`
 
@@ -127,7 +122,7 @@
 - Push Notification
 - Web Payment
 
-## Blogs
+#### Geeks Blog
 
 - https://toddmotto.com/
 - https://medium.com/@mikeal
@@ -139,7 +134,7 @@
 - http://blog.jeonghwan.net/
 - http://dev-momo.tistory.com/
 
-#### +More
+#### References
 
 - [JavaScript Top 10 Articles - Sep](https://medium.mybridge.co/javascript-top-10-articles-for-the-past-month-v-sep-2017-168efb9a3b0f)
 - [JavaScript Top 10 Articles - Oct](https://medium.mybridge.co/javascript-top-10-articles-for-the-past-month-v-oct-2017-e51b3b1a34d2)
