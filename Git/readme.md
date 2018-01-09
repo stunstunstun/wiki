@@ -13,9 +13,4 @@
 - [Github Pages에 Custom Domain 적용하기](../../Git/github-page-and-custom-domain.md)
 - [Git Flow 와 자주 사용하는 명령어들](../../master/Git/git-commands.md)
 - [소소한 GitHub Tips](../../master/Git/github-tips.md)
-- [GitHub Webhook and CI](../../master/Git/github-webhook-and-ci.md)
 
-## Useful GitHub Plugins
-
-- Github Webhooks 활용하기
-- Coveralls를 통해 Coverage 리포트 효율적으로 확인하기
