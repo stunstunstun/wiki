@@ -2,16 +2,28 @@
 
 #### Overview
 
-- [Bitcoin and Cryptocurrency Technologies](https://www.coursera.org/learn/cryptocurrency)
-- [Mastering Bitcoin](https://www.safaribooksonline.com/library/view/mastering-bitcoin-2nd/9781491954379/)
-- [Bitcoin: A Peer-to-Peer Electronic Cash System](https://bitcoin.org/bitcoin.pdf)
-- [Bitcoin Developer Guide](https://bitcoin.org/en/developer-guide)
-- [이더리움 백서](https://github.com/ethereum/wiki/wiki/%5BKorean%5D-White-Paper)
 - [비트코인 논문](https://encodent.com/bitcoin)
+- [비토코인 코어 구현 분석](https://docs.google.com/presentation/d/13oPCbsaCj4kzGRYbGTTgsXbHsYktymu1tUWq8C6-JII/edit#slide=id.g2a718a35fd_0_0)
+- [이더리움 백서](https://github.com/ethereum/wiki/wiki/%5BKorean%5D-White-Paper)
 
 #### Courses
 
-- [Cryptography courses](https://www.udacity.com/course/applied-cryptography--cs387)
+- [Bitcoin and Cryptocurrency Technologies](https://www.coursera.org/learn/cryptocurrency)
+- [Applied Cryptography](https://www.udacity.com/course/applied-cryptography--cs387)
+
+#### 시작하기
+
+- [Mastering Bitcoin](https://www.safaribooksonline.com/library/view/mastering-bitcoin-2nd/9781491954379/)
+- [Bitcoin: A Peer-to-Peer Electronic Cash System](https://bitcoin.org/bitcoin.pdf)
+- [Bitcoin Developer Guide](https://bitcoin.org/en/developer-guide)
+
+#### 질문하기
+
+#### 구현하기
+
+- [The original Bitcoin source code](http://www.bitcointrading.com/forum/bitcoin-clients/original-bitcoin-source-code-archives/)
+- [A blockchain implementation in 200 lines of code](https://github.com/lhartikk/naivechain)
+- [pyethereum](https://github.com/ethereum/pyethereum)
 
 #### lisk.io
 
@@ -21,16 +33,6 @@
 - [List Blogs](https://blog.lisk.io/)
 - [List Careers](https://lisk.io/careers)
 - [Lastest Transactions](https://explorer.lisk.io/)
-
-#### 시작하기
-
-#### 질문하기
-
-#### 구현하기
-
-- [A blockchain implementation in 200 lines of code](https://github.com/lhartikk/naivechain)
-- [pyethereum](https://github.com/ethereum/pyethereum)
-- [The original Bitcoin source code](http://www.bitcointrading.com/forum/bitcoin-clients/original-bitcoin-source-code-archives/)
 
 #### References
 
