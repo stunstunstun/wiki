@@ -65,7 +65,7 @@
 - JavaScript로 RSA 구현하기
 - 십진수를 팔진수로 변환하는 함수
 - JavaScript에서 정확하게 부동 소수점 계산하기
-- ASCII, Unicode 그리고 ArrayBuffer, String에 관해서
+- [ASCII, Unicode 그리고 ArrayBuffer, String에 관해서](../../master/Front-end/javascript-array-buffer.md)
 - JavaScript I/O 이야기
 - JavaScript를 통해 파일을 읽어들여 특정 키의 개수를 카운팅하는 함수
 - JavaScript를 통해 LRU 캐싱 알고리듬 구현하기
@@ -83,7 +83,7 @@
 - Template Literals
 - Array
 - Destructuring
-- `fetch()`를 소개합니다
+- [fetch()를 소개합니다](https://developers.google.com/web/updates/2015/03/introduction-to-fetch)
 
 #### Functional Programming in JavaScripts
 

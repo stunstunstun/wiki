@@ -10,6 +10,7 @@
 #### CI, Tools
 
 - 유용한 리눅스 명령어 모음
+- [Bash 스크립트 작성시 Exit Codes 이해하기](http://bencane.com/2014/09/02/understanding-exit-codes-and-how-to-use-them-in-bash-scripts/)
 - [Learn Shell](http://www.learnshell.org/)
 - [Gradle은 정말 Maven보다 100배나 빠를까?](https://github.com/stunstunstun/awesome-wiki/blob/master/DevOps/devops-gradle-is-faster-than-maven.md)
 - [Mac에서는 Homebrew를 통해 패키지를 설치하자](https://github.com/stunstunstun/awesome-wiki/blob/master/DevOps/devops-get-started-homebrew.md)
