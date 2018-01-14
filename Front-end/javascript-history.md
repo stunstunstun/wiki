@@ -1,12 +1,11 @@
 ---
-title: jQuery를 넘어서 JavaScript의 생태계는 어떻게 발전해 왔을까?
-date: 2018-01-02 11:54:07
+title: JavaScript의 역사와 철학
+desc: jQuery를 넘어서 JavaScript의 생태계는 어떻게 발전해 왔을까?
+date: 2018-01-20 11:54:07
 categories: front-end
 ---
 
 이 문서는 개인적인 용도로 사용하기 위한 서비스인 [블라블라 테크](http://blahblah.tech)를 개발하면서 개인이 학습한 내용을 바탕으로 작성되고 있습니다. 많은 분들에게 더욱 좋은 정보가 전달 될 수 있도록 개선이 필요한 내용이 있다면 코멘트 해주세요.
-
-> https://march23hare.github.io/2017/11/30/tr-modern-javascript-explained-for-dinosaurs/
 
 ## 대체 Front-end 개발 어디서 부터 시작해야 하지..?
 
@@ -145,6 +144,7 @@ webpack은 로더를 통해 scss의 전처리를 통해 css를 통합하여 만�
 
 ## References
 
+- https://www.holaxprogramming.com/2017/08/16/java-history/
 - https://march23hare.github.io/2017/11/30/tr-modern-javascript-explained-for-dinosaurs/
 - http://ahnheejong.name/articles/ecmascript-tc39/
 - https://medium.com/@peterxjang/modern-javascript-explained-for-dinosaurs-f695e9747b70
