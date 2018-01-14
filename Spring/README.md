@@ -1,18 +1,12 @@
 <img src='https://alexandreesl.files.wordpress.com/2014/12/springboot.png' />
 
-현재 많은 개발자가 Spring Framework를 통해 Back-End 개발을 하고 있습니다. 저 역시 프로그래밍을 하면서 맡은 첫 업무가 Spring Framework를 통해 게임 포털를 개발하고 운영하는 것이였습니다.
-
-이후에 Java Back-end 환경이외의 다양한 플랫폼에서 개발을 하게 되면서 한 동안 Spring Framework에 대한 경험을 지속적으로 리마인드 할 수 없는 상태였는데 최근에 Spring Boot을 통해 개발한 경험을 `Spring Boot 레시피`라는 이름으로 예제 위주로 정리하고자 합니다.
-
-> 틀린 내용이 많을 수 있으니 코멘트를 주시면 적극적으로 반영하도록 할께요, 감사합니다
-
 ## TDD와 함께하는 Spring Boot 2.0
 
-이 Spring Boot 레시피 문서는 먼저 Spring Boot의 출현 배경에 대하여 알아보고, 개발환경을 준비하는 것으로 시작합니다. 이후에 문서에서 제시하는 다양한 예제를 레시피보듯 가볍게 구현해 보시기를 바랍니다.
+이 Spring Boot 레시피 문서는 먼저 Spring Boot의 출현 배경에 대하여 알아보고, TDD를 통해 개발환경을 준비하는 것으로 시작합니다. 이후에 문서에서 제시하는 다양한 예제를 레시피보듯 가볍게 구현해 보시기를 바랍니다.
 
 #### 목표
 
-Java, Gradle, Spring Boot을 이용해 자신이 상상하는 웹 애플리케이션을 구현합니다.
+Java, Gradle, Spring Boot을 통해 실무 수준의 엔터프라이즈 환경 웹 애플리케이션을 구현합니다.
 
 #### 대상 독자
 
@@ -32,9 +26,10 @@ Gradle | 4.0
 ## 1부 재료 다지기
 
 #### 1장 목표 소개
+
 - 웹 애플리케이션에 필요한 요소들
 - 점점 작게 분리되는 서비스들
-- Spring Boot을 통해 인증 API 만들기
+- Spring Boot을 통해 인증 API 구현하기
 - 레거시라는 괴물을 만들지 않는 습관
 - TDD 시작하기
 
@@ -51,7 +46,7 @@ Gradle | 4.0
 - [Spring Boot 개발환경 준비](https://github.com/stunstunstun/awesome-wiki/blob/master/Spring/spring-boot-environments.md)
 - Spring Boot CLI
 - [Gradle를 통해 프로젝트를 효율적으로 관리하자](https://github.com/stunstunstun/awesome-wiki/blob/master/Spring/spring-boot-and-gradle.md)
-- 보일러 프로젝트 만들기
+- Walking Skeleton 프로젝트
 - Github를 통해 맘껏 뛰어 놀기
 
 ## 2부 Spring Boot 요리하기
@@ -76,6 +71,7 @@ Gradle | 4.0
 
 - 독립적으로 실행되는 Spring Boot 애플리케이션
 - [Spring Boot과 Spring MVC](https://github.com/stunstunstun/awesome-wiki/blob/master/Spring/spring-boot-web-mvc.md)
+- Spring MVC 테스트
 - 더 나은 REST API 제공하기
 - [Gradle과 Spring Boot 애플리케이션의 Multi 프로젝트 구조](https://github.com/stunstunstun/awesome-wiki/blob/master/Spring/spring-boot-gradle-multi-project.md)
 
@@ -84,13 +80,10 @@ Gradle | 4.0
 #### 7장 꾸준한 맛을 내는 전략 테스트
 
 - 기본적인 단위 테스트
-- 효과적인 테스트 전략
+- 테스트하기 어려운 경우를 위한 효과적인 테스트 전략
 - 가짜 객체 만들기
-- Spring Boot 1.4에서 개선된 테스트
-- Spring MVC 테스트
+- Spring Boot 1.4, 2.0에서 개선된 테스트
 - 통합 테스트
-- Spring Boot 2.0에서 개선된 테스트
-
 
 #### 8장 지속적으로 유용하고 건강한 애플리케이션 만들기
 
@@ -100,19 +93,18 @@ Gradle | 4.0
 - Travis CI와 Jacoco를 이용한 테스트 커버리지 생성하기
 - GitHub와 연동하기
 
-#### 9장 누구보다 빠르게 사용자에게 배포하기
+#### 9장 Spring Boot 애플리케이션 배포하기
 
+- 시스템 환경 변수와 Profile를 이용한 Properties 관리
 - 실행 가능한 JAR
 - 실행과 배포 가능한 WAR
-- 시스템 환경 변수와 Profile를 이용한 Properties 관리
-- 먼저 로컬 PC에 배포하기
-- 클라우드 서비스에 배포하기 AWS
-
-#### 10장 혼자서도 개발하고 운영(DevOps)하는 마법의 도구들
-
 - Spring Boot DevTools
 - Spring Boot Actuator
-- AWS CodeStar를 통해 운영, 모니터링 하기
+
+#### [부록] 혼자서도 개발하고 운영(DevOps)하는 마법의 도구들
+
+- AWS 시작하기
+- AWS CodeStar를 통해 빌드, 배포, 모니터링 하기
 
 #### Spring Boot 예제 소스들
 
