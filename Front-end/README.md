@@ -10,11 +10,14 @@
 
 #### React
 
+- [React 한글 문서](https://reactjs-kr.firebaseapp.com/docs/hello-world.html)
 - [React Tutorials](https://facebook.github.io/react/docs/hello-world.html)
 - [Redux](https://deminoth.github.io/redux/)
 
 #### New-age JavaScript and CSS
 
+- Pug를 통한 템플릿 개발
+- CSS 개발에 Preprocessor가 필요할까?
 - [ES6 Languages Specification](http://www.ecma-international.org/ecma-262/6.0/)
 - [CSS Modules](https://github.com/css-modules/css-modules)
 
@@ -56,53 +59,41 @@
 
 #### JavaScript 시작하기
 
-- [JavaScript의 역사와 철학](../../master/Front-end/javascript-more-modern.md)
+- [JavaScript의 역사와 철학](../../master/Front-end/javascript-history.md)
 - Primitive data types
 - Bit operators
 - JavaScript로 RSA 구현하기
 - 십진수를 팔진수로 변환하는 함수
 - JavaScript에서 정확하게 부동 소수점 계산하기
-- ASCII, Unicode 그리고 ArrayBuffer, String에 관해서
+- [ASCII, Unicode 그리고 ArrayBuffer, String에 관해서](../../master/Front-end/javascript-array-buffer.md)
 - JavaScript I/O 이야기
 - JavaScript를 통해 파일을 읽어들여 특정 키의 개수를 카운팅하는 함수
 - JavaScript를 통해 LRU 캐싱 알고리듬 구현하기
-
-#### Function
-
 - JavaScript에서의 함수
+- Hoisting
+- Scope와 Strict Mode
 - JavaScript의 Object
 - JavaScript의 객체지향 프로그래밍
 
-#### Scope와 Closure
-
-- Hoisting
-- Scope와 Strict Mode
-
-#### Functional Programming in JavaScripts
-
-#### 일목요연 ES6
+#### 일목요연 ES2015
 
 - jQuery를 넘어서 JavaScript의 생태계는 어떻게 발전해 왔을까?
-- ES6 시작하기
+- TDD와 함께하는 JavaScript 시작하기
 - Constants와 Variables
 - Template Literals
 - Array
 - Destructuring
-- `fetch()`를 소개합니다
+- [fetch()를 소개합니다](https://developers.google.com/web/updates/2015/03/introduction-to-fetch)
+
+#### Functional Programming in JavaScripts
 
 #### DevOps
 
 - [Node의 실행 환경을 지탱하는 도구들](../../master/Front-end/node-environments.md)
 - [Yarn 톺아보기](../../master/Front-end/node-yarn-tutorials.md)
-- TDD로 시작하는 Node.js
 - Continuous Integration with Jenkins
-
-#### Front-end
-
-- Pug를 통한 템플릿 개발
-- CSS 개발에 Preprocessor가 필요할까?
 - React 프로젝트의 테스트 환경 구축하기
-- Webpack으로 효율적으로 Front-end 리소스 빌드하기
+- Webpack3로 효율적으로 Front-end 프로젝트 빌드하기
 
 #### Back-end
 
@@ -115,7 +106,7 @@
 - Koa.js Fork부터 Contribute까지
 - Node.js 기반 시스템 운영 중 알아두면 쓸모 있는 지식들
 
-#### Upcoming
+#### Upcoming Feartures
 
 - Service Worker
 - Physical Web

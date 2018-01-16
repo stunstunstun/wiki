@@ -1,9 +1,3 @@
----
-title: 일목요연 ES6
-date: 2018-01-20 13:07:11
-categories: front-end
-description: ES6 한 눈에 살펴보기
----
 
 이 문서는 Udacity의 `ES6 JavaScript Improved`와 Nicholas C. Zakas의 `Underderstanding ES6`을 통해 학습한 내용을 요약한 내용입니다. 요약한 내용을 먼저 훏어보시고 첨부된 자료를 통해 ES6 학습에 도움이 되길 바랍니다.
 

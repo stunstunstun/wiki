@@ -1,6 +1,13 @@
 ## Contents
 
-#### 파이썬 TDD로 시작하기
+#### 안녕 프로그래밍
+
+- 프로그래밍 시작하기
+- 프로그래밍 언어에 대해 소개합니다.
+- HTML을 통해 첫 프로그램 만나기
+- 안녕 파이썬!
+
+#### TDD로 시작하는 파이썬
 
 - [TDD와 함께 파이썬 시작하기](https://github.com/stunstunstun/awesome-wiki/blob/master/Python/python-get-started.md)
 - [unittest와 함께하는 파이썬 테스트](https://github.com/stunstunstun/awesome-wiki/blob/master/Python/python-with-test.md)
@@ -16,3 +23,4 @@
 - [점프 투 파이썬](https://wikidocs.net/book/1)
 - [Python Tips](http://book.pythontips.com/en/latest/index.html)
 - [Advanced Python Features](https://tech.io/playgrounds/500/advanced-python-features/content/advanced-python-features)
+- [Python Crash Course](https://www.safaribooksonline.com/library/view/python-crash-course/9781457197185/)

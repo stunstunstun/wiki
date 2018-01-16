@@ -46,6 +46,8 @@
 - [HTTP/2
 ](http://httpwg.org/specs/rfc7540.html)
 - [더 빠른 웹을 위해 HTTP/2](https://www.slideshare.net/eungjun/http2-40582114)
+- [HTTPS 전환 후 서버 메모리는 안녕한가요?](http://d2.naver.com/helloworld/8842776)
+- [HTTPS 전환 과정에서 read timeout 오류 해결 과정](http://d2.naver.com/helloworld/1469717)
 
 #### Blah-Blah
 
