@@ -27,6 +27,7 @@
 - [그런 REST API로 괜찮은가](http://slides.com/eungjun/rest)
 - [API Versioning](https://stripe.com/blog/api-versioning)
 - [API 디자인은 왜 중요한가?](https://github.com/stunstunstun/awesome-wiki/blob/master/DevOps/devops-api-design.md)
+- [GraphQL를 통해 효율적으로 리소스 전달하기](../../master/DevOps/devops-graphql-api.md)
 - [API Gateway 패턴](https://github.com/stunstunstun/awesome-wiki/blob/master/DevOps/devops-api-gateway.md)
 - [API Gateway의 인증 및 API 요청의 검증](https://github.com/stunstunstun/awesome-wiki/blob/master/DevOps/devops-api-gateway-authentication.md)
 
