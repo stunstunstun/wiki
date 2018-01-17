@@ -6,9 +6,9 @@
 
 > 점점 어디론가 흩어져가고 있지 않으세요?
 
-<center>
+<div align='center'>
   <a href='https://holaxprogramming.com' target='_blank'><img src='https://www.holaxprogramming.com/logo.png'/></a>
-</center>
+</div>
 
 
 ## 저자로 참여해주세요!
