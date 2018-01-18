@@ -76,7 +76,7 @@ categories: devops
 
 CodeStar는 서비스 운영에 필요한 컨테이너 생성부터 소스코드 관리, 빌드, 배포, 모니터링을 위한 다양한 서비스를 한 곳에서 쉽게 관리 할 수 있는 서비스라고 보면 됩니다. 우리가 위에서 고민했던 많은 문제들을 해결 할 수 있겠네요.
 
-<img src='http://image.toast.com/aaaaahq/aws-code-star.png' />
+<img src='https://image.slidesharecdn.com/srv414newlaunchintroducingawscodestarthecentralexperiencetoquicklystartdevelopingapplicationsonaws-170420182636/95/srv414-new-launch-introducing-aws-codestar-the-central-experience-to-quickly-start-developing-applications-on-aws-27-638.jpg?cb=1492713269' />
 
 #### 이런 분들이 사용하면 좋다고 하네요
 
