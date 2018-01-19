@@ -100,6 +100,7 @@
 - [Airbnb Tech](http://nerds.airbnb.com/)
 - [Airbnb Design](http://airbnb.design/)
 - [Netflix](http://techblog.netflix.com/)
+- [Atlassian](https://developer.atlassian.com/blog/)
 - [Amazon Web Services](https://aws.amazon.com/blogs/aws/)
 - [Instagram](https://engineering.instagram.com/)
 - [Kickstarter](https://www.kickstarter.com/blog)
