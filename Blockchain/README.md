@@ -35,6 +35,10 @@
 - [List Careers](https://lisk.io/careers)
 - [Lastest Transactions](https://explorer.lisk.io/)
 
+#### Articles
+
+- [블록체인을 지탱하는 기술 #1 암호화와 서명](../../master/Blockchain/blockchain-encryption-and-signature.md)
+
 #### References
 
 - https://www.blockchain.com/
