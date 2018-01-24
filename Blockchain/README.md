@@ -14,11 +14,16 @@
 
 #### 시작하기
 
+- [PoW](https://en.bitcoin.it/wiki/Proof_of_work)
+- [Pure P2P](https://www.quora.com/Is-a-pure-P2P-network-possible-and-does-one-exist)
+- [Unstructured Overlay Network](http://gossple2.irisa.fr/~akermarr/LSDS-EPFL-unstructured.pdf)
 - [Mastering Bitcoin](https://www.safaribooksonline.com/library/view/mastering-bitcoin-2nd/9781491954379/)
 - [Bitcoin: A Peer-to-Peer Electronic Cash System](https://bitcoin.org/bitcoin.pdf)
 - [Bitcoin Developer Guide](https://bitcoin.org/en/developer-guide)
 
-#### 질문하기
+#### 경쟁하기
+
+- [PoW implementation & Code Review](https://github.com/lhartikk/naivechain)
 
 #### 구현하기
 
