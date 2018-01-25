@@ -133,6 +133,7 @@ query {
 ```
 
 를 사용하느냐에 따라서 응답의 구조가 완전히 다르게 된다.
+
 [v3 repository api]: https://developer.github.com/v3/repos/#list-your-repositories
 [v4 api]: https://developer.github.com/v4/explorer/
 
