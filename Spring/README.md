@@ -43,7 +43,7 @@ Gradle | 4.0
 
 #### 3장 Spring Boot 개발 환경 준비
 
-- [Spring Boot 개발환경 준비](https://github.com/stunstunstun/awesome-wiki/blob/master/Spring/spring-boot-environments.md)
+- [Spring Boot 개발환경 준비](https://github.com/stunstunstun/awesome-wiki/blob/master/Spring/spring-boot-environment.md)
 - Spring Boot CLI
 - [Gradle를 통해 프로젝트를 효율적으로 관리하자](https://github.com/stunstunstun/awesome-wiki/blob/master/Spring/spring-boot-and-gradle.md)
 - Walking Skeleton 프로젝트
