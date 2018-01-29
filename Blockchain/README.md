@@ -43,6 +43,7 @@
 #### Articles
 
 - [블록체인을 지탱하는 기술 #1 암호화와 서명](../../master/Blockchain/blockchain-encryption-and-signature.md)
+- [The authoritative guide to blockchain development](https://medium.freecodecamp.org/the-authoritative-guide-to-blockchain-development-855ab65b58bc)
 
 #### References
 
