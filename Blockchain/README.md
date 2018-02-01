@@ -4,7 +4,7 @@
 
 - [How the Bitcoin protocol actually works](http://www.michaelnielsen.org/ddi/how-the-bitcoin-protocol-actually-works/)
 - [비트코인 논문](https://encodent.com/bitcoin)
-- [비토코인 코어 구현 분석](https://docs.google.com/presentation/d/13oPCbsaCj4kzGRYbGTTgsXbHsYktymu1tUWq8C6-JII/edit#slide=id.g2a718a35fd_0_0)
+- [비트코인 코어 구현 분석](https://docs.google.com/presentation/d/13oPCbsaCj4kzGRYbGTTgsXbHsYktymu1tUWq8C6-JII/edit#slide=id.g2a718a35fd_0_0)
 - [이더리움 백서](https://github.com/ethereum/wiki/wiki/%5BKorean%5D-White-Paper)
 
 #### Courses
