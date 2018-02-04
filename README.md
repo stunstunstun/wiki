@@ -27,7 +27,7 @@
 | [Python](https://github.com/stunstunstun/awesome-wiki/tree/master/Python)| Python 관련 카테고리 |
 | [Java](https://github.com/stunstunstun/awesome-wiki/tree/master/Java) | Java의 기본지식 및 Java8, Java9 Features |
 | [Scala](https://github.com/stunstunstun/awesome-wiki/tree/master/Scala) | Scala 을 통한 Functional Language 에 대한 지식 |
-| [Front-end](https://github.com/stunstunstun/awesome-wiki/tree/master/Front-end) | JavaScript 및 프론트엔드 관련 기술 |
+| [JavaScript](https://github.com/stunstunstun/awesome-wiki/tree/master/JavaScript) | JavaScript, Front-end 관련 기술 |
 | [Android](https://github.com/stunstunstun/awesome-wiki/tree/master/Android) | Java, Kotlin Android 관련 기술 |
 | [iOS](https://github.com/stunstunstun/awesome-wiki/tree/master/iOS) | Swift를 통한 iOS 개발에 관한 지식 |
 | [Spring Framework](https://github.com/stunstunstun/awesome-wiki/tree/master/Spring) | Java9, Spring Framework 5.0.0, Spring Boot 2.0, Gradle 4 |
