@@ -16,3 +16,4 @@
 - [Github Pages에 Custom Domain 적용하기](../../Git/github-page-and-custom-domain.md)
 - [Git Flow 와 자주 사용하는 명령어들](../../master/Git/git-commands.md)
 - [소소한 GitHub Tips](../../master/Git/github-tips.md)
+- [Git Merge vs Rebase](../../master/Git/git-merge-and-rebase.md)
