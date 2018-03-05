@@ -11,8 +11,11 @@
 #### React
 
 - [React 한글 문서](https://reactjs-kr.firebaseapp.com/docs/hello-world.html)
-- [React Tutorials](https://facebook.github.io/react/docs/hello-world.html)
-- [Redux](https://deminoth.github.io/redux/)
+- [Redux 한글 문서](https://deminoth.github.io/redux/)
+- [MobX](https://mobx.js.org/getting-started.html)
+- [React 도움닫기](https://github.com/the-road-to-learn-react/the-road-to-learn-react-korean/tree/master/manuscript)
+- [Learning React](https://www.safaribooksonline.com/library/view/learning-react-1st/9781491954614/)
+- [React Design Pattern and Best Practices](https://www.safaribooksonline.com/library/view/react-design-patterns/9781786464538/)
 
 #### New-age JavaScript and CSS
 
