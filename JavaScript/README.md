@@ -2,11 +2,11 @@
 
 #### Web Fundamentals
 
+- [Google Web Fundamentals](https://developers.google.com/web/fundamentals/)
+- [Google Web Updates](https://developers.google.com/web/updates/2017/)
 - [HTML5 History API](https://developer.mozilla.org/en-US/docs/Web/API/History_API)
 - [Ajax와 CORS](https://developer.mozilla.org/ko/docs/Web/HTTP/Access_control_CORS)
 - [Debugging JavaScript in WebStorm and Chrome](https://www.youtube.com/watch?v=a-IsnxZpRrQ)
-- [Google Web Fundamentals](https://developers.google.com/web/fundamentals/)
-- [Google Web Updates](https://developers.google.com/web/updates/2017/)
 
 #### React
 
@@ -14,8 +14,6 @@
 - [Redux 한글 문서](https://deminoth.github.io/redux/)
 - [MobX](https://mobx.js.org/getting-started.html)
 - [React 도움닫기](https://github.com/the-road-to-learn-react/the-road-to-learn-react-korean/tree/master/manuscript)
-- [Learning React](https://www.safaribooksonline.com/library/view/learning-react-1st/9781491954614/)
-- [React Design Pattern and Best Practices](https://www.safaribooksonline.com/library/view/react-design-patterns/9781786464538/)
 
 #### New-age JavaScript and CSS
 
@@ -35,21 +33,18 @@
 - [Example microservice app](https://github.com/elgris/microservice-app-example)
 - [Node.js Best Practices](https://github.com/i0natan/nodebestpractices)
 
-#### Node.js Environments
+#### npm packages
 
-- `node`, `npm`, `nvm`, `yarn`
+- `yarn`, `lerna`
 - `jest`, `supertest`, `mocha`, `chai`, `sinon`, `nock`, `karma`, `jasmine`
-- `babel`, `eslint`, `eslint-config-airbnb`, `nyc`
-- `TypeScript`, `Flow`
-- `react`, `enzyme`
-- `webpack`, `gulp`, `run-sequence`
-- `expressjs`, `koajs`, `sd`, `dotenv`, `joi`, `log4js`
-- `requests`, `lodash`, `async`, `moment`,  `rxjs`
-- `browser-sync`, `nodemon`
-
-#### Integration with Databases
-
-- `mongoose`, `mongoose-mock`, `elasticsearch.js`
+- `babel`, `babel-preset-env`, `eslint`, `eslint-config-airbnb`, `nyc`, `istanbul`
+- `TypeScript`, `Flow`, `prettier`, `husky`, `lint-staged`
+- `webpack`, `gulp`, `css-loader`, `npm-run-all`, `dotenv`, `joi`, `rimraf`
+- `winston`, `log4js`
+- `express.js`, `koa.js`
+- `react`, `react-dom`, `enzyme`, `redux`, `mobx`
+- `axios`, `requests`, `lodash`, `moment`,  `rxjs`
+- `mongodb`, `mongoose`, `mongoose-mock`, `elasticsearch.js`
 
 #### Batch
 
