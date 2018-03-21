@@ -57,21 +57,21 @@
 
 ### JavaScript 시작하기
 
-- [JavaScript의 역사와 철학](../../master/Front-end/javascript-history.md)
+- JavaScript의 역사와 철학
 - Primitive data types
 - Bit operators
 - JavaScript로 RSA 구현하기
 - 십진수를 팔진수로 변환하는 함수
 - JavaScript에서 정확하게 부동 소수점 계산하기
-- [ASCII, Unicode 그리고 ArrayBuffer, String에 관해서](../../master/Front-end/javascript-array-buffer.md)
+- ASCII, Unicode 그리고 ArrayBuffer, String에 관해서
 - JavaScript I/O 이야기
-- JavaScript를 통해 파일을 읽어들여 특정 키의 개수를 카운팅하는 함수
-- JavaScript를 통해 LRU 캐싱 알고리듬 구현하기
-- JavaScript에서의 함수
 - Hoisting
 - Scope와 Strict Mode
 - JavaScript의 Object
 - JavaScript의 객체지향 프로그래밍
+- JavaScript에서의 함수
+- JavaScript를 통해 파일을 읽어들여 특정 키의 개수를 카운팅하는 Function을 Functional하게 구현하기
+- JavaScript를 통해 LRU 캐싱 알고리듬 구현하기
 
 ### Testing
 
@@ -99,15 +99,16 @@
 
 #### DevOps
 
-- [Node의 실행 환경을 지탱하는 도구들](../../master/Front-end/node-environments.md)
-- [Yarn 톺아보기](../../master/Front-end/node-yarn-tutorials.md)
+- [Node의 실행 환경을 지탱하는 도구들](../../master/JavaScript/node-environments.md)
+- [Yarn 톺아보기](../../master/JavaScript/node-yarn-tutorials.md)
 - Continuous Integration with Jenkins
+- Node.js 프로젝트의 테스트 환경 구축하기
 - React 프로젝트의 테스트 환경 구축하기
 - 효율적으로 Front-end 프로젝트 빌드하기 with Webpack4
 
 #### Back-end
 
-- [GraphQL 과 RESTful API](../../master/Front-end/graphql-vs-restful-api.md)
+- [GraphQL 과 RESTful API](../../master/JavaScript/graphql-vs-restful-api.md)
 - Node.js는 어떻게 동작하는가?
 - Node.js의 인터프리터 과정을 통해 Variables 삶 살펴보기
 - Node.js의 V8의 가바지 컬렉션
