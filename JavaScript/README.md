@@ -55,7 +55,7 @@
 
 ## Articles
 
-#### JavaScript 시작하기
+### JavaScript 시작하기
 
 - [JavaScript의 역사와 철학](../../master/Front-end/javascript-history.md)
 - Primitive data types
@@ -73,21 +73,29 @@
 - JavaScript의 Object
 - JavaScript의 객체지향 프로그래밍
 
-#### 일목요연 ES2015
+### Testing
+
+- JavaScript로 시작하는 TDD
+- Fixtures, Setup, Tear Down
+- API 통합 Testing
+- Testing Asynchronous Code
+- 단위 Testing과 다양한 Mocking 전략
+- Enzyme, Jest Snapshot Testing을 통한 React Component 테스트
+- mocha, chai, sinon, supertest, node-mocks-http, jest, enzyme, rewire, istanbul, nyc
+- nyc를 통해 coverage 리포트 생성하고 GitHub Pages에 배포하기
+
+### 일목요연 ES2015
 
 - jQuery를 넘어서 JavaScript의 생태계는 어떻게 발전해 왔을까?
-- TDD와 함께하는 JavaScript 시작하기
 - Constants와 Variables
 - Template Literals
 - Array
 - Destructuring
 - [fetch()를 소개합니다](https://developers.google.com/web/updates/2015/03/introduction-to-fetch)
 
-#### GraphQL
-
-- [GraphQL 과 RESTful API](../../master/Front-end/graphql-vs-restful-api.md)
-
 #### Functional Programming in JavaScripts
+
+- Functional Programming이 해결한 문제
 
 #### DevOps
 
@@ -95,10 +103,11 @@
 - [Yarn 톺아보기](../../master/Front-end/node-yarn-tutorials.md)
 - Continuous Integration with Jenkins
 - React 프로젝트의 테스트 환경 구축하기
-- Webpack3로 효율적으로 Front-end 프로젝트 빌드하기
+- 효율적으로 Front-end 프로젝트 빌드하기 with Webpack4
 
 #### Back-end
 
+- [GraphQL 과 RESTful API](../../master/Front-end/graphql-vs-restful-api.md)
 - Node.js는 어떻게 동작하는가?
 - Node.js의 인터프리터 과정을 통해 Variables 삶 살펴보기
 - Node.js의 V8의 가바지 컬렉션
