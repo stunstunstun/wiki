@@ -40,6 +40,10 @@
 - [Valhalla Project](https://wiki.openjdk.java.net/display/valhalla/Main)
 
 
+#### Java 10+
+
+- [JEP 286: Local-Variable Type Inference](http://openjdk.java.net/jeps/286)
+
 ## Java Documents
 
 문제의 해결을 위해 `Google` 또는 `Stack Over Flow`를 참고하는 것도 가능하지만, 실무 경험을 탄탄하게 쌓고자하는 개발자라면 Oracle에서 제공하는 공식 문서를 참고하는 것이 더욱 유용할 것이다.
