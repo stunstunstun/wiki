@@ -76,12 +76,14 @@
 ### Testing
 
 - JavaScript로 시작하는 TDD
+- Monorepo를 통해 Testing 범위 분리하기
 - Fixtures, Setup, Tear Down
 - API 통합 Testing
 - Testing Asynchronous Code
 - 단위 Testing과 다양한 Mocking 전략
 - Enzyme, Jest Snapshot Testing을 통한 React Component 테스트
-- mocha, chai, sinon, supertest, node-mocks-http, jest, enzyme, rewire, istanbul, nyc
+- React와 Storybook을 통한 Interactive UI Dev and Testing
+- W/ mocha, chai, sinon, supertest, node-mocks-http, jest, enzyme, rewire, istanbul, nyc
 - nyc를 통해 coverage 리포트 생성하고 GitHub Pages에 배포하기
 
 ### 일목요연 ES2015
