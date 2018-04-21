@@ -12,8 +12,8 @@
 
 - [React 한글 문서](https://reactjs-kr.firebaseapp.com/docs/hello-world.html)
 - [Redux 한글 문서](https://deminoth.github.io/redux/)
-- [MobX](https://mobx.js.org/getting-started.html)
 - [React 도움닫기](https://github.com/the-road-to-learn-react/the-road-to-learn-react-korean/tree/master/manuscript)
+- [React Design Patterns and Best Practices](https://www.safaribooksonline.com/library/view/react-design-patterns/9781786464538/)
 
 #### New-age JavaScript and CSS
 
@@ -33,7 +33,7 @@
 - [Example microservice app](https://github.com/elgris/microservice-app-example)
 - [Node.js Best Practices](https://github.com/i0natan/nodebestpractices)
 
-#### npm packages
+#### Ranked npm packages
 
 - `yarn`, `lerna`
 - `jest`, `supertest`, `mocha`, `chai`, `sinon`, `nock`, `karma`, `jasmine`
@@ -55,7 +55,7 @@
 
 ## Articles
 
-### JavaScript 시작하기
+### Get Started JavaScript
 
 - JavaScript의 역사와 철학
 - Primitive data types
@@ -73,6 +73,31 @@
 - JavaScript를 통해 파일을 읽어들여 특정 키의 개수를 카운팅하는 Function을 Functional하게 구현하기
 - JavaScript를 통해 LRU 캐싱 알고리듬 구현하기
 
+### Advanced JavaScript
+
+- Closure
+- JavaScript와 Functional Programming
+
+### 일목요연 ES2015
+
+- jQuery를 넘어서 JavaScript의 생태계는 어떻게 발전해 왔을까?
+- Constants와 Variables
+- Template Literals
+- Array
+- Destructuring
+
+### Advanced React Guides
+
+- Handling Events
+- Typechecking With PropTypes
+- [Refs and the DOM](https://reactjs.org/docs/refs-and-the-dom.html)
+- [Forwarding Refs](https://reactjs.org/docs/forwarding-refs.html)
+- React Router
+- React 상태 관리와 Async actions
+- React 16 Features 그리고 React 16.3 new lifecycle 그리고 Context API
+- [Optimizing Performance](https://reactjs.org/docs/optimizing-performance.html)
+
+
 ### Testing
 
 - JavaScript로 시작하는 TDD
@@ -86,27 +111,11 @@
 - W/ mocha, chai, sinon, supertest, node-mocks-http, jest, enzyme, rewire, istanbul, nyc
 - nyc를 통해 coverage 리포트 생성하고 GitHub Pages에 배포하기
 
-### 일목요연 ES2015
-
-- jQuery를 넘어서 JavaScript의 생태계는 어떻게 발전해 왔을까?
-- Constants와 Variables
-- Template Literals
-- Array
-- Destructuring
-- [fetch()를 소개합니다](https://developers.google.com/web/updates/2015/03/introduction-to-fetch)
-
-#### Functional Programming in JavaScripts
-
-- Functional Programming이 해결한 문제
-
 #### DevOps
 
 - [Node의 실행 환경을 지탱하는 도구들](../../master/JavaScript/node-environments.md)
 - [Yarn 톺아보기](../../master/JavaScript/node-yarn-tutorials.md)
 - Continuous Integration with Jenkins
-- Node.js 프로젝트의 테스트 환경 구축하기
-- React 프로젝트의 테스트 환경 구축하기
-- 효율적으로 Front-end 프로젝트 빌드하기 with Webpack4
 
 #### Back-end
 
