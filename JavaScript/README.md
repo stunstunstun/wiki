@@ -3,10 +3,17 @@
 #### Web Fundamentals
 
 - [Google Web Fundamentals](https://developers.google.com/web/fundamentals/)
+- [ES6 Languages Specification](http://www.ecma-international.org/ecma-262/6.0/)
+- [CSS Modules](https://github.com/css-modules/css-modules)
 - [Google Web Updates](https://developers.google.com/web/updates/2017/)
 - [HTML5 History API](https://developer.mozilla.org/en-US/docs/Web/API/History_API)
 - [Ajax와 CORS](https://developer.mozilla.org/ko/docs/Web/HTTP/Access_control_CORS)
 - [Debugging JavaScript in WebStorm and Chrome](https://www.youtube.com/watch?v=a-IsnxZpRrQ)
+- [PWA](https://developers.google.com/web/progressive-web-apps/)
+- Service Worker
+- Physical Web
+- Push Notification
+- Web Payment
 
 #### React
 
@@ -15,14 +22,7 @@
 - [React 도움닫기](https://github.com/the-road-to-learn-react/the-road-to-learn-react-korean/tree/master/manuscript)
 - [React Design Patterns and Best Practices](https://www.safaribooksonline.com/library/view/react-design-patterns/9781786464538/)
 
-#### New-age JavaScript and CSS
-
-- Pug를 통한 템플릿 개발
-- CSS 개발에 Preprocessor가 필요할까?
-- [ES6 Languages Specification](http://www.ecma-international.org/ecma-262/6.0/)
-- [CSS Modules](https://github.com/css-modules/css-modules)
-
-#### Best Practices
+#### Project Best Practices
 
 - [Github Flow](https://guides.github.com/introduction/flow/)
 - [Airbnb Javascript Style Guide](https://github.com/airbnb/javascript)
@@ -45,13 +45,6 @@
 - `react`, `react-dom`, `enzyme`, `redux`, `mobx`
 - `axios`, `requests`, `lodash`, `moment`,  `rxjs`
 - `mongodb`, `mongoose`, `mongoose-mock`, `elasticsearch.js`
-
-#### Batch
-
-- [What's new in Node.js 9](https://nemethgergely.com/what-is-new-in-nodejs-9/)
-- [node-cron](https://github.com/kelektiv/node-cron)
-- [Node Schedule](https://github.com/node-schedule/node-schedule)
-- [Agenda](https://github.com/agenda/agenda)
 
 ## Articles
 
@@ -97,7 +90,6 @@
 - React 16 Features 그리고 React 16.3 new lifecycle 그리고 Context API
 - [Optimizing Performance](https://reactjs.org/docs/optimizing-performance.html)
 
-
 ### Testing
 
 - JavaScript로 시작하는 TDD
@@ -119,25 +111,22 @@
 
 #### Back-end
 
-- [GraphQL 과 RESTful API](../../master/JavaScript/graphql-vs-restful-api.md)
 - Node.js는 어떻게 동작하는가?
 - Node.js의 인터프리터 과정을 통해 Variables 삶 살펴보기
-- Node.js의 V8의 가바지 컬렉션
+- Nginx, Node.js, PM2를 통한 웹 애플리케이션 운영
+- PM2에서는 Metric을 어떻게 관리할까?
+- Node.js V8의 가바지 컬렉션
+- Update Node v8.9.4 LTS without Babel
+- Node.js와 MongoDB, mongoose v5.0.0
+- 배치 프로세스를 위해 agenda, cron, later, node-schedule 비교하기
 - Node.js, Koa.js 프로젝트의 테스트 환경 구축
+- Koa.js Fork부터 Contribute까지
 - Node.js 애플리케이션 배포하기, Node의 프로세스 관리 도구 PM2
 - Node.js 애플리케이션 모니터링을 위한 CPU, 메모리 프로파일링
-- Koa.js Fork부터 Contribute까지
-- Node.js 기반 시스템 운영 중 알아두면 쓸모 있는 지식들
+- [What's new in Node.js 9](https://nemethgergely.com/what-is-new-in-nodejs-9/)
+- [GraphQL과 RESTful API](../../master/JavaScript/graphql-vs-restful-api.md)
 
-#### Progress Web Apps
-
-- [PWA](https://developers.google.com/web/progressive-web-apps/)
-- Service Worker
-- Physical Web
-- Push Notification
-- Web Payment
-
-#### Geeks Blog
+#### Geek Blogs
 
 - https://toddmotto.com/
 - https://medium.com/@mikeal
@@ -149,7 +138,7 @@
 - http://blog.jeonghwan.net/
 - http://dev-momo.tistory.com/
 
-#### References
+#### News
 
 - [JavaScript Top 10 Articles - Sep](https://medium.mybridge.co/javascript-top-10-articles-for-the-past-month-v-sep-2017-168efb9a3b0f)
 - [JavaScript Top 10 Articles - Oct](https://medium.mybridge.co/javascript-top-10-articles-for-the-past-month-v-oct-2017-e51b3b1a34d2)
