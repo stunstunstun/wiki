@@ -49,7 +49,6 @@
 ## Articles
 
 ### Get Started JavaScript
-
 - JavaScript의 역사와 철학
 - Primitive data types
 - Bit operators
@@ -67,12 +66,12 @@
 - JavaScript를 통해 LRU 캐싱 알고리듬 구현하기
 
 ### Advanced JavaScript
-
-- Closure
+- 함수와 프로토타입 체이닝
+- 실행 컨텍스트와 클로저
+- JavaScript와 OOP Programming
 - JavaScript와 Functional Programming
 
 ### 일목요연 ES2015
-
 - jQuery를 넘어서 JavaScript의 생태계는 어떻게 발전해 왔을까?
 - Constants와 Variables
 - Template Literals
@@ -89,19 +88,6 @@
 - React 상태 관리와 Async actions
 - React 16 Features 그리고 React 16.3 new lifecycle 그리고 Context API
 - [Optimizing Performance](https://reactjs.org/docs/optimizing-performance.html)
-
-### Testing
-
-- JavaScript로 시작하는 TDD
-- Monorepo를 통해 Testing 범위 분리하기
-- Fixtures, Setup, Tear Down
-- API 통합 Testing
-- Testing Asynchronous Code
-- 단위 Testing과 다양한 Mocking 전략
-- Enzyme, Jest Snapshot Testing을 통한 React Component 테스트
-- React와 Storybook을 통한 Interactive UI Dev and Testing
-- W/ mocha, chai, sinon, supertest, node-mocks-http, jest, enzyme, rewire, istanbul, nyc
-- nyc를 통해 coverage 리포트 생성하고 GitHub Pages에 배포하기
 
 #### DevOps
 
@@ -125,6 +111,18 @@
 - Node.js 애플리케이션 모니터링을 위한 CPU, 메모리 프로파일링
 - [What's new in Node.js 9](https://nemethgergely.com/what-is-new-in-nodejs-9/)
 - [GraphQL과 RESTful API](../../master/JavaScript/graphql-vs-restful-api.md)
+
+### Testing
+- JavaScript로 시작하는 TDD
+- Monorepo를 통해 Testing 범위 분리하기
+- Fixtures, Setup, Tear Down
+- API 통합 Testing
+- Testing Asynchronous Code
+- 단위 Testing과 다양한 Mocking 전략
+- Enzyme, Jest Snapshot Testing을 통한 React Component 테스트
+- React와 Storybook을 통한 Interactive UI Dev and Testing
+- W/ mocha, chai, sinon, supertest, node-mocks-http, jest, enzyme, rewire, istanbul, nyc
+- nyc를 통해 coverage 리포트 생성하고 GitHub Pages에 배포하기
 
 #### Geek Blogs
 
