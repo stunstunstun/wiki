@@ -16,9 +16,9 @@
 - Web Payment
 
 #### ECMAScript
-- [ECMAScript Repo](https://github.com/tc39/ecma262#ecmascript)
-- [TC39 Proposals](https://github.com/tc39/proposals/blob/master/finished-proposals.md)
-- [Node.js Compat Table](https://node.green/)
+- [ecma262 status, process, documents](https://github.com/tc39/ecma262#ecmascript)
+- [TC39 proposals](https://github.com/tc39/proposals/blob/master/finished-proposals.md)
+- [Node.js ECMAScript compat table](https://node.green/)
 
 #### React
 
