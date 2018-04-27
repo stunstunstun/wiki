@@ -15,7 +15,7 @@
 - Push Notification
 - Web Payment
 
-### DevOps
+### Project Best Practices
 
 - [Github Flow](https://guides.github.com/introduction/flow/)
 - [Airbnb Javascript Style Guide](https://github.com/airbnb/javascript)
@@ -74,11 +74,10 @@
 - Array
 - Destructuring
 
-### ECMAScript Compat with Node & TC39 Proposals
-- https://nodejs.org/en/docs/es6/
-- https://node.green/
-- https://kangax.github.io/compat-table/es6/
-- https://github.com/tc39/proposals
+#### ECMAScript
+- [ecma262 status, process, documents](https://github.com/tc39/ecma262#ecmascript)
+- [TC39 proposals](https://github.com/tc39/proposals/blob/master/finished-proposals.md)
+- [Node.js ECMAScript compat table](https://node.green/)
 
 ### React Stuffs
 
