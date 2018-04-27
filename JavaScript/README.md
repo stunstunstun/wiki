@@ -1,6 +1,6 @@
-## Contents
+## Overview
 
-#### Web Fundamentals
+### Web Fundamentals
 
 - [Google Web Fundamentals](https://developers.google.com/web/fundamentals/)
 - [ES6 Languages Specification](http://www.ecma-international.org/ecma-262/6.0/)
@@ -15,14 +15,7 @@
 - Push Notification
 - Web Payment
 
-#### React
-
-- [React 한글 문서](https://reactjs-kr.firebaseapp.com/docs/hello-world.html)
-- [Redux 한글 문서](https://deminoth.github.io/redux/)
-- [React 도움닫기](https://github.com/the-road-to-learn-react/the-road-to-learn-react-korean/tree/master/manuscript)
-- [React Design Patterns and Best Practices](https://www.safaribooksonline.com/library/view/react-design-patterns/9781786464538/)
-
-#### Project Best Practices
+### DevOps
 
 - [Github Flow](https://guides.github.com/introduction/flow/)
 - [Airbnb Javascript Style Guide](https://github.com/airbnb/javascript)
@@ -32,8 +25,11 @@
 - [Grab's Front-end Guide](https://github.com/grab/front-end-guide)
 - [Example microservice app](https://github.com/elgris/microservice-app-example)
 - [Node.js Best Practices](https://github.com/i0natan/nodebestpractices)
+- [Node의 실행 환경을 지탱하는 도구들](../../master/JavaScript/node-environments.md)
+- [Yarn 톺아보기](../../master/JavaScript/node-yarn-tutorials.md)
+- Continuous Integration with Jenkins
 
-#### Ranked npm packages
+### Ranked npm packages
 
 - `yarn`, `lerna`
 - `jest`, `supertest`, `mocha`, `chai`, `sinon`, `nock`, `karma`, `jasmine`
@@ -71,32 +67,51 @@
 - JavaScript와 OOP Programming
 - JavaScript와 Functional Programming
 
-### 일목요연 ES2015
+### ES6
 - jQuery를 넘어서 JavaScript의 생태계는 어떻게 발전해 왔을까?
 - Constants와 Variables
 - Template Literals
 - Array
 - Destructuring
 
-### Advanced React Guides
+### ECMAScript Compat with Node & TC39 Proposals
+- https://nodejs.org/en/docs/es6/
+- https://node.green/
+- https://kangax.github.io/compat-table/es6/
+- https://github.com/tc39/proposals
 
+### React Stuffs
+
+#### React Guides
+- [React 한글 문서](https://reactjs-kr.firebaseapp.com/docs/hello-world.html)
+- [Redux 한글 문서](https://deminoth.github.io/redux/)
+- [React 도움닫기](https://github.com/the-road-to-learn-react/the-road-to-learn-react-korean/tree/master/manuscript)
+- [React Design Patterns and Best Practices](https://www.safaribooksonline.com/library/view/react-design-patterns/9781786464538/)
+
+#### Articles
+- [React, GitHub Pages로 Reddit 클론하기](../master/shares/react-get-started.md)
+- [React Forms](../master/shares/react-forms.md)
 - Handling Events
 - Typechecking With PropTypes
 - [Refs and the DOM](https://reactjs.org/docs/refs-and-the-dom.html)
 - [Forwarding Refs](https://reactjs.org/docs/forwarding-refs.html)
-- React Router
+- React Router v4 Overview
 - React 상태 관리와 Async actions
 - React 16 Features 그리고 React 16.3 new lifecycle 그리고 Context API
 - [Optimizing Performance](https://reactjs.org/docs/optimizing-performance.html)
 
-#### DevOps
-
-- [Node의 실행 환경을 지탱하는 도구들](../../master/JavaScript/node-environments.md)
-- [Yarn 톺아보기](../../master/JavaScript/node-yarn-tutorials.md)
-- Continuous Integration with Jenkins
+#### Advanced Issues
+- [React Component Lifecycle](../master/shares/react-component-lifecycle.md)
+- [Handling Events](../master/shares/react-handling-events.md)
+- [Error Handling](../master/shares/react-error-handling.md)
+- [React Forms](../master/shares/react-forms.md)
+- [React Router와 Prefetch](../master/shares/react-router-and-prefetch.md)
+- React Router와 Route-based code splitting
+- React 상태 관리와 Async actions
+- React 16 new features
+- React 16.3 new lifecycle 그리고 Context API
 
 #### Back-end
-
 - Node.js는 어떻게 동작하는가?
 - Node.js의 인터프리터 과정을 통해 Variables 삶 살펴보기
 - Nginx, Node.js, PM2를 통한 웹 애플리케이션 운영
@@ -112,7 +127,7 @@
 - [What's new in Node.js 9](https://nemethgergely.com/what-is-new-in-nodejs-9/)
 - [GraphQL과 RESTful API](../../master/JavaScript/graphql-vs-restful-api.md)
 
-### Testing
+#### Testing
 - JavaScript로 시작하는 TDD
 - Monorepo를 통해 Testing 범위 분리하기
 - Fixtures, Setup, Tear Down
@@ -125,7 +140,6 @@
 - nyc를 통해 coverage 리포트 생성하고 GitHub Pages에 배포하기
 
 #### Geek Blogs
-
 - https://toddmotto.com/
 - https://medium.com/@mikeal
 - https://blog.sessionstack.com/@zlatkov
@@ -137,7 +151,6 @@
 - http://dev-momo.tistory.com/
 
 #### News
-
 - [JavaScript Top 10 Articles - Sep](https://medium.mybridge.co/javascript-top-10-articles-for-the-past-month-v-sep-2017-168efb9a3b0f)
 - [JavaScript Top 10 Articles - Oct](https://medium.mybridge.co/javascript-top-10-articles-for-the-past-month-v-oct-2017-e51b3b1a34d2)
 - [Node.js Top 10 Articles - Sep](https://medium.mybridge.co/node-js-top-10-articles-for-the-past-month-v-sep-2017-46e904272856)
