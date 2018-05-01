@@ -70,23 +70,9 @@ const rootElement = document.getElementById('root')
 ReactDOM.render(<App />, rootElement);
 ```
 
-## Redux의 작동과정과 데이터의 흐름
-
-- 브라우저에서 이벤트가 발생한다.
-- 컴포넌트에서 이벤트가 발생한다.
-- 액션 메서드가 호출된다.
-- 스토어의 dispatch() 메서드가 호출된다.
-스토어에서 리듀서를 호출한다. 샘플 코드에서는 todos 리듀서를 호출한다.
-subscribe() 메서드로 등록한 리스너를 호출한다. 샘플 코드에서는 render() 메서드를 호출해 뷰를 갱신한다.
-
-
 #### References
 
-- [React 참고 자료 모음](https://github.com/reactkr/learn-react-in-korean)
+- https://jsx.github.io/
 - https://facebook.github.io/react/
 - https://facebook.github.io/react/tutorial/tutorial.html
-- https://jsx.github.io/
 - https://github.com/facebookincubator/create-react-app
-- http://blog.tamizhvendan.in/blog/2015/11/23/a-beginner-guide-to-setup-react-dot-js-environment-using-babel-6-and-webpack/
-- https://survivejs.com/react/advanced-techniques/structuring-react-projects/
-- http://ccoenraets.github.io/es6-tutorial-react/setup/

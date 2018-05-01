@@ -27,7 +27,6 @@
 - [Node.js Best Practices](https://github.com/i0natan/nodebestpractices)
 - [Node의 실행 환경을 지탱하는 도구들](../../master/JavaScript/node-environments.md)
 - [Yarn 톺아보기](../../master/JavaScript/node-yarn-tutorials.md)
-- Continuous Integration with Jenkins
 
 ### Ranked npm packages
 
@@ -67,14 +66,14 @@
 - JavaScript와 OOP Programming
 - JavaScript와 Functional Programming
 
-### ES6
+### ECMAScript 2015
 - jQuery를 넘어서 JavaScript의 생태계는 어떻게 발전해 왔을까?
 - Constants와 Variables
 - Template Literals
 - Array
 - Destructuring
 
-#### ECMAScript
+#### ECMAScript Processes, RFC Documents
 - [ecma262 status, process, documents](https://github.com/tc39/ecma262#ecmascript)
 - [TC39 proposals](https://github.com/tc39/proposals/blob/master/finished-proposals.md)
 - [Node.js ECMAScript compat table](https://node.green/)
@@ -87,28 +86,22 @@
 - [React 도움닫기](https://github.com/the-road-to-learn-react/the-road-to-learn-react-korean/tree/master/manuscript)
 - [React Design Patterns and Best Practices](https://www.safaribooksonline.com/library/view/react-design-patterns/9781786464538/)
 
-#### Articles
-- [React, GitHub Pages로 Reddit 클론하기](../master/shares/react-get-started.md)
-- [React Forms](../master/shares/react-forms.md)
-- Handling Events
+#### Basic Issues
+- [React 시작하기](../master/shares/react-get-started.md)
+- [React Element, Component](../master/shares/react-element-and-component.md)
+- [React Component Lifecycle](../master/shares/react-component-lifecycle.md)
 - Typechecking With PropTypes
-- [Refs and the DOM](https://reactjs.org/docs/refs-and-the-dom.html)
-- [Forwarding Refs](https://reactjs.org/docs/forwarding-refs.html)
-- React Router v4 Overview
-- React 상태 관리와 Async actions
-- React 16 Features 그리고 React 16.3 new lifecycle 그리고 Context API
-- [Optimizing Performance](https://reactjs.org/docs/optimizing-performance.html)
 
 #### Advanced Issues
-- [React Component Lifecycle](../master/shares/react-component-lifecycle.md)
 - [Handling Events](../master/shares/react-handling-events.md)
-- [Error Handling](../master/shares/react-error-handling.md)
-- [React Forms](../master/shares/react-forms.md)
+- [Handling Errors](../master/shares/react-handling-errors.md)
 - [React Router와 Prefetch](../master/shares/react-router-and-prefetch.md)
+- React Router v4
 - React Router와 Route-based code splitting
-- React 상태 관리와 Async actions
-- React 16 new features
-- React 16.3 new lifecycle 그리고 Context API
+- React 상태 관리와 async actions
+- React 16 Features
+- React 16.3 Features 그리고 Context API
+- [Optimizing Performance](https://reactjs.org/docs/optimizing-performance.html)
 
 #### Back-end
 - Node.js는 어떻게 동작하는가?
