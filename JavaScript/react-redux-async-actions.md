@@ -1,4 +1,8 @@
 
+## Redux
+
+> - https://redux.js.org/recipes/structuring-reducers
+> - https://redux.js.org/recipes/structuring-reducers/immutable-update-patterns
 
 ## References
 - https://deminoth.github.io/redux/
