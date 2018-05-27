@@ -15,9 +15,8 @@
 - Push Notification
 - Web Payment
 
-### Project Best Practices
+### JavaScript Best Practices
 
-- [Github Flow](https://guides.github.com/introduction/flow/)
 - [Airbnb Javascript Style Guide](https://github.com/airbnb/javascript)
 - [JavasScript Project Guidelines](https://github.com/wearehive/project-guidelines)
 - [Modern Web Dev](https://github.com/dexteryy/spellbook-of-modern-webdev)
@@ -78,32 +77,20 @@
 - [TC39 proposals](https://github.com/tc39/proposals/blob/master/finished-proposals.md)
 - [Node.js ECMAScript compat table](https://node.green/)
 
-### React Stuffs
+### Testing
+- JavaScript로 시작하는 TDD
+- Monorepo를 통해 Testing 범위 분리하기
+- Fixtures, Setup, Tear Down
+- API 통합 Testing
+- Testing Asynchronous Code
+- 단위 Testing과 다양한 Mocking 전략
+- Enzyme, Jest Snapshot Testing을 통한 React Component 테스트
+- React와 Storybook을 통한 Interactive UI Dev and Testing
+- W/ mocha, chai, sinon, supertest, node-mocks-http, jest, enzyme, rewire, istanbul, nyc
+- nyc를 통해 coverage 리포트 생성하고 GitHub Pages에 배포하기
 
-#### React Guides
-- [React 한글 문서](https://reactjs-kr.firebaseapp.com/docs/hello-world.html)
-- [Redux 한글 문서](https://deminoth.github.io/redux/)
-- [React 도움닫기](https://github.com/the-road-to-learn-react/the-road-to-learn-react-korean/tree/master/manuscript)
-- [React Design Patterns and Best Practices](https://www.safaribooksonline.com/library/view/react-design-patterns/9781786464538/)
+### Back-end with LTS Node.js
 
-#### Basic Issues
-- [React 시작하기](../master/shares/react-get-started.md)
-- [React Element, Component](../master/shares/react-element-and-component.md)
-- [React Component Lifecycle](../master/shares/react-component-lifecycle.md)
-- Typechecking With PropTypes
-
-#### Advanced Issues
-- [Handling Events](../master/shares/react-handling-events.md)
-- [Handling Errors](../master/shares/react-handling-errors.md)
-- [React Router와 Prefetch](../master/shares/react-router-and-prefetch.md)
-- React Router v4
-- React Router와 Route-based code splitting
-- React 상태 관리와 async actions
-- React 16 Features
-- React 16.3 Features 그리고 Context API
-- [Optimizing Performance](https://reactjs.org/docs/optimizing-performance.html)
-
-#### Back-end
 - Node.js는 어떻게 동작하는가?
 - Node.js의 인터프리터 과정을 통해 Variables 삶 살펴보기
 - Nginx, Node.js, PM2를 통한 웹 애플리케이션 운영
@@ -119,19 +106,7 @@
 - [What's new in Node.js 9](https://nemethgergely.com/what-is-new-in-nodejs-9/)
 - [GraphQL과 RESTful API](../../master/JavaScript/graphql-vs-restful-api.md)
 
-#### Testing
-- JavaScript로 시작하는 TDD
-- Monorepo를 통해 Testing 범위 분리하기
-- Fixtures, Setup, Tear Down
-- API 통합 Testing
-- Testing Asynchronous Code
-- 단위 Testing과 다양한 Mocking 전략
-- Enzyme, Jest Snapshot Testing을 통한 React Component 테스트
-- React와 Storybook을 통한 Interactive UI Dev and Testing
-- W/ mocha, chai, sinon, supertest, node-mocks-http, jest, enzyme, rewire, istanbul, nyc
-- nyc를 통해 coverage 리포트 생성하고 GitHub Pages에 배포하기
-
-#### Geek Blogs
+### Geek Blogs
 - https://toddmotto.com/
 - https://medium.com/@mikeal
 - https://blog.sessionstack.com/@zlatkov
@@ -142,7 +117,7 @@
 - http://blog.jeonghwan.net/
 - http://dev-momo.tistory.com/
 
-#### News
+### News
 - [JavaScript Top 10 Articles - Sep](https://medium.mybridge.co/javascript-top-10-articles-for-the-past-month-v-sep-2017-168efb9a3b0f)
 - [JavaScript Top 10 Articles - Oct](https://medium.mybridge.co/javascript-top-10-articles-for-the-past-month-v-oct-2017-e51b3b1a34d2)
 - [Node.js Top 10 Articles - Sep](https://medium.mybridge.co/node-js-top-10-articles-for-the-past-month-v-sep-2017-46e904272856)
