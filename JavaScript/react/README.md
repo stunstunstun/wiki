@@ -39,6 +39,7 @@
 
 #### Advanced Features
 
+- [High order components](https://reactjs.org/docs/higher-order-components.html)
 - Handling Events with this keyword
 - Handling errors globally 
 - React Router to add different routes to applications
@@ -49,6 +50,7 @@
 
 ### References
 
+- [React Components, Elements, and Instances](https://medium.com/@dan_abramov/react-components-elements-and-instances-90800811f8ca)
 - [Using this in React](https://gist.github.com/amitai10/adb66d6faa714e8c3cdb94946bb98356)
 - [Error handling in React 16](https://reactjs.org/blog/2017/07/26/error-handling-in-react-16.html)
 - [React v16.3.0:New lifecycles and Context API](https://reactjs.org/blog/2018/03/29/react-v-16-3.html)
