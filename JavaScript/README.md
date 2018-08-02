@@ -105,15 +105,14 @@
 - [GraphQL과 RESTful API](../../master/JavaScript/graphql-vs-restful-api.md)
 
 ### Geek Blogs
+- https://medium.com/@addyosmani
 - https://toddmotto.com/
 - https://medium.com/@mikeal
 - https://blog.sessionstack.com/@zlatkov
 - https://derickbailey.com/
 - http://sculove.github.io/blog/
 - https://blog.outsider.ne.kr/category/Javascript
-- https://blog.outsider.ne.kr/category/node.js
 - http://blog.jeonghwan.net/
-- http://dev-momo.tistory.com/
 
 ### News
 - [JavaScript Top 10 Articles - Sep](https://medium.mybridge.co/javascript-top-10-articles-for-the-past-month-v-sep-2017-168efb9a3b0f)
